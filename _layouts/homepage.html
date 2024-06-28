@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en-US">
+
+{% include head.html %}
+
+<body>
+
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TDGX39L" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+
+  {% include header.html %}
+  {% include header-mobile.html %}
+
+  <div id="t4-bodyContainer">
+    <div data-spy="affix" data-offset-top="45">
+
+      <header>
+        <style>
+          .pgs-banner__image {
+            background-image: url("{{ site.baseurl }}/assets/img/homepage/2024-spring-v4-1600x512.jpg");
+          }
+        </style>
+        <div class="pgs-banner pgs-banner--grand shadow-2">
+          <div class="pgs-banner__image">
+          </div>
+          <div class="pgs-banner__title">
+            <div id="ctl00_PlaceHolderMain_ctl02_label" style='display:none'>Page_Content_2</div>
+            <div id="ctl00_PlaceHolderMain_ctl02__ControlWrapper_RichHtmlField" class="ms-rtestate-field" style="display:inline" aria-labelledby="ctl00_PlaceHolderMain_ctl02_label">
+              <h2 class="pgs-banner__h1 h1">​Stay On Track<br></h2>
+              <p class="pgs-banner__p">Register for Wintermester and Spring 2024 classes. Find flexible class options to fit your schedule.</p>
+              <p class="pgs-banner__p text-end">
+                <a href="/admissions/registration/Pages/default.aspx" class="button button-sm cwhite pgs-banner__button button-md cta">Register Now</a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      {% include content_homepage.html %}
+
+    </div>
+  </div>
+
+  {% include footer.html %}
+
+</body>
+</html>
