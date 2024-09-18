@@ -1,49 +1,14 @@
 <!--Mobile Header -->
-<header id="l-header-mobile" class="mobile_master" aria-hidden="false">
-
-
-  <nav class="navbar navbar-expand-sm navbar-dark bg-cprimary-lt navbar--utility-nav">
-    <div class="container-fluid">
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Link</a>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              Dropdown
-            </a>
-            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <li><a class="dropdown-item" href="#">Action</a></li>
-              <li><a class="dropdown-item" href="#">Another action</a></li>
-              <li><hr class="dropdown-divider"></li>
-              <li><a class="dropdown-item" href="#">Something else here</a></li>
-            </ul>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-          </li>
-        </ul>
-        <form class="d-flex">
-          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-          <button class="btn btn-outline-success" type="submit">Search</button>
-        </form>
-      </div>
-    </div>
-  </nav>
-
-  <nav id="l-nav-utility" class="navbar navbar-expand-sm navbar-dark bg-cprimary-lt navbar--utility-nav" aria-label="Eighth navbar example">
+<header id="l-header-mobile" class="ms-dialogHidden mobile_master" aria-hidden="false">
+  <div class="skiptocontent">
+    <a style="color:#ffffff!important" href="#main__body">Skip to Main Content</a>
+    <a style="color:#ffffff!important" href="#" data-ally-content-id="0" data-ally-content-ref="0" data-ally-invoke="alternativeformats">Open Alternative Formats of This Page</a>
+  </div>
+  <nav class="navbar navbar-default navbar-utility bg-cprimary-lt" aria-label="Utility">
     <!-- Brand and toggle get grouped for better mobile display -->
-    <div class="container-fluid">
     <ul class="nav navbar-nav">
       <li class="dropdown dropdown--people">
-        <a href="#" class="dropdown-toggle" data-bs-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">I am a... <span class="ico fas fa-chevron-circle-down" aria-hidden="true"></span></a>
+        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">I am a... <span class="ico fas fa-chevron-circle-down" aria-hidden="true"></span></a>
         <ul class="dropdown-menu">
           <li><a class="track-header" href="/future-students/pages/default.aspx">Future Student</a></li>
           <li><a class="track-header" href="/students/pages/default.aspx">Current Student</a></li>
@@ -59,7 +24,7 @@
     </ul>
     <ul class="nav navbar-nav navbar-right">
       <li class="dropdown dropdown--tools">
-        <a href="#" class="dropdown-toggle" data-bs-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Online Tools <span class="ico fas fa-chevron-circle-down" aria-hidden="true"></span></a>
+        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Online Tools <span class="ico fas fa-chevron-circle-down" aria-hidden="true"></span></a>
         <ul class="dropdown-menu row">
           <li class="col-xs-4 col-xxs-6"><a class="track-header" href="https://econnect.dcccd.edu"><span class="ico fas fa-network-wired" aria-hidden="true"></span>eConnect</a></li>
           <li class="col-xs-4 col-xxs-6"><a class="track-header" href="https://selfsrv.dcccd.edu/student"><span class="ico fas fa-laptop" aria-hidden="true"></span>Self Service</a></li>
@@ -75,13 +40,12 @@
         </ul>
       </li>
     </ul>
-    </div>
   </nav>
   <nav id="dc_mobileNavbar" class="navbar navbar-inverse shadow-nav bg-cprimary" data-spy="affix" data-offset-top="45" aria-label="Primary Navigation">
     <!-- Hamburger Menu -->
     <div class="navbar-header bg-cprimary-gr">
       <a class="mobile-logo" href="/"><img src="{{ site.baseurl }}/assets/img/logos/dc-logo-master-white.svg" alt="Dallas College"></a>
-      <button class="navbar-toggle hamburger hamburger--squeeze navbar-toggle collapsed bg-cprimary-dk navbar-primary-toggle" type="button" data-bs-toggle="collapse" data-target="#l-header-mobile__menu" aria-expanded="false" aria-haspopup="true">
+      <button class="hamburger hamburger--squeeze navbar-toggle collapsed bg-cprimary-dk navbar-primary-toggle" type="button" data-toggle="collapse" data-target="#l-header-mobile__menu" aria-expanded="false" aria-haspopup="true">
         <span class="hamburger-box">
           <span class="hamburger-inner"></span><span class="sr-only">Toggle Menu</span>
         </span>
@@ -94,7 +58,7 @@
           <label for="srchBox" class="sr-only">Search this website</label>
           <input type="text" class="form-control bg-cwhite" placeholder="Search this website" id="srchBox">
           <span class="input-group-btn">
-            <button class="navbar-toggle bg-cwhite text-cprimary track-header" type="button" id="mobileSrchBtn"><span class="ico fas fa-search" aria-label="Search"></span></button>
+            <button class="bg-cwhite text-cprimary track-header" type="button" id="mobileSrchBtn"><span class="ico fas fa-search" aria-label="Search"></span></button>
           </span>
         </div>
       </form>
