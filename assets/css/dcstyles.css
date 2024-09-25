@@ -1756,7 +1756,7 @@ ul.button-group .button {
   margin-bottom: 0
 }
 
-ul.button-group li {
+ul.button-group li.list-inline-item {
   padding: 0;
   margin: 0 1px 0 0
 }
