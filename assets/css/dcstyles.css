@@ -1865,7 +1865,6 @@ ul.button-group--vertical li:last-child .button {
 
 .button.button-mn {
   font-size: .625rem;
-  text-transform: uppercase
 }
 
 .button.button-ghost .button.button-flat {
@@ -2037,7 +2036,7 @@ a.grand-photo-button.no-border, a.grand-photo-button-lg.no-border, a.grand-photo
 }
 
 .pgs-breadcrumb {
-  text-transform: uppercase
+  /* text-transform: uppercase */
 }
 
 .pgs-shortcut, .pgs-breadcrumb {
@@ -2542,7 +2541,7 @@ img.cb-mainimg-lg {
 }
 
 .award-box .cta {
-  text-transform: uppercase;
+  /* text-transform: uppercase; */
   text-align: center
 }
 
@@ -2608,7 +2607,7 @@ img.cb-mainimg-lg {
 .card.award-box .card-header {
   padding: .75rem 1.25rem;
   border-bottom: 1px solid rgba(0, 0, 0, 0.125);
-  text-transform: uppercase;
+  /* text-transform: uppercase; */
   font-size: 12px
 }
 
@@ -2670,7 +2669,7 @@ ul.pgs-program-card__loc {
 
 .pgs-program-card__type {
   font-size: .675rem;
-  text-transform: uppercase;
+  /* text-transform: uppercase; */
   font-weight: 700
 }
 
@@ -2746,7 +2745,7 @@ ul.pgs-program-card__loc {
 h2.pgs-dept-card__subhead, h3.pgs-dept-card__subhead, h4.pgs-dept-card__subhead {
   font-size: 14px;
   font-weight: bold;
-  text-transform: uppercase;
+  /* text-transform: uppercase; */
   margin-top: 0;
   margin-bottom: 1em
 }
@@ -6204,7 +6203,7 @@ ul.contact-info li.extra.contact-desktop:before {
 }
 
 .pop-footer h2 {
-  text-transform: uppercase;
+  /* text-transform: uppercase; */
   border-bottom-width: 5px;
   border-bottom-style: solid;
   padding-bottom: .5em
