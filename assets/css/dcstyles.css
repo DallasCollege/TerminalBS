@@ -2275,7 +2275,7 @@ ul.pgs-org-card__list .ico {
   clear: both
 }
 
-.cb-mainico.img-circle {
+.cb-mainico.img-circle,.cb-mainoco.rounded-circle {
   width: 8em;
   height: 8em;
   padding: 2.5em 2em;
@@ -2289,7 +2289,7 @@ ul.pgs-org-card__list .ico {
   margin: 1em auto 2em auto
 }
 
-.cb-mainico.img-circle .ico, .cb-mainico.img-rounded .ico, .cb-mainico.ico-square .ico {
+.cb-mainico.img-circle .ico, .cb-mainico.rounded-circle .ico, .cb-mainico.img-rounded .ico, .cb-mainico.ico-square .ico {
   font-size: 3em
 }
 
@@ -2329,7 +2329,7 @@ img.cb-mainimg-lg {
   font-size: 4em
 }
 
-.cb-mainico.img-circle, .cb-mainico.img-rounded, .cb-mainico.ico-circle {
+.cb-mainico.img-circle, .cb-mainico.rounded-circle, .cb-mainico.img-rounded, .cb-mainico.ico-circle {
   width: 8em;
   height: 8em;
   padding: 2.5em 2em;
@@ -2340,11 +2340,11 @@ img.cb-mainimg-lg {
   border-width: 4px
 }
 
-.cb-mainico.img-circle .ico, .cb-mainico.img-rounded .ico, .cb-mainico.ico-square .ico {
+.cb-mainico.img-circle .ico, .cb-mainico.rounded-circle .ico,.cb-mainico.img-rounded .ico, .cb-mainico.ico-square .ico {
   font-size: 3em
 }
 
-.data-box .cb-mainico.img-circle, .data-box .cb-mainico.img-rounded, .data-box .cb-mainico.ico-circle {
+.data-box .cb-mainico.img-circle, .data-box .cb-mainico.rounded-circle, .data-box .cb-mainico.img-rounded, .data-box .cb-mainico.ico-circle {
   margin-bottom: 1em
 }
 
@@ -6241,7 +6241,7 @@ ul.contact-info li.extra.contact-desktop:before {
     text-align: center
   }
 
-  .pop-footer img:not(.img-circle.width-30) {
+  .pop-footer img:not(.img-circle.width-30),  .pop-footer img:not(.img-rounded.width-30) {
     display: block;
     margin-left: auto;
     margin-right: auto
