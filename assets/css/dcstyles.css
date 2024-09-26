@@ -58,7 +58,7 @@ h5, .h5 {
 h6, .h6 {
   font-weight: 700;
   font-size: .875rem;
-  text-transform: uppercase
+  /* text-transform: uppercase */
 }
 
 .h1 .small, .h1 small, .h2 .small, .h2 small, .h3 .small, .h3 small, .h4 .small, .h4 small, .h5 .small, .h5 small, .h6 .small, .h6 small, h1 .small, h1 small, h2 .small, h2 small, h3 .small, h3 small, h4 .small, h4 small, h5 .small, h5 small, h6 .small, h6 small {
@@ -147,7 +147,7 @@ blockquote {
   margin-bottom: 1rem;
   font-size: .875em;
   color: #6c757d;
-  padding: 10px 0 20px 25px
+  padding: 10px 0 20px 30px
 }
 
 .col-md-8 .container {
