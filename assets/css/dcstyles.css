@@ -138,7 +138,16 @@ blockquote {
   font-size: 18px;
   line-height: 1.875em;
   border-left: 8px solid #f7f3e8;
-  font-family: "Montserrat"
+  font-family: "Montserrat";
+  padding: 10px 20px
+}
+
+.blockquote-footer {
+  margin-top: -1rem;
+  margin-bottom: 1rem;
+  font-size: .875em;
+  color: #6c757d;
+  padding: 10px 0 20px 25px
 }
 
 .col-md-8 .container {

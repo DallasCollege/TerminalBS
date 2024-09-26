@@ -252,7 +252,77 @@
         <main id="main__body">
             <div class="container">
               <div class="row">
+                <!-- Sidebar Begin -->
+<aside id="sidebar" class="sidebar col-md-3 offset-1 order-md-last">
 
+
+
+
+
+
+  <nav class="navbar pgs-navbar pgs-navbar--sidebar navbar-expand-md">
+    <div class="container-fluid">
+
+
+      <div class="navbar-header">
+
+<!--
+                                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#pgs-navbar--sidebar__collapse" aria-expanded="false">Health Services and Promotion Menu<span aria-hidden="true" class="ico fas fa-chevron-circle-down"></span></button>
+-->
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#pgs-navbar--sidebar__collapse" aria-controls="pgs-navbar--sidebar__collapse" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    </div>
+      <div class="collapse navbar-collapse" id="pgs-navbar--sidebar__collapse">
+        <ul class="nav navbar-nav flex-column">
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="#">Interior Layouts</a>
+          </li>
+          <li role="menuitem" class="nav-item"><a class="nav-link" tabindex="-1" href="#typography">Typography</a></li>
+          <li role="menuitem" class="nav-item"><a class="nav-link" tabindex="-1" href="#action-links">Action Links</a></li>
+          <li role="menuitem" class="nav-item"><a class="nav-link" tabindex="-1" href="#award-card">Award Card</a></li>
+          <li role="menuitem" class="nav-item"><a class="nav-link level1 selected static" tabindex="-1" href="#dept-card" aria-current="page">Department Card</a></li>
+          <li role="menuitem" class="nav-item"><a class="nav-link" tabindex="-1" href="#buttons">Buttons</a></li>
+          <li role="menuitem" class="nav-item"><a class="nav-link" tabindex="-1" href="#event-cards">Event Cards</a></li>
+          <li role="menuitem" class="nav-item"><a class="nav-link" tabindex="-1" href="#feature-cards">Feature Cards</a></li>
+
+        </ul>
+      </div>
+    </div>
+  </nav>
+<!--
+  <div class="ms-core-sideNavBox-removeLeftMargin">
+    <nav class="navbar pgs-navbar pgs-navbar--sidebar" aria-label="Secondary">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#pgs-navbar--sidebar__collapse" aria-expanded="false">Health Services and Promotion Menu<span aria-hidden="true"
+            class="ico fas fa-chevron-circle-down"></span></button>
+      </div>
+      <div class="collapse navbar-collapse" id="pgs-navbar--sidebar__collapse">
+
+        <div id="zz1_V4QuickLaunchMenu" style="float: left;">
+          <ul class="level1 nav nav-stacked static" tabindex="0" role="menu" style="position: relative; width: auto; float: left;">
+            <li role="menuitem" class="static" style="position: relative;"><a class="level1 static" href="/resources/health-centers/Pages/default.aspx" tabindex="-1">Health Services and Promotion</a></li>
+            <li role="menuitem" class="static" style="position: relative;"><a class="level1 static" href="/resources/health-centers/Pages/immunizations.aspx" tabindex="-1">Immunizations and Insurance</a></li>
+            <li role="menuitem" class="static" style="position: relative;"><a class="level1 static" href="/resources/health-centers/Pages/tb-resources.aspx" tabindex="-1">Tuberculosis Testing and Resources</a></li>
+            <li role="menuitem" class="static" style="position: relative;"><a class="level1 static" href="/resources/health-centers/Pages/free-prescriptions.aspx" tabindex="-1">Free Prescriptions</a></li>
+            <li role="menuitem" class="static" style="position: relative;"><a class="level1 static" href="/resources/health-centers/health-promotion/Pages/default.aspx" tabindex="-1">Health Promotion</a></li>
+            <li role="menuitem" class="static" style="position: relative;"><a class="level1 static" href="/resources/health-centers/Pages/events.aspx" tabindex="-1">Health and Well-Being Events</a></li>
+            <li role="menuitem" class="static" style="position: relative;"><a class="level1 selected static" href="/resources/health-centers/Pages/contact.aspx" tabindex="-1" aria-current="page">Contact Health Services</a></li>
+            <li role="menuitem" class="static" style="position: relative;"><a class="level1 static" href="/resources/health-centers/Pages/nurses.aspx" tabindex="-1">Meet the Health Services &amp; Promotion Team</a></li>
+          </ul>
+        </div>
+        <div style="clear: left;"></div>
+
+      </div>
+    </nav>
+  </div>
+-->
+</aside>
+<!-- Sidebar End -->
+
+
+                <div class="col-md-8 order-md-first">
 
                 <h2>Table of Contents</h2>
                 <ul>
@@ -263,6 +333,7 @@
                    <li><a href="#buttons">Buttons</a></li>
                    <li><a href="#event-cards">Event Cards</a></li>
                    <li><a href="#feature-cards">Feature Cards</a></li>
+               
                 </ul>
                 
 
@@ -330,13 +401,31 @@
         <li class="li-border">Item 3</li>
     </ul>
     </div>
+<div class="row">
+    <div class="col-sm-12">
 
     <h3>Blockquote</h3>
-    <blockquote>You all are an integral part of Dallas College, regardless of what your role is all about. Regardless of title. Regardless of position. You are Dallas College. You connect people and ideas. You are the solution to solving the problems of those in need. You are hope. Dallas College cannot function without you. I hope you will stand with us as we transform lives and communities, creating hope and futures, bridging what divides us through education.</blockquote>
+
+    <blockquote class="blockquote">You all are an integral part of Dallas College, regardless of what your role is all about. Regardless of title. Regardless of position. You are Dallas College. You connect people and ideas. You are the solution to solving the problems of those in need. You are hope. Dallas College cannot function without you. I hope you will stand with us as we transform lives and communities, creating hope and futures, bridging what divides us through education.</blockquote>
+
+    <h3>Blockquote With a Source</h3>
+
+    <figure>
+        <blockquote class="blockquote">
+          <p>A well-known quote, contained in a blockquote element.</p>
+        </blockquote>
+        <figcaption class="blockquote-footer">
+          Someone famous in <cite title="Source Title">Source Title</cite>
+        </figcaption>
+      </figure>
+
+</div>
 
     <div class="spacer-3"></div>
     <h3>Indent</h3>
     <div class="indent">You all are an integral part of Dallas College, regardless of what your role is all about. Regardless of title. Regardless of position. You are Dallas College. You connect people and ideas. You are the solution to solving the problems of those in need. You are hope. Dallas College cannot function without you. I hope you will stand with us as we transform lives and communities, creating hope and futures, bridging what divides us through education.</div>
+
+</div>
       <hr>
       <h2 id="action-links">Action Links</h2>
 
@@ -492,9 +581,207 @@
                         </div>
 
             </div>
+      <hr>
+      <h2 id="dept-card">Department Cards</h2>
+
+<h3>Department Cards: Standard</h3>
+
+<div class="row">
+    <div class="col-sm-12">
+        <div class="pgs-dept-card">
+            <h2 class="pgs-dept-card__title">Richland Multicultural Center</h2>
+            <div class="row">
+               <div class="col-md-4 col-sm-12 pgs-dept-card__col">
+                  <h3 class="pgs-dept-card__subhead">Visit Us</h3>
+                  <ul class="fa-ul">
+                     <li>
+                        <span class="fa-li"><span aria-hidden="true" class="ico fas fa-university"></span></span>Thunderduck Hall, T-150</li>
+                     <li>
+                        <span class="fa-li"><span aria-hidden="true" class="ico fas fa-map-marker-alt"></span></span><strong>Richland</strong><br> 12800 Abrams Rd.<br> Dallas, TX 75243 </li>
+                  </ul>
+                  <h3 class="pgs-dept-card__subhead">Mailing Address</h3>
+                  <ul class="fa-ul">
+                     <li>
+                        <span class="fa-li"><span aria-hidden="true" class="ico fas fa-mail-bulk"></span></span>Multicultural Center<br>Richland Campus<br> 12800 Abrams Rd.<br> Dallas, TX 75243 </li>
+                  </ul>
+               </div>
+               <div class="col-md-4 col-sm-6 pgs-dept-card__col">
+                  <h3 class="pgs-dept-card__subhead">Call or Email Us</h3>
+                  <ul class="fa-ul">
+                     <li>
+                        <span class="fa-li"><span aria-hidden="true" class="ico fas fa-phone"></span></span>972-238-6900 (general information)</li>
+                     <li>
+                        <span class="fa-li"><span aria-hidden="true" class="ico fas fa-phone"></span></span>972-238-6291 (direct line)</li>
+                     <li>
+                        <span class="fa-li"><span aria-hidden="true" class="ico fas fa-fax"></span></span>972-238-6165 (fax)</li>
+                     <li>
+                        <span class="fa-li"><span aria-hidden="true" class="ico fas fa-envelope"></span></span><a href="/sandbox/migration/Pages/richlandmulticultural@dcccd.edu">Email
+                           <span class="sr-only">Richland </span>Multicultural Center (for resident students)</a></li>
+                     <li>
+                        <span class="fa-li"><span aria-hidden="true" class="ico fas fa-envelope"></span></span><a href="/sandbox/migration/Pages/RLCWorld@dcccd.edu">Email
+                           <span class="sr-only">Richland </span>Multicultural Center (for international students)</a></li>
+                  </ul>
+                  <h3 class="pgs-dept-card__subhead">Connect with Us</h3>
+                  <ul class="fa-ul">
+                     <li>
+                        <span class="fa-li"><span aria-hidden="true" class="ico fab fa-facebook"></span></span><a href="https://www.facebook.com/rlcmulticultural"><span class="sr-only">Richland Multicultural Center</span>On Facebook</a></li>
+                     <li>
+                        <span class="fa-li"><span aria-hidden="true" class="ico fab fa-twitter"></span></span><a href="https://www.twitter.com/rlc_mc"><span class="sr-only">Richland Multicultural Center</span>On Twitter</a></li>
+                     <li>
+                        <span class="fa-li"><span aria-hidden="true" class="ico fab fa-instagram"></span></span><a href="https://www.instagram.com/rlcmulticultural"><span class="sr-only">Richland Multicultural Center</span>On Instagram</a></li>
+                  </ul>
+               </div>
+               <div class="col-md-4 col-sm-6 pgs-dept-card__col">
+                  <h3 class="pgs-dept-card__subhead">Hours for Academic Advising</h3>
+                  <ul class="fa-ul">
+                     <li>
+                        <span class="fa-li"><span aria-hidden="true" class="ico fas fa-clock"></span></span><strong>Mon-Thurs:</strong> 8 a.m. - 7 p.m.</li>
+                     <li>
+                        <span class="fa-li"><span aria-hidden="true" class="ico fas fa-clock"></span></span><strong>Fri:</strong> 8 a.m. - 5 p.m.</li>
+                     <li>
+                        <span class="fa-li"><span aria-hidden="true" class="ico fas fa-clock"></span></span><strong>Sat-Sun:</strong> Closed</li>
+                     <li>
+                        <strong>Note:</strong> Closed every Wednesday from 1-4 p.m. for staff meeting, except during peak registration</li>
+                  </ul>
+                  <h3 class="pgs-dept-card__subhead">Hours for International Advising</h3>
+                  <ul class="fa-ul">
+                     <li>
+                        <span class="fa-li"><span aria-hidden="true" class="ico fas fa-clock"></span></span><strong>Mon-Thurs:</strong> 8:30 a.m. - 4:30 p.m.</li>
+                     <li>
+                        <span class="fa-li"><span aria-hidden="true" class="ico fas fa-clock"></span></span><strong>Fri-Sun:</strong> Closed</li>
+                     <li>
+                        <strong>Note:</strong> Closed every Wednesday from 1-4 p.m. for staff meeting, except during peak registration</li>
+                  </ul>
+               </div>
+            </div>
+         </div>
+        </div>
+    </div>
+
+     <div class="spacer-3"></div>
+
+        <h3>Department Cards: Quiet Mode</h3>
+
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="pgs-dept-card pgs-dept-card--quiet">
+                    <h2 class="pgs-dept-card__title">Richland Multicultural Center</h2>
+                    <div class="row">
+                       <div class="col-md-4 col-sm-12 pgs-dept-card__col">
+                          <h4 class="pgs-dept-card__subhead">Visit Us</h4>
+                          <ul class="fa-ul">
+                             <li>
+                                <span class="fa-li"><span aria-hidden="true" class="ico fas fa-university"></span></span>Thunderduck Hall, T-150</li>
+                             <li>
+                                <span class="fa-li"><span aria-hidden="true" class="ico fas fa-map-marker-alt"></span></span><strong>Richland</strong><br> 12800 Abrams Rd.<br> Dallas, TX 75243 </li>
+                          </ul>
+                          <h3 class="pgs-dept-card__subhead">Mailing Address</h3>
+                          <ul class="fa-ul">
+                             <li>
+                                <span class="fa-li"><span aria-hidden="true" class="ico fas fa-mail-bulk"></span></span>Multicultural Center<br>Richland Campus<br> 12800 Abrams Rd.<br> Dallas, TX 75243 </li>
+                          </ul>
+                       </div>
+                       <div class="col-md-4 col-sm-6 pgs-dept-card__col">
+                          <h3 class="pgs-dept-card__subhead">Call or Email Us</h3>
+                          <ul class="fa-ul">
+                             <li>
+                                <span class="fa-li"><span aria-hidden="true" class="ico fas fa-phone"></span></span>972-238-6900 (general information)</li>
+                             <li>
+                                <span class="fa-li"><span aria-hidden="true" class="ico fas fa-phone"></span></span>972-238-6291 (direct line)</li>
+                             <li>
+                                <span class="fa-li"><span aria-hidden="true" class="ico fas fa-fax"></span></span>972-238-6165 (fax)</li>
+                             <li>
+                                <span class="fa-li"><span aria-hidden="true" class="ico fas fa-envelope"></span></span><a href="/sandbox/migration/Pages/richlandmulticultural@dcccd.edu">Email
+                                   <span class="sr-only">Richland </span>Multicultural Center (for resident students)</a></li>
+                             <li>
+                                <span class="fa-li"><span aria-hidden="true" class="ico fas fa-envelope"></span></span><a href="/sandbox/migration/Pages/RLCWorld@dcccd.edu">Email
+                                   <span class="sr-only">Richland </span>Multicultural Center (for international students)</a></li>
+                          </ul>
+                          <h3 class="pgs-dept-card__subhead">Connect with Us</h3>
+                          <ul class="fa-ul">
+                             <li>
+                                <span class="fa-li"><span aria-hidden="true" class="ico fab fa-facebook"></span></span><a href="https://www.facebook.com/rlcmulticultural"><span class="sr-only">Richland Multicultural Center</span>On Facebook</a></li>
+                             <li>
+                                <span class="fa-li"><span aria-hidden="true" class="ico fab fa-twitter"></span></span><a href="https://www.twitter.com/rlc_mc"><span class="sr-only">Richland Multicultural Center</span>On Twitter</a></li>
+                             <li>
+                                <span class="fa-li"><span aria-hidden="true" class="ico fab fa-instagram"></span></span><a href="https://www.instagram.com/rlcmulticultural"><span class="sr-only">Richland Multicultural Center</span>On Instagram</a></li>
+                          </ul>
+                       </div>
+                       <div class="col-md-4 col-sm-6 pgs-dept-card__col">
+                          <h3 class="pgs-dept-card__subhead">Hours for Academic Advising</h3>
+                          <ul class="fa-ul">
+                             <li>
+                                <span class="fa-li"><span aria-hidden="true" class="ico fas fa-clock"></span></span><strong>Mon-Thurs:</strong> 8 a.m. - 7 p.m.</li>
+                             <li>
+                                <span class="fa-li"><span aria-hidden="true" class="ico fas fa-clock"></span></span><strong>Fri:</strong> 8 a.m. - 5 p.m.</li>
+                             <li>
+                                <span class="fa-li"><span aria-hidden="true" class="ico fas fa-clock"></span></span><strong>Sat-Sun:</strong> Closed</li>
+                             <li>
+                                <strong>Note:</strong> Closed every Wednesday from 1-4 p.m. for staff meeting, except during peak registration</li>
+                          </ul>
+                          <h3 class="pgs-dept-card__subhead">Hours for International Advising</h3>
+                          <ul class="fa-ul">
+                             <li>
+                                <span class="fa-li"><span aria-hidden="true" class="ico fas fa-clock"></span></span><strong>Mon-Thurs:</strong> 8:30 a.m. - 4:30 p.m.</li>
+                             <li>
+                                <span class="fa-li"><span aria-hidden="true" class="ico fas fa-clock"></span></span><strong>Fri-Sun:</strong> Closed</li>
+                             <li>
+                                <strong>Note:</strong> Closed every Wednesday from 1-4 p.m. for staff meeting, except during peak registration</li>
+                          </ul>
+                       </div>
+                    </div>
+                 </div>
+        </div>
+    </div>
+      <hr>
+      <h2 id="buttons">Buttons</h2>
+<p>Stand alone buttons can be a format in the WYSIWG editor. Groups will likely need to be content types.</p>
+<h3>Buttons: Standard</h3>
+<a href="#" class="button bg-cprimary">Button Text</a>
+
+<a href="#" class="button bg-csecondary">Button Text</a>
+
+<a href="#" class="button bg-cgrey">Button Text</a>
+
+<h3>Buttons: With Icons</h3>
+
+<a href="#" class="button bg-cprimary"><span aria-hidden="true" class="ico fab fa-twitter"></span>Button with Icon</a>
+
+<a href="#" class="button bg-cprimary">Button with Icon Right<span aria-hidden="true" class="ico-right fas fa-chevron-right"></span></a>
+
+<h3>Buttons: Sizes</h3>
+
+<a href="#" class="button button-xl bg-cprimary"><span class="ico fab fa-twitter" aria-hidden="true"></span>Extra Large Button with Icon</a>
+<a href="#" class="button button-lg bg-cprimary"><span class="ico fab fa-twitter" aria-hidden="true"></span>Large Button With Icon</a>
+<a href="#" class="button button-sm bg-cprimary">Small Button With Icon<span aria-hidden="true" class="ico-right fas fa-chevron-right"></span></a>
+<a href="#" class="button button-mn bg-cprimary"><span class="ico fab fa-twitter" aria-hidden="true"></span>Mini Button With Icon</a>
+
+<h3>Buttons: Block Button</h3>
+
+<a href="#" class="button bg-cprimary button-block">Block Button</a>
+
+<h3>Buttons: Ghost Button</h3>
+
+<a href="#" class="button border-cprimary button-ghost">Ghost Button<span aria-hidden="true" class="ico-right fas fa-chevron-right"></span></a>
+
+<h3>Buttons: Button Group</h3>
+
+<ul class="button-group list-inline">
+    <li class="list-inline-item"><a class="button bg-csecondary" href="#">Item 1</a></li><li class="list-inline-item"><a class="button bg-csecondary" href="#">Item 2</a></li><li class="list-inline-item"><a class="button bg-csecondary" href="#">Item 3</a></li><li class="list-inline-item"><a class="button bg-csecondary" href="#">Item 4</a></li><li class="list-inline-item"><a class="button bg-csecondary" href="#">Item 5</a></li>
+</ul>
+
+<h3>Buttons: Justified Button Group</h3>
+<ul class="button-group button-group--justified list-inline">
+    <li class="list-inline-item"><a class="button bg-csecondary" href="#">Item 1</a></li>
+    <li class="list-inline-item"><a class="button bg-csecondary" href="#">Item 2</a></li>
+    <li class="list-inline-item"><a class="button bg-csecondary" href="#">Item 3</a></li>
+    <li class="list-inline-item"><a class="button bg-csecondary" href="#">Item 4</a></li>
+
+  </ul>
 
     </div>
   </div>
+</div>
 </div>
 </div>
 </main>

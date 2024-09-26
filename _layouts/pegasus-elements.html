@@ -19,7 +19,9 @@
         <main id="main__body">
             <div class="container">
               <div class="row">
+                {% include interior/content_featured-sidebar.html %}
 
+                <div class="col-md-8 order-md-first">
 
                 <h2>Table of Contents</h2>
                 <ul>
@@ -30,6 +32,7 @@
                    <li><a href="#buttons">Buttons</a></li>
                    <li><a href="#event-cards">Event Cards</a></li>
                    <li><a href="#feature-cards">Feature Cards</a></li>
+               
                 </ul>
                 
 
@@ -39,9 +42,14 @@
       {% include pegasus/action-links.html %}
       <hr>
       {% include pegasus/award-cards.html %}
+      <hr>
+      {% include pegasus/dept-cards.html %}
+      <hr>
+      {% include pegasus/buttons.html %}
 
     </div>
   </div>
+</div>
 </div>
 </div>
 </main>
