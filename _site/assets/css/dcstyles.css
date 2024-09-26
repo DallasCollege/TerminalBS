@@ -2275,7 +2275,9 @@ ul.pgs-org-card__list .ico {
   clear: both
 }
 
-.cb-mainico.img-circle,.cb-mainoco.rounded-circle {
+/* Featured Box */
+
+.cb-mainico.img-circle, .cb-mainoco.rounded-circle {
   width: 8em;
   height: 8em;
   padding: 2.5em 2em;
