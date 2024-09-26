@@ -61,6 +61,12 @@ h6, .h6 {
   text-transform: uppercase
 }
 
+.h1 .small, .h1 small, .h2 .small, .h2 small, .h3 .small, .h3 small, .h4 .small, .h4 small, .h5 .small, .h5 small, .h6 .small, .h6 small, h1 .small, h1 small, h2 .small, h2 small, h3 .small, h3 small, h4 .small, h4 small, h5 .small, h5 small, h6 .small, h6 small {
+  font-weight: 400;
+  line-height: 1;
+  color: #777;
+}
+
 
 /* general */
 a {
@@ -1750,7 +1756,7 @@ ul.button-group .button {
   margin-bottom: 0
 }
 
-ul.button-group li {
+ul.button-group li.list-inline-item {
   padding: 0;
   margin: 0 1px 0 0
 }
@@ -1859,7 +1865,6 @@ ul.button-group--vertical li:last-child .button {
 
 .button.button-mn {
   font-size: .625rem;
-  text-transform: uppercase
 }
 
 .button.button-ghost .button.button-flat {
@@ -2031,7 +2036,7 @@ a.grand-photo-button.no-border, a.grand-photo-button-lg.no-border, a.grand-photo
 }
 
 .pgs-breadcrumb {
-  text-transform: uppercase
+  /* text-transform: uppercase */
 }
 
 .pgs-shortcut, .pgs-breadcrumb {
@@ -2270,7 +2275,7 @@ ul.pgs-org-card__list .ico {
   clear: both
 }
 
-.cb-mainico.img-circle {
+.cb-mainico.img-circle,.cb-mainoco.rounded-circle {
   width: 8em;
   height: 8em;
   padding: 2.5em 2em;
@@ -2284,7 +2289,7 @@ ul.pgs-org-card__list .ico {
   margin: 1em auto 2em auto
 }
 
-.cb-mainico.img-circle .ico, .cb-mainico.img-rounded .ico, .cb-mainico.ico-square .ico {
+.cb-mainico.img-circle .ico, .cb-mainico.rounded-circle .ico, .cb-mainico.img-rounded .ico, .cb-mainico.ico-square .ico {
   font-size: 3em
 }
 
@@ -2324,7 +2329,7 @@ img.cb-mainimg-lg {
   font-size: 4em
 }
 
-.cb-mainico.img-circle, .cb-mainico.img-rounded, .cb-mainico.ico-circle {
+.cb-mainico.img-circle, .cb-mainico.rounded-circle, .cb-mainico.img-rounded, .cb-mainico.ico-circle {
   width: 8em;
   height: 8em;
   padding: 2.5em 2em;
@@ -2335,11 +2340,11 @@ img.cb-mainimg-lg {
   border-width: 4px
 }
 
-.cb-mainico.img-circle .ico, .cb-mainico.img-rounded .ico, .cb-mainico.ico-square .ico {
+.cb-mainico.img-circle .ico, .cb-mainico.rounded-circle .ico,.cb-mainico.img-rounded .ico, .cb-mainico.ico-square .ico {
   font-size: 3em
 }
 
-.data-box .cb-mainico.img-circle, .data-box .cb-mainico.img-rounded, .data-box .cb-mainico.ico-circle {
+.data-box .cb-mainico.img-circle, .data-box .cb-mainico.rounded-circle, .data-box .cb-mainico.img-rounded, .data-box .cb-mainico.ico-circle {
   margin-bottom: 1em
 }
 
@@ -2536,7 +2541,7 @@ img.cb-mainimg-lg {
 }
 
 .award-box .cta {
-  text-transform: uppercase;
+  /* text-transform: uppercase; */
   text-align: center
 }
 
@@ -2602,7 +2607,7 @@ img.cb-mainimg-lg {
 .card.award-box .card-header {
   padding: .75rem 1.25rem;
   border-bottom: 1px solid rgba(0, 0, 0, 0.125);
-  text-transform: uppercase;
+  /* text-transform: uppercase; */
   font-size: 12px
 }
 
@@ -2664,7 +2669,7 @@ ul.pgs-program-card__loc {
 
 .pgs-program-card__type {
   font-size: .675rem;
-  text-transform: uppercase;
+  /* text-transform: uppercase; */
   font-weight: 700
 }
 
@@ -2740,7 +2745,7 @@ ul.pgs-program-card__loc {
 h2.pgs-dept-card__subhead, h3.pgs-dept-card__subhead, h4.pgs-dept-card__subhead {
   font-size: 14px;
   font-weight: bold;
-  text-transform: uppercase;
+  /* text-transform: uppercase; */
   margin-top: 0;
   margin-bottom: 1em
 }
@@ -6198,7 +6203,7 @@ ul.contact-info li.extra.contact-desktop:before {
 }
 
 .pop-footer h2 {
-  text-transform: uppercase;
+  /* text-transform: uppercase; */
   border-bottom-width: 5px;
   border-bottom-style: solid;
   padding-bottom: .5em
@@ -6236,7 +6241,7 @@ ul.contact-info li.extra.contact-desktop:before {
     text-align: center
   }
 
-  .pop-footer img:not(.img-circle.width-30) {
+  .pop-footer img:not(.img-circle.width-30),  .pop-footer img:not(.img-rounded.width-30) {
     display: block;
     margin-left: auto;
     margin-right: auto
