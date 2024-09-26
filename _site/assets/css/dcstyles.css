@@ -321,7 +321,7 @@ li.navbar-nav--seperator:before {
 }
 
 #l-nav-primary a {
-  border-bottom: 6px solid transparent;
+  border-bottom: 0px solid transparent;
   border-top: 6px solid transparent;
   display: block;
   padding: .875em 0;
@@ -2040,7 +2040,7 @@ a.grand-photo-button.no-border, a.grand-photo-button-lg.no-border, a.grand-photo
 }
 
 .pgs-shortcut, .pgs-breadcrumb {
-  font-size: .75rem;
+  font-size: .9rem;
   padding-top: 1rem;
   padding-bottom: 1rem
 }
@@ -2274,8 +2274,6 @@ ul.pgs-org-card__list .ico {
   display: table;
   clear: both
 }
-
-/* Featured Box */
 
 .cb-mainico.img-circle, .cb-mainoco.rounded-circle {
   width: 8em;

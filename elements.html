@@ -29,6 +29,7 @@
 <h2>Table of Contents</h2>
 <ul>
    <li><a href="#typography">Typography</a></li>
+   <li><a href="#action-links">Action Links</a></li>
    <li><a href="#award-card">Award Card</a></li>
    <li><a href="#dept-card">Department Card</a></li>
    <li><a href="#buttons">Buttons</a></li>
@@ -50,6 +51,38 @@
 <h2>You can have a regular header
     <small>And wrap it with the <code>.small</code> class for a subhead</small></h2>
 
+
+    <hr>
+
+    <h2 id="action-links">Action Links</h2>
+
+    <h3>Action Link: Standard</h3>
+    <a class="pgs-action-link" href="#"><span class="ico fas fa-chevron-right"></span>Meet Tamera and other inspiring Dallas College students</a>
+    <h3>Action Link: Quiet</h3>
+    <a class="pgs-action-link pgs-action-link--quiet" href="#"><span class="ico fas fa-chevron-right"></span>Meet Tamera and other inspiring Dallas College students</a>
+
+    <h3>Action Link: List</h3>
+    <ul class="pgs-action-link-list fa-ul">
+      <li><a class="pgs-action-link" href="#"><span class="fa-li"><span class="ico fas fa-chevron-right"></span></span>Search All Programs of Study</a></li>
+      <li><a class="pgs-action-link" href="#"><span class="fa-li"><span class="ico fas fa-chevron-right"></span></span>Browse Class Schedules</a></li>
+      <li><a class="pgs-action-link" href="#"><span class="fa-li"><span class="ico fas fa-chevron-right"></span></span>Open Course Catalog</a></li>
+  </ul>
+
+  <h3>Action Link: List Inline</h3>
+  <ul class="list-inline pgs-action-link-list fa-ul">
+   <li class="list-inline-item"><a class="pgs-action-link" href="#"><span class="fa-li"><span class="ico fas fa-chevron-right"></span></span>Search All Programs of Study</a></li>
+   <li class="list-inline-item"><a class="pgs-action-link" href="#"><span class="fa-li"><span class="ico fas fa-chevron-right"></span></span>Browse Class Schedules</a></li>
+   <li class="list-inline-item"><a class="pgs-action-link" href="#"><span class="fa-li"><span class="ico fas fa-chevron-right"></span></span>Open Course Catalog</a></li>
+</ul>
+
+<h3>Action Link: List Inline Centered</h3>
+<ul class="list-inline pgs-action-link-list pgs-action-link-list--center fa-ul">
+   <li class="list-inline-item"><a class="pgs-action-link" href="#"><span class="fa-li"><span class="ico fas fa-chevron-right"></span></span>Search All Programs of Study</a></li>
+   <li class="list-inline-item"><a class="pgs-action-link" href="#"><span class="fa-li"><span class="ico fas fa-chevron-right"></span></span>Browse Class Schedules</a></li>
+   <li class="list-inline-item"><a class="pgs-action-link" href="#"><span class="fa-li"><span class="ico fas fa-chevron-right"></span></span>Open Course Catalog</a></li>
+</ul>
+
+<hr>
     <h2 id="award-card">Award Card</h2>
 <h3>Award Card: Standard</h3>
 
@@ -91,7 +124,6 @@
             </div>
         </div>
 
-        <hr>
 
         <h3>Award Card: Certificates/CE</h3>
 
@@ -133,8 +165,7 @@
             </div>
             </div>
 
-            <hr>
-
+       
             <h3>Award Card: GPS</h3>
 
             <div class="row">
@@ -247,7 +278,7 @@
                     </div>
                 </div>
 
-                    <hr>
+                 
 
                     <h3>Department Cards: Quiet Mode</h3>
 
@@ -358,10 +389,7 @@
 <h3>Buttons: Button Group</h3>
 
 <ul class="button-group list-inline">
-    <li class="list-inline-item"><a class="button bg-csecondary" href="#">Item 1</a></li>
-    <li class="list-inline-item"><a class="button bg-csecondary" href="#">Item 2</a></li>
-    <li class="list-inline-item"><a class="button bg-csecondary" href="#">Item 3</a></li>
-    <li class="list-inline-item"><a class="button bg-csecondary" href="#">Item 4</a></li>
+    <li class="list-inline-item"><a class="button bg-csecondary" href="#">Item 1</a></li><li class="list-inline-item"><a class="button bg-csecondary" href="#">Item 2</a></li><li class="list-inline-item"><a class="button bg-csecondary" href="#">Item 3</a></li><li class="list-inline-item"><a class="button bg-csecondary" href="#">Item 4</a></li>
 </ul>
 
 <h3>Buttons: Justified Button Group</h3>
@@ -642,7 +670,6 @@
 </div>
 </div>
 
-<hr>
 
 <div class="row">
    <div class="col-sm-4">
@@ -658,12 +685,11 @@
 
 </div>
 
-
 <div class="col-sm-4">
 
-   <h2>Feature Card: Icon in Circle</h2>
+   <h2>Feature Card: Icon in Square</h2>
    <div class="feature-card bg-cgrey">
-      <div class="cb-mainico bg-csecondary ico-square shadow-sm">
+      <div class="cb-mainico rounded bg-csecondary ico-square shadow-sm">
           <span aria-hidden="true" class="ico fab fa-twitter"></span>
       </div>
       <h3 class="cb-title">Title</h3>
@@ -671,6 +697,58 @@
   </div>
    
    </div>
+</div>
+
+<div class="row">
+ 
+   <div class="col-sm-4">
+
+      <h2>Feature Card: Image in Circle</h2>
+      <div class="feature-card bg-cgrey">
+         <img class="cb-mainimg rounded-circle" src="https://via.placeholder.com/150x150">
+         <h3 class="cb-title">Training Close to Home</h3>
+       <p>Spend less time ... completely online.</p>
+     </div>
+      
+      </div>
+
+      <div class="col-sm-4">
+
+         <h2>Feature Card: Image in Square</h2>
+         <div class="feature-card bg-cgrey">
+            <img class="cb-mainimg rounded" src="https://via.placeholder.com/150x150">
+            <h3 class="cb-title">Training Close to Home</h3>
+          <p>Spend less time ... completely online.</p>
+        </div>
+         
+         </div>
+         </div>
+         <div class="row">
+   
+<div class="col-sm-4">
+
+   <h2>Feature Card: Image in Square</h2>
+   <div class="feature-card bg-cgrey">
+      <img class="cb-mainimg-lg rounded-circle" src="https://via.placeholder.com/150x150">
+      <h3 class="cb-title">Training Close to Home</h3>
+    <p>Spend less time ... completely online.</p>
+  </div>
+
+</div>
+
+<div class="col-sm-4">
+
+   <h2>Feature Card: Icon in Full Block</h2>
+   <div class="feature-card bg-cgrey">
+      <div class="cb-mainico bg-cprimary ico-block">
+           <span aria-hidden="true" class="ico fab fa-twitter"></span>​
+        </div>
+      <h3 class="cb-title">Training Close to Home</h3>
+    <p>Spend less time ... completely online.</p>
+  </div>
+
+</div>
+
 
 </div>
 
