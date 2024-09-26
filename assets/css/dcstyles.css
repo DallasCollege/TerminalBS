@@ -321,7 +321,7 @@ li.navbar-nav--seperator:before {
 }
 
 #l-nav-primary a {
-  border-bottom: 0px solid transparent;
+  border-bottom: 6px solid transparent;
   border-top: 6px solid transparent;
   display: block;
   padding: .875em 0;
