@@ -555,12 +555,6 @@ li.navbar-nav--seperator:before {
   background: #E9F2FF
 }
 
-@media (min-width: 983px) {
-.bg-cprimary-dk.apply-now a {line-height:1.6rem}
-}
-
-
-
 /*  footers */
 
 .list-group-item { background-color:transparent; border:0; margin:0 !important; }
@@ -6929,6 +6923,19 @@ div.csecondary-dk p a:not(.button), div.cseconary-dk p a:link:not(.button) {
   .collapsed.collapsible .fa-chevron-circle-right {
     display: none
   }
+
+  .pgs-accordion .pgs-accordion--quiet .accordion-button {
+    padding-right: 40px;
+}
+
+  .pgs-accordion .accordion-button::after {
+    /* padding-right: 40px; */
+    position: absolute;
+    right: 20px;
+    /* padding-right: 80px; */
+}
+
+
 
   .pgs-accordion .collapsible {
     padding: .5em 0;
