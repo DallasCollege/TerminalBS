@@ -2808,6 +2808,11 @@ h3.accordion-header {margin-top: .375em; }
   border-bottom: none
 }
 
+button.accordion-button {
+  border-left: 5px solid #003385;
+  border-radius: 4px;
+}
+
 .pgs-accordion--quiet button {
   width: auto;
   background: none
