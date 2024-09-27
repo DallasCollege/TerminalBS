@@ -3,12 +3,24 @@
 
 {% include head.html %}
 
+<style>
+    hr {margin:3rem}
+</style>
 <body>
 
   <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TDGX39L" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
   {% include header.html %}
+
   {% include interior/content_featured-breadcrumb.html %}
+
+  <div class="pgs-banner pgs-banner--interior"></div>
+    <style>
+        .pgs-banner {
+            background-image: url("https://www.dallascollege.edu/PublishingImages/banner-1600x512/fall-2020-1600x512.jpg");
+        }
+    </style>  
+</div>
 
   <div id="t4-bodyContainer">
     <div data-spy="affix" data-offset-top="45">
@@ -16,11 +28,51 @@
         <main id="main__body">
             <div class="container">
               <div class="row">
+                
+                {% include interior/content_featured-sidebar.html %}
+
+                <div class="col-md-8 order-md-first">
+
+                    <h1 class="page-header--xl">Pegasus Elements</h1>
+
+                <h2>Table of Contents</h2>
+                <ul>
+                   <li><a href="#typography">Typography</a></li>
+                   <li><a href="#action-links">Action Links</a></li>
+                   <li><a href="#accordions">Accordions</a></li>
+                   <li><a href="#award-card">Award Card</a></li>
+                   <li><a href="#buttons">Buttons</a></li>
+                   <li><a href="#dept-card">Department Card</a></li>
+                   <li><a href="#dropdowns">Dropdowns</a></li>
+                   <li><a href="#event-cards">Event Cards</a></li>
+                   <li><a href="#feature-cards">Feature Cards</a></li>
+               
+                </ul>
+                
+
 
       {% include pegasus/typography.html %}
+      <hr>
+      {% include pegasus/action-links.html %}
+      <hr>
+      {% include pegasus/accordion.html %}
+      <hr>
+      {% include pegasus/buttons.html %}
+      <hr>
+      {% include pegasus/award-cards.html %}
+      <hr>
+      {% include pegasus/dept-cards.html %}
+      <hr>
+      {% include pegasus/dropdowns.html %}
+      <hr>
+      {% include pegasus/event-cards.html %}
+      <hr>
+      {% include pegasus/feature-cards.html %}
+
 
     </div>
   </div>
+</div>
 </div>
 </div>
 </main>
