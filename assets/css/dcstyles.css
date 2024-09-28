@@ -2815,6 +2815,10 @@ button.accordion-button {
   border-radius: 4px
 }
 
+.pgs-accordion--pc {
+  border-left:0px solid;
+}
+
 .pgs-accordion--quiet button {
   width: auto;
   background: none
@@ -3359,7 +3363,7 @@ a .txt-img-overlay__text {
   background-color: #fff;
   top: 0;
   left: 0;
-  width: 100%
+  width: 100%;
   z-index: -1; /* temporary rks addition while figuring out offsets not working the same */
 }
 
