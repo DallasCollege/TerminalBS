@@ -1137,12 +1137,10 @@ main.affix {
   }
 }
 
+
 .module-block {
-  padding: 3rem 0 2rem
+  padding: 3rem 0 2rem 0
 }
-
-
-
 
 
 
@@ -1542,6 +1540,96 @@ a.pgs-calendar__event {
   text-decoration: underline
 }
 
+#main__body {
+  margin-top: 0;
+}
+
+.pgs-navbar--home {
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.pgs-navbar--home .nav>li>a {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+/* School Blocks */
+
+.pgs-tile--business {
+  background: linear-gradient(0deg, rgba(26, 112, 35, 0.85), rgba(26, 112, 35, 0.85)), url('{{ site.url }}/assets/img/homepage/path-business-400x300.jpg');
+  background-size: cover;
+  background-position: center;
+  border-bottom-color: #249E31;
+}
+
+.pgs-tile--arts {
+  background: linear-gradient(0deg, rgba(147, 16, 29, 0.85), rgba(147, 16, 29, 0.85)), url('{{ site.url }}/assets/img/homepage/path-arts-400x300.jpg');
+  background-size: cover;
+  background-position: center;
+  border-bottom-color: #C00D1E;
+}
+
+.pgs-tile--education {
+  background: linear-gradient(0deg, rgba(133, 45, 129, 0.85), rgba(133, 45, 129, 0.85)), url('{{ site.baseurl }}/assets/img/homepage/path-education-400x300.jpg');
+  background-size: cover;
+  background-position: center;
+  border-bottom-color: #93328E;
+}
+
+.pgs-tile--health {
+  background: linear-gradient(0deg, rgba(26, 112, 184, 0.85), rgba(31, 121, 184, 0.85)), url('{{ site.baseurl }}/assets/img/homepage/path-health-sciences-400x300.jpg');
+  background-size: cover;
+  background-position: center;
+  border-bottom-color: #248ED8;
+}
+
+.pgs-tile--law {
+  background: linear-gradient(0deg, rgba(28, 31, 130, 0.85), rgba(28, 31, 130, 0.85)), url('{{ site.baseurl }}/assets/img/homepage/path-public-service-400x300.jpg');
+  background-size: cover;
+  background-position: center;
+  border-bottom-color: #1E22AA;
+}
+
+.pgs-tile--manufacturing {
+  background: linear-gradient(0deg, rgba(121, 79, 63, 0.85), rgba(121, 79, 63, 0.85)), url('{{ site.baseurl }}/assets/img/homepage/path-manufacturing-400x300.jpg');
+  background-size: cover;
+  background-position: center;
+  border-bottom-color: #95614D;
+}
+
+.pgs-tile--stem {
+  background: linear-gradient(0deg, rgba(184, 84, 0, 0.85), rgba(184, 84, 0, 0.85)), url('{{ site.baseurl }}/assets/img/homepage/path-stem-400x300.jpg');
+  background-size: cover;
+  background-position: center;
+  border-bottom-color: #FF7500;
+}
+
+/* End School Blocks */
+
+/* Offset CSS */
+
+.fwr-offset--success:before {
+  /*sets height of offest */
+  height: 80px;
+}
+
+.fwr-offset--campuses:before {
+  height: 180px;
+}
+
+@media (min-width:992px) {
+  .img-offset-top-6-md {
+    /* at MD and above, image will be offset, under that image will be normal */
+    margin-top: -6rem;
+  }
+}
+
+/* End Offset CSS */
+
+.list-group-item { background-color:transparent; border:0; }
+
+
 @media screen and (max-width: 1199px) {
   .pgs-banner--grand, .pgs-banner--grand .pgs-banner__image {
     min-height: 29em
@@ -1573,7 +1661,7 @@ a.pgs-calendar__event {
 
 @media screen and (max-width: 991px) {
   .module-block {
-    padding: 2rem 0 1rem
+    padding: 2rem 0 1rem 0
   }
 
   .pgs-banner--grand {
@@ -3335,7 +3423,7 @@ a .txt-img-overlay__text {
 
 @media (min-width: 576px) {
   .full-width-row {
-    width: 98.5vw
+  width: 98.5vw; 
   }
 }
 
@@ -5516,7 +5604,7 @@ a:focus>img:not(.logo-bar-slot__img) {
   }
 
   .full-width-row>.container, .full-width-row>.container-fluid {
-    margin: 0 2rem
+    /* margin: 0 2rem; */
   }
 
   h2.module-title--sm, h3.module-title--sm {
