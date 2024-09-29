@@ -1557,14 +1557,14 @@ a.pgs-calendar__event {
 /* School Blocks */
 
 .pgs-tile--business {
-  background: linear-gradient(0deg, rgba(26, 112, 35, 0.85), rgba(26, 112, 35, 0.85)), url('{{ site.url }}/assets/img/homepage/path-business-400x300.jpg');
+  background: linear-gradient(0deg, rgba(26, 112, 35, 0.85), rgba(26, 112, 35, 0.85)), url('{{ site.baseurl }}/assets/img/homepage/path-business-400x300.jpg');
   background-size: cover;
   background-position: center;
   border-bottom-color: #249E31;
 }
 
 .pgs-tile--arts {
-  background: linear-gradient(0deg, rgba(147, 16, 29, 0.85), rgba(147, 16, 29, 0.85)), url('{{ site.url }}/assets/img/homepage/path-arts-400x300.jpg');
+  background: linear-gradient(0deg, rgba(147, 16, 29, 0.85), rgba(147, 16, 29, 0.85)), url('{{ site.baseurl }}/assets/img/homepage/path-arts-400x300.jpg');
   background-size: cover;
   background-position: center;
   border-bottom-color: #C00D1E;
