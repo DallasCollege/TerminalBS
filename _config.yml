@@ -26,8 +26,8 @@ description: >- # this means to ignore newlines until "baseurl:"
   Brookhaven, Cedar Valley, Eastfield, El Centro,
   Mountain View, North Lake and Richland.
   Apply today!
-baseurl: "TerminalBS" # the subpath of your site (for LOCAL testing)
-baseurl: "TerminalBS"     #uncomment before git push
+#baseurl: "TerminalBS" # the subpath of your site (for LOCAL testing)
+#baseurl: "TerminalBS"     #uncomment before git push
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: jekyllrb
 github_username:  jekyll
