@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en-US">
+
+{% include head.html %}
+
+<body>
+
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TDGX39L" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+
+  {% include header.html %}
+
+          <!-- site notice -->
+          <div class="full-width-row bg-info">
+            <div class="container">
+                <div class="row min-height-100">
+                    <div class="col-1 d-flex justify-content-center align-items-center p-2">
+                            <span aria-hidden="true" class="ico fas fa-info-circle icon-3x"></span>
+                    </div>
+                    
+                    <div class="col-10 p-3">
+                        <p><strong>This is an info site notice</strong>. It should close similar to the functionality that's on the <a href="https://samplesite-01-us-east-1.terminalfour.net/home-alternate/">Terminalfour sample site</a>. It should appear above the breadcrumbs on each layout when activated.</p>
+                    </div>
+                    <div class="col-1 p-3 d-flex justify-content-center align-items-center">
+                        <span aria-hidden="true" class="ico fas fa-times-circle icon-lg"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- end site notice -->
+  {% include interior/content_featured-breadcrumb.html %}
+
+  <!-- <div class="pgs-banner pgs-banner--interior"></div>
+    <style>
+        .pgs-banner {
+            background-image: url("https://www.dallascollege.edu/PublishingImages/banner-1600x512/fall-2020-1600x512.jpg");
+        }
+    </style>  
+</div> -->
+
+
+  <div id="t4-bodyContainer">
+    <div data-spy="affix" data-offset-top="45">
+
+      {% include interior/content_staff-directory.html %}
+
+    </div>
+  </div>
+
+  {% include footer.html %}
+
+</body>
+</html>
