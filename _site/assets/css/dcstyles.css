@@ -235,7 +235,7 @@ ul.dropdown-menu {
   display: inline-block;
   font-size: .75rem;
   padding: .5em 1rem;
-  text-transform: uppercase
+  /* text-transform: uppercase */
 }
 
 #l-nav-utility .navbar-nav>li>a .ico, .navbar-utility .navbar-nav>li>a .ico {
@@ -506,7 +506,7 @@ li.navbar-nav--seperator:before {
 
 .navbar-utility a.dropdown-toggle {
   display: inline-block;
-  text-transform: uppercase;
+  /* text-transform: uppercase; */
   font-size: .875rem
 }
 
@@ -1382,7 +1382,7 @@ main.affix {
 .pgs-navbar--banner .dropdown>a, .pgs-navbar--banner .navbar-nav a {
   text-decoration: none;
   font-weight: 600;
-  font-size: .875em;
+  font-size: 1em;
   color: #000;
   padding-top: 1.375rem;
   padding-bottom: 1.375rem;
@@ -1472,7 +1472,7 @@ main.affix {
   width: 100%;
   text-align: left;
   font-family: "Montserrat";
-  text-transform: uppercase
+  /* text-transform: uppercase */
 }
 
 .pgs-navbar .navbar-toggler .ico, .pgs-navbar--sidebar .navbar-toggler .ico{
@@ -1541,12 +1541,12 @@ a.pgs-calendar__event {
 }
 
 #main__body {
-  margin-top: 0;
+  margin-top: 48px;
 }
 
 .pgs-navbar--home {
   font-weight: 800;
-  text-transform: uppercase;
+  /* text-transform: uppercase; */
 }
 
 .pgs-navbar--home .nav>li>a {
@@ -2181,7 +2181,7 @@ a.grand-photo-button.no-border, a.grand-photo-button-lg.no-border, a.grand-photo
 }
 
 .pgs-shortcut span {
-  text-transform: uppercase;
+  /* text-transform: uppercase; */
   font-size: .875em
 }
 
@@ -3257,8 +3257,19 @@ a.pgs-tile--container:focus .pgs-tile, a.pgs-tile--container:hover .pgs-tile {
   margin-top: .25rem
 }
 
+/* may not be needed */
 .pgs-grand-dropdown.open button .ico {
   transform: rotate(180deg)
+}
+
+.pgs-grand-dropdown__btn[aria-expanded="true"] .ico {
+  transform: rotate(180deg); /* Rotate the icon 180 degrees */
+  transition: transform 0.3s ease;
+}
+
+.navbar-toggler[aria-expanded="true"] .ico {
+  transform: rotate(180deg); /* Rotate the icon 180 degrees */
+  transition: transform 0.3s ease;
 }
 
 .pgs-grand-dropdown .dropdown-menu {
@@ -5496,7 +5507,7 @@ a:focus>img:not(.logo-bar-slot__img) {
 
 @media (max-width: 767px) {
   html, body {
-    font-size: 14px
+    font-size: 1rem
   }
 
   .table-center {
@@ -6801,7 +6812,7 @@ a.grand-button.bg-cgrey-60:hover, a.grand-button.bg-cgrey-60:focus, a.button.bg-
 }
 
 .alert-success, .bg-success {
-  background-color: #dff0d8;
+  background-color: #dff0d8 !important;
   border-color: #d6e9c6;
   color: #2B542B
 }
@@ -6819,7 +6830,7 @@ a.grand-button.bg-cgrey-60:hover, a.grand-button.bg-cgrey-60:focus, a.button.bg-
 }
 
 .alert-info, .bg-info {
-  background-color: #d9edf7;
+  background-color: #d9edf7 !important;
   border-color: #bce8f1;
   color: #214A5F
 }
@@ -6837,7 +6848,7 @@ a.grand-button.bg-cgrey-60:hover, a.grand-button.bg-cgrey-60:focus, a.button.bg-
 }
 
 .alert-warning, .bg-warning {
-  background-color: #fcf8e3;
+  background-color: #fcf8e3 !important;
   border-color: #faebcc;
   color: #604C29
 }
@@ -6855,7 +6866,7 @@ a.grand-button.bg-cgrey-60:hover, a.grand-button.bg-cgrey-60:focus, a.button.bg-
 }
 
 .alert-danger, .bg-danger {
-  background-color: #f2dede;
+  background-color: #f2dede !important;
   border-color: #ebccd1;
   color: #762F2E
 }
