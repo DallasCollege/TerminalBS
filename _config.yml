@@ -22,12 +22,10 @@ title: >
   Dallas College: Education That Works in Dallas County
 email: your-email@example.com
 description: >- # this means to ignore newlines until "baseurl:" 
-  The seven campuses of Dallas College include
-  Brookhaven, Cedar Valley, Eastfield, El Centro,
-  Mountain View, North Lake and Richland.
+  The seven campuses of Dallas College include Brookhaven, Cedar Valley, Eastfield, El Centro, Mountain View, North Lake and Richland.
   Apply today!
-#baseurl: "TerminalBS" # the subpath of your site (for LOCAL testing)
-#baseurl: "TerminalBS"     #uncomment before git push
+#baseurl: "" # the subpath of your site (for LOCAL testing)
+#baseurl: "/FreshBS"     #uncomment before git push
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: jekyllrb
 github_username:  jekyll

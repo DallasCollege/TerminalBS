@@ -2134,9 +2134,9 @@ a.grand-photo-button.no-border, a.grand-photo-button-lg.no-border, a.grand-photo
   margin-right: 0
 }
 
-.pgs-breadcrumb {
-  /* text-transform: uppercase */
-}
+/* .pgs-breadcrumb {
+  text-transform: uppercase
+} */
 
 .pgs-shortcut, .pgs-breadcrumb {
   font-size: .9rem;
@@ -5614,9 +5614,9 @@ a:focus>img:not(.logo-bar-slot__img) {
     text-align: center
   }
 
-  .full-width-row>.container, .full-width-row>.container-fluid {
-    /* margin: 0 2rem; */
-  }
+  /* .full-width-row>.container, .full-width-row>.container-fluid {
+    margin: 0 2rem;
+  } */
 
   h2.module-title--sm, h3.module-title--sm {
     display: block;
@@ -6785,7 +6785,7 @@ a.grand-button.bg-cgrey-60:hover, a.grand-button.bg-cgrey-60:focus, a.button.bg-
 }
 
 .text-cgrey-80 {
-  color: #333 !important
+  color: #333 
 }
 
 .bg-cgrey-80 {
