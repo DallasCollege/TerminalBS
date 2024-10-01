@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en-US">
+
+{% include head.html %}
+
+<body>
+
+     <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TDGX39L" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+
+    {% include header.html %}
+
+
+
+     <header>
+        <style>
+            .pgs-banner__image{
+                background-image: url("https://www.dallascollege.edu/cd/credit/world-languages/PublishingImages/world-lang-banner-1200x300.jpg");
+            }
+        </style>
+
+        <!-- site notice -->
+        <div class="full-width-row bg-info">
+            <div class="container">
+                <div class="row min-height-100">
+                    <div class="col-1 d-flex justify-content-center align-items-center p-2">
+                            <span aria-hidden="true" class="ico fas fa-info-circle icon-3x"></span>
+                    </div>
+                    
+                    <div class="col-10 p-3">
+                        <p><strong>This is an info site notice</strong>. It should close similar to the functionality that's on the <a href="https://samplesite-01-us-east-1.terminalfour.net/home-alternate/">Terminalfour sample site</a>. It should appear above the breadcrumbs on each layout when activated.</p>
+                    </div>
+                    <div class="col-1 p-3 d-flex justify-content-center align-items-center">
+                        <span aria-hidden="true" class="ico fas fa-times-circle icon-lg"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- end site notice -->
+
+        <div class="pgs-banner pgs-banner--sub-landing pgs-banner--fw">
+            <div class="pgs-banner__image">
+                {% include interior/content_featured-breadcrumb.html %}
+            </div>
+
+            
+            <div class="pgs-banner__title">
+                <div class="container">
+                    <h1 class="pgs-banner__h1"><!-- title -->Landing Page With Sidebar</h1>
+                </div>
+            </div>
+        </div>
+
+
+                </div>
+            </div>
+        </div>
+    </header>
+    <div id="t4-bodyContainer">
+        <div data-spy="affix" data-offset-top="45">
+
+     
+                    {% include interior/content_featured.html %}
+
+<style>
+    .page-header--xl {
+    display:none
+}
+</style>
+        </div>
+    </div>
+
+  {% include footer.html %}
+
+</body>
+</html>

@@ -3451,7 +3451,8 @@ a .txt-img-overlay__text {
 
 .full-width-row {
   position: relative;
-  width: 98vw;
+  width: 98vw; 
+  width:100%;
   left: calc(-50vw + 50%);
   /*! padding-left:15px;  NOTE - removed 8/25/17 - causing issues*/
   /*! padding-right:15px; */
@@ -3460,18 +3461,21 @@ a .txt-img-overlay__text {
 @media (min-width: 576px) {
   .full-width-row {
   width: 98.5vw; 
+
   }
 }
 
 @media (min-width: 992px) {
   .full-width-row {
     width: 99vw
+
   }
 }
 
 @media (min-width: 1200px) {
   .full-width-row {
     width: 99.5vw
+
   }
 }
 
@@ -5639,9 +5643,9 @@ a:focus>img:not(.logo-bar-slot__img) {
     text-align: center
   }
 
-  /* .full-width-row>.container, .full-width-row>.container-fluid {
+.full-width-row>.container, .full-width-row>.container-fluid {
     margin: 0 2rem;
-  } */
+  } 
 
   h2.module-title--sm, h3.module-title--sm {
     display: block;
