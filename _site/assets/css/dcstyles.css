@@ -254,9 +254,11 @@ ul.dropdown-menu {
 }
 
 #l-nav-utility .dropdown-menu>li>a {
-  padding-top: 8px;
-  padding-bottom: 8px;
-  color: #333
+  /*padding-top: 8px;
+  padding-bottom: 8px;*/
+  padding: 1em 2em;
+  color: #333;
+  display: block;
 }
 
 #l-nav-utility .ico.fa-lock {
@@ -412,7 +414,10 @@ li.navbar-nav--seperator:before {
 }
 
 #l-header-mobile ul {
-  /*margin-left: -15px*/
+  width: 100vw;
+  background: white;
+  margin-left: -15px;
+  margin-top: 0;
 }
 
 #l-header-mobile a {
