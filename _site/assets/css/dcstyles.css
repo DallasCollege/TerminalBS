@@ -412,7 +412,7 @@ li.navbar-nav--seperator:before {
 }
 
 #l-header-mobile ul {
-  margin-left: -15px
+  /*margin-left: -15px*/
 }
 
 #l-header-mobile a {
@@ -1395,7 +1395,7 @@ main.affix {
 }
 
 .pgs-navbar--sidebar .navbar-toggler {
-  border-color: #ddd; 
+  border-color: #ddd;
   /* width:100% */
 }
 
@@ -3451,7 +3451,7 @@ a .txt-img-overlay__text {
 
 .full-width-row {
   position: relative;
-  width: 98vw; 
+  width: 98vw;
   width:100%;
   left: calc(-50vw + 50%);
   /*! padding-left:15px;  NOTE - removed 8/25/17 - causing issues*/
@@ -3460,7 +3460,7 @@ a .txt-img-overlay__text {
 
 @media (min-width: 576px) {
   .full-width-row {
-  width: 98.5vw; 
+  width: 98.5vw;
 
   }
 }
@@ -5645,7 +5645,7 @@ a:focus>img:not(.logo-bar-slot__img) {
 
 .full-width-row>.container, .full-width-row>.container-fluid {
     margin: 0 2rem;
-  } 
+  }
 
   h2.module-title--sm, h3.module-title--sm {
     display: block;
@@ -6814,7 +6814,7 @@ a.grand-button.bg-cgrey-60:hover, a.grand-button.bg-cgrey-60:focus, a.button.bg-
 }
 
 .text-cgrey-80 {
-  color: #333 
+  color: #333
 }
 
 .bg-cgrey-80 {
