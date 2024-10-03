@@ -1528,7 +1528,7 @@ tr.calendar-dayhead, tr.calendar-dayrow {
 }
 
 .cal-table tbody tr:nth-child(even) {
-  background:#F7F3E8; 
+  background:#E5E2D6; 
   color:#000000;
 }
 
