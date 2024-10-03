@@ -2975,6 +2975,11 @@ button.accordion-button {
   background: none
 }
 
+.pgs-accordion--quiet button.accordion-button {
+  border-left: 0px solid;
+  width:100%
+}
+
 .pgs-accordion--block {
   background: #e5e2d6
 }
