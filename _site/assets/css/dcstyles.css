@@ -1116,9 +1116,10 @@ main.affix {
     margin-right: 1.25rem
   }
 
+  /* removed based on non-sticky footer
   #l-footer__fine-print {
     margin-bottom: 50px
-  }
+  } */
 
   #l-footer__mobile {
     display: block
@@ -1489,6 +1490,8 @@ main.affix {
   transition: transform .25s ease
 }
 
+/* Calendar */
+
 .pgs-calendar__date {
   font-family: montserrat;
   font-weight: 800;
@@ -1497,11 +1500,11 @@ main.affix {
   text-align: center
 }
 
-.pgs-calendar__day {
+.pgs-calendar__day a {
   font-size: 3rem;
   color: #e52626;
   display: block;
-  margin-top: .5rem
+  margin-top: .5rem;
 }
 
 .pgs-calendar__time {
@@ -1515,6 +1518,57 @@ a.pgs-calendar__event {
   font-size: 1rem;
   margin-bottom: .25rem
 }
+
+table.cal-table {
+  width: 100%;
+  text-align: center;
+  font-weight: 700;
+}
+
+tr.calendar-dayhead {
+  line-height: 2.5em;
+  background:#E5E2D6;
+  color:#000000;
+}
+
+tr.calendar-dayhead, tr.calendar-dayrow {
+  line-height: 2.5rem;
+}
+
+.cal-table tbody tr:nth-child(even) {
+  background:#F7F3E8; 
+  color:#000000;
+}
+
+.cal-table tbody tr:nth-child(odd) {
+  background-color: #ffffff; 
+}
+
+
+td.hasEvents {
+  background: #E9F2FF;
+  color:#111111;
+}
+
+td.thismonth.viewrange.periodday.hasEvents a {
+  color:#111111;
+}
+
+#calendar_box table td.today {
+  background:#E52626; 
+  color:#fffff;
+}
+
+td.thismonth.viewrange.periodday.today.hasEvents a {
+  color:#ffffff;
+}
+
+#prev_month, #next_month {
+  display: inline;
+  margin: 10px;
+}
+
+/* End Calendar */
 
 .pgs-navbar--sidebar .navbar-toggler [aria-expanded="true"] {
   border-radius: 4px 4px 0 0;
@@ -3457,7 +3511,6 @@ a .txt-img-overlay__text {
 .full-width-row {
   position: relative;
   width: 98vw;
-  width:100%;
   left: calc(-50vw + 50%);
   /*! padding-left:15px;  NOTE - removed 8/25/17 - causing issues*/
   /*! padding-right:15px; */
