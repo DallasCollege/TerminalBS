@@ -1568,6 +1568,10 @@ td.thismonth.viewrange.periodday.today.hasEvents a {
   margin: 10px;
 }
 
+.event-thumb img {
+  width: 100%;
+}
+
 /* End Calendar */
 
 .pgs-navbar--sidebar .navbar-toggler [aria-expanded="true"] {
