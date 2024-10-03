@@ -1492,31 +1492,23 @@ main.affix {
 
 /* Calendar */
 
-.pgs-calendar__date {
-  font-family: montserrat;
-  font-weight: 800;
-  text-transform: uppercase;
-  margin-bottom: 1.5rem;
-  text-align: center
-}
-
-.pgs-calendar__day a {
-  font-size: 3rem;
-  color: #e52626;
-  display: block;
-  margin-top: .5rem;
+.pgs-calendar__day {
+    font-size: 3rem;
+    color: #e52626;
+    display: block;
+    margin-top: .5rem
 }
 
 .pgs-calendar__time {
-  font-size: .875rem;
-  margin-bottom: 1rem
+    font-size: .875rem;
+    margin-bottom: 1rem
 }
 
 a.pgs-calendar__event {
-  display: block;
-  font-weight: 700;
-  font-size: 1rem;
-  margin-bottom: .25rem
+    display: block;
+    font-weight: 700;
+    font-size: 1rem;
+    margin-bottom: .25rem
 }
 
 table.cal-table {
@@ -1572,7 +1564,23 @@ td.thismonth.viewrange.periodday.today.hasEvents a {
   width: 100%;
 }
 
+.pgs-calendar__date {
+    font-family: montserrat;
+    font-weight: 800;
+    text-transform: uppercase;
+    margin-bottom: 1.5rem;
+    text-align: center
+}
+
+
+
+
 /* End Calendar */
+
+
+
+
+
 
 .pgs-navbar--sidebar .navbar-toggler [aria-expanded="true"] {
   border-radius: 4px 4px 0 0;
@@ -1601,6 +1609,33 @@ td.thismonth.viewrange.periodday.today.hasEvents a {
 .pgs-navbar--banner .navbar-toggler:hover, .pgs-navbar--banner .navbar-toggler:focus {
   background: none;
   text-decoration: underline
+}
+
+.pgs-calendar__date {
+  font-family: montserrat;
+  font-weight: 800;
+  text-transform: uppercase;
+  margin-bottom: 1.5rem;
+  text-align: center
+}
+
+.pgs-calendar__day a {
+  font-size: 3rem;
+  color: #e52626;
+  display: block;
+  margin-top: .5rem;
+}
+
+.pgs-calendar__time {
+  font-size: .875rem;
+  margin-bottom: 1rem
+}
+
+a.pgs-calendar__event {
+  display: block;
+  font-weight: 700;
+  font-size: 1rem;
+  margin-bottom: .25rem
 }
 
 #main__body {
