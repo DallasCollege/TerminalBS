@@ -334,7 +334,7 @@
                   <li><a href="#buttons">Buttons</a></li>
                   <li><a href="#cta">Calls to Action Stripe</a></li>
                   <li><a href="#colors">Colors</a></li>
-                  <li>Content & Image Boxes</li>
+                  <li><a href="#cib">Content & Image Boxes</a></li>
                   <li>Data Boxes</li>
                   <li><a href="#dept-card">Department Card</a></li>
                   <li><a href="#dropdowns">Dropdowns</a></li>
@@ -963,23 +963,122 @@
 
 <h3>Buttons: Button Group</h3>
 
-<ul class="button-group list-inline">
+<ul class="button-group list-inline text-start">
     <li class="list-inline-item"><a class="button bg-csecondary" href="#">Item 1</a></li><li class="list-inline-item"><a class="button bg-csecondary" href="#">Item 2</a></li><li class="list-inline-item"><a class="button bg-csecondary" href="#">Item 3</a></li><li class="list-inline-item"><a class="button bg-csecondary" href="#">Item 4</a></li><li class="list-inline-item"><a class="button bg-csecondary" href="#">Item 5</a></li>
 </ul>
 
-<h3>Buttons: Justified Button Group</h3>
-<ul class="button-group button-group--justified list-inline">
-    <li class="list-inline-item"><a class="button bg-csecondary" href="#">Item 1</a></li>
-    <li class="list-inline-item"><a class="button bg-csecondary" href="#">Item 2</a></li>
-    <li class="list-inline-item"><a class="button bg-csecondary" href="#">Item 3</a></li>
-    <li class="list-inline-item"><a class="button bg-csecondary" href="#">Item 4</a></li>
+<div class="text-center">
+    <ul class="button-group list-inline">
+        <li class="list-inline-item"><a class="button bg-csecondary" href="#">Item 1</a></li><li class="list-inline-item"><a class="button bg-csecondary" href="#">Item 2</a></li><li class="list-inline-item"><a class="button bg-csecondary" href="#">Item 3</a></li><li class="list-inline-item"><a class="button bg-csecondary" href="#">Item 4</a></li><li class="list-inline-item"><a class="button bg-csecondary" href="#">Item 5</a></li>
+    </ul>
+</div>
 
-  </ul>
+<div class="text-end">
+<ul class="button-group list-inline">
+    <li class="list-inline-item"><a class="button bg-csecondary" href="#">Item 1</a></li><li class="list-inline-item"><a class="button bg-csecondary" href="#">Item 2</a></li><li class="list-inline-item"><a class="button bg-csecondary" href="#">Item 3</a></li><li class="list-inline-item"><a class="button bg-csecondary" href="#">Item 4</a></li><li class="list-inline-item"><a class="button bg-csecondary" href="#">Item 5</a></li>
+</ul>
+</div>
+
+<h3>Buttons: Button Group - Justified</h3>
+<div class="row">
+    <div class="col-12">
+        <ul class="button-group button-group--justified list-inline">
+            <li class="list-inline-item"><a class="button bg-csecondary" href="#">Item 1</a></li>
+            <li class="list-inline-item"><a class="button bg-csecondary" href="#">Item 2</a></li>
+            <li class="list-inline-item"><a class="button bg-csecondary" href="#">Item 3</a></li>
+            <li class="list-inline-item"><a class="button bg-csecondary" href="#">Item 4</a></li>
+            <li class="list-inline-item"><a class="button bg-csecondary" href="#">Item 5</a></li>
+        </ul>
+    </div>
+</div>
+      <hr>
+      <h2 id="cib">Content and Image Block</h2>
+
+<style>
+    #get-started-apply {
+        background-image: url(https://www.dallascollege.edu/about/style/documents/pegasus/images/banner-test.jpg);
+      }
+</style>
+
+<h3>Content and Image Block: Image Left (5/7 layout)</h3>
+
+<div class="row">
+    <div class="col-12">
+        <div class="content-image-box bg-cprimary">
+            <div class="col-sm-5 cib-left cib-img" id="get-started-apply"></div>
+            <div class="col-sm-7 cib-right cib-content">
+                <h2 class="cb-title-xl">Employee Success</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed veniam.</p>
+                <h3>Subpoint</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed veniam. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed veniam. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed veniam.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed veniam.</p>
+                <p><a href="#" class="button bg-cprimary-lt">Button</a></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<h3>Content and Image Block: Image Right (8/4 layout)</h3>
+
+<div class="row">
+    <div class="col-12">
+        <div class="content-image-box bg-cprimary">
+            <div class="col-sm-8 cib-left cib-content">
+                <h2 class="cb-title-xl">Employee Success</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed veniam.</p>
+                <h3>Subpoint</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed veniam. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed veniam. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed veniam.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed veniam.</p>
+                <p><a href="#" class="button bg-cprimary-lt">Button</a></p>
+                <div class="col-sm-4 cib-right cib-img" id="get-started-apply"></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<h3>Content and Image Block: Image Right (3/9 layout)</h3>
+
+<div class="row">
+    <div class="col-12">
+        <div class="content-image-box bg-cgrey">
+            <div class="col-sm-3 cib-left cib-img" id="get-started-apply"></div>
+            <div class="col-sm-9 cib-right cib-content">
+                <h2 class="cb-title">Employee Success</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed veniam. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed veniam. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed veniam.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="content-image-box bg-cprimary">
+            <div class="col-sm-3 cib-left cib-img" id="get-started-apply"></div>
+            <div class="col-sm-9 cib-right cib-content">
+                <h2 class="cb-title">Employee Success</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed veniam. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed veniam. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed veniam.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="content-image-box bg-cprimary-lt">
+            <div class="col-sm-3 cib-left cib-img" id="get-started-apply"></div>
+            <div class="col-sm-9 cib-right cib-content">
+                <h2 class="cb-title">Employee Success</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed veniam. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed veniam. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed veniam.</p>
+            </div>
+        </div>
+    </div>
+</div>
       <hr>
       <h2 id="cta">CTA Block</h2>
 
 <div class="row">
-    <div class="col-sm-8 offset-2">
+    <div class="col-sm-8 offset-sm-2">
         <div class="pgs-cta bg-cgrey-05 border-cprimary">
             <p class="pgs-cta__headline text-cprimary-dk">Winter/Spring registration opens Nov. 16 for continuing students and Nov. 22 for all students.<br></p>
             <a href="/admissions/pages/default.aspx" class="button button-lg bg-csecondary shadow-2 button-off">Get Started Now</a>
@@ -2779,7 +2878,6 @@ color:#FFFFFF;</code>
         </div>
     </div>
 </div>
-
 
       <hr>
       <h2 id="site-notices">Site Notices</h2>
