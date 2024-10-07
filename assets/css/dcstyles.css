@@ -198,6 +198,17 @@ img {
 
 
 
+/* BS5 Utilities */
+
+.dcflex-end {
+  justify-content: flex-end;
+  margin-left: auto;
+}
+
+
+
+
+
 /* headers and navigation  */
 
 #l-header-desktop a {
@@ -426,7 +437,7 @@ li.navbar-nav--seperator:before {
 
 #l-header-mobile #l-utility .navbar {
   margin-left: 0px;
-  padding-right:40px; 
+  padding-right:40px;
 }
 
 #l-header-mobile #l-utility ul.navbar-top-nav a#navbarDropdown {
@@ -434,7 +445,7 @@ li.navbar-nav--seperator:before {
   background: #001E49;
   color:#ffffff;
   margin-left: 0px;
-  margin-right:40px; 
+  margin-right:40px;
   margin-top: 0;
   padding-top: 10px;
   padding-bottom:10px
@@ -443,7 +454,7 @@ li.navbar-nav--seperator:before {
 #l-header-mobile #l-utility ul.dropdown-menu.show {
   border-top-left-radius:0;
   border-top-right-radius:0;
-  margin-left: 0px; 
+  margin-left: 0px;
   margin-top: 0;
 }
 
@@ -451,7 +462,7 @@ li.navbar-nav--seperator:before {
   width: 100vw;
   background:#ffffff;
   color:#333;
-  margin-left: 0px; 
+  margin-left: 0px;
   margin-top: 0;
   /* padding-top: 10px;
   padding-bottom:10px */
@@ -466,14 +477,14 @@ li.navbar-nav--seperator:before {
 #l-header-mobile ul.navbar-nav {
   width: 100vw;
   background: #003385;
-  margin-left: 0px; 
+  margin-left: 0px;
   margin-top: 0;
 }
 
 #l-header-mobile ul.navbar-nav.navbar-secondary  {
   width: 100vw;
   background: #001E49;
-  margin-left: 0px; 
+  margin-left: 0px;
   margin-top: 0;
 }
 
@@ -1589,12 +1600,12 @@ tr.calendar-dayhead, tr.calendar-dayrow {
 }
 
 .cal-table tbody tr:nth-child(even) {
-  background:#E5E2D6; 
+  background:#E5E2D6;
   color:#000000;
 }
 
 .cal-table tbody tr:nth-child(odd) {
-  background-color: #ffffff; 
+  background-color: #ffffff;
 }
 
 
@@ -1608,7 +1619,7 @@ td.thismonth.viewrange.periodday.hasEvents a {
 }
 
 #calendar_box table td.today {
-  background:#E52626; 
+  background:#E52626;
   color:#fffff;
 }
 
@@ -4773,7 +4784,7 @@ ol.list-margin-5 li, ul.list-margin-5 li {
   }
 }
 
-@media screen and (min-width: 576px) { 
+@media screen and (min-width: 576px) {
   .height-sm-12, .child-height-sm-12 [class*="col-"] {
     min-height: 12px
   }
