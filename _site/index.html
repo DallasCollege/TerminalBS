@@ -91,7 +91,7 @@
     <a style="color:#ffffff!important" href="#" data-ally-content-id="0" data-ally-content-ref="0" data-ally-invoke="alternativeformats">Open Alternative Formats of This Page</a>
 </div>
   <div id="l-nav-utility" class="navbar navbar-expand-sm navbar-dark bg-cprimary-lt navbar--utility-nav" aria-label="Eighth navbar example">
-    <div class="container">
+    <div class="container-fluid">
       <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample07" aria-controls="navbarsExample07" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -269,8 +269,80 @@
     </div>
   </nav>
 
-  <nav id="l-nav-utility" class="navbar navbar-expand-sm navbar-dark bg-cprimary-lt navbar--utility-nav" aria-label="Eighth navbar example">
-    <!-- Brand and toggle get grouped for better mobile display -->
+  <nav id="l-nav-utility" class="navbar navbar-expand-sm navbar-dark bg-primary" aria-label="Eighth navbar example">
+    <div class="container-fluid">
+      <ul class="navbar-nav">
+        <li class="nav-item dropdown dropdown--people">
+          <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">I am a... <span class="ico fas fa-chevron-circle-down" aria-hidden="true"></span></a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item track-header" href="/future-students/pages/default.aspx">Future Student</a></li>
+            <li><a class="dropdown-item track-header" href="/students/pages/default.aspx">Current Student</a></li>
+            <li><a class="dropdown-item track-header" href="/alumni/pages/default.aspx">Former Student (Alumni)</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item track-header" href="/employees/pages/default.aspx">Employee</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item track-header" href="/community/pages/default.aspx">Community Member</a></li>
+            <li><a class="dropdown-item track-header" href="/business-industry/pages/default.aspx">Business or Industry Partner</a></li>
+            <li><a class="dropdown-item track-header" href="/business-industry/pages/do-business-with-us.aspx">Supplier or Vendor</a></li>
+          </ul>
+        </li>
+      </ul>
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item dropdown dropdown--tools">
+          <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Online Tools <span class="ico fas fa-chevron-circle-down" aria-hidden="true"></span></a>
+          <ul class="dropdown-menu row">
+            <li class="col-4"><a class="dropdown-item track-header" href="https://econnect.dcccd.edu"><span class="ico fas fa-network-wired" aria-hidden="true"></span>eConnect</a></li>
+            <li class="col-4"><a class="dropdown-item track-header" href="https://selfsrv.dcccd.edu/student"><span class="ico fas fa-laptop" aria-hidden="true"></span>Self Service</a></li>
+            <li class="col-4"><a class="dropdown-item track-header" href="https://ecampus.dallascollege.edu/"><span class="ico fas fa-chalkboard-teacher" aria-hidden="true"></span>eCampus</a></li>
+            <li class="col-4"><a class="dropdown-item track-header" href="https://dcccd.sharepoint.com/"><span class="ico fab fa-microsoft" aria-hidden="true"></span>SharePoint</a></li>
+            <li class="col-4"><a class="dropdown-item track-header" href="http://outlook.dcccd.edu/"><span class="ico fas fa-envelope" aria-hidden="true"></span>Email</a></li>
+            <li class="col-4"><a class="dropdown-item track-header" href="https://www.myworkday.com/dallascollege/login-saml2.htmld"><span class="ico tools-workday" aria-hidden="true"></span>Workday</a></li>
+            <li class="col-4"><a class="dropdown-item track-header" href="/staff-directory/pages/default.aspx"><span class="ico fas fa-address-book" aria-hidden="true"></span><span class="hidden-ip5">Employee </span>Directory</a></li>
+            <li class="col-4"><a class="dropdown-item track-header" href="https://dallascollege.navigate.eab.com/"><span class="ico fas fa-compass" aria-hidden="true"></span>Navigate</a></li>
+            <li class="col-4"><a class="dropdown-item track-header" href="https://teams.microsoft.com"><span class="ico fas fa-users" aria-hidden="true"></span>Microsoft Teams</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li class="col-12"><a class="dropdown-item track-header" href="http://myapps.dcccd.edu">View more online tools...</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <nav id="dc_mobileNavbar" class="navbar navbar-dark bg-secondary shadow" data-bs-spy="affix" data-bs-offset-top="45" aria-label="Primary Navigation">
+    <div class="container-fluid">
+      <div class="navbar-header bg-primary">
+        <a class="mobile-logo" href="/"><img src="/assets/img/logos/dc-logo-master-white.svg" alt="Dallas College"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#l-header-mobile__menu" aria-controls="l-header-mobile__menu" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      </div>
+      <div class="collapse navbar-collapse" id="l-header-mobile__menu">
+        <form class="d-flex">
+          <div class="input-group search-component l-header-mobile__menu__search">
+            <label for="srchBox" class="visually-hidden">Search this website</label>
+            <input type="text" class="form-control bg-white" placeholder="Search this website" id="srchBox">
+            <button class="btn btn-outline-secondary" type="button" id="mobileSrchBtn"><span class="ico fas fa-search" aria-label="Search"></span></button>
+          </div>
+        </form>
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link track-header" href="/admissions/pages/default.aspx">Admissions</a></li>
+          <li class="nav-item"><a class="nav-link track-header" href="/paying-for-college/pages/default.aspx">Paying for College</a></li>
+          <li class="nav-item"><a class="nav-link track-header" href="/cd/pages/default.aspx">Classes & Degrees</a></li>
+          <li class="nav-item"><a class="nav-link track-header" href="/resources/pages/support.aspx">Student Resources</a></li>
+          <li class="nav-item"><a class="nav-link track-header" href="/slife/pages/default.aspx">Student Life</a></li>
+        </ul>
+        <ul class="navbar-nav bg-primary">
+          <li class="nav-item"><a class="nav-link track-header" href="/about/pages/default.aspx">About</a></li>
+          <li class="nav-item"><a class="nav-link track-header" href="/contact/pages/default.aspx">Contact</a></li>
+          <li class="nav-item" lang="es"><a class="nav-link track-header" href="/espanol/pages/default.aspx">Español</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+
+<!--
+    <nav id="l-nav-utility" class="navbar navbar-expand-sm navbar-dark bg-cprimary-lt navbar--utility-nav" aria-label="Eighth navbar example">
     <div class="container-fluid">
     <ul class="nav navbar-nav">
       <li class="dropdown dropdown--people">
@@ -309,7 +381,6 @@
     </div>
   </nav>
   <nav id="dc_mobileNavbar" class="navbar navbar-inverse shadow-nav bg-cprimary" data-spy="affix" data-offset-top="45" aria-label="Primary Navigation">
-    <!-- Hamburger Menu -->
     <div class="navbar-header bg-cprimary-gr">
       <a class="mobile-logo" href="/"><img src="/assets/img/logos/dc-logo-master-white.svg" alt="Dallas College"></a>
       <button class="navbar-toggle hamburger hamburger--squeeze navbar-toggle collapsed bg-cprimary-dk navbar-primary-toggle" type="button" data-bs-toggle="collapse" data-target="#l-header-mobile__menu" aria-expanded="false" aria-haspopup="true">
@@ -318,7 +389,6 @@
         </span>
       </button>
     </div>
-    <!-- Mobile Primary Nav -->
     <div class="collapse navbar-collapse" id="l-header-mobile__menu">
       <form>
         <div class="input-group search-component l-header-mobile__menu__search">
@@ -341,8 +411,11 @@
         <li><a class="track-header" href="/contact/pages/default.aspx">Contact</a></li>
         <li lang="es"><a class="track-header" href="/espanol/pages/default.aspx">Español</a></li>
       </ul>
-    </div><!-- /.navbar-collapse -->
+    </div>
   </nav>
+
+  -->
+  
 </header>
 
 

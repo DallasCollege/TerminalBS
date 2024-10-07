@@ -234,7 +234,7 @@ ul.dropdown-menu {
   display: inline-block;
   font-size: .75rem;
   padding: .5em 1rem;
-  /* text-transform: uppercase */
+  /*text-transform: uppercase;*/
 }
 
 #l-nav-utility .navbar-nav>li>a .ico, .navbar-utility .navbar-nav>li>a .ico {
