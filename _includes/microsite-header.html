@@ -64,20 +64,17 @@
     <div class="pgs-banner pgs-banner--compact pgs-banner--microsite">
         <div class="pgs-banner__title">
             <div class="container-fluid">
-                <div class="row">
-                    <div class="col-md-9 col-sm-8">
-                        <div class="h1 pgs-banner__h1">
-                            <a class="d-none d-sm-block" href="/pages/default.aspx">
-                                <img class="logo-bar-slot__img" src="https://www.dallascollege.edu/publishingimages/logos/dc-logo-master-white.svg" alt="Dallas College">
-                            </a>
-                            <a class="underline-inv text-cwhite site-title" href="default.aspx"></a>
-                        </div>
-                    </div>
-                    <div class="col-md-3 col-sm-4 text-end">
-                        <div class="nav-secondary">
-                            <a class="btn btn-light track-header" href="about.aspx"><span aria-hidden="true" class="ico fas fa-info-circle"></span>About</a>
-                            <a class="btn btn-light track-header" href="contact.aspx"><span aria-hidden="true" class="ico fas fa-phone"></span>Contact</a>
-                        </div>
+                <div class="col-md-9 col-sm-8">
+                    <div class="h1 pgs-banner__h1">
+                        <a class="hidden-sm" href="/pages/default.aspx">
+                            <img class="logo-bar-slot__img" src="https://www.dallascollege.edu//publishingimages/logos/dc-logo-master-white.svg" alt="Dallas College">
+                        </a>
+                        <a class="underline-inv text-cwhite site-title" href="default.aspx">PLA Portal Project</a></div>
+                </div>
+                <div class="col-md-3 col-sm-4 text-right">
+                    <div class="nav-secondary">
+                        <a class="button button-mn text-cwhite track-header" href="about.aspx"><span aria-hidden="true" class="ico fas fa-info-circle"></span>About</a>
+                        <a class="button button-mn text-cwhite track-header" href="contact.aspx"><span aria-hidden="true" class="ico fas fa-phone"></span>Contact</a>
                     </div>
                 </div>
             </div>
@@ -121,23 +118,29 @@
         <a style="color:#ffffff!important" href="#main__body">Skip to Main Content</a>
         <a style="color:#ffffff!important" href="#" data-ally-content-id="0" data-ally-content-ref="0" data-ally-invoke="alternativeformats">Open Alternative Formats of This Page</a>
     </div>
-    <nav class="navbar navbar-default navbar-utility bg-cprimary-dk" aria-label="Utility">
+    <div id="l-utility" class="bg-cprimary-dk navbar">
+    <!-- <nav class="navbar navbar-expand bg-cprimary-dk" aria-label="Utility"> -->
         <!-- Brand and toggle get grouped for better mobile display -->
-        <ul class="nav navbar-nav">
-            <li class="dropdown dropdown--people text-right">
-                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Explore Dallas College<span class="ico fas fa-chevron-circle-down" aria-hidden="true"></span></a>
-                <ul class="dropdown-menu text-right">
-                    <li><a href="/students/pages/default.aspx">For Students</a></li>
-                    <li><a href="/community/pages/default.aspx">For Community</a></li>
-                    <li><a href="/business-industry/pages/default.aspx">For Business or Workforce Partners</a></li>
-                    <li role="separator" class="divider"></li>
-                    <li><a href="/business-industry/pages/default.aspx">Locations</a></li>
+        <ul class="navbar-top-nav">
+            <li class="nav-item dropdown">
+                <a href="#" class="nav-link dropdown-toggle text-end me-3" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Explore Dallas College
+                    <span class="ico fas fa-chevron-circle-down" aria-hidden="true"></span>
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <li><a class="dropdown-item" href="/students/pages/default.aspx">For Students</a></li>
+                    <li><a class="dropdown-item" href="/community/pages/default.aspx">For Community</a></li>
+                    <li><a class="dropdown-item" href="/business-industry/pages/default.aspx">For Business or Workforce Partners</a></li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li><a class="dropdown-item" href="/business-industry/pages/default.aspx">Locations</a></li>
                 </ul>
             </li>
         </ul>
-    </nav>
+    </div>
+    </div>
+    <!-- </nav> -->
     <!-- logo and submenu -->
-    <nav id="dc_mobileNavbar" class="navbar navbar-inverse shadow-nav pgs-banner bg-cprimary" aria-label="Primary">
+    <nav id="dc_mobileNavbar" class="navbar navbar-dark shadow-nav pgs-banner bg-cprimary" aria-label="Primary">
         <div class="container-fluid">
             <a class="navbar-brand mobile-logo" href="default.aspx">
                 <img src="https://www.dallascollege.edu/publishingimages/logos/dc-logo-dmark-white.svg" alt="Dallas College">
@@ -147,12 +150,6 @@
             <button class="navbar-toggler bg-cprimary-dk" type="button" data-bs-toggle="collapse" data-bs-target="#l-header-mobile__menu" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-
-            <!-- <button class="hamburger hamburger--squeeze navbar-toggler bg-cprimary-dk" type="button" data-bs-toggle="collapse" data-bs-target="#l-header-mobile__menu" aria-expanded="false" aria-label="Toggle Menu">
-                <span class="hamburger-box">
-                    <span class="hamburger-inner"></span>
-                </span>
-            </button> -->
         </div>
     
         <div class="collapse navbar-collapse bg-cprimary" id="l-header-mobile__menu">
