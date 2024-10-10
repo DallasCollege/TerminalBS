@@ -1587,10 +1587,10 @@ tr.calendar-dayhead, tr.calendar-dayrow {
   line-height: 2.5rem;
 }
 
-.cal-table tbody tr:nth-child(even) {
+/* .cal-table tbody tr:nth-child(even) {
   background:#E5E2D6;
   color:#000000;
-}
+} */
 
 .cal-table tbody tr:nth-child(odd) {
   background-color: #ffffff;
