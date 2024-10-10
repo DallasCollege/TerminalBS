@@ -18,39 +18,105 @@
             <h2>Filter Your Results</h2>
             <fieldset>
                 <legend style="font-size: 18px; font-weight: 700;">Filter by Position</legend>
-                <div><input type="checkbox" value="facutly" id="chkdc" name="chkdc" class="filterLocationChk my-3"><label for="chkdc">&nbsp;Faculty</label></div>
-                <div><input type="checkbox" value="staff" id="chkbhc" name="chkbhc" class="filterLocationChk my-3"><label for="chkbhc">&nbsp;Staff</label></div>
-                <hr>
-
+                <div class="form-check">
+                  <input type="checkbox" value="dc_dallas_college" id="chkdc_dallas_faculty" name="chkdc_dallas_faculty" class="form-check-input">
+                  <label class="form-check-label" for="chkdc_dallas_faculty">Faculty</label>
+              </div>
+              <div class="form-check">
+                <input type="checkbox" value="dc_dallas_college" id="chkdc_dallas_staff" name="chkdc_dallas_staff" class="form-check-input">
+                <label class="form-check-label" for="chkdc_dallas_staff">Staff</label>
+            </div>
+                
+              </fieldset>
+              <hr>
+              <fieldset>
                 <legend style="font-size: 18px; font-weight: 700;">Filter by Location</legend>
                 <legend style="font-size: 16px; font-weight: 600;">Campuses:</legend>
-                <div><input type="checkbox" value="dc" id="chkdc" name="chkdc" class="filterLocationChk my-3"><label for="chkdc">&nbsp;Dallas College</label></div>
-                <div><input type="checkbox" value="bhc" id="chkbhc" name="chkbhc" class="filterLocationChk my-3"><label for="chkbhc">&nbsp;Brookhaven</label></div>
-                <div><input type="checkbox" value="cvc" id="chkcvc" name="chkcvc" class="filterLocationChk my-3"><label for="chkcvc">&nbsp;Cedar Valley</label></div>
-                <div><input type="checkbox" value="efc" id="chkefc" name="chkefc" class="filterLocationChk my-3"><label for="chkefc">&nbsp;Eastfield</label></div>
-                <div><input type="checkbox" value="ecc" id="chkecc" name="chkecc" class="filterLocationChk my-3"><label for="chkecc">&nbsp;El Centro</label></div>
-                <div><input type="checkbox" value="nlc" id="chknlc" name="chknlc" class="filterLocationChk my-3"><label for="chknlc">&nbsp;North Lake</label></div>
-                <div><input type="checkbox" value="mvc" id="chkmvc" name="chkmvc" class="filterLocationChk my-3"><label for="chkmvc">&nbsp;Mountain View</label></div>
-                <div><input type="checkbox" value="rlc" id="chkrlc" name="chkrlc" class="filterLocationChk my-3"><label for="chkrlc">&nbsp;Richland</label></div>
+                <div class="form-check">
+                    <input type="checkbox" value="dc_dallas_college" id="chkdc_dallas_college" name="chkdc_dallas_college" class="form-check-input">
+                    <label class="form-check-label" for="chkdc_dallas_college">Dallas College</label>
+                </div>
+                <div class="form-check">
+                    <input type="checkbox" value="dc_brookhaven" id="chkdc_brookhaven" name="chkdc_brookhaven" class="form-check-input">
+                    <label class="form-check-label" for="chkdc_brookhaven">Brookhaven</label>
+                </div>
+                <div class="form-check">
+                    <input type="checkbox" value="dc_cedar_valley" id="chkdc_cedar_valley" name="chkdc_cedar_valley" class="form-check-input">
+                    <label class="form-check-label" for="chkdc_cedar_valley">Cedar Valley</label>
+                </div>
+                <div class="form-check">
+                    <input type="checkbox" value="dc_eastfield" id="chkdc_eastfield" name="chkdc_eastfield" class="form-check-input">
+                    <label class="form-check-label" for="chkdc_eastfield">Eastfield</label>
+                </div>
+                <div class="form-check">
+                    <input type="checkbox" value="dc_el_centro" id="chkdc_el_centro" name="chkdc_el_centro" class="form-check-input">
+                    <label class="form-check-label" for="chkdc_el_centro">El Centro</label>
+                </div>
+                <div class="form-check">
+                    <input type="checkbox" value="dc_mountain_view" id="chkdc_mountain_view" name="chkdc_mountain_view" class="form-check-input">
+                    <label class="form-check-label" for="chkdc_mountain_view">Mountain View</label>
+                </div>
+                <div class="form-check">
+                    <input type="checkbox" value="dc_north_lake" id="chkdc_north_lake" name="chkdc_north_lake" class="form-check-input">
+                    <label class="form-check-label" for="chkdc_north_lake">North Lake</label>
+                </div>
+                <div class="form-check">
+                    <input type="checkbox" value="dc_richland" id="chkdc_richland" name="chkdc_richland" class="form-check-input">
+                    <label class="form-check-label" for="chkdc_richland">Richland</label>
+                </div>
                 <hr>
                 <legend style="font-size: 16px; font-weight: 600;">Centers:</legend>
-                <div><input type="checkbox" value="dc" id="chkdc" name="chkdc" class="filterLocationChk my-3"><label for="chkbjp">&nbsp;Bill J. Priest</label></div>
-                <div><input type="checkbox" value="dc" id="chkdc" name="chkdc" class="filterLocationChk my-3"><label for="chkchc">&nbsp;Cedar Hill</label></div>
-                <div><input type="checkbox" value="dc" id="chkdc" name="chkdc" class="filterLocationChk my-3"><label for="chkcc">&nbsp;Coppell</label></div>
-                <div><input type="checkbox" value="dc" id="chkdc" name="chkdc" class="filterLocationChk my-3"><label for="chkpcp">&nbsp;Culinary, Pastry and Hospitality</label></div>		
-                <div><input type="checkbox" value="dc" id="chkdc" name="chkdc" class="filterLocationChk my-3"><label for="chkdhc">&nbsp;Downtown Health Sciences</label></div>		
-                <div><input type="checkbox" value="dc" id="chkdc" name="chkdc" class="filterLocationChk my-3"><label for="chkic">&nbsp;Irving</label></div>	
-                <div><input type="checkbox" value="dc" id="chkdc" name="chkdc" class="filterLocationChk my-3"><label for="chklwdc">&nbsp;Lancaster Workforce Development</label></div>		
-                <div><input type="checkbox" value="dc" id="chkdc" name="chkdc" class="filterLocationChk my-3"><label for="chkpg">&nbsp;Pleasant Grove</label></div>		
-                <div><input type="checkbox" value="dc" id="chkdc" name="chkdc" class="filterLocationChk my-3"><label for="chksdtc">&nbsp;South Dallas Training</label></div>		
-                <div><input type="checkbox" value="dc" id="chkdc" name="chkdc" class="filterLocationChk my-3"><label for="chkwdc">&nbsp;West Dallas</label></div>
-                <div><input type="checkbox" value="dc" id="chkdc" name="chkdc" class="filterLocationChk my-3"><label for="chkwrb">&nbsp;Workforce Center at RedBird</label></div>
+                <div class="form-check">
+                    <input type="checkbox" value="dc" id="chkdc" name="chkdc" class="form-check-input">
+                    <label class="form-check-label"for="chkdc">Bill J. Priest</label>
+                </div>
+                <div class="form-check">
+                    <input type="checkbox" value="dc" id="chkdc" name="chkdc" class="form-check-input">
+                    <label class="form-check-label"for="chkdc">Cedar Hill</label>
+                </div>
+                <div class="form-check">
+                    <input type="checkbox" value="dc" id="chkdc" name="chkdc" class="form-check-input">
+                    <label class="form-check-label"for="chkdc">Coppell</label>
+                </div>
+                <div class="form-check">
+                    <input type="checkbox" value="dc" id="chkdc" name="chkdc" class="form-check-input">
+                    <label class="form-check-label"for="chkdc">Culinary, Pastry and Hospitality</label>		
+                </div>
+                <div class="form-check">
+                    <input type="checkbox" value="dc" id="chkdc" name="chkdc" class="form-check-input">
+                    <label class="form-check-label"for="chkdc">Downtown Health Sciences</label>	
+                </div>
+                <div class="form-check">
+                    <input type="checkbox" value="dc" id="chkdc" name="chkdc" class="form-check-input">
+                    <label class="form-check-label"for="chkdc">Irving</label>
+                </div>
+                <div class="form-check">
+                    <input type="checkbox" value="dc" id="chkdc" name="chkdc" class="form-check-input">
+                    <label class="form-check-label"for="chkdc">Lancaster Workforce Development</label>	
+                </div>
+                <div class="form-check">	
+                    <input type="checkbox" value="dc" id="chkdc" name="chkdc" class="form-check-input">
+                    <label class="form-check-label"for="chkdc">Pleasant Grove</label>	
+                </div>
+                <div class="form-check">
+                    <input type="checkbox" value="dc" id="chkdc" name="chkdc" class="form-check-input">
+                    <label class="form-check-label"for="chkdc">South Dallas Training</label>		
+                </div>
+                <div class="form-check">
+                    <input type="checkbox" value="dc" id="chkdc" name="chkdc" class="form-check-input">
+                    <label class="form-check-label"for="chkdc">West Dallas</label>
+                </div>
+                <div class="form-check">
+                    <input type="checkbox" value="dc" id="chkdc" name="chkdc" class="form-check-input">
+                    <label class="form-check-label"for="chkdc">Workforce Center at RedBird</label>
+                    </div>
             </fieldset>
         </ul>
 
       </div>
     </div>
   </nav>
+  <a href="#" class="button button-mn bg-cprimary">Submit</a>
   <a href="#" class="button button-mn bg-cprimary">Clear Filters</a>
   <div id="scnbox" class="text-success border-success"><div id="scnboxtext" class="h6 text-success no-margin">Here's a place for HTML content to be setup as an "ad" on pages based on tags.</div>
 </aside>

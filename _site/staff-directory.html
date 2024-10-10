@@ -313,39 +313,105 @@
             <h2>Filter Your Results</h2>
             <fieldset>
                 <legend style="font-size: 18px; font-weight: 700;">Filter by Position</legend>
-                <div><input type="checkbox" value="facutly" id="chkdc" name="chkdc" class="filterLocationChk my-3"><label for="chkdc">&nbsp;Faculty</label></div>
-                <div><input type="checkbox" value="staff" id="chkbhc" name="chkbhc" class="filterLocationChk my-3"><label for="chkbhc">&nbsp;Staff</label></div>
-                <hr>
-
+                <div class="form-check">
+                  <input type="checkbox" value="dc_dallas_college" id="chkdc_dallas_faculty" name="chkdc_dallas_faculty" class="form-check-input">
+                  <label class="form-check-label" for="chkdc_dallas_faculty">Faculty</label>
+              </div>
+              <div class="form-check">
+                <input type="checkbox" value="dc_dallas_college" id="chkdc_dallas_staff" name="chkdc_dallas_staff" class="form-check-input">
+                <label class="form-check-label" for="chkdc_dallas_staff">Staff</label>
+            </div>
+                
+              </fieldset>
+              <hr>
+              <fieldset>
                 <legend style="font-size: 18px; font-weight: 700;">Filter by Location</legend>
                 <legend style="font-size: 16px; font-weight: 600;">Campuses:</legend>
-                <div><input type="checkbox" value="dc" id="chkdc" name="chkdc" class="filterLocationChk my-3"><label for="chkdc">&nbsp;Dallas College</label></div>
-                <div><input type="checkbox" value="bhc" id="chkbhc" name="chkbhc" class="filterLocationChk my-3"><label for="chkbhc">&nbsp;Brookhaven</label></div>
-                <div><input type="checkbox" value="cvc" id="chkcvc" name="chkcvc" class="filterLocationChk my-3"><label for="chkcvc">&nbsp;Cedar Valley</label></div>
-                <div><input type="checkbox" value="efc" id="chkefc" name="chkefc" class="filterLocationChk my-3"><label for="chkefc">&nbsp;Eastfield</label></div>
-                <div><input type="checkbox" value="ecc" id="chkecc" name="chkecc" class="filterLocationChk my-3"><label for="chkecc">&nbsp;El Centro</label></div>
-                <div><input type="checkbox" value="nlc" id="chknlc" name="chknlc" class="filterLocationChk my-3"><label for="chknlc">&nbsp;North Lake</label></div>
-                <div><input type="checkbox" value="mvc" id="chkmvc" name="chkmvc" class="filterLocationChk my-3"><label for="chkmvc">&nbsp;Mountain View</label></div>
-                <div><input type="checkbox" value="rlc" id="chkrlc" name="chkrlc" class="filterLocationChk my-3"><label for="chkrlc">&nbsp;Richland</label></div>
+                <div class="form-check">
+                    <input type="checkbox" value="dc_dallas_college" id="chkdc_dallas_college" name="chkdc_dallas_college" class="form-check-input">
+                    <label class="form-check-label" for="chkdc_dallas_college">Dallas College</label>
+                </div>
+                <div class="form-check">
+                    <input type="checkbox" value="dc_brookhaven" id="chkdc_brookhaven" name="chkdc_brookhaven" class="form-check-input">
+                    <label class="form-check-label" for="chkdc_brookhaven">Brookhaven</label>
+                </div>
+                <div class="form-check">
+                    <input type="checkbox" value="dc_cedar_valley" id="chkdc_cedar_valley" name="chkdc_cedar_valley" class="form-check-input">
+                    <label class="form-check-label" for="chkdc_cedar_valley">Cedar Valley</label>
+                </div>
+                <div class="form-check">
+                    <input type="checkbox" value="dc_eastfield" id="chkdc_eastfield" name="chkdc_eastfield" class="form-check-input">
+                    <label class="form-check-label" for="chkdc_eastfield">Eastfield</label>
+                </div>
+                <div class="form-check">
+                    <input type="checkbox" value="dc_el_centro" id="chkdc_el_centro" name="chkdc_el_centro" class="form-check-input">
+                    <label class="form-check-label" for="chkdc_el_centro">El Centro</label>
+                </div>
+                <div class="form-check">
+                    <input type="checkbox" value="dc_mountain_view" id="chkdc_mountain_view" name="chkdc_mountain_view" class="form-check-input">
+                    <label class="form-check-label" for="chkdc_mountain_view">Mountain View</label>
+                </div>
+                <div class="form-check">
+                    <input type="checkbox" value="dc_north_lake" id="chkdc_north_lake" name="chkdc_north_lake" class="form-check-input">
+                    <label class="form-check-label" for="chkdc_north_lake">North Lake</label>
+                </div>
+                <div class="form-check">
+                    <input type="checkbox" value="dc_richland" id="chkdc_richland" name="chkdc_richland" class="form-check-input">
+                    <label class="form-check-label" for="chkdc_richland">Richland</label>
+                </div>
                 <hr>
                 <legend style="font-size: 16px; font-weight: 600;">Centers:</legend>
-                <div><input type="checkbox" value="dc" id="chkdc" name="chkdc" class="filterLocationChk my-3"><label for="chkbjp">&nbsp;Bill J. Priest</label></div>
-                <div><input type="checkbox" value="dc" id="chkdc" name="chkdc" class="filterLocationChk my-3"><label for="chkchc">&nbsp;Cedar Hill</label></div>
-                <div><input type="checkbox" value="dc" id="chkdc" name="chkdc" class="filterLocationChk my-3"><label for="chkcc">&nbsp;Coppell</label></div>
-                <div><input type="checkbox" value="dc" id="chkdc" name="chkdc" class="filterLocationChk my-3"><label for="chkpcp">&nbsp;Culinary, Pastry and Hospitality</label></div>		
-                <div><input type="checkbox" value="dc" id="chkdc" name="chkdc" class="filterLocationChk my-3"><label for="chkdhc">&nbsp;Downtown Health Sciences</label></div>		
-                <div><input type="checkbox" value="dc" id="chkdc" name="chkdc" class="filterLocationChk my-3"><label for="chkic">&nbsp;Irving</label></div>	
-                <div><input type="checkbox" value="dc" id="chkdc" name="chkdc" class="filterLocationChk my-3"><label for="chklwdc">&nbsp;Lancaster Workforce Development</label></div>		
-                <div><input type="checkbox" value="dc" id="chkdc" name="chkdc" class="filterLocationChk my-3"><label for="chkpg">&nbsp;Pleasant Grove</label></div>		
-                <div><input type="checkbox" value="dc" id="chkdc" name="chkdc" class="filterLocationChk my-3"><label for="chksdtc">&nbsp;South Dallas Training</label></div>		
-                <div><input type="checkbox" value="dc" id="chkdc" name="chkdc" class="filterLocationChk my-3"><label for="chkwdc">&nbsp;West Dallas</label></div>
-                <div><input type="checkbox" value="dc" id="chkdc" name="chkdc" class="filterLocationChk my-3"><label for="chkwrb">&nbsp;Workforce Center at RedBird</label></div>
+                <div class="form-check">
+                    <input type="checkbox" value="dc" id="chkdc" name="chkdc" class="form-check-input">
+                    <label class="form-check-label"for="chkdc">Bill J. Priest</label>
+                </div>
+                <div class="form-check">
+                    <input type="checkbox" value="dc" id="chkdc" name="chkdc" class="form-check-input">
+                    <label class="form-check-label"for="chkdc">Cedar Hill</label>
+                </div>
+                <div class="form-check">
+                    <input type="checkbox" value="dc" id="chkdc" name="chkdc" class="form-check-input">
+                    <label class="form-check-label"for="chkdc">Coppell</label>
+                </div>
+                <div class="form-check">
+                    <input type="checkbox" value="dc" id="chkdc" name="chkdc" class="form-check-input">
+                    <label class="form-check-label"for="chkdc">Culinary, Pastry and Hospitality</label>		
+                </div>
+                <div class="form-check">
+                    <input type="checkbox" value="dc" id="chkdc" name="chkdc" class="form-check-input">
+                    <label class="form-check-label"for="chkdc">Downtown Health Sciences</label>	
+                </div>
+                <div class="form-check">
+                    <input type="checkbox" value="dc" id="chkdc" name="chkdc" class="form-check-input">
+                    <label class="form-check-label"for="chkdc">Irving</label>
+                </div>
+                <div class="form-check">
+                    <input type="checkbox" value="dc" id="chkdc" name="chkdc" class="form-check-input">
+                    <label class="form-check-label"for="chkdc">Lancaster Workforce Development</label>	
+                </div>
+                <div class="form-check">	
+                    <input type="checkbox" value="dc" id="chkdc" name="chkdc" class="form-check-input">
+                    <label class="form-check-label"for="chkdc">Pleasant Grove</label>	
+                </div>
+                <div class="form-check">
+                    <input type="checkbox" value="dc" id="chkdc" name="chkdc" class="form-check-input">
+                    <label class="form-check-label"for="chkdc">South Dallas Training</label>		
+                </div>
+                <div class="form-check">
+                    <input type="checkbox" value="dc" id="chkdc" name="chkdc" class="form-check-input">
+                    <label class="form-check-label"for="chkdc">West Dallas</label>
+                </div>
+                <div class="form-check">
+                    <input type="checkbox" value="dc" id="chkdc" name="chkdc" class="form-check-input">
+                    <label class="form-check-label"for="chkdc">Workforce Center at RedBird</label>
+                    </div>
             </fieldset>
         </ul>
 
       </div>
     </div>
   </nav>
+  <a href="#" class="button button-mn bg-cprimary">Submit</a>
   <a href="#" class="button button-mn bg-cprimary">Clear Filters</a>
   <div id="scnbox" class="text-success border-success"><div id="scnboxtext" class="h6 text-success no-margin">Here's a place for HTML content to be setup as an "ad" on pages based on tags.</div>
 </aside>
@@ -435,8 +501,8 @@
                                             <li><span class="fa-li"><span aria-hidden="true" class="ico fas fa-university"></span></span>White House, Oval Office</li>
                                             <li><span class="fa-li"><span aria-hidden="true" class="ico fas fa-phone"></span></span>202-555-1234</li>
                                             <li><span class="fa-li"><span aria-hidden="true" class="ico fas fa-envelope"></span></span><a href="mailto:jbartlet@whitehouse.gov">Email Josiah</a></li>
-                                            <li><a href="#"><span class="fa-li"><span class="ico fab fa-linkedin icon-lg"></span></span>LinkedIn</a></li>
-                                            <li><a href="#"><span class="fa-li"><span aria-hidden="true" class="ico fas fa-clipboard-check"></span></span><span class="sr-only"></span>Credentials</a></li>
+                                            <li><a href="#"><span class="fa-li"><span class="ico fab fa-linkedin icon"></span></span>LinkedIn</a></li>
+                                            <li><a href="#"><span class="fa-li"><span aria-hidden="true" class="ico fas fa-id-card"></span></span><span class="sr-only"></span>Credentials</a></li>
                                         </ul>
                                     </div>
                                 </div>
@@ -461,8 +527,8 @@
                                             <li><span class="fa-li"><span aria-hidden="true" class="ico fas fa-university"></span></span>White House, West Wing</li>
                                             <li><span class="fa-li"><span aria-hidden="true" class="ico fas fa-phone"></span></span>202-555-5678</li>
                                             <li><span class="fa-li"><span aria-hidden="true" class="ico fas fa-envelope"></span></span><a href="mailto:lmcgarry@whitehouse.gov">Email Leo</a></li>
-                                            <li><a href="#"><span class="fa-li"><span class="ico fab fa-linkedin icon-lg"></span></span>LinkedIn</a></li>
-                                            <li><a href="#"><span class="fa-li"><span aria-hidden="true" class="ico fas fa-clipboard-check"></span></span><span class="sr-only"></span>Credentials</a></li>
+                                            <li><a href="#"><span class="fa-li"><span class="ico fab fa-linkedin icon"></span></span>LinkedIn</a></li>
+                                            <li><a href="#"><span class="fa-li"><span aria-hidden="true" class="ico fas fa-id-card"></span></span><span class="sr-only"></span>Credentials</a></li>
                                         </ul>
                                     </div>
                                 </div>
@@ -487,8 +553,8 @@
                                             <li><span class="fa-li"><span aria-hidden="true" class="ico fas fa-university"></span></span>White House, Press Room</li>
                                             <li><span class="fa-li"><span aria-hidden="true" class="ico fas fa-phone"></span></span>202-555-9876</li>
                                             <li><span class="fa-li"><span aria-hidden="true" class="ico fas fa-envelope"></span></span><a href="mailto:ccregg@whitehouse.gov">Email C.J.</a></li>
-                                            <li><a href="#"><span class="fa-li"><span class="ico fab fa-linkedin icon-lg"></span></span>LinkedIn</a></li>
-                                            <li><a href="#"><span class="fa-li"><span aria-hidden="true" class="ico fas fa-clipboard-check"></span></span><span class="sr-only"></span>Credentials</a></li>
+                                            <li><a href="#"><span class="fa-li"><span class="ico fab fa-linkedin icon"></span></span>LinkedIn</a></li>
+                                            <li><a href="#"><span class="fa-li"><span aria-hidden="true" class="ico fas fa-id-card"></span></span><span class="sr-only"></span>Credentials</a></li>
                                         </ul>
                                     </div>
                                 </div>
@@ -513,7 +579,7 @@
                                         <li><span class="fa-li"><span aria-hidden="true" class="ico fas fa-university"></span></span>White House, West Wing</li>
                                         <li><span class="fa-li"><span aria-hidden="true" class="ico fas fa-phone"></span></span>202-555-6543</li>
                                         <li><span class="fa-li"><span aria-hidden="true" class="ico fas fa-envelope"></span></span><a href="mailto:tziegler@whitehouse.gov">Email Toby</a></li>
-                                        <li><a href="#"><span class="fa-li"><span aria-hidden="true" class="ico fas fa-clipboard-check"></span></span><span class="sr-only"></span>Credentials</a></li>
+                                        <li><a href="#"><span class="fa-li"><span aria-hidden="true" class="ico fas fa-id-card"></span></span><span class="sr-only"></span>Credentials</a></li>
                                         </ul>
                                     </div>
                                 </div>
@@ -538,7 +604,7 @@
                                             <li><span class="fa-li"><span aria-hidden="true" class="ico fas fa-university"></span></span>AFC Richmond, Nelson Road Stadium</li>
                                             <li><span class="fa-li"><span aria-hidden="true" class="ico fas fa-phone"></span></span>555-123-4567</li>
                                             <li><span class="fa-li"><span aria-hidden="true" class="ico fas fa-envelope"></span></span><a href="mailto:ted@afcrichmond.com">Email Ted</a></li>
-                                            <li><a href="#"><span class="fa-li"><span class="ico fab fa-linkedin icon-lg"></span></span>LinkedIn</a></li>
+                                            <li><a href="#"><span class="fa-li"><span class="ico fab fa-linkedin icon"></span></span>LinkedIn</a></li>
                                         </ul>
                                     </div>
                                 </div>
@@ -563,7 +629,7 @@
                                             <li><span class="fa-li"><span aria-hidden="true" class="ico fas fa-university"></span></span>AFC Richmond, Nelson Road Stadium</li>
                                             <li><span class="fa-li"><span aria-hidden="true" class="ico fas fa-phone"></span></span>555-234-5678</li>
                                             <li><span class="fa-li"><span aria-hidden="true" class="ico fas fa-envelope"></span></span><a href="mailto:rebecca@afcrichmond.com">Email Rebecca</a></li>
-                                            <li><a href="#"><span class="fa-li"><span class="ico fab fa-linkedin icon-lg"></span></span>LinkedIn</a></li>
+                                            <li><a href="#"><span class="fa-li"><span class="ico fab fa-linkedin icon"></span></span>LinkedIn</a></li>
                                         </ul>
                                     </div>
                                 </div>
@@ -588,7 +654,7 @@
                                             <li><span class="fa-li"><span aria-hidden="true" class="ico fas fa-university"></span></span>AFC Richmond, Nelson Road Stadium</li>
                                             <li><span class="fa-li"><span aria-hidden="true" class="ico fas fa-phone"></span></span>555-345-6789</li>
                                             <li><span class="fa-li"><span aria-hidden="true" class="ico fas fa-envelope"></span></span><a href="mailto:roy@afcrichmond.com">Email Roy</a></li>
-                                            <li><a href="#"><span class="fa-li"><span class="ico fab fa-linkedin icon-lg"></span></span>LinkedIn</a></li>
+                                            <li><a href="#"><span class="fa-li"><span class="ico fab fa-linkedin icon"></span></span>LinkedIn</a></li>
                                         </ul>
                                     </div>
                                 </div>
@@ -613,7 +679,7 @@
                                             <li><span class="fa-li"><span aria-hidden="true" class="ico fas fa-university"></span></span>AFC Richmond, Nelson Road Stadium</li>
                                             <li><span class="fa-li"><span aria-hidden="true" class="ico fas fa-phone"></span></span>555-345-6789</li>
                                             <li><span class="fa-li"><span aria-hidden="true" class="ico fas fa-envelope"></span></span><a href="mailto:beard@afcrichmond.com">Email Willis</a></li>
-                                            <li><a href="#"><span class="fa-li"><span class="ico fab fa-linkedin icon-lg"></span></span>LinkedIn</a></li>
+                                            <li><a href="#"><span class="fa-li"><span class="ico fab fa-linkedin icon"></span></span>LinkedIn</a></li>
                                         </ul>
                                     </div>
                                 </div>
@@ -824,7 +890,7 @@
     <li class="list-inline-item"><a class="track-footer" href="https://www.facebook.com/dallascollegetx"><span class="ico fab fa-facebook icon-lg" aria-hidden="true"></span><span class="sr-only">Facebook</span></a></li>
     <li class="list-inline-item"><a class="track-footer" href="https://twitter.com/dallascollegetx"><span class="ico fab fa-x-twitter icon-lg" aria-hidden="true"></span><span class="sr-only">X/Twitter</span></a></li>
     <li class="list-inline-item"><a class="track-footer" href="https://www.instagram.com/dallascollegetx/"><span class="ico fab fa-instagram icon-lg" aria-hidden="true"></span><span class="sr-only">Instagram</span></a></li>
-    <li class="list-inline-item"><a class="track-footer" href="https://www.linkedin.com/school/dallascollege"><span class="ico fab fa-linkedin icon-lg" aria-hidden="true"></span><span class="sr-only">LinkedIn</span></a></li>
+    <li class="list-inline-item"><a class="track-footer" href="https://www.linkedin.com/school/dallascollege"><span class="ico fab fa-linkedin icon" aria-hidden="true"></span><span class="sr-only">LinkedIn</span></a></li>
     <li class="list-inline-item"><a class="track-footer" href="https://www.youtube.com/user/DCCCDCollege"><span class="ico fab fa-youtube icon-lg" aria-hidden="true"></span><span class="sr-only">YouTube</span></a></li>
   </ul>
 </div>
@@ -859,7 +925,7 @@
             <li><a class="track-footer" href="https://www.facebook.com/dallascollegetx"><span class="ico fab fa-facebook icon-lg" aria-hidden="true"></span><span class="sr-only">Facebook</span></a></li>
             <li><a class="track-footer" href="https://twitter.com/dallascollegetx"><span class="ico fab fa-twitter icon-lg" aria-hidden="true"></span><span class="sr-only">Twitter</span></a></li>
             <li><a class="track-footer" href="https://www.instagram.com/dallascollegetx/"><span class="ico fab fa-instagram icon-lg" aria-hidden="true"></span><span class="sr-only">Instagram</span></a></li>
-            <li><a class="track-footer" href="https://www.linkedin.com/school/dallascollege"><span class="ico fab fa-linkedin icon-lg" aria-hidden="true"></span><span class="sr-only">LinkedIn</span></a></li>
+            <li><a class="track-footer" href="https://www.linkedin.com/school/dallascollege"><span class="ico fab fa-linkedin icon" aria-hidden="true"></span><span class="sr-only">LinkedIn</span></a></li>
             <li><a class="track-footer" href="https://www.youtube.com/user/DCCCDCollege"><span class="ico fab fa-youtube icon-lg" aria-hidden="true"></span><span class="sr-only">YouTube</span></a></li>
           </ul>
         </div>
