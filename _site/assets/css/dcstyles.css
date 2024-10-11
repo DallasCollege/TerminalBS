@@ -417,6 +417,7 @@ li.navbar-nav--seperator:before {
 }
 
 #l-header-mobile ul {
+  width: 100vw;
   /*width: 100vw;*/
   background: #ffffff;
   margin-left: -15px;
@@ -463,6 +464,7 @@ li.navbar-nav--seperator:before {
 
 
 #l-header-mobile ul.navbar-nav {
+  width: 100vw;
   /*width: 100vw;*/
   background: #003385;
   margin-left: 0px;
@@ -479,6 +481,7 @@ li.navbar-nav--seperator:before {
 #l-header-mobile a {
   text-decoration: none;
   font-weight: 600;
+  /* color: #fff */
   color: #ffffff;
 }
 
@@ -7425,6 +7428,16 @@ div.csecondary-dk p a:not(.button), div.cseconary-dk p a:link:not(.button) {
   justify-content: flex-end;
   margin-left: auto;
 }
+#l-nav-utility .container-fluid, #dc_mobileNavbar .container-fluid {
+  padding: 0;
+}
+.l-header-mobile__menu__search {
+  margin: 1em;
+}
+#l-header-mobile .navbar-nav li {
+  text-align:center;
+}
+
 #l-nav-utility .container-fluid, #dc_mobileNavbar .container-fluid {
   padding: 0;
 }
