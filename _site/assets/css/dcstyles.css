@@ -1615,6 +1615,10 @@ td.thismonth.viewrange.periodday.today.hasEvents a {
   color:#ffffff;
 }
 
+.minical-nav a {
+  font-weight: 700;
+}
+
 #prev_month, #next_month {
   display: inline;
   margin: 10px;
