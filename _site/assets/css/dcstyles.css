@@ -2921,6 +2921,20 @@ ul.pgs-program-card__loc {
   font-size: .75rem
 }
 
+ul.pgs-program-card__meta {
+  font-size: .75rem
+}
+
+.program-search-results, .news-search-results, .calendar-search-results {
+  border-bottom:1px solid #dee2e6;
+  padding-bottom:2rem;
+  margin-bottom:3rem;
+}
+
+.program-search-results:last-child, .news-searchresults:last-child, .calendar-search-results:last-child {
+  border-bottom: none;
+}
+
 .pgs-program-card ul li {
   margin-bottom: 0;
   margin-right: 1.25rem;
