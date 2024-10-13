@@ -46,50 +46,163 @@
     </div>
   </div>
 
-  <div class="tile height-sm-150 height-xxs-125">
-    <img src="/assets/img/students1.jpg" class="img-fluid">
-    <div class="overlay">
-        <h2 class="h3">Testing</h2>
-    </div>
-  </div>
+<h3>Tiles: Flexbox </h3>
+  <div class="tiles-container ">
+    <a href="#" class="tile height-sm-150 height-xxs-125">
+        <img src="/assets/img/students1.jpg" class="img-fluid">
+        <div class="overlay tile--business">
+            <h2 class="h3 pgs-tile__title">Business, Hospitality and Global Trade</h2>
+        </div>
+    </a>
 
-  <div class="tile height-sm-150 height-xxs-125">
-    <img src="/assets/img/students1.jpg" class="img-fluid">
-    <div class="overlay">
-        <h2 class="h3">Testing</h2>
-    </div>
-  </div>
+    <a href="#" class="tile height-sm-150 height-xxs-125">
+        <img src="/assets/img/students1.jpg" class="img-fluid">
+        <div class="overlay tile--arts">
+            <h2 class="h3 pgs-tile__title">Creative Arts, Entertainment and Design</h2>
+        </div>
+    </a>
 
-  <style>
-    .tile {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        position: relative;
-        width: 100%;
-        height: 100px;
-        overflow: hidden;
-    }
+    <a href="#" class="tile height-sm-150 height-xxs-125">
+        <img src="/assets/img/students1.jpg" class="img-fluid">
+        <div class="overlay tile--education">
+            <h2 class="h3 pgs-tile__title">Education</h2>
+        </div>
+    </a>
 
-    .tile img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-    }
+    <a href="#" class="tile height-sm-150 height-xxs-125">
+        <img src="/assets/img/students1.jpg" class="img-fluid">
+        <div class="overlay tile--stem">
+            <h2 class="h3 pgs-tile__title">Engineering, Technology, Mathematics and Sciences</h2>
+        </div>
+    </a>
+</div>
 
-    .overlay {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background-color: rgba(0, 51, 133, 0.5); /* Adjust the color and opacity as needed */
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        color: white;
-        font-size: 16px;
-        text-align: center;
-    }
+<div class="tiles-container">
+    <a href="#" class="tile height-sm-150 height-xxs-125 ">
+        <img src="/assets/img/students1.jpg" class="img-fluid">
+        <div class="overlay tile--health">
+            <h2 class="h3 pgs-tile__title">Health Sciences</h2>
+        </div>
+    </a>
+
+    <a href="#" class="tile height-sm-150 height-xxs-125">
+        <img src="/assets/img/students1.jpg" class="img-fluid">
+        <div class="overlay tile--lps">
+            <h2 class="h3 pgs-tile__title">Law and Public Service</h2>
+        </div>
+    </a>
+
+    <a href="#" class="tile height-sm-150 height-xxs-125">
+        <img src="/assets/img/students1.jpg" class="img-fluid">
+        <div class="overlay tile--manufacturing">
+            <h2 class="h3 pgs-tile__title">Manufacturing and Industrial Technology</h2>
+        </div>
+    </a>
+
+</div>
+
+
+    <style>
+        .tiles-container {
+            display: flex;
+            gap: 1.5rem; /* Adjust the gap between tiles as needed */
+            flex-wrap: wrap;
+            max-width: 880px;
+          }
     
-  </style>
+        a .tilea, .tile {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            width: 100%;
+            height: 100px;
+            overflow: hidden;
+            margin-bottom: 2rem;
+            border-radius: 2px;
+            border-bottom: 6px solid #003385;
+            flex: 1 1 calc(50% - 1.5rem); /* Default to 2 tiles per row */
+        }
+    
+        a .tile img, .tile img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    
+        a .overlay, .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            /* background-color: rgba(0, 51, 133, 0.5);  */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 16px;
+            /* text-align: center; */
+        }
+
+        /* School Blocks */
+
+.overlay.tile--business {
+    background: linear-gradient(0deg, rgba(26, 112, 35, 0.85), rgba(26, 112, 35, 0.85));
+    background-size: cover;
+    background-position: center;
+    border-bottom-color: #249E31;
+  }
+  
+  .overlay.tile--arts {
+    background: linear-gradient(0deg, rgba(147, 16, 29, 0.85), rgba(147, 16, 29, 0.85));
+    background-size: cover;
+    background-position: center;
+    border-bottom-color: #C00D1E;
+  }
+  
+  .overlay.tile--education {
+    background: linear-gradient(0deg, rgba(133, 45, 129, 0.85), rgba(133, 45, 129, 0.85));
+    background-size: cover;
+    background-position: center;
+    border-bottom-color: #93328E;
+  }
+  
+  .overlay.tile--health {
+    background: linear-gradient(0deg, rgba(26, 112, 184, 0.85), rgba(31, 121, 184, 0.85));
+    background-size: cover;
+    background-position: center;
+    border-bottom-color: #248ED8;
+  }
+  
+  .overlay.tile--lps {
+    background: linear-gradient(0deg, rgba(28, 31, 130, 0.85), rgba(28, 31, 130, 0.85));
+    background-size: cover;
+    background-position: center;
+    border-bottom-color: #1E22AA;
+  }
+  
+  .overlay.tile--manufacturing {
+    background: linear-gradient(0deg, rgba(121, 79, 63, 0.85), rgba(121, 79, 63, 0.85));
+    background-size: cover;
+    background-position: center;
+    border-bottom-color: #95614D;
+  }
+  
+  .overlay.tile--stem {
+    background: linear-gradient(0deg, rgba(184, 84, 0, 0.85), rgba(184, 84, 0, 0.85));
+    background-size: cover;
+    background-position: center;
+    border-bottom-color: #FF7500;
+  }
+  
+  /* End School Blocks */
+  
+        
+        @media (min-width: 768px) {
+            .tile {
+              flex: 1 1 calc(25% - 1.5rem); /* 4 tiles per row on larger screens */
+            }
+          }
+
+      </style>

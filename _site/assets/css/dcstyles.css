@@ -3419,11 +3419,14 @@ a.pgs-tile {
 .pgs-tile__title, .pgs-tile__title:is(h2, h3, h4, h5, h6) {
   position: absolute;
   bottom: 1rem;
+  left: 1rem;
   font-size: 1.125rem;
   font-family: "Montserrat", "Open Sans", Helvetica, Arial, sans-serif;
   text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5);
   font-weight: 700;
-  margin-right: 1rem
+  margin-right: 1rem;
+  margin-bottom: 0rem;
+  color: #ffffff;
 }
 
 .pgs-tile:hover, .pgs-tile:focus {
