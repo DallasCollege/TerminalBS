@@ -1553,6 +1553,60 @@ main.affix {
   transition: transform .25s ease
 }
 
+.sidebar-img img {
+  margin-bottom: 1rem;
+}
+
+#scnbox {
+  position: relative;
+  z-index: 1;
+  border-width: 1px;
+  border-style: solid;
+  margin: 0 1px 1em 1px;
+  padding: 2rem 1rem;
+  text-align: center;
+  font-weight: 700;
+  background: #d1f9c7;
+  background: -moz-linear-gradient(135deg, #d1f9c7 0, #fffed9 100%);
+  background: -webkit-linear-gradient(135deg, #d1f9c7 0, #fffed9 100%);
+  background: linear-gradient(135deg, #d1f9c7 0, #fffed9 100%)
+}
+
+#scnbox a {
+  font-size: 1.125rem !important;
+  color: #333
+}
+
+#scnbox:before {
+  content: "\f004";
+  position: absolute;
+  z-index: -1;
+  font-family: "Font Awesome 5 Free";
+  font-size: 7em;
+  color: #3c763d;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  -moz-opacity: .1;
+  -khtml-opacity: .1;
+  opacity: .1
+}
+
+#scnboxtext {
+  padding-bottom: .5rem;
+  line-height: 1.6em !important
+}
+
+@media (max-width:992px) {
+  #scnbox:before {
+    font-size: 7.5em
+  }
+
+  #scnbox a {
+    font-size: 1.25rem !important
+  }
+}
+
 /* Calendar */
 
 .pgs-calendar__day {
