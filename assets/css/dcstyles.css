@@ -639,6 +639,10 @@ li.navbar-nav--seperator:before {
   background: #E9F2FF
 }
 
+#l-header-mobile .navbar-nav li li.nav-item {
+  text-align: left;
+}
+
 /*  footers */
 
 .list-group-item { background-color:transparent; border:0; margin:0 !important; }
@@ -7519,7 +7523,7 @@ div.csecondary-dk p a:not(.button), div.cseconary-dk p a:link:not(.button) {
 
 /* BS5 Utilities */
 
-#l-header-desktop .dcflex-end {
+/* #l-header-desktop .dcflex-end {
   justify-content: flex-end;
   margin-left: auto;
 }
@@ -7541,4 +7545,4 @@ div.csecondary-dk p a:not(.button), div.cseconary-dk p a:link:not(.button) {
 }
 #l-header-mobile .navbar-nav li {
   text-align:center;
-}
+} */
