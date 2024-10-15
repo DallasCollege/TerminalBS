@@ -419,7 +419,7 @@ li.navbar-nav--seperator:before {
 #l-header-mobile ul {
   width: 100vw;
   /*width: 100vw;*/
-  background: #ffffff;
+  /* background: #ffffff; */
   margin-left: -15px;
   margin-top: 0;
 }
@@ -466,7 +466,7 @@ li.navbar-nav--seperator:before {
 #l-header-mobile ul.navbar-nav {
   width: 100vw;
   /*width: 100vw;*/
-  background: #003385;
+  /* background: #003385; */
   margin-left: 0px;
   margin-top: 0;
 }
@@ -482,8 +482,24 @@ li.navbar-nav--seperator:before {
   text-decoration: none;
   font-weight: 600;
   /* color: #fff */
-  color: #ffffff;
+  /* color: #ffffff; */
 }
+
+  /* Added These Styles (Not Sure If Necessary) */
+  .nav > li > a {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  /* // Edited This Existing Style (Not Sure If Necessary)*/
+  #l-header-mobile ul.navbar-nav {
+    width: 100vw;
+      /* background: #003385;  */
+    margin-left: 0px;
+    margin-top: 0;
+  }
+
+  #l-header-mobile .navbar-right ul.dropdown-menu { margin-left: -50vw; }
 
 .navbar-primary-toggle {
   margin: 0;
@@ -596,7 +612,7 @@ li.navbar-nav--seperator:before {
 
 #l-header-mobile .navbar-primary a, #l-header-mobile .navbar-utility .dropdown-menu a {
   padding: 1em 2em;
-  color: #333
+  /* color: #333; */
 }
 
 #l-header-mobile .navbar-utility .dropdown-menu [class*="col-"] {
@@ -2483,7 +2499,7 @@ img.bio-image.pull-left, .pull-left.thumbnail, img.bio-image.pull-right, .pull-r
   border-radius: 0
 }
 
-.content-image-box #cib-image {
+.content-image-box .cib-image {
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -3905,14 +3921,15 @@ caption {
   font-size: .875rem
 }
 
-.card {
+/* .card { duplicate with lines 6480
   position: relative;
   margin-bottom: .75em;
   border: 1px solid rgba(0, 0, 0, 0.16);
   border-radius: .25em;
   display: block;
   margin: 1em 0
-}
+} */
+
 
 #LayoutBody .hero-overlay-content {
   margin-top: 2em;
@@ -6426,7 +6443,7 @@ a:focus>img:not(.logo-bar-slot__img) {
   border: 1px solid rgba(0, 0, 0, 0.16);
   border-radius: .25em;
   display: block;
-  margin: 1em 0
+  margin: 1em 0 2em 0
 }
 
 .card-block {
@@ -6462,9 +6479,7 @@ ul.card-list {
   margin-top: 1em
 }
 
-.card {
-  margin: 0 0 2em
-}
+
 
 .card-footer:last-child {
   border-radius: 0 0 calc(.25rem - 1px) calc(.25rem - 1px)
