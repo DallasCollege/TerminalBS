@@ -2625,9 +2625,9 @@ ul.pgs-org-card__list .ico {
 }
 
 .cb-mainico.ico-square {
-  width: 8em;
-  height: 8em;
-  padding: 2.5em 2em;
+  width: 6em;
+  height: 6em;
+  padding: 1.5em 1em; 
   margin: 1em auto 2em auto;
   border-width: 4px
 }
