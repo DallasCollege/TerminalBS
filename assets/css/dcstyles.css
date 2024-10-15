@@ -416,10 +416,8 @@ li.navbar-nav--seperator:before {
   display: none
 }
 
-#l-header-mobile ul {
+#top-utility-nav ul {
   width: 100vw;
-  /*width: 100vw;*/
-  /* background: #ffffff; */
   margin-left: -15px;
   margin-top: 0;
 }
@@ -464,15 +462,14 @@ li.navbar-nav--seperator:before {
 
 
 #l-header-mobile ul.navbar-nav {
-  width: 100vw;
-  /*width: 100vw;*/
-  /* background: #003385; */
+  /*width: 100vw;
+  background: #003385;
   margin-left: 0px;
   margin-top: 0;
+  */
 }
 
 #l-header-mobile ul.navbar-nav.navbar-secondary  {
-  width: 100vw;
   background: #001E49;
   margin-left: 0px;
   margin-top: 0;
@@ -493,10 +490,11 @@ li.navbar-nav--seperator:before {
 
   /* // Edited This Existing Style (Not Sure If Necessary)*/
   #l-header-mobile ul.navbar-nav {
-    width: 100vw;
-      /* background: #003385;  */
+    /*width: 100vw;
+    background: #003385;
     margin-left: 0px;
     margin-top: 0;
+    */
   }
 
   #l-header-mobile .navbar-right ul.dropdown-menu { margin-left: -50vw; }
@@ -624,7 +622,7 @@ li.navbar-nav--seperator:before {
 }
 
 #l-header-mobile .navbar-nav.navbar-primary {
-  margin-top: 1em;
+  /*margin-top: 1em;*/
   margin-bottom: 1em
 }
 
@@ -2647,7 +2645,7 @@ ul.pgs-org-card__list .ico {
 .cb-mainico.ico-square {
   width: 6em;
   height: 6em;
-  padding: 1.5em 1em; 
+  padding: 1.5em 1em;
   margin: 1em auto 2em auto;
   border-width: 4px
 }
@@ -7523,26 +7521,27 @@ div.csecondary-dk p a:not(.button), div.cseconary-dk p a:link:not(.button) {
 
 /* BS5 Utilities */
 
-/* #l-header-desktop .dcflex-end {
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(255, 255, 255, 1)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e") !important;
+}
+
+#l-header-desktop .dcflex-end {
   justify-content: flex-end;
   margin-left: auto;
 }
 #l-nav-utility .container-fluid, #dc_mobileNavbar .container-fluid {
   padding: 0;
 }
+
 .l-header-mobile__menu__search {
   margin: 1em;
 }
-#l-header-mobile .navbar-nav li {
-  text-align:center;
-}
-
 #l-nav-utility .container-fluid, #dc_mobileNavbar .container-fluid {
   padding: 0;
 }
 .l-header-mobile__menu__search {
   margin: 1em;
 }
-#l-header-mobile .navbar-nav li {
+/*#l-header-mobile .navbar-nav li {
   text-align:center;
-} */
+}*/
