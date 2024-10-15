@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en-US">
+
+{% include head.html %}
+
+<style>
+    hr {margin:3rem}
+</style>
+<body>
+
+  {% include header.html %}
+
+  {% include interior/content_featured-breadcrumb.html %}
+
+  <div class="pgs-banner pgs-banner--interior"></div>
+    <style>
+        .pgs-banner {
+            background-image: url("https://www.dallascollege.edu/PublishingImages/banner-1600x512/fall-2020-1600x512.jpg");
+        }
+    </style>  
+</div>
+
+<div id="t4-bodyContainer">
+<div data-spy="affix" data-offset-top="45">
+
+<main id="main__body">
+    <div class="container">
+        <div class="row">
+
+            {% include interior/content_featured-sidebar.html %}
+
+                <div class="col-md-8 order-md-first">
+
+                    {{ content }}
+                <!-- </div> -->
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+
+  {% include footer.html %}
+
+</body>
+</html>

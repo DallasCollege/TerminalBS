@@ -3111,6 +3111,8 @@ p+.pgs-dept-card, ul+.pgs-dept-card, ol+.pgs-dept-card {
 h3.accordion-header {margin-top: .375em; }
 .accordion-item:first-of-type { border-top: 0}
 .accordion-item {margin-top:5px; margin-bottom:5px}
+.accordion-item-quiet {margin-top:5px; margin-bottom:5px; border:0px solid}
+
 
 .accordion .pgs-dept-card:first-of-type {   margin-top: .5rem;}
 .accordion .pgs-dept-card:last-of-type {  border-bottom:0;}
