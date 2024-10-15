@@ -2483,6 +2483,13 @@ img.bio-image.pull-left, .pull-left.thumbnail, img.bio-image.pull-right, .pull-r
   border-radius: 0
 }
 
+.content-image-box #cib-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+
 * [class^="cib-col-"], .cb-mainico {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
