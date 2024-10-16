@@ -6291,6 +6291,9 @@ a:focus>img:not(.logo-bar-slot__img) {
   padding-left: 30px
 }
 
+
+/* Testimonials - Mega Quotes */
+
 .testimonial {
   padding: 2em 3em;
   position: relative
@@ -6424,6 +6427,76 @@ a:focus>img:not(.logo-bar-slot__img) {
     padding: 0 32px 0 32px
   }
 }
+
+.t4-testimonial {
+  margin:5rem 0;
+}
+.t4-testimonial-quote blockquote {
+  border:0
+}
+
+.t4-testimonial-photo img {
+  margin-bottom: 2em
+}
+
+.t4-testimonial-quote {
+  position:relative;
+}
+.t4-testimonial-photo img {
+  max-width:125px
+}
+.t4-testimonial-name {
+  font-family: "Montserrat", "Open Sans", Helvetica, Arial, sans-serif;
+  font-weight: bold;
+  line-height: 1.7rem;
+}
+.t4-testimonial-title {
+  font-size: .875em
+}
+.t4-testimonial-quote:before {
+  position: absolute;
+  content: '';
+  top: 0;
+  left: -90px;
+  background-image: url("https://www.dallascollege.edu/publishingimages/icons/dc-quotes-open-cgrey-05.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 96px;
+  height: 96px;
+  z-index:-1
+}
+
+.t4-testimonial--mega .t4-testimonial-quote blockquote {
+  font-size:1.5rem;
+}
+
+.t4-testimonial--mega .t4-testimonial-quote:before {
+  position: absolute;
+  content: '';
+  top: 0;
+  right: -100px;
+  background-image: url("https://www.dallascollege.edu/publishingimages/icons/dc-quotes-open-cgrey-05.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 96px;
+  height: 96px
+}
+
+.t4-testimonial--mega .t4-testimonial-quote:after {
+  position: absolute;
+  content: '';
+  top: 0;
+  right: -100px;
+  background-image: url("https://www.dallascollege.edu/publishingimages/icons/dc-quotes-close-cgrey-05.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 96px;
+  height: 96px
+}
+
+/* End Testimonials - Mega Quotes */
+
+
 
 @media (min-width: 576px) {
   .card-group {
