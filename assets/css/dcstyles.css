@@ -3999,6 +3999,105 @@ caption {
 
 /* End School Blocks */
 
+/* New T4 Tiles */
+
+a .t4-tile, .t4-tile {
+  display: block;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  margin-bottom: 2rem;
+  border-radius: 2px;
+  background: #001E49;
+  border-bottom: 6px solid #6D0000;
+  background-size: cover;
+  background-position: center;
+  min-height: 150px;
+}
+
+a.t4-tile {
+  color: #fff
+  }
+
+a .t4-tile img, .t4-tile img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  }
+
+a .t4-tile-overlay, .t4-tile-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #001E49;
+  display: flex;
+  align-items: center;
+  justify-content: center; 
+  color: white;
+  font-size: 16px;
+}
+
+.t4-tile-title, .t4-tile-title:is(h2, h3, h4, h5, h6) {
+  position: absolute;
+  bottom: 1rem;
+  left: 1rem;
+  font-size: 1.125rem;
+  font-family: "Montserrat", "Open Sans", Helvetica, Arial, sans-serif;
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5);
+  font-weight: 700;
+  margin-right: 1rem;
+  margin-bottom: 0rem;
+  color: #ffffff;
+}
+
+.t4-tile:hover, .t4-tile:focus {
+  border-bottom-width: 6px;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.25), 0 4px 6px -2px rgba(0, 0, 0, 0.12);
+  outline: #4d90fe solid 3px
+}
+
+.t4-tile.t4-tile--business, .t4-tile--business .t4-tile-overlay {
+  background: linear-gradient(0deg, rgba(26, 112, 35, 0.85), rgba(26, 112, 35, 0.85));
+  border-bottom-color: #249E31;
+}
+
+.t4-tile.t4-tile--arts, .t4-tile--arts .t4-tile-overlay {
+  background: linear-gradient(0deg, rgba(147, 16, 29, 0.85), rgba(147, 16, 29, 0.85));
+  border-bottom-color: #C00D1E;
+}
+
+.t4-tile.t4-tile--education, .t4-tile--education .t4-tile-overlay {
+  background: linear-gradient(0deg, rgba(133, 45, 129, 0.85), rgba(133, 45, 129, 0.85));
+  border-bottom-color: #93328E;
+}
+
+.t4-tile.t4-tile--health, .t4-tile--health .t4-tile-overlay {
+  background: linear-gradient(0deg, rgba(26, 112, 184, 0.85), rgba(31, 121, 184, 0.85));
+  border-bottom-color: #248ED8;
+}
+
+.t4-tile.t4-tile--lps, .t4-tile--lps .t4-tile-overlay {
+  background: linear-gradient(0deg, rgba(28, 31, 130, 0.85), rgba(28, 31, 130, 0.85));
+  border-bottom-color: #1E22AA;
+}
+
+.t4-tile.t4-tile--manufacturing, .t4-tile--manufacturing .t4-tile-overlay {
+  background: linear-gradient(0deg, rgba(121, 79, 63, 0.85), rgba(121, 79, 63, 0.85)), url('');
+  border-bottom-color: #95614D;
+}
+
+.t4-tile.t4-tile--stem, .t4-tile--stem .t4-tile-overlay {
+  background: linear-gradient(0deg, rgba(184, 84, 0, 0.85), rgba(184, 84, 0, 0.85)), url('https://www.dallascollege.edu/PublishingImages/home/path-stem-400x300.jpg');
+  border-bottom-color: #FF7500;
+}
+
+/* End T4 Tiles */
+
 
 @media screen and (min-width: 350px) and (max-width: 500px) {
   #LayoutBody .hero-overlay-fixed {
