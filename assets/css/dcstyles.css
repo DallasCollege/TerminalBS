@@ -3901,10 +3901,22 @@ a.button.button-off {
   margin-bottom: 0
 }
 
-.thumbnail {
+.img-cap, .thumbnail {
   height: auto;
+  font-size:.875rem;
   max-width: 100%;
-  padding: 4px
+  margin-bottom:1.5rem
+}
+
+.img-cap img, .thumbnail img {
+  margin-bottom:1rem;
+  border-radius:4px;
+}
+
+.img-cap .caption, .thumbnail .caption {
+  padding:0 5px;
+  font-weight:700;
+  color:#333333;
 }
 
 .list-inline>li {
