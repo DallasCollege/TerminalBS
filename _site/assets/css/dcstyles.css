@@ -4062,7 +4062,7 @@ a .t4-tile-overlay, .t4-tile-overlay {
   background: #001E49;
   display: flex;
   align-items: center;
-  justify-content: center; 
+  justify-content: center;
   color: white;
   font-size: 16px;
 }
@@ -7739,6 +7739,10 @@ div.csecondary-dk p a:not(.button), div.cseconary-dk p a:link:not(.button) {
 .l-header-mobile__menu__search {
   margin: 1em;
 }
-/*#l-header-mobile .navbar-nav li {
-  text-align:center;
-}*/
+
+/* right nav item on desktop only */
+@media (min-width: 768px) {
+    #sidebar .navbar-expand-md .navbar-nav .nav-link {
+      padding: .75rem 1rem;
+    }
+}
