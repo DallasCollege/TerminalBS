@@ -4039,7 +4039,7 @@ a .t4-tile, .t4-tile {
   border-bottom: 6px solid #6D0000;
   background-size: cover;
   background-position: center;
-  min-height: 150px;
+  height: 175px;
 }
 
 a.t4-tile {
