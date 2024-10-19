@@ -3146,20 +3146,35 @@ p+.pgs-dept-card, ul+.pgs-dept-card, ol+.pgs-dept-card {
   margin-top: 2rem
 }
 
-h3.accordion-header {margin-top: .375em; }
-.accordion-item:first-of-type { border-top: 0}
+h2.accordion-header, h3.accordion-header, h4.accordion-header {margin-top: .375em; }
+
+.accordion-header button {
+  background:#e5e2d6
+}
+
+.accordion-item-quiet .accordion-header button {
+  background:transparent
+}
+
+.accordion-button:not(.collapsed) {
+  background:#F7F3E8
+}
+
+  .accordion-item:first-of-type { border-top: 0}
 .accordion-item {margin-top:5px; margin-bottom:5px}
-.accordion-item-quiet {margin-top:5px; margin-bottom:5px; border:0px solid}
 
 
 .accordion .pgs-dept-card:first-of-type {   margin-top: .5rem;}
 .accordion .pgs-dept-card:last-of-type {  border-bottom:0;}
 .accordion .pgs-dept-card__col { margin-bottom: 0;}
 
-.pgs-accordion>h2, .pgs-accordion>h3, .pgs-accordion>h4, .pgs-accordion>h5, .pgs-accordion>h6 {
-  margin-top: 0;
-  margin-bottom: 0;
-  font-size: 20px
+
+.accordion-item button.accordion-button, .accordion-item-quiet button.accordion-button {
+  font-size: 1.15rem;
+}
+
+.pgs-accordion--sm button.accordion-button {
+  font-size:1rem;
 }
 
 .pgs-accordion {
@@ -3176,6 +3191,10 @@ h3.accordion-header {margin-top: .375em; }
 button.accordion-button {
   border-left: 5px solid #003385;
   border-radius: 4px
+}
+
+.accordion-item-quiet button {
+  border:0px solid;
 }
 
 .pgs-accordion--pc {
@@ -3200,7 +3219,7 @@ button.accordion-button {
   content: "\f13a"; /* Unicode for Font Awesome chevron-down */
   font-family: "Font Awesome 5 Free"; /* Specify Font Awesome */
   font-weight: 900; /* Required for solid icons */
-  margin-right: 0.5rem; /* Space between icon and text */
+  margin-right: 0.6rem; /* Space between icon and text */
   transition: transform 0.3s; /* Smooth transition for rotation */
   color:#003385
 }
