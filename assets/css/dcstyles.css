@@ -7415,11 +7415,20 @@ a.grand-button.bg-cgrey-60:hover, a.grand-button.bg-cgrey-60:focus, a.button.bg-
   color: #2B542B
 }
 
-.alert-info, .bg-info {
+/* .alert-info, .bg-info {
   background-color: #d9edf7 !important;
   border-color: #bce8f1;
   color: #214A5F
+} */
+
+
+.alert-info, .bg-info {
+  background-color: #99C3FF !important;
+  color: #000;
 }
+
+
+
 
 .alert-info h2, .alert-info h3, .alert-info h4, .alert-info h5, .alert-info h6, .text-info {
   color: #214A5F !important

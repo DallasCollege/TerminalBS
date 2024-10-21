@@ -24,19 +24,21 @@
 
 
 <main id="main__body">
-    <div class="container">
-        <div class="row">
+    <article>
+        <div class="container">
+            <div class="row">
 
-            {% include interior/content_featured-sidebar.html %}
+                {% include interior/content_featured-sidebar.html %}
 
-                <div class="col-md-8 order-md-first">
+                    <div class="col-md-8 order-md-first">
 
-                    {{ content }}
-                <!-- </div> -->
+                        {{ content }}
+                    <!-- </div> -->
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
+    </article>
 </main>
 
   {% include footer.html %}
