@@ -6698,9 +6698,10 @@ a:focus>img:not(.logo-bar-slot__img) {
   margin: 1em 0 2em 0
 }
 
-.card-block {
+.card-block, .card-button {
   padding: 1.25em
 }
+
 
 .card-title, span.card-title, h2.card-title, h3.card-title, h4.card-title, h5.card-title {
   display: block;
