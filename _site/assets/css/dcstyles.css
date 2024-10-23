@@ -5792,7 +5792,7 @@ a:hover {
   text-decoration: none
 }
 
-article *:not(.bg-cprimary):not(.bg-cprimary-lt):not(.bg-cprimary-dk):not(.bg-cprimary-gr):not(.cprimary):not(.cprimary-lt):not(.cprimary-dk):not(.cprimary-gr) a:not(.pgs-org-card__heading):not(.pgs-tile):not(.button):not(.collapsible):not(.grand-button):hover {
+article *:not(.bg-cprimary):not(.bg-cprimary-lt):not(.bg-cprimary-dk):not(.bg-cprimary-gr):not(.cprimary):not(.cprimary-lt):not(.cprimary-dk):not(.cprimary-gr) a:not(.pgs-org-card__heading):not(.pgs-tile):not(.button):not(.collapsible):not(.grand-button):hover, article a:hover {
   color: #BF1717
 }
 
