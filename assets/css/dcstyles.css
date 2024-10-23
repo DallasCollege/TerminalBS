@@ -3218,7 +3218,7 @@ button.accordion-button {
 
 /* Hide the default chevron */
 /* .accordion-button::after {
-  display: none; 
+  display: none;
  */
 
 
@@ -4115,7 +4115,7 @@ a .t4-tile-overlay, .t4-tile-overlay {
   background: #001E49;
   display: flex;
   align-items: center;
-  justify-content: center; 
+  justify-content: center;
   color: white;
   font-size: 16px;
 }
@@ -6630,45 +6630,49 @@ a:focus>img:not(.logo-bar-slot__img) {
 .t4-testimonial-title {
   font-size: .875em
 }
-.t4-testimonial-quote:before {
-  position: absolute;
-  content: '';
-  top: 0;
-  left: -90px;
-  background-image: url("https://www.dallascollege.edu/publishingimages/icons/dc-quotes-open-cgrey-05.svg");
-  background-repeat: no-repeat;
-  background-size: contain;
-  width: 96px;
-  height: 96px;
-  z-index:-1
-}
 
+@media (min-width: 768px) {
+  .t4-testimonial-quote:before {
+    position: absolute;
+    content: '';
+    top: 0;
+    left: -90px;
+    background-image: url("https://www.dallascollege.edu/publishingimages/icons/dc-quotes-open-cgrey-05.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 96px;
+    height: 96px;
+    z-index:-1
+  }
+}
 .t4-testimonial--mega .t4-testimonial-quote blockquote {
   font-size:1.5rem;
 }
 
-.t4-testimonial--mega .t4-testimonial-quote:before {
-  position: absolute;
-  content: '';
-  top: 0;
-  right: -100px;
-  background-image: url("https://www.dallascollege.edu/publishingimages/icons/dc-quotes-open-cgrey-05.svg");
-  background-repeat: no-repeat;
-  background-size: contain;
-  width: 96px;
-  height: 96px
-}
+@media (min-width: 768px) {
+  .t4-testimonial--mega .t4-testimonial-quote:before {
+    position: absolute;
+    content: '';
+    top: 0;
+    right: -100px;
+    background-image: url("https://www.dallascollege.edu/publishingimages/icons/dc-quotes-open-cgrey-05.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 96px;
+    height: 96px
+  }
 
-.t4-testimonial--mega .t4-testimonial-quote:after {
-  position: absolute;
-  content: '';
-  top: 0;
-  right: -100px;
-  background-image: url("https://www.dallascollege.edu/publishingimages/icons/dc-quotes-close-cgrey-05.svg");
-  background-repeat: no-repeat;
-  background-size: contain;
-  width: 96px;
-  height: 96px
+  .t4-testimonial--mega .t4-testimonial-quote:after {
+    position: absolute;
+    content: '';
+    top: 0;
+    right: -100px;
+    background-image: url("https://www.dallascollege.edu/publishingimages/icons/dc-quotes-close-cgrey-05.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 96px;
+    height: 96px
+  }
 }
 
 /* End Testimonials - Mega Quotes */
