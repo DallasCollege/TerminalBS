@@ -3216,22 +3216,51 @@ button.accordion-button {
   width:100%
 }
 
-.accordion-button::after {
-  display: none; /* Hide the default chevron */
-}
+/* Hide the default chevron */
+/* .accordion-button::after {
+  display: none; 
+ */
 
-.accordion-button::before {
+
+.accordion .accordion-button::after {
   content: "\f13a"; /* Unicode for Font Awesome chevron-down */
+  background-image: none; /* Overwrites Bootstrap default icon */
+  width:auto; /* Overwrites Bootstrap default icon */
+  height:auto; /* Overwrites Bootstrap default icon */
   font-family: "Font Awesome 5 Free"; /* Specify Font Awesome */
   font-weight: 900; /* Required for solid icons */
   margin-right: 0.6rem; /* Space between icon and text */
   transition: transform 0.3s; /* Smooth transition for rotation */
-  color:#003385
+  color: #003385; /* Custom color */
+
 }
 
-.accordion-button:not(.collapsed)::before {
+.accordion .accordion-button:not(.collapsed)::after {
   transform: rotate(180deg); /* Rotate the chevron when expanded */
 }
+
+
+.accordion.accordion-item-quiet .accordion-button::after {
+  display:none
+}
+
+.accordion.accordion-item-quiet .accordion-button::before {
+  content: "\f13a"; /* Unicode for Font Awesome chevron-down */
+  background-image: none; /* Overwrites Bootstrap default icon */
+  width:auto; /* Overwrites Bootstrap default icon */
+  height:auto; /* Overwrites Bootstrap default icon */
+  font-family: "Font Awesome 5 Free"; /* Specify Font Awesome */
+  font-weight: 900; /* Required for solid icons */
+  margin-right: 0.6rem; /* Space between icon and text */
+  transition: transform 0.3s; /* Smooth transition for rotation */
+  color: #003385; /* Custom color */
+
+}
+
+.accordion.accordion-item-quiet .accordion-button:not(.collapsed)::before {
+  transform: rotate(180deg); /* Rotate the chevron when expanded */
+}
+
 
 .pgs-accordion--block {
   background: #e5e2d6
