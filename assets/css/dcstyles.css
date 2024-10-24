@@ -3977,17 +3977,20 @@ a.button.button-off {
   height: auto;
   font-size:.875rem;
   max-width: 100%;
-  margin-bottom:1.5rem
+  margin-bottom:1.5rem;
+  margin-left: .5rem;
+  margin-right: .5rem
+
 }
 
 .img-cap img, .thumbnail img {
-  margin-bottom:1rem;
+  margin-bottom:.5rem;
   border-radius:4px;
 }
 
 .img-cap .caption, .thumbnail .caption {
-  padding:0 5px;
-  font-weight:700;
+  padding:0;
+  font-weight:400;
   color:#333333;
 }
 
