@@ -298,7 +298,7 @@ li.navbar-nav--seperator:before {
 }
 
 .tools-workday {
-  background-image: url("/publishingimages/icons/workday.svg");
+  background-image: url("https://dallascollege.github.io/TerminalBS/publishingimages/icons/workday.svg");
   width: 25px;
   display: inline-block;
   height: 15px;
@@ -1108,8 +1108,8 @@ main.affix {
   }
 
   #l-nav-utility .navbar-nav>li>a {
-    font-size: .625rem;
-    padding: 1em 2em
+    /* font-size: .625rem; */
+    padding: 1em 1em
   }
 
   #l-header-desktop .hidden-sm {
@@ -1201,7 +1201,7 @@ main.affix {
   }
 
   footer#l-footer, .l-footer__main__popular-items__box ul {
-    font-size: 1rem !important
+    font-size: .8125rem !important
   }
 
   #l-footer__contact .l-footer__contact__social {
@@ -1405,7 +1405,7 @@ main.affix {
     padding-right: 20px !important;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1100px) {
 .pgs-navbar--home .nav-link {
   padding-left: 10px !important;
   padding-right: 10px !important;
@@ -7412,7 +7412,8 @@ a.grand-button.bg-cgrey-40:hover, a.grand-button.bg-cgrey-40:focus, a.button.bg-
 }
 
 a.grand-button.bg-cgrey-60:hover, a.grand-button.bg-cgrey-60:focus, a.button.bg-cgrey-60:hover, a.button.bg-cgrey-60:focus {
-  background-color: #817e76
+  background-color: #817e76;
+  color:#fff;
 }
 
 .text-cgrey-80 {
