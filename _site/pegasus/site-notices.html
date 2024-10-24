@@ -465,8 +465,8 @@
 
   <nav id="dc_mobileNavbar" class="navbar navbar-inverse shadow-nav bg-cprimary-gr affix-top" data-bs-spy="affix" data-bs-offset-top="45" aria-label="Primary Navigation">
     <div class="container-fluid">
-      <a class="mobile-logo" href="/"><img src="https://www.dallascollege.edu/publishingimages/logos/dc-logo-master-white.svg" alt="Dallas College" /></a>
-      <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#l-header-mobile__menu" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <a class="mobile-logo ms-1" href="/"><img src="https://www.dallascollege.edu/publishingimages/logos/dc-logo-master-white.svg" alt="Dallas College" /></a>
+      <button class="navbar-toggler collapsed m-2" type="button" data-bs-toggle="collapse" data-bs-target="#l-header-mobile__menu" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="bg-cprimary collapse navbar-collapse" id="l-header-mobile__menu" aria-expanded="false" style="height: 1px">
@@ -589,7 +589,7 @@
 <h2>Sites Notices: Success (All Clear)</h2>
 <div class="site-notices bg-success">
     <div class="container">
-        <div class="row min-height-100">
+        <div class="row min-height-100 flex-nowrap">
             <div class="col-2 d-flex justify-content-center align-items-center p-2">
                 <span aria-hidden="true" class="ico fas fa-check-circle icon-3x"></span>
             </div>
@@ -606,18 +606,16 @@
 <div class="spacer-2"></div>
 
 <h2>Sites Notices: Info</h2>
-<div class="site-notices bg-info">
+<div class="alert alert-dismissible site-notices bg-info" role="alert">
     <div class="container">
-        <div class="row min-height-100">
+        <div class="row min-height-100 flex-nowrap">
             <div class="col-2 d-flex justify-content-center align-items-center p-2">
                     <span aria-hidden="true" class="ico fas fa-info-circle icon-3x"></span>
             </div>
-            
-            <div class="col-9 p-3">
-                <p><strong>N Building at Dallas College Eastfield Campus</strong> is where you can find the Dallas College Police Station.</p>
-            </div>
-            <div class="col-1 p-3 d-flex justify-content-center align-items-center">
-                <span aria-hidden="true" class="ico fas fa-times-circle icon-lg"></span>
+
+            <div class="col-10 p-2">
+                <p class="mb-0"><strong>N Building at Dallas College Eastfield Campus</strong> is where you can find the Dallas College Police Station.</p>
+                <button type="button" class="btn-close" aria-label="Close" data-bs-dismiss="alert"></button>
             </div>
         </div>
     </div>
@@ -628,7 +626,7 @@
 <h2>Sites Notices: Warning</h2>
 <div class="site-notices bg-warning">
     <div class="container">
-        <div class="row min-height-100">
+        <div class="row min-height-100 flex-nowrap">
             <div class="col-2 d-flex justify-content-center align-items-center p-2">
                     <span aria-hidden="true" class="ico fas fa-exclamation-triangle icon-3x"></span>
             </div>
@@ -647,7 +645,7 @@
 <h2>Sites Notices: Danger</h2>
 <div class="site-notices bg-danger">
     <div class="container">
-        <div class="row min-height-100">
+        <div class="row min-height-100 flex-nowrap">
             <div class="col-2 d-flex justify-content-center align-items-center p-2">
                 <span aria-hidden="true" class="ico fas fa-exclamation-circle icon-3x"></span>
             </div>
