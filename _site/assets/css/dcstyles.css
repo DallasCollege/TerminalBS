@@ -1201,7 +1201,7 @@ main.affix {
   }
 
   footer#l-footer, .l-footer__main__popular-items__box ul {
-    font-size: 1rem !important
+    font-size: .8125rem !important
   }
 
   #l-footer__contact .l-footer__contact__social {
