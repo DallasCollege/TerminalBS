@@ -7413,7 +7413,8 @@ a.grand-button.bg-cgrey-40:hover, a.grand-button.bg-cgrey-40:focus, a.button.bg-
 }
 
 a.grand-button.bg-cgrey-60:hover, a.grand-button.bg-cgrey-60:focus, a.button.bg-cgrey-60:hover, a.button.bg-cgrey-60:focus {
-  background-color: #817e76
+  background-color: #817e76;
+  color:#fff;
 }
 
 .text-cgrey-80 {
