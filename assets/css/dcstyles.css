@@ -510,7 +510,7 @@ li.navbar-nav--seperator:before {
     */
   }
 
-  #l-header-mobile .navbar-right ul.dropdown-menu { margin-left: -50vw; }
+  #l-header-mobile .navbar-right ul.dropdown-menu { margin-left: -50vw;}
 
 .navbar-primary-toggle {
   margin: 0;
