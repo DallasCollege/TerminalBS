@@ -1159,7 +1159,7 @@ main.affix {
 
   .l-footer__fine-print__links li {
     margin-bottom: .25rem !important;
-    font-size: .875rem
+    /* font-size: .875rem; */
   }
 
   li.navbar-nav--seperator:before {
@@ -3983,7 +3983,7 @@ a.button.button-off {
 
 }
 
-.img-cap img, .thumbnail img {
+.img-cap img, .thumbnail img, img.feature-news {
   margin-bottom:.5rem;
   border-radius:4px;
 }
@@ -5801,8 +5801,9 @@ a:hover {
   text-decoration: none
 }
 
-article *:not(.bg-cprimary):not(.bg-cprimary-lt):not(.bg-cprimary-dk):not(.bg-cprimary-gr):not(.cprimary):not(.cprimary-lt):not(.cprimary-dk):not(.cprimary-gr) a:not(.pgs-org-card__heading):not(.pgs-tile):not(.button):not(.collapsible):not(.grand-button):hover, article a:hover {
-  color: #BF1717
+article *:not(.bg-cprimary):not(.bg-cprimary-lt):not(.bg-cprimary-dk):not(.bg-cprimary-gr):not(.cprimary):not(.cprimary-lt):not(.cprimary-dk):not(.cprimary-gr):not(.bg-csecondary):not(.bg-cgrey-80) a:not(.pgs-org-card__heading a):not(.pgs-tile):not(.button):not(.collapsible):not(.grand-button):hover, 
+article a:not(.pgs-org-card__heading a):hover {
+  color: #BF1717;
 }
 
 article .cprimary a:not(.button):hover, article .cprimary-lt a:not(.button):hover, article .cprimary-dk a:not(.button):hover, article .cprimary-gr a:not(.button):hover, article .bg-cprimary a:not(.button):hover, article .bg-cprimary-lt a:not(.button):hover, article .bg-cprimary-dk a:not(.button):hover, article .bg-cprimary-gr a:not(.button):hover {
