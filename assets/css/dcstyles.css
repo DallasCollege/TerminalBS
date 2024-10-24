@@ -1507,12 +1507,11 @@ main.affix {
 }
 
 .pgs-navbar--sidebar .navbar-toggler {
-  border-color: #ddd;
-  /* width:100% */
+  border-color: #F7F3E8;
 }
 
 .pgs-navbar--sidebar .navbar-toggler:hover, .pgs-navbar--sidebar .navbar-toggler:focus {
-  background-color: #ddd
+  background-color: #F7F3E8;
 }
 
 .pgs-navbar--sidebar .navbar-toggler .icon-bar {
