@@ -476,8 +476,7 @@
           Online Tools
           <span class="ico fas fa-chevron-circle-down" aria-hidden="true"></span>
         </a>
-        <ul class="dropdown-menu vw-100" aria-labelledby="avbarDropdownMenuOnline">
-          <!-- <div class="row g-0">  -->
+        <ul class="dropdown-menu vw-100" aria-labelledby="navbarDropdownMenuOnline">
             <li class="nav-item">
               <a class="dropdown-item track-header" href="https://econnect.dcccd.edu">
                 <span class="ico fas fa-network-wired" aria-hidden="true"></span>
@@ -536,7 +535,6 @@
               <hr class="dropdown-divider" >
             </li>
             <li class="nav-item-full"><a class="dropdown-item track-header" href="http://myapps.dcccd.edu">View more online tools...</a></li>
-          </div>
         </ul>
       </li>
     </ul>
@@ -545,15 +543,15 @@
   <nav id="dc_mobileNavbar" class="navbar navbar-inverse shadow-nav bg-cprimary-gr affix-top" data-bs-spy="affix" data-bs-offset-top="45" aria-label="Primary Navigation">
     <div class="container-fluid">
       <a class="mobile-logo ms-1" href="/"><img src="https://www.dallascollege.edu/publishingimages/logos/dc-logo-master-white.svg" alt="Dallas College" ></a>
-      <button class="navbar-toggler collapsed m-2" type="button" data-bs-toggle="collapse" data-bs-target="#l-header-mobile__menu" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <button class="navbar-toggler collapsed m-2" type="button" data-bs-toggle="collapse" data-bs-target="#l-header-mobile__menu" aria-controls="l-header-mobile__menu" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="bg-cprimary collapse navbar-collapse" id="l-header-mobile__menu" aria-expanded="false" style="height: 1px">
+      <div class="bg-cprimary collapse navbar-collapse" id="l-header-mobile__menu" aria-expanded="false" style="height: 1px" role="navigation">
         <form class="d-flex">
           <div class="input-group search-component l-header-mobile__menu__search">
             <label for="srchBox" class="visually-hidden">Search this website</label>
             <input type="text" class="form-control bg-white text-cprimary" placeholder="Search this website" id="srchBox" >
-            <button class="bg-cwhite text-cprimary track-header" type="button" id="mobileSrchBtn"><span class="ico fas fa-search" aria-label="Search"></span></button>
+            <button class="bg-cwhite text-cprimary track-header" type="button" id="mobileSrchBtn"><span class="ico fas fa-search"><span class="visually-hidden">Search</span></span></button>
           </div>
         </form>
         <ul class="navbar-nav navbar-primary">
