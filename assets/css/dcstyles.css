@@ -1534,12 +1534,15 @@ main.affix {
 }
 
 .sidebar-img img {
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
   border-bottom: 8px #003385 solid !important;
   display: block;
   max-width: 100%;
-  height: auto
+  height: auto;
+  border-radius: 4px 4px 0 0;
+  border:0 solid;
 }
+
 
 .pgs-navbar--banner .nav>li {
   margin-bottom: 0
@@ -1649,9 +1652,6 @@ main.affix {
   transition: transform .25s ease
 }
 
-.sidebar-img img {
-  margin-bottom: 1rem;
-}
 
 #scnbox {
   position: relative;
@@ -1788,8 +1788,6 @@ td.thismonth.viewrange.periodday.today.hasEvents a {
     margin-bottom: 1.5rem;
     text-align: center
 }
-
-
 
 
 /* End Calendar */
@@ -4324,6 +4322,7 @@ a.font-bold, .font-bold {
 .page-header--xl {
   color: #000;
   font-weight: 800;
+  font-size:2rem;
   display: block;
   border-bottom-width: .25em;
   border-bottom-color: #E9F2FF;
@@ -4332,7 +4331,7 @@ a.font-bold, .font-bold {
   margin-bottom: .75em;
   margin-top: 0
 }
-/* */
+
 .icon-lg {
   font-size: 1.333em
 }
@@ -8066,7 +8065,7 @@ h2.news-module-no-left-margin {
 
 /*
 **************************************************
-Full Layout Themes
+Full News Layout Themes
 **************************************************
  */
 
@@ -8100,25 +8099,10 @@ Full Layout Themes
   color:#fff;
 }
 
-/* Dark Red Theme */
-.news-dk-red-theme .news-theme-1 {
-  background-color: #6d0000;
-  color: #fff;
-}
-
-.news-dk-red-theme .news-theme-2 {
-  background-color: #f7f3e8;
-    color: #000;
-}
-
-.news-dk-red-theme .news-theme-title, .news-dk-red-theme a.pgs-action-link {
-  color:#fff;
-}
-
 
 /*
 **************************************************
-List layout
+News List layout
 **************************************************
  */
 
@@ -8152,3 +8136,10 @@ List layout
   padding-top: 0.5rem;
   clear:both;
 }
+
+
+/*
+**************************************************
+Image Styles for T4
+**************************************************
+ */

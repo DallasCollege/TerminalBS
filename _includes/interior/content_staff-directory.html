@@ -1,300 +1,396 @@
 <main id="main__body">
-  <div class="container">   
-    <div class="row">
-        <h1 class="page-header--xl">Staff Directory</h1>
+    <div class="container">
+        <div class="row">
+            <h1 class="page-header--xl">Staff Directory</h1>
 
-      {% include interior/staff-directory-sidebar.html %}
+            {% include interior/staff-directory-sidebar.html %}
 
-      <div class="col-md-8 offset-md-1 my-5">
-        <article>
+            <div class="col-md-8 offset-md-1 my-5">
+                <article>
 
-            <!-- Content Area Begin -->
-            <div class="mainContent">
-                <div class="container">
-                    <div class="row">        
-                      <div class="col-md-12">
-                        <!-- search form -->
-                        <form role="search" style="display:inline;">
+                    <!-- Content Area Begin -->
+                    <div class="mainContent">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <!-- search form -->
+                                    <form role="search" style="display:inline;">
 
-                            <div class="input-group input-group-lg">
-                                <label class="sr-only" for="masterPage_searchTxt">Search the Staff Directory</label>
-                                <input type="text" class="form-control shadow-2" placeholder="Search the Staff Directory">
-                                <button class="btn bg-cprimary shadow-2" type="button" id="button-addon2">Search</button>
+                                        <div class="input-group input-group-lg">
+                                            <label class="sr-only" for="masterPage_searchTxt">Search the Staff
+                                                Directory</label>
+                                            <input type="text" class="form-control shadow-2"
+                                                placeholder="Search the Staff Directory">
+                                            <button class="btn bg-cprimary shadow-2" type="button"
+                                                id="button-addon2">Search</button>
+                                        </div>
+
+
+                                    </form>
+
+                                </div>
+
+
+                                <div class="row my-4">
+                                    <legend style="font-size: 18px; font-weight: 700;">Filter by A to Z</legend>
+
+                                    <div class="staff button-list my-3">
+                                        <form action="/staff-directory/" method="get">
+                                            <button value="1" name="showall" class="selected">All</button>
+                                            <button name="lastname" value="a">A</button>
+                                            <button name="lastname" value="b">B</button>
+                                            <button name="lastname" value="c">C</button>
+                                            <button name="lastname" value="d">D</button>
+                                            <button name="lastname" value="e">E</button>
+                                            <button name="lastname" value="f">F</button>
+                                            <button name="lastname" value="g">G</button>
+                                            <button name="lastname" value="h">H</button>
+                                            <button name="lastname" value="i">I</button>
+                                            <button name="lastname" value="j">J</button>
+                                            <button name="lastname" value="k">K</button>
+                                            <button name="lastname" value="l">L</button>
+                                            <button name="lastname" value="m">M</button>
+                                            <button name="lastname" value="n">N</button>
+                                            <button name="lastname" value="o">O</button>
+                                            <button name="lastname" value="p">P</button>
+                                            <button name="lastname" value="q">Q</button>
+                                            <button name="lastname" value="r">R</button>
+                                            <button name="lastname" value="s">S</button>
+                                            <button name="lastname" value="t">T</button>
+                                            <button name="lastname" value="u">U</button>
+                                            <button name="lastname" value="v">V</button>
+                                            <button name="lastname" value="w">W</button>
+                                            <button name="lastname" value="x">X</button>
+                                            <button name="lastname" value="y">Y</button>
+                                            <button name="lastname" value="z">Z</button>
+                                            <div id="hidden-form-atoz" data-t4-ajax-group="directorySearch">
+                                                <input type="hidden" name="showall" data-cookie="T4_persona" value="1">
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+
+                                <!-- results-->
+                                <div class="row mt-5">
+
+                                    <div class="col-12 col-xl-6 d-flex">
+                                        <div
+                                            class="pgs-people-card pgs-people-card--quiet pgs-people-card--compact flex-fill">
+                                            <div class="row">
+                                                <div class="col-4 ps-0 pgs-people-card__col pgs-people-sd-card__img">
+                                                    <img src="https://www.dallascollege.edu/about/style/documents/pegasus/assets/jbartlet-100x100.jpg"
+                                                        alt="">
+                                                </div>
+                                                <div class="col-8 ps-0 pgs-people-card__col">
+                                                    <h3 class="pgs-people-card__name">Josiah Bartlet</h3>
+                                                    <ul class="list-unstyled">
+                                                        <li>President of the United States</li>
+                                                    </ul>
+                                                </div>
+                                                <div class="offset-4 col-8 ps-0 pgs-people-card__col">
+                                                    <ul class="fa-ul">
+                                                        <li><span class="fa-li"><span aria-hidden="true"
+                                                                    class="ico fas fa-university"></span></span>White
+                                                            House, Oval Office</li>
+                                                        <li><span class="fa-li"><span aria-hidden="true"
+                                                                    class="ico fas fa-phone"></span></span>202-555-1234
+                                                        </li>
+                                                        <li><span class="fa-li"><span aria-hidden="true"
+                                                                    class="ico fas fa-envelope"></span></span><a
+                                                                href="mailto:jbartlet@whitehouse.gov">Email Josiah</a>
+                                                        </li>
+                                                        <li><span class="fa-li"><span aria-hidden="true"
+                                                                    class="ico fab fa-linkedin icon"></span></span><a
+                                                                href="#">LinkedIn</a></li>
+                                                        <li><span class="fa-li"><span aria-hidden="true"
+                                                                    class="ico fas fa-id-card"></span></span><a
+                                                                href="#">Credentials</a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-12 col-xl-6 d-flex">
+                                        <div
+                                            class="pgs-people-card pgs-people-card--quiet pgs-people-card--compact flex-fill">
+                                            <div class="row">
+                                                <div class="col-4 ps-0 pgs-people-card__col pgs-people-sd-card__img">
+                                                    <img src="https://www.dallascollege.edu/about/style/documents/pegasus/assets/lmcgarry-100x100.jpg"
+                                                        alt="">
+                                                </div>
+                                                <div class="col-8 ps-0 pgs-people-card__col">
+                                                    <h3 class="pgs-people-card__name">Leo McGarry</h3>
+                                                    <ul class="list-unstyled">
+                                                        <li>White House Chief of Staff</li>
+                                                    </ul>
+                                                </div>
+                                                <div class="offset-4 col-8 ps-0 pgs-people-card__col">
+                                                    <ul class="fa-ul">
+                                                        <li><span class="fa-li"><span aria-hidden="true"
+                                                                    class="ico fas fa-university"></span></span>White
+                                                            House, West Wing</li>
+                                                        <li><span class="fa-li"><span aria-hidden="true"
+                                                                    class="ico fas fa-phone"></span></span>202-555-5678
+                                                        </li>
+                                                        <li><span class="fa-li"><span aria-hidden="true"
+                                                                    class="ico fas fa-envelope"></span></span><a
+                                                                href="mailto:lmcgarry@whitehouse.gov">Email Leo</a></li>
+                                                        <li><span class="fa-li"><span aria-hidden="true"
+                                                                    class="ico fab fa-linkedin icon"></span></span><a
+                                                                href="#">LinkedIn</a></li>
+                                                        <li><span class="fa-li"><span aria-hidden="true"
+                                                                    class="ico fas fa-id-card"></span></span><a
+                                                                href="#">Credentials</a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-12 col-xl-6 d-flex">
+                                        <div
+                                            class="pgs-people-card pgs-people-card--quiet pgs-people-card--compact flex-fill">
+                                            <div class="row">
+                                                <div class="col-4 ps-0 pgs-people-card__col pgs-people-sd-card__img">
+                                                    <img src="https://www.dallascollege.edu/about/style/documents/pegasus/assets/ccregg-100x100.jpg"
+                                                        alt="">
+                                                </div>
+                                                <div class="col-8 ps-0 pgs-people-card__col">
+                                                    <h3 class="pgs-people-card__name">C.J. Cregg</h3>
+                                                    <ul class="list-unstyled">
+                                                        <li>White House Press Secretary</li>
+                                                    </ul>
+                                                </div>
+                                                <div class="offset-4 col-8 ps-0 pgs-people-card__col">
+                                                    <ul class="fa-ul">
+                                                        <li><span class="fa-li"><span aria-hidden="true"
+                                                                    class="ico fas fa-university"></span></span>White
+                                                            House, Press Room</li>
+                                                        <li><span class="fa-li"><span aria-hidden="true"
+                                                                    class="ico fas fa-phone"></span></span>202-555-9876
+                                                        </li>
+                                                        <li><span class="fa-li"><span aria-hidden="true"
+                                                                    class="ico fas fa-envelope"></span></span><a
+                                                                href="mailto:ccregg@whitehouse.gov">Email C.J.</a></li>
+                                                        <li><span class="fa-li"><span aria-hidden="true"
+                                                                    class="ico fab fa-linkedin icon"></span></span><a
+                                                                href="#">LinkedIn</a></li>
+                                                        <li><span class="fa-li"><span aria-hidden="true"
+                                                                    class="ico fas fa-id-card"></span></span><a
+                                                                href="#">Credentials</a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-12 col-xl-6 d-flex">
+                                        <div
+                                            class="pgs-people-card pgs-people-card--quiet pgs-people-card--compact flex-fill">
+                                            <div class="row">
+                                                <div class="col-4 ps-0 pgs-people-card__col pgs-people-sd-card__img">
+                                                    <img src="https://www.dallascollege.edu/about/style/documents/pegasus/assets/tzieglar-100x100.jpg"
+                                                        alt="">
+                                                </div>
+                                                <div class="col-8 ps-0 pgs-people-card__col">
+                                                    <h3 class="pgs-people-card__name">Toby Ziegler</h3>
+                                                    <ul class="list-unstyled">
+                                                        <li>White House Communications Director</li>
+                                                    </ul>
+                                                </div>
+                                                <div class="offset-4 col-8 ps-0 pgs-people-card__col">
+                                                    <ul class="fa-ul">
+                                                        <li><span class="fa-li"><span aria-hidden="true"
+                                                                    class="ico fas fa-university"></span></span>White
+                                                            House, West Wing</li>
+                                                        <li><span class="fa-li"><span aria-hidden="true"
+                                                                    class="ico fas fa-phone"></span></span>202-555-6543
+                                                        </li>
+                                                        <li><span class="fa-li"><span aria-hidden="true"
+                                                                    class="ico fas fa-envelope"></span></span><a
+                                                                href="mailto:tziegler@whitehouse.gov">Email Toby</a>
+                                                        </li>
+                                                        <li><span class="fa-li"><span aria-hidden="true"
+                                                                    class="ico fas fa-id-card"></span></span><a
+                                                                href="#">Credentials</a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+                                    <div class="col-12 col-xl-6 d-flex">
+                                        <div
+                                            class="pgs-people-card pgs-people-card--quiet pgs-people-card--compact flex-fill">
+                                            <div class="row">
+                                                <div class="col-4 ps-0 pgs-people-card__col pgs-people-sd-card__img">
+                                                    <img src="https://dallascollege.github.io/TerminalBS/assets/img/tlasso-100x100.jpg"
+                                                        alt="">
+                                                </div>
+                                                <div class="col-8 ps-0 pgs-people-card__col">
+                                                    <h3 class="pgs-people-card__name">Ted Lasso</h3>
+                                                    <ul class="list-unstyled">
+                                                        <li>Head Coach, AFC Richmond</li>
+                                                    </ul>
+                                                </div>
+                                                <div class="offset-4 col-8 pgs-people-card__col"
+                                                    style="padding-left: 0;">
+                                                    <ul class="fa-ul">
+                                                        <li><span class="fa-li"><span aria-hidden="true"
+                                                                    class="ico fas fa-university"></span></span>AFC
+                                                            Richmond, Nelson Road Stadium</li>
+                                                        <li><span class="fa-li"><span aria-hidden="true"
+                                                                    class="ico fas fa-phone"></span></span>555-123-4567
+                                                        </li>
+                                                        <li><span class="fa-li"><span aria-hidden="true"
+                                                                    class="ico fas fa-envelope"></span></span><a
+                                                                href="mailto:ted@afcrichmond.com">Email Ted</a></li>
+                                                        <li><span class="fa-li"><span aria-hidden="true"
+                                                                    class="ico fab fa-linkedin icon"></span></span><a
+                                                                href="#">LinkedIn</a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+                                    <div class="col-12 col-xl-6 d-flex">
+                                        <div
+                                            class="pgs-people-card pgs-people-card--quiet pgs-people-card--compact flex-fill">
+                                            <div class="row">
+                                                <div class="col-4 ps-0 pgs-people-card__col pgs-people-sd-card__img">
+                                                    <img src="https://dallascollege.github.io/TerminalBS/assets/img/rwelton-100x100.jpg"
+                                                        alt="">
+                                                </div>
+                                                <div class="col-8 ps-0 pgs-people-card__col">
+                                                    <h3 class="pgs-people-card__name">Rebecca Welton</h3>
+                                                    <ul class="list-unstyled">
+                                                        <li>Owner, AFC Richmond</li>
+                                                    </ul>
+                                                </div>
+                                                <div class="offset-4 col-8 ps-0 pgs-people-card__col">
+                                                    <ul class="fa-ul">
+                                                        <li><span class="fa-li"><span aria-hidden="true"
+                                                                    class="ico fas fa-university"></span></span>AFC
+                                                            Richmond, Nelson Road Stadium</li>
+                                                        <li><span class="fa-li"><span aria-hidden="true"
+                                                                    class="ico fas fa-phone"></span></span>555-234-5678
+                                                        </li>
+                                                        <li><span class="fa-li"><span aria-hidden="true"
+                                                                    class="ico fas fa-envelope"></span></span><a
+                                                                href="mailto:rebecca@afcrichmond.com">Email Rebecca</a>
+                                                        </li>
+                                                        <li><span class="fa-li"><span aria-hidden="true"
+                                                                    class="ico fab fa-linkedin icon"></span></span><a
+                                                                href="#">LinkedIn</a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+                                    <div class="col-12 col-xl-6 d-flex">
+                                        <div
+                                            class="pgs-people-card pgs-people-card--quiet pgs-people-card--compact flex-fill">
+                                            <div class="row">
+                                                <div class="col-4 ps-0 pgs-people-card__col pgs-people-sd-card__img">
+                                                    <img src="https://dallascollege.github.io/TerminalBS/assets/img/rkent-100x100.jpg"
+                                                        alt="">
+                                                </div>
+                                                <div class="col-8 ps-0 pgs-people-card__col">
+                                                    <h3 class="pgs-people-card__name">Roy Kent</h3>
+                                                    <ul class="list-unstyled">
+                                                        <li>Assistant Coach, AFC Richmond</li>
+                                                    </ul>
+                                                </div>
+                                                <div class="offset-4 col-8 ps-0 pgs-people-card__col">
+                                                    <ul class="fa-ul">
+                                                        <li><span class="fa-li"><span aria-hidden="true"
+                                                                    class="ico fas fa-university"></span></span>AFC
+                                                            Richmond, Nelson Road Stadium</li>
+                                                        <li><span class="fa-li"><span aria-hidden="true"
+                                                                    class="ico fas fa-phone"></span></span>555-345-6789
+                                                        </li>
+                                                        <li><span class="fa-li"><span aria-hidden="true"
+                                                                    class="ico fas fa-envelope"></span></span><a
+                                                                href="mailto:roy@afcrichmond.com">Email Roy</a></li>
+                                                        <li><span class="fa-li"><span aria-hidden="true"
+                                                                    class="ico fab fa-linkedin icon"></span></span><a
+                                                                href="#">LinkedIn</a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+                                    <div class="col-12 col-xl-6 d-flex">
+                                        <div
+                                            class="pgs-people-card pgs-people-card--quiet pgs-people-card--compact flex-fill">
+                                            <div class="row">
+                                                <div class="col-4 ps-0 pgs-people-card__col pgs-people-sd-card__img">
+                                                    <img src="https://dallascollege.github.io/TerminalBS/assets/img/cbeard-100x100.jpg"
+                                                        alt="">
+                                                </div>
+                                                <div class="col-8 ps-0 pgs-people-card__col">
+                                                    <h3 class="pgs-people-card__name">Willis "Coach" Beard</h3>
+                                                    <ul class="list-unstyled">
+                                                        <li>Assistant Coach, AFC Richmond</li>
+                                                    </ul>
+                                                </div>
+                                                <div class="offset-4 col-8 ps-0 pgs-people-card__col">
+                                                    <ul class="fa-ul">
+                                                        <li><span class="fa-li"><span aria-hidden="true"
+                                                                    class="ico fas fa-university"></span></span>AFC
+                                                            Richmond, Nelson Road Stadium</li>
+                                                        <li><span class="fa-li"><span aria-hidden="true"
+                                                                    class="ico fas fa-phone"></span></span>555-345-6789
+                                                        </li>
+                                                        <li><span class="fa-li"><span aria-hidden="true"
+                                                                    class="ico fas fa-envelope"></span></span><a
+                                                                href="mailto:beard@afcrichmond.com">Email Willis</a>
+                                                        </li>
+                                                        <li><span class="fa-li"><span aria-hidden="true"
+                                                                    class="ico fab fa-linkedin icon"></span></span><a
+                                                                href="#">LinkedIn</a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div> <!-- end results -->
+
+                                <!-- pagination -->
+                                <div class="row text-center my-5">
+                                    <div class="pagination-box">
+                                        <div class="pagination-pages">
+                                            <span class="results">Results 1 - 8 of 24</span>
+
+                                            <nav aria-label="Page navigation example">
+                                                <ul class="pagination justify-content-center my-4">
+                                                    <li class="page-item"><a class="page-link" href="#">Previous</a>
+                                                    </li>
+                                                    <li class="page-item"><a class="page-link" href="#">1</a></li>
+                                                    <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                                    <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                                    <li class="page-item"><a class="page-link" href="#">Next</a></li>
+                                                </ul>
+                                            </nav>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- end pagination -->
+
                             </div>
-
-                            
-                        </form>
-                        
+                        </div>
                     </div>
-                      
-                    
-                    <div class="row my-4">                    
-                        <legend style="font-size: 18px; font-weight: 700;">Filter by A to Z</legend>
-
-                        <div class="staff button-list my-3">
-                            <form action="/staff-directory/" method="get">
-                                <button value="1" name="showall" class="selected">All</button>
-                                <button name="lastname" value="a">A</button>
-                                <button name="lastname" value="b">B</button>
-                                <button name="lastname" value="c">C</button>
-                                <button name="lastname" value="d">D</button>
-                                <button name="lastname" value="e">E</button>
-                                <button name="lastname" value="f">F</button>
-                                <button name="lastname" value="g">G</button>
-                                <button name="lastname" value="h">H</button>
-                                <button name="lastname" value="i">I</button>
-                                <button name="lastname" value="j">J</button>
-                                <button name="lastname" value="k">K</button>
-                                <button name="lastname" value="l">L</button>
-                                <button name="lastname" value="m">M</button>
-                                <button name="lastname" value="n">N</button>
-                                <button name="lastname" value="o">O</button>
-                                <button name="lastname" value="p">P</button>
-                                <button name="lastname" value="q">Q</button>
-                                <button name="lastname" value="r">R</button>
-                                <button name="lastname" value="s">S</button>
-                                <button name="lastname" value="t">T</button>
-                                <button name="lastname" value="u">U</button>
-                                <button name="lastname" value="v">V</button>
-                                <button name="lastname" value="w">W</button>
-                                <button name="lastname" value="x">X</button>
-                                <button name="lastname" value="y">Y</button>
-                                <button name="lastname" value="z">Z</button>
-                                <div id="hidden-form-atoz" data-t4-ajax-group="directorySearch">
-                                <input type="hidden" name="showall" data-cookie="T4_persona" value="1"></div>
-                            </form>
-                        </div>
-                    </div>
-
-                    <!-- results-->
-                    <div class="row mt-5">
-
-                        <div class="col-12 col-xl-6 d-flex">
-                            <div class="pgs-people-card pgs-people-card--quiet pgs-people-card--compact flex-fill">
-                                <div class="row">
-                                    <div class="col-4 ps-0 pgs-people-card__col pgs-people-sd-card__img">
-                                        <img src="https://www.dallascollege.edu/about/style/documents/pegasus/assets/jbartlet-100x100.jpg" alt="">
-                                    </div>
-                                    <div class="col-8 ps-0 pgs-people-card__col">
-                                        <h3 class="pgs-people-card__name">Josiah Bartlet</h3>
-                                        <ul class="list-unstyled">
-                                            <li>President of the United States</li>
-                                        </ul>
-                                    </div>
-                                    <div class="offset-4 col-8 ps-0 pgs-people-card__col">
-                                        <ul class="fa-ul">
-                                            <li><span class="fa-li"><span aria-hidden="true" class="ico fas fa-university"></span></span>White House, Oval Office</li>
-                                            <li><span class="fa-li"><span aria-hidden="true" class="ico fas fa-phone"></span></span>202-555-1234</li>
-                                            <li><span class="fa-li"><span aria-hidden="true" class="ico fas fa-envelope"></span></span><a href="mailto:jbartlet@whitehouse.gov">Email Josiah</a></li>
-                                            <li><span class="fa-li"><span aria-hidden="true" class="ico fab fa-linkedin icon"></span></span><a href="#">LinkedIn</a></li>
-                                            <li><span class="fa-li"><span aria-hidden="true" class="ico fas fa-id-card"></span></span><a href="#">Credentials</a></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                          
-                        <div class="col-12 col-xl-6 d-flex">
-                            <div class="pgs-people-card pgs-people-card--quiet pgs-people-card--compact flex-fill">
-                                <div class="row">
-                                    <div class="col-4 ps-0 pgs-people-card__col pgs-people-sd-card__img">
-                                        <img src="https://www.dallascollege.edu/about/style/documents/pegasus/assets/lmcgarry-100x100.jpg" alt="">
-                                    </div>
-                                    <div class="col-8 ps-0 pgs-people-card__col">
-                                        <h3 class="pgs-people-card__name">Leo McGarry</h3>
-                                        <ul class="list-unstyled">
-                                            <li>White House Chief of Staff</li>
-                                        </ul>
-                                    </div>
-                                    <div class="offset-4 col-8 ps-0 pgs-people-card__col">
-                                        <ul class="fa-ul">
-                                            <li><span class="fa-li"><span aria-hidden="true" class="ico fas fa-university"></span></span>White House, West Wing</li>
-                                            <li><span class="fa-li"><span aria-hidden="true" class="ico fas fa-phone"></span></span>202-555-5678</li>
-                                            <li><span class="fa-li"><span aria-hidden="true" class="ico fas fa-envelope"></span></span><a href="mailto:lmcgarry@whitehouse.gov">Email Leo</a></li>
-                                            <li><span class="fa-li"><span aria-hidden="true" class="ico fab fa-linkedin icon"></span></span><a href="#">LinkedIn</a></li>
-                                            <li><span class="fa-li"><span aria-hidden="true" class="ico fas fa-id-card"></span></span><a href="#">Credentials</a></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                          
-                        <div class="col-12 col-xl-6 d-flex">
-                            <div class="pgs-people-card pgs-people-card--quiet pgs-people-card--compact flex-fill">
-                                <div class="row">
-                                    <div class="col-4 ps-0 pgs-people-card__col pgs-people-sd-card__img">
-                                        <img src="https://www.dallascollege.edu/about/style/documents/pegasus/assets/ccregg-100x100.jpg" alt="">
-                                    </div>
-                                    <div class="col-8 ps-0 pgs-people-card__col">
-                                        <h3 class="pgs-people-card__name">C.J. Cregg</h3>
-                                        <ul class="list-unstyled">
-                                            <li>White House Press Secretary</li>
-                                        </ul>
-                                    </div>
-                                    <div class="offset-4 col-8 ps-0 pgs-people-card__col">
-                                        <ul class="fa-ul">
-                                            <li><span class="fa-li"><span aria-hidden="true" class="ico fas fa-university"></span></span>White House, Press Room</li>
-                                            <li><span class="fa-li"><span aria-hidden="true" class="ico fas fa-phone"></span></span>202-555-9876</li>
-                                            <li><span class="fa-li"><span aria-hidden="true" class="ico fas fa-envelope"></span></span><a href="mailto:ccregg@whitehouse.gov">Email C.J.</a></li>
-                                            <li><span class="fa-li"><span aria-hidden="true" class="ico fab fa-linkedin icon"></span></span><a href="#">LinkedIn</a></li>
-                                            <li><span class="fa-li"><span aria-hidden="true" class="ico fas fa-id-card"></span></span><a href="#">Credentials</a></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                          
-                        <div class="col-12 col-xl-6 d-flex">
-                            <div class="pgs-people-card pgs-people-card--quiet pgs-people-card--compact flex-fill">
-                                <div class="row">
-                                    <div class="col-4 ps-0 pgs-people-card__col pgs-people-sd-card__img">
-                                        <img src="https://www.dallascollege.edu/about/style/documents/pegasus/assets/tzieglar-100x100.jpg" alt="">
-                                    </div>
-                                    <div class="col-8 ps-0 pgs-people-card__col">
-                                        <h3 class="pgs-people-card__name">Toby Ziegler</h3>
-                                        <ul class="list-unstyled">
-                                        <li>White House Communications Director</li>
-                                        </ul>
-                                    </div>
-                                    <div class="offset-4 col-8 ps-0 pgs-people-card__col">
-                                        <ul class="fa-ul">
-                                        <li><span class="fa-li"><span aria-hidden="true" class="ico fas fa-university"></span></span>White House, West Wing</li>
-                                        <li><span class="fa-li"><span aria-hidden="true" class="ico fas fa-phone"></span></span>202-555-6543</li>
-                                        <li><span class="fa-li"><span aria-hidden="true" class="ico fas fa-envelope"></span></span><a href="mailto:tziegler@whitehouse.gov">Email Toby</a></li>
-                                        <li><span class="fa-li"><span aria-hidden="true" class="ico fas fa-id-card"></span></span><a href="#">Credentials</a></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        
-
-                        <div class="col-12 col-xl-6 d-flex">
-                            <div class="pgs-people-card pgs-people-card--quiet pgs-people-card--compact flex-fill">
-                                <div class="row">
-                                    <div class="col-4 ps-0 pgs-people-card__col pgs-people-sd-card__img">
-                                        <img src="https://dallascollege.github.io/TerminalBS/assets/img/tlasso-100x100.jpg" alt="">
-                                    </div>
-                                    <div class="col-8 ps-0 pgs-people-card__col">
-                                        <h3 class="pgs-people-card__name">Ted Lasso</h3>
-                                        <ul class="list-unstyled">
-                                            <li>Head Coach, AFC Richmond</li>
-                                        </ul>
-                                    </div>
-                                    <div class="offset-4 col-8 pgs-people-card__col" style="padding-left: 0;">
-                                        <ul class="fa-ul">
-                                            <li><span class="fa-li"><span aria-hidden="true" class="ico fas fa-university"></span></span>AFC Richmond, Nelson Road Stadium</li>
-                                            <li><span class="fa-li"><span aria-hidden="true" class="ico fas fa-phone"></span></span>555-123-4567</li>
-                                            <li><span class="fa-li"><span aria-hidden="true" class="ico fas fa-envelope"></span></span><a href="mailto:ted@afcrichmond.com">Email Ted</a></li>
-                                            <li><span class="fa-li"><span aria-hidden="true" class="ico fab fa-linkedin icon"></span></span><a href="#">LinkedIn</a></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        
-           
-                        <div class="col-12 col-xl-6 d-flex">
-                            <div class="pgs-people-card pgs-people-card--quiet pgs-people-card--compact flex-fill">
-                                <div class="row">
-                                    <div class="col-4 ps-0 pgs-people-card__col pgs-people-sd-card__img">
-                                        <img src="https://dallascollege.github.io/TerminalBS/assets/img/rwelton-100x100.jpg" alt="">
-                                    </div>
-                                    <div class="col-8 ps-0 pgs-people-card__col">
-                                        <h3 class="pgs-people-card__name">Rebecca Welton</h3>
-                                        <ul class="list-unstyled">
-                                            <li>Owner, AFC Richmond</li>
-                                        </ul>
-                                    </div>
-                                    <div class="offset-4 col-8 ps-0 pgs-people-card__col">
-                                        <ul class="fa-ul">
-                                            <li><span class="fa-li"><span aria-hidden="true" class="ico fas fa-university"></span></span>AFC Richmond, Nelson Road Stadium</li>
-                                            <li><span class="fa-li"><span aria-hidden="true" class="ico fas fa-phone"></span></span>555-234-5678</li>
-                                            <li><span class="fa-li"><span aria-hidden="true" class="ico fas fa-envelope"></span></span><a href="mailto:rebecca@afcrichmond.com">Email Rebecca</a></li>
-                                            <li><span class="fa-li"><span aria-hidden="true" class="ico fab fa-linkedin icon"></span></span><a href="#">LinkedIn</a></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        
-            
-                        <div class="col-12 col-xl-6 d-flex">
-                            <div class="pgs-people-card pgs-people-card--quiet pgs-people-card--compact flex-fill">
-                                <div class="row">
-                                    <div class="col-4 ps-0 pgs-people-card__col pgs-people-sd-card__img">
-                                        <img src="https://dallascollege.github.io/TerminalBS/assets/img/rkent-100x100.jpg" alt="">
-                                    </div>
-                                    <div class="col-8 ps-0 pgs-people-card__col">
-                                        <h3 class="pgs-people-card__name">Roy Kent</h3>
-                                        <ul class="list-unstyled">
-                                            <li>Assistant Coach, AFC Richmond</li>
-                                        </ul>
-                                    </div>
-                                    <div class="offset-4 col-8 ps-0 pgs-people-card__col">
-                                        <ul class="fa-ul">
-                                            <li><span class="fa-li"><span aria-hidden="true" class="ico fas fa-university"></span></span>AFC Richmond, Nelson Road Stadium</li>
-                                            <li><span class="fa-li"><span aria-hidden="true" class="ico fas fa-phone"></span></span>555-345-6789</li>
-                                            <li><span class="fa-li"><span aria-hidden="true" class="ico fas fa-envelope"></span></span><a href="mailto:roy@afcrichmond.com">Email Roy</a></li>
-                                            <li><span class="fa-li"><span aria-hidden="true" class="ico fab fa-linkedin icon"></span></span><a href="#">LinkedIn</a></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        
-            
-                        <div class="col-12 col-xl-6 d-flex">
-                            <div class="pgs-people-card pgs-people-card--quiet pgs-people-card--compact flex-fill">
-                                <div class="row">
-                                    <div class="col-4 ps-0 pgs-people-card__col pgs-people-sd-card__img">
-                                        <img src="https://dallascollege.github.io/TerminalBS/assets/img/cbeard-100x100.jpg" alt="">
-                                    </div>
-                                    <div class="col-8 ps-0 pgs-people-card__col">
-                                        <h3 class="pgs-people-card__name">Willis "Coach" Beard</h3>
-                                        <ul class="list-unstyled">
-                                            <li>Assistant Coach, AFC Richmond</li>
-                                        </ul>
-                                    </div>
-                                    <div class="offset-4 col-8 ps-0 pgs-people-card__col">
-                                        <ul class="fa-ul">
-                                            <li><span class="fa-li"><span aria-hidden="true" class="ico fas fa-university"></span></span>AFC Richmond, Nelson Road Stadium</li>
-                                            <li><span class="fa-li"><span aria-hidden="true" class="ico fas fa-phone"></span></span>555-345-6789</li>
-                                            <li><span class="fa-li"><span aria-hidden="true" class="ico fas fa-envelope"></span></span><a href="mailto:beard@afcrichmond.com">Email Willis</a></li>
-                                            <li><span class="fa-li"><span aria-hidden="true" class="ico fab fa-linkedin icon"></span></span><a href="#">LinkedIn</a></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                            
-                        </div> <!-- end results -->
-
-<!-- pagination -->
-                        <div class="row text-center my-5">
-                            <div class="pagination-box">
-                                <div class="pagination-pages">
-                                    <span class="results">Results 1 - 8 of 24</span>
-                                    
-                                    <nav aria-label="Page navigation example">
-                                        <ul class="pagination justify-content-center my-4">
-                                        <li class="page-item"><a class="page-link" href="#">Previous</a></li>
-                                        <li class="page-item"><a class="page-link" href="#">1</a></li>
-                                        <li class="page-item"><a class="page-link" href="#">2</a></li>
-                                        <li class="page-item"><a class="page-link" href="#">3</a></li>
-                                        <li class="page-item"><a class="page-link" href="#">Next</a></li>
-                                        </ul>
-                                    </nav>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- end pagination -->
-
-                    </div>                    
-                </div>
+                </article>
             </div>
-        </article>
-      </div>
+        </div>
     </div>
-  </div>
 </main>

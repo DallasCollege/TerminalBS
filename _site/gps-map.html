@@ -13,23 +13,6 @@
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <script>
-    dataLayer = []; //for Google Analytics
-    g_wsaEnabled = false;
-    (function (w, d, s, l, i) {
-      w[l] = w[l] || [];
-      w[l].push({
-        'gtm.start': new Date().getTime(),
-        event: 'gtm.js'
-      });
-      var f = d.getElementsByTagName(s)[0],
-        j = d.createElement(s),
-        dl = l != 'dataLayer' ? '&l=' + l : '';
-      j.async = true;
-      j.src = 'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
-      f.parentNode.insertBefore(j, f);
-    })(window, document, 'script', 'dataLayer', 'GTM-TDGX39L');
-  </script>
 
   <title>
     Dallas College: Education That Works in Dallas County
@@ -175,8 +158,6 @@
 </head>
 
 <body>
-  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TDGX39L" height="0" width="0"
-      style="display:none;visibility:hidden"></iframe></noscript>
 
 <header id="l-header-desktop">
 
@@ -392,7 +373,7 @@
             <div class="search-slot" style="display: inline-block">
               <div class="input-group shadow-2 search-bar">
                 <label class="sr-only" for="masterPage_searchTxt">Search this website</label>
-                <input type="text" class="form-control search-bar__input" placeholder="Search this website" id="masterPage_searchTxt" >
+                <input type="text" class="form-control search-bar__input" placeholder="Search this website" id="masterPage_searchTxt" autocomplete="search" >
                 <button class="btn bg-cprimary border-cprimary search-bar__button track-header" type="button" id="masterPage_searchBtn">
                   <span class="ico fas fa-search" aria-hidden="true"></span>
                   <span class="sr-only">Search</span>
@@ -563,7 +544,7 @@
         <form class="d-flex">
           <div class="input-group search-component l-header-mobile__menu__search">
             <label for="srchBox" class="visually-hidden">Search this website</label>
-            <input type="text" class="form-control bg-white text-cprimary" placeholder="Search this website" id="srchBox" >
+            <input type="text" class="form-control bg-white text-cprimary" placeholder="Search this website" id="srchBox" autocomplete="search">
             <button class="bg-cwhite text-cprimary track-header" type="button" id="mobileSrchBtn"><span class="ico fas fa-search"><span class="visually-hidden">Search</span></span></button>
           </div>
         </form>
