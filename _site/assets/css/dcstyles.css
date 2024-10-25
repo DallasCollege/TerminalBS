@@ -7902,9 +7902,25 @@ div.csecondary-dk p a:not(.button), div.cseconary-dk p a:link:not(.button) {
 
 /*
 **************************************************
+Home News layout
+**************************************************
+*/
+.news-image {
+  margin-bottom:1.25rem
+}
+
+.news-title, a .news-title  {
+  margin-bottom: 1.25rem;
+  font-size: 16px;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+/*
+**************************************************
 Featured News layout
 **************************************************
- */
+*/
  .news-featured-block {
   padding: 1rem 0;
 }
@@ -8152,7 +8168,19 @@ fieldset legend {
 Image Styles for T4
 **************************************************
  */
-.related-news-basic {
+.related-news-basic img, .home-news img, .news-image img  {
   max-width: 100%;
   height: auto;
+  border-radius:2px;
  }
+
+ .news-image img {
+  -webkit-box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+  -webkit-transition: all 0.25s ease-in-out;
+  transition: all 0.25s ease-in-out;
+}
+
+a:hover .news-image img {
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.25), 0 4px 6px -2px rgba(0, 0, 0, 0.12);
+}
