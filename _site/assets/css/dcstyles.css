@@ -1805,6 +1805,10 @@ a.pgs-calendar__event {
   margin-top: 48px;
 }
 
+#main__body-home {
+  margin-top: 0px;
+}
+
 .pgs-navbar--home {
   font-weight: 800;
   /* text-transform: uppercase; */
@@ -1817,7 +1821,7 @@ a.pgs-calendar__event {
 
 /* School Blocks */
 
-.pgs-tile--business {
+/* .pgs-tile--business {
   background: linear-gradient(0deg, rgba(26, 112, 35, 0.85), rgba(26, 112, 35, 0.85)), url('https://www.dallascollege.edu/PublishingImages/home/path-business-400x300.jpg');
   background-size: cover;
   background-position: center;
@@ -1864,7 +1868,7 @@ a.pgs-calendar__event {
   background-size: cover;
   background-position: center;
   border-bottom-color: #FF7500;
-}
+} */
 
 /* End School Blocks */
 

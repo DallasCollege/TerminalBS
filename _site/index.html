@@ -362,11 +362,11 @@
     <!-- Brand and toggle get grouped for better mobile display -->
     <ul class="nav navbar-nav bg-cprimary-lt">
       <li class="nav-item dropdown dropdown--people">
-        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuIam" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
           I am a...
           <span class="ico fas fa-chevron-circle-down" aria-hidden="true"></span>
         </a>
-        <ul class="dropdown-menu vw-100" aria-labelledby="navbarDropdownMenuLink">
+        <ul class="dropdown-menu vw-100" aria-labelledby="navbarDropdownMenuIam">
           <li class="nav-item"><a class="nav-link" href="/future-students/pages/default.aspx">Future Student</a></li>
           <li class="nav-item"><a class="nav-link" href="/students/pages/default.aspx">Current Student</a></li>
           <li class="nav-item"><a class="nav-link" href="/alumni/pages/default.aspx">Former Student (Alumni)</a></li>
@@ -385,12 +385,12 @@
     </ul>
     <ul class="nav navbar-nav navbar-right navbar-expand-sm bg-cprimary-lt">
       <li class="nav-item dropdown dropdown--tools">
-        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuOnline" role="button" data-bs-toggle="dropdown" aria-expanded="false">
           Online Tools
           <span class="ico fas fa-chevron-circle-down" aria-hidden="true"></span>
         </a>
-        <ul class="dropdown-menu vw-100" aria-labelledby="navbarDropdownMenuLink">
-          <div class="row g-0">
+        <ul class="dropdown-menu vw-100" aria-labelledby="avbarDropdownMenuOnline">
+          <span class="row g-0">
             <li class="col-6 nav-item">
               <a class="dropdown-item track-header" href="https://econnect.dcccd.edu">
                 <span class="ico fas fa-network-wired" aria-hidden="true"></span>
@@ -449,7 +449,7 @@
               <hr class="dropdown-divider" >
             </li>
             <li class="col-12 nav-item"><a class="dropdown-item track-header" href="http://myapps.dcccd.edu">View more online tools...</a></li>
-          </div>
+          </span>
         </ul>
       </li>
     </ul>
@@ -487,20 +487,14 @@
 </header>
 
 
-  <div id="t4-bodyContainer">  
+  <div id="pgs-bodyContainer">  
 
       <header>
-        <style>
-          .pgs-banner__image {
-            background-image: url("/assets/img/homepage/2024-spring-v4-1600x512.jpg");
-          }
-        </style>
+
         <div class="pgs-banner pgs-banner--grand shadow-2">
-          <div class="pgs-banner__image">
+          <div class="pgs-banner__image-home" style="background-image: url('https://dallascollege.github.io/TerminalBS/assets/img/homepage/2024-spring-v4-1600x512.jpg');">
           </div>
           <div class="pgs-banner__title">
-            <!-- <div id="ctl00_PlaceHolderMain_ctl02_label" style='display:none'>Page_Content_2</div>
-            <div id="ctl00_PlaceHolderMain_ctl02__ControlWrapper_RichHtmlField" class="ms-rtestate-field" style="display:inline" aria-labelledby="ctl00_PlaceHolderMain_ctl02_label"> -->
               <h2 class="pgs-banner__h1 h1">Stay On Track<br></h2>
               <p class="pgs-banner__p">Register for Wintermester and Spring 2024 classes. Find flexible class options to fit your schedule.</p>
               <p class="pgs-banner__p text-end">
@@ -511,18 +505,15 @@
         </div>
       </header>
 
-      <main id="main__body m-0">
+      <main id="main__body-home">
 
   <article>
+    <!-- title -->
     <h1 class="sr-only">
-      <!-- title -->Dallas College: Education That Works
+      Dallas College: Education That Works
     </h1>
+    
     <!-- Content Area Begin -->
-    <div class="mainWebPartZone">
-
-      <style>
-
-      </style>
 
       <div class="pgs-banner__sub-nav bg-cprimary-lt">
         <nav class="navbar pgs-navbar--banner pgs-navbar--home navbar-expand-lg" aria-label="Student Quick Links">
@@ -558,7 +549,7 @@
               <div class="spacer-2 visible-sm"></div>
               <div class="dropdown pgs-grand-dropdown">
                 <h3 id="iam" class="h4">Who are you?</h3>
-                <button id="iamdropdown" class="bg-cwhite button button-lg pgs-grand-dropdown__btn dropdown-toggle shadow-2" type="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" labelledby="iam"> I am ... <span
+                <button id="iamdropdown" class="bg-cwhite button button-lg pgs-grand-dropdown__btn dropdown-toggle shadow-2" type="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" aria-labelledby="iam"> I am ... <span
                     class="ico fas fa-chevron-circle-down"></span> </button>
                 <ul class="dropdown-menu" aria-labelledby="iamdropdown">
                   <li><a class="dropdown-item" href="/students/pages/future-students.aspx">a future student</a></li>
@@ -669,7 +660,6 @@
 
           </div>
         </div>
-    </div>
     </section>
 
     <div class="container">
@@ -797,8 +787,8 @@
                 <div class="spacer-2"></div>
 
                 <ul class="pgs-action-link-list list-inline no-margin fa-ul">
-                  <li><a class="pgs-action-link" href="/maps/pages/default.aspx"><span class="fa-li"><span class="ico fas fa-chevron-right"></span></span>Explore maps and parking info</a></li>
-                  <li><a class="pgs-action-link" href="/maps/pages/dart.aspx"><span class="fa-li"><span class="ico fas fa-chevron-right"></span></span>How to get here on DART</a></li>
+                  <li class="list-inline-item"><a class="pgs-action-link" href="/maps/pages/default.aspx"><span class="fa-li"><span class="ico fas fa-chevron-right"></span></span>Explore maps and parking info</a></li>
+                  <li class="list-inline-item"><a class="pgs-action-link" href="/maps/pages/dart.aspx"><span class="fa-li"><span class="ico fas fa-chevron-right"></span></span>How to get here on DART</a></li>
                 </ul>
 
               </div>
