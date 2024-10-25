@@ -220,8 +220,29 @@ ul.dropdown-menu {
   margin-top: 0;
   border-top-left-radius: 0;
   border-top-right-radius: 0;
-
 }
+
+/* Navbar Fix to remove row and columns */
+.navbar-right .dropdown-menu.show {
+  display: flex;
+  flex-wrap: wrap; /* Allow items to wrap into multiple lines */
+  padding: 0; /* Remove default padding */
+  margin: 0; /* Remove default margin */
+  list-style: none; /* Remove bullet points */
+}
+.dropdown-menu .nav-item {
+  flex: 0 0 50%;
+  box-sizing: border-box;}
+
+.dropdown-menu .nav-item-full {
+  flex: 0 0 100%;
+  box-sizing: border-box;}
+
+.dropdown-item {
+  padding: 10px; /* Adjust padding as needed */
+}
+/* End Navbar Fix to remove row and columns */
+
 
 .navbar-right ul.dropdown-menu {
   right: 0;
@@ -298,7 +319,7 @@ li.navbar-nav--seperator:before {
 }
 
 .tools-workday {
-  background-image: url("https://dallascollege.github.io/TerminalBS/publishingimages/icons/workday.svg");
+  background-image: url("https://dallascollege.edu/publishingimages/icons/workday.svg");
   width: 25px;
   display: inline-block;
   height: 15px;
