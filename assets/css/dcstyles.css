@@ -3505,6 +3505,27 @@ ol+.pgs-accordion {
   min-height: 7.5rem
 }
 
+.pgs-people-card__img img {
+  width: 50px;
+  max-width:100%;
+  height: 50px;
+  border-radius: 50%;
+  text-align: center;
+  margin: .25em 0 -2em .25em;
+  background-color: #66645e;
+}
+
+
+.pgs-people-sd-card__img img {
+  width: 75px;
+  max-width:100%;
+  height: 75px;
+  border-radius: 50%;
+  text-align: center;
+  margin: .25em 0 -2em .25em;
+  background-color: #66645e;
+}
+
 .pgs-people-card--directory:last-of-type {
   margin-bottom: 1rem
 }
@@ -3521,7 +3542,7 @@ ol+.pgs-accordion {
   border-left-color: #6d0000
 }
 
-.pgs-people-card .ico {
+.pgs-people-card .ico, .pgs-people-card .fas, .pgs-people-card .fa {
   color: #003385
 }
 
