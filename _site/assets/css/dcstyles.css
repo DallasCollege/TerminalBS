@@ -8152,3 +8152,7 @@ fieldset legend {
 Image Styles for T4
 **************************************************
  */
+.related-news-basic {
+  max-width: 100%;
+  height: auto;
+ }
