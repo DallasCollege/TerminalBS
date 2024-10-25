@@ -825,6 +825,39 @@ footer a:not(.button):focus {
   padding-right: 0
 }
 
+.student-help li {
+  font-size: .875rem;
+  margin-right: 1.75rem;
+}
+
+footer#l-footer #l-footer__contact .social-icon li {
+  margin-right: 1.875rem;
+}
+
+footer#l-footer #l-footer__contact .social-icon li:last-child {
+  margin-right: auto;
+}
+
+footer#l-footer #l-footer__contact .social-icon-2 li {
+  margin-right: 2rem;
+}
+
+footer#l-footer #l-footer__contact .social-icon-2 li:last-child {
+  margin-right: auto;
+}
+
+footer#l-footer #l-footer__fine-print .small-print {
+  margin-top: .375rem;
+}
+
+footer#l-footer #l-footer__fine-print .small-print li {
+  margin-right: .5rem;
+}
+
+
+footer#l-footer #l-footer__fine-print .small-print li:last-child {
+  margin-right: auto;
+}
 
 
 /* content */
