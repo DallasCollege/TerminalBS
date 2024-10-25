@@ -736,7 +736,7 @@ footer a:not(.button):hover, footer a:not(.button):focus {
 .l-footer__main__heading {
   font-size: 1rem;
   font-weight: 900;
-  text-transform: uppercase;
+  /* text-transform: uppercase; */
   border-bottom: 1px solid #99bbaf;
   padding-bottom: 1rem;
   margin-bottom: 1rem;
