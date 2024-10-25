@@ -641,7 +641,7 @@
                 <div class="nav navbar-nav flex-column">
                     <h2>Filter Your Results</h2>
                     <fieldset>
-                        <legend style="font-size: 18px; font-weight: 700;">Filter by Position</legend>
+                        <legend>Filter by Position</legend>
                         <div class="form-check">
                             <input type="checkbox" value="dc_dallas_college" id="chkdc_dallas_faculty"
                                 name="chkdc_dallas_faculty" class="form-check-input">
@@ -655,9 +655,9 @@
 
                     </fieldset>
                     <hr>
+                    <h3>Filter by Location</h3>
                     <fieldset>
-                        <legend style="font-size: 18px; font-weight: 700;">Filter by Location</legend>
-                        <legend style="font-size: 16px; font-weight: 600;">Campuses:</legend>
+                        <legend>Campuses:</legend>
                         <div class="form-check">
                             <input type="checkbox" value="dc_dallas_college" id="chkdc_dallas_college"
                                 name="chkdc_dallas_college" class="form-check-input">
@@ -698,8 +698,10 @@
                                 class="form-check-input">
                             <label class="form-check-label" for="chkdc_richland">Richland</label>
                         </div>
+                    </fieldset>
                         <hr>
-                        <legend style="font-size: 16px; font-weight: 600;">Centers:</legend>
+                        <fieldset>
+                        <legend>Centers:</legend>
                         <div class="form-check">
                             <input type="checkbox" value="dc" id="bjp" name="bjp" class="form-check-input">
                             <label class="form-check-label" for="bjp">Bill J. Priest</label>
@@ -710,7 +712,7 @@
                         </div>
                         <div class="form-check">
                             <input type="checkbox" value="dc" id="cc" name="cc" class="form-check-input">
-                            <label class="form-check-label" for="chkdc">Coppell</label>
+                            <label class="form-check-label" for="cc">Coppell</label>
                         </div>
                         <div class="form-check">
                             <input type="checkbox" value="dc" id="cph" name="cph" class="form-check-input">
@@ -774,7 +776,7 @@
                                             <label class="sr-only" for="masterPage_searchTxt">Search the Staff
                                                 Directory</label>
                                             <input type="text" class="form-control shadow-2"
-                                                placeholder="Search the Staff Directory">
+                                                placeholder="Search the Staff Directory" autocomplete="off">
                                             <button class="btn bg-cprimary shadow-2" type="button"
                                                 id="button-addon2">Search</button>
                                         </div>
