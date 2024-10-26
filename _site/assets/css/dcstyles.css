@@ -7902,18 +7902,23 @@ div.csecondary-dk p a:not(.button), div.cseconary-dk p a:link:not(.button) {
 
 /*
 **************************************************
-Home News layout
+News Container Layouts
 **************************************************
 */
-.news-image {
-  margin-bottom:1.25rem
-}
 
-.news-title, a .news-title  {
-  margin-bottom: 1.25rem;
+.news-container a  {
   font-size: 16px;
   font-weight: 600;
   text-decoration: none;
+}
+
+.news-container a:hover, a.news-title h3:hover {
+  text-decoration:underline;
+  color:#BF1717;
+}
+
+.news-container .news-image {
+  margin-bottom:1.25rem
 }
 
 /*
