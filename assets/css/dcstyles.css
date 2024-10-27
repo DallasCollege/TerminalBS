@@ -188,7 +188,7 @@ img {
   z-index: 100
 }
 
-.skiptocontent a:focus, #skiptocontent a:focus {
+.skiptocontent a:focus, #skiptocontent a:focus, .skiptocontent a:hover, #skiptocontent a:hover {
   -webkit-transition: top .1s ease-in, background .5s linear;
   background: #6D0000;
   left: 0;
