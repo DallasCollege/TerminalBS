@@ -495,13 +495,12 @@ li.navbar-nav--seperator:before {
 }
 
 
-#l-header-mobile ul.navbar-nav {
-  /*width: 100vw;
+/* #l-header-mobile ul.navbar-nav {
+width: 100vw;
   background: #003385;
   margin-left: 0px;
   margin-top: 0;
-  */
-}
+} */
 
 #l-header-mobile ul.navbar-nav.navbar-secondary  {
   background: #001E49;
@@ -522,14 +521,14 @@ li.navbar-nav--seperator:before {
     padding-right: 20px;
   }
 
-  /* // Edited This Existing Style (Not Sure If Necessary)*/
+  /* // Edited This Existing Style (Not Sure If Necessary)
   #l-header-mobile ul.navbar-nav {
-    /*width: 100vw;
+    width: 100vw;
     background: #003385;
     margin-left: 0px;
     margin-top: 0;
-    */
-  }
+   
+  }*/
 
   #l-header-mobile .navbar-right ul.dropdown-menu { margin-left: -50vw;}
 
@@ -1765,7 +1764,7 @@ td.thismonth.viewrange.periodday.hasEvents a {
 
 #calendar_box table td.today {
   background:#E52626;
-  color:#fffff;
+  color:#ffffff;
 }
 
 td.thismonth.viewrange.periodday.today.hasEvents a {
@@ -6256,9 +6255,10 @@ a:focus>img:not(.logo-bar-slot__img) {
     text-align: center
   }
 
+  /* container margin creates a left to right scroll bar
 .full-width-row>.container, .full-width-row>.container-fluid {
-    /* margin: 0 2rem; container margin creates a left to right scroll bar */
-  }
+    margin: 0 2rem; 
+  } */
 
   h2.module-title--sm, h3.module-title--sm {
     display: block;
@@ -8069,9 +8069,7 @@ h2.news-module-no-left-margin {
   .news-thumb img {
   	width : 100px !important;
   }
-  .news-text{
-  	/* margin-left: 115px; */
-  }
+
 }
 @media screen and (max-width: 576px){
   .news-thumb img {
@@ -8170,7 +8168,7 @@ PHP Functional Pages for T4
  */
 fieldset legend {
   font-size: 18px;
-  font-weight: 700;"
+  font-weight: 700;
 }
 
 /*
@@ -8227,4 +8225,24 @@ a:hover .news-image img {
 
 .video-container .ratio {
   margin-bottom:1rem;
+}
+
+.gps-icon img {
+  width:75px;
+  height:75px;
+  max-width:100%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top:2.5rem;
+}
+
+@media screen and (max-width: 769px){
+  .gps-icon img {
+  width:50px;
+  height:50px;
+  max-width:100%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top:2.5rem;
+} 
 }
