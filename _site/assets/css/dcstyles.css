@@ -8175,6 +8175,11 @@ fieldset legend {
   font-weight: 700;
 }
 
+fieldset label.t4-functional {
+font-size: 18px;
+font-weight: 700;
+}
+
 /*
 **************************************************
 Image Styles for T4
