@@ -186,7 +186,7 @@ img {
 
 .skiptocontent a:focus, #skiptocontent a:focus {
   -webkit-transition: top .1s ease-in, background .5s linear;
-  background: #BF1717;
+  background: #6D0000;
   left: 0;
   outline: 0;
   position: absolute;
