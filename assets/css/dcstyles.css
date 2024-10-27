@@ -1730,6 +1730,10 @@ table.cal-table {
   font-weight: 700;
 }
 
+#current_month {
+  text-align: center;
+}
+
 tr.calendar-dayhead {
   line-height: 2.5em;
   background:#E5E2D6;

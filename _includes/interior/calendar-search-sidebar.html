@@ -3,19 +3,21 @@
 <aside id="sidebar" class="sidebar col-md-3">
     <!-- Begin Calendar -->
     <div class="event-list" id="calendar_box">
+
+        <div id="mini_cal_header_inner">
+            <div id="current_month">
+                <h2 class="h3"><span aria-hidden="true"
+                        class="ico fas fa-arrow-left me-2"></span>October<span> 2024</span><span
+                        aria-hidden="true" class="ico fas fa-arrow-right ms-2"></span></h2>
+            </div>
+        </div>
         <div class="table-wrap">
             <div class="table-wrapper">
                 <table class="cal-table mb-4 mb-sm-0">
                     <thead>
                         <tr class="calendar-box-header">
                             <th colspan="7" id="mini_cal_header">
-                                <div id="mini_cal_header_inner">
-                                    <div id="current_month">
-                                        <h2 class="h3"><span aria-hidden="true"
-                                                class="ico fas fa-arrow-left me-2"></span>October<span> 2024</span><span
-                                                aria-hidden="true" class="ico fas fa-arrow-right ms-2"></span></h2>
-                                    </div>
-                                </div>
+
                             </th>
                         </tr>
                         <tr class="calendar-dayhead">
@@ -161,6 +163,7 @@
                         href="#">Week</a> | <a href="#">All</a></div>
             </div>
         </div>
+    </div>
         <!-- End Calendar -->
 
 
@@ -170,7 +173,7 @@
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#pgs-navbar--sidebar__collapse" aria-controls="pgs-navbar--sidebar__collapse"
                     aria-expanded="false" aria-label="Toggle navigation">
-                    Staff Directory Filter Options
+                    Calendar Filter Options
                     <span class="ico fas fa-chevron-circle-down"></span>
                 </button>
 
@@ -178,7 +181,7 @@
 
                 <div class="collapse navbar-collapse" id="pgs-navbar--sidebar__collapse">
 
-                    <ul class="nav navbar-nav flex-column">
+                    <div class="nav navbar-nav flex-column">
                         <h2>Filter Your Results</h2>
                         <fieldset>
                             <legend style="font-size: 18px; font-weight: 700;">Filter by Category</legend>
@@ -300,7 +303,7 @@
                                 <label class="form-check-label" for="wrb">Workforce Center at RedBird</label>
                             </div>
                         </fieldset>
-                    </ul>
+                    </div>
 
                 </div>
             </div>

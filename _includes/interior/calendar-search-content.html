@@ -1,186 +1,210 @@
 <main id="main__body">
-  <div class="container">   
-    <div class="row">
-        <h1 class="page-header--xl">Dallas College Events</h1>
+    <div class="container">
+        <div class="row">
+            <h1 class="page-header--xl">Dallas College Events</h1>
 
-      {% include interior/calendar-search-sidebar.html %}
+            {% include interior/calendar-search-sidebar.html %}
 
-      <div class="col-md-8 offset-md-1 my-5">
-        <article>
+            <div class="col-md-8 offset-md-1 my-5">
+                <article>
 
-            <!-- Content Area Begin -->
-            <div class="mainContent">
-                <div class="container">
-                    <div class="row">        
-                      <div class="col-md-12">
-                        <!-- search form -->
-                        <form role="search" style="display:inline;">
+                    <!-- Content Area Begin -->
+                    <div class="mainContent">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <!-- search form -->
+                                    <form role="search" style="display:inline;">
 
-                            <div class="input-group input-group-lg">
-                                <label class="sr-only" for="masterPage_searchTxt">Search the Calendar</label>
-                                <input type="text" class="form-control shadow-2" placeholder="Search the Calendar">
-                                <button class="btn bg-cprimary shadow-2" type="button" id="button-addon2">Search</button>
-                            </div>
-
-                            
-                        </form>
-                        
-                    </div>
-                      
-                    
-
-                    <!-- results-->
-                    <div class="row mt-5">
-                        <h2>October 2024 Events</h2>
-                        <!-- calendar item -->
-                        <div class="row calendar-search-results">
-                            <div class="col-md-4 event-thumb">
-                                <img src="https://dallascollege.github.io/TerminalBS/assets/img/students1.jpg" alt="" class="img-fluid mt-3 rounded-2">
-                            </div>
-                            <div class="col-md-8">
-                                    <h3 class="date h5">
-                                        <div class="date-stamp"><span aria-hidden="true" class="ico fas fa-calendar text-cprimary me-2"></span>
-                                            <span class="month">Oct</span>
-                                            <span class="day">03,</span>
-                                            <span class="year">2024</span>
-                                            <span class="date-stamp smaller"> – </span>
-                                            <span class="date-stamp2 date-stamp">
-                                            <span class="month">Oct</span>
-                                            <span class="day">04,</span>
-                                            <span class="year">2024</span>
-                                            </span> 
+                                        <div class="input-group input-group-lg">
+                                            <label class="sr-only" for="masterPage_searchTxt">Search the
+                                                Calendar</label>
+                                            <input type="text" class="form-control shadow-2"
+                                                placeholder="Search the Calendar">
+                                            <button class="btn bg-cprimary shadow-2" type="button"
+                                                id="button-addon2">Search</button>
                                         </div>
-                                    </h3>
-                                    <h4 class="h3 cal-header title mt-1">      
-                                            <a href="calendar-event.html">Event 1: Multi Day</a>
-                                        </p>
-                                    </h4>
-                                    <div class="cal-summary">
-                                    <p>Event re-occurring 2 weeks. This event will give an overview of the whole week's plans, as well as introductions to all the 'people-to-know' on campus.</p>
-                                </div>
-                                    <div class="mb-2">
-                                        <span aria-hidden="true" class="ico fas fa-clock text-cprimary me-2"></span><span class="datelisting">6:50 a.m.</span> - <span class="datelisting">1:20 p.m.</span>
-                                    <br>
-                                    </div>
-                                    <div class="location">
-                                        <div class="mb-2">
-                                            <span aria-hidden="true" class="ico fas fa-map-marker-alt text-cprimary me-2"></span>Off-Campus
-                                        </div>
-                                        <ul class="inline-list ps-0">
-                                            <li class="inline-list-item badge bg-info">Student Life</li>
-                                            <li class="inline-list-item badge bg-info">Community</li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                   
 
-                        <!-- calendar item -->
-                        <div class="row calendar-search-results">
-                            <div class="col-md-4 event-thumb">
-                                <img src="https://dallascollege.github.io/TerminalBS/assets/img/dallas-college-dmark-450x300.jpg" alt="" class="img-fluid mt-3 rounded-2">
+
+                                    </form>
+
+                                </div>
+
+
+
+                                <!-- results-->
+                                <div class="row mt-5">
+                                    <h2>October 2024 Events</h2>
+                                    <!-- calendar item -->
+                                    <div class="row calendar-search-results">
+                                        <div class="col-md-4 event-thumb">
+                                            <img src="https://dallascollege.github.io/TerminalBS/assets/img/students1.jpg"
+                                                alt="" class="img-fluid mt-3 rounded-2">
+                                        </div>
+                                        <div class="col-md-8">
+                                            <h3 class="date h5">
+                                                <span class="date-stamp">
+                                                    <span aria-hidden="true"
+                                                        class="ico fas fa-calendar text-cprimary me-2"></span>
+                                                    <span class="month">Oct</span>
+                                                    <span class="day">03,</span>
+                                                    <span class="year">2024</span>
+                                                    <span class="date-stamp smaller"> - </span>
+                                                    <span class="date-stamp2 date-stamp">
+                                                        <span class="month">Oct</span>
+                                                        <span class="day">04,</span>
+                                                        <span class="year">2024</span>
+                                                    </span>
+                                                </span>
+                                            </h3>
+                                            <h4 class="h3 cal-header title mt-1">
+                                                <a href="calendar-event.html">Event 1: Multi Day</a>
+                                            </h4>
+                                            <div class="cal-summary">
+                                                <p>Event re-occurring 2 weeks. This event will give an overview of the
+                                                    whole week's plans, as well as introductions to all the
+                                                    'people-to-know' on campus.</p>
+                                            </div>
+                                            <div class="mb-2">
+                                                <span aria-hidden="true"
+                                                    class="ico fas fa-clock text-cprimary me-2"></span><span
+                                                    class="datelisting">6:50 a.m.</span> - <span
+                                                    class="datelisting">1:20 p.m.</span>
+                                                <br>
+                                            </div>
+                                            <div class="location">
+                                                <div class="mb-2">
+                                                    <span aria-hidden="true"
+                                                        class="ico fas fa-map-marker-alt text-cprimary me-2"></span>Off-Campus
+                                                </div>
+                                                <ul class="inline-list ps-0">
+                                                    <li class="inline-list-item badge bg-info">Student Life</li>
+                                                    <li class="inline-list-item badge bg-info">Community</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+                                    <!-- calendar item -->
+                                    <div class="row calendar-search-results">
+                                        <div class="col-md-4 event-thumb">
+                                            <img src="https://dallascollege.github.io/TerminalBS/assets/img/dallas-college-dmark-450x300.jpg"
+                                                alt="" class="img-fluid mt-3 rounded-2">
+
+                                        </div>
+                                        <div class="col-md-8">
+                                            <h3 class="date h5">
+                                                <span class="date-stamp">
+                                                    <span aria-hidden="true"
+                                                        class="ico fas fa-calendar text-cprimary me-2"></span>
+                                                    <span class="month">Oct</span>
+                                                    <span class="day">04,</span>
+                                                    <span class="year">2024</span>
+                                                </span>
+                                            </h3>
+                                            <h4 class="h3 cal-header title mt-1">
+                                                <a href="calendar-event.html">Event 2 Is Cool With No Picture</a>
+                                            </h4>
+                                            <div class="cal-summary">
+                                                <p>Event re-occurring 2 weeks. This event will give an overview of the
+                                                    whole week's plans, as well as introductions to all the
+                                                    'people-to-know' on campus.</p>
+                                            </div>
+                                            <div class="mb-2">
+                                                <span aria-hidden="true"
+                                                    class="ico fas fa-clock text-cprimary me-2"></span><span
+                                                    class="datelisting">Noon</span> - <span class="datelisting">3:30
+                                                    p.m.</span>
+                                                <br>
+                                            </div>
+                                            <div class="location">
+                                                <div class="mb-2">
+                                                    <span aria-hidden="true"
+                                                        class="ico fas fa-map-marker-alt text-cprimary me-2"></span>Brookhaven,
+                                                    Eastfield, El Centro
+                                                </div>
+                                                <ul class="inline-list ps-0">
+                                                    <li class="inline-list-item badge bg-info">Student Life</li>
+                                                    <li class="inline-list-item badge bg-info">Community</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+                                    <!-- calendar item -->
+                                    <div class="row calendar-search-results">
+                                        <div class="col-md-4 event-thumb">
+                                            <img src="https://dallascollege.github.io/TerminalBS/assets/img/students2.jpg"
+                                                alt="" class="img-fluid mt-3 rounded-2">
+                                        </div>
+                                        <div class="col-md-8">
+                                            <h3 class="date h5">
+                                                <span class="date-stamp">
+                                                    <span aria-hidden="true"
+                                                        class="ico fas fa-calendar text-cprimary me-2"></span>
+                                                    <span class="month">Oct</span>
+                                                    <span class="day">04,</span>
+                                                    <span class="year">2024</span>
+                                                </span>
+                                            </h3>
+                                            <h4 class="h3 cal-header title mt-1">
+                                                <a href="calendar-event.html">Event 3 Has No Image</a>
+                                            </h4>
+                                            <div class="cal-summary">
+                                                <p>Event re-occurring 2 weeks. This event will give an overview of the
+                                                    whole week's plans, as well as introductions to all the
+                                                    'people-to-know' on campus.</p>
+                                            </div>
+                                            <div class="mb-2">
+                                                <span aria-hidden="true"
+                                                    class="ico fas fa-clock text-cprimary me-2"></span><span
+                                                    class="datelisting">Noon</span> - <span class="datelisting">3:30
+                                                    p.m.</span>
+                                                <br>
+                                            </div>
+                                            <div class="location">
+                                                <div class="mb-2">
+                                                    <span aria-hidden="true"
+                                                        class="ico fas fa-map-marker-alt text-cprimary me-2"></span>All
+                                                    Locations
+                                                </div>
+                                                <ul class="inline-list ps-0">
+                                                    <li class="inline-list-item badge bg-info">Student Life</li>
+                                                    <li class="inline-list-item badge bg-info">Community</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
 
                             </div>
-                            <div class="col-md-8">
-                                    <h3 class="date h5">
-                                        <div class="date-stamp"><span aria-hidden="true" class="ico fas fa-calendar text-cprimary me-2"></span>
-                                            <span class="month">Oct</span>
-                                            <span class="day">04,</span>
-                                            <span class="year">2024</span>
-                                            </span> 
-                                        </div>
-                                    </h3>
-                                    <h4 class="h3 cal-header title mt-1">      
-                                            <a href="calendar-event.html">Event 2 Is Cool With No Picture</a>
-                                        </p>
-                                    </h4>
-                                    <div class="cal-summary">
-                                    <p>Event re-occurring 2 weeks. This event will give an overview of the whole week's plans, as well as introductions to all the 'people-to-know' on campus.</p>
-                                </div>
-                                    <div class="mb-2">
-                                        <span aria-hidden="true" class="ico fas fa-clock text-cprimary me-2"></span><span class="datelisting">Noon</span> - <span class="datelisting">3:30 p.m.</span>
-                                    <br>
-                                    </div>
-                                    <div class="location">
-                                        <div class="mb-2">
-                                            <span aria-hidden="true" class="ico fas fa-map-marker-alt text-cprimary me-2"></span>Brookhaven, Eastfield, El Centro
-                                        </div>
-                                        <ul class="inline-list ps-0">
-                                            <li class="inline-list-item badge bg-info">Student Life</li>
-                                            <li class="inline-list-item badge bg-info">Community</li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        
+                            <!-- end results -->
 
-                         <!-- calendar item -->
-                         <div class="row calendar-search-results">
-                            <div class="col-md-4 event-thumb">
-                                <img src="https://dallascollege.github.io/TerminalBS/assets/img/students2.jpg" alt="" class="img-fluid mt-3 rounded-2">
-                            </div>
-                            <div class="col-md-8">
-                                    <h3 class="date h5">
-                                        <div class="date-stamp"><span aria-hidden="true" class="ico fas fa-calendar text-cprimary me-2"></span>
-                                            <span class="month">Oct</span>
-                                            <span class="day">04,</span>
-                                            <span class="year">2024</span>
-                                            </span> 
-                                        </div>
-                                    </h3>
-                                    <h4 class="h3 cal-header title mt-1">                                
-                                            <a href="calendar-event.html">Event 3 Has No Image</a>
-                                        </p>
-                                    </h4>
-                                    <div class="cal-summary">
-                                    <p>Event re-occurring 2 weeks. This event will give an overview of the whole week's plans, as well as introductions to all the 'people-to-know' on campus.</p>
-                                </div>
-                                    <div class="mb-2">
-                                        <span aria-hidden="true" class="ico fas fa-clock text-cprimary me-2"></span><span class="datelisting">Noon</span> - <span class="datelisting">3:30 p.m.</span>
-                                    <br>
-                                    </div>
-                                    <div class="location">
-                                        <div class="mb-2">
-                                            <span aria-hidden="true" class="ico fas fa-map-marker-alt text-cprimary me-2"></span>All Locations
-                                        </div>
-                                        <ul class="inline-list ps-0">
-                                            <li class="inline-list-item badge bg-info">Student Life</li>
-                                            <li class="inline-list-item badge bg-info">Community</li>
-                                        </ul>
+                            <!-- pagination -->
+                            <div class="row text-center my-5">
+                                <div class="pagination-box">
+                                    <div class="pagination-pages">
+                                        <span class="results">Results 1 - 8 of 24</span>
+
+                                        <nav aria-label="Page navigation example">
+                                            <ul class="pagination justify-content-center my-4">
+                                                <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+                                                <li class="page-item"><a class="page-link" href="#">1</a></li>
+                                                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                                <li class="page-item"><a class="page-link" href="#">Next</a></li>
+                                            </ul>
+                                        </nav>
                                     </div>
                                 </div>
                             </div>
+                            <!-- end pagination -->
                         </div>
-                    
-                    
                     </div>
-                    <!-- end results -->
-
-<!-- pagination -->
-                        <div class="row text-center my-5">
-                            <div class="pagination-box">
-                                <div class="pagination-pages">
-                                    <span class="results">Results 1 - 8 of 24</span>
-                                    
-                                    <nav aria-label="Page navigation example">
-                                        <ul class="pagination justify-content-center my-4">
-                                        <li class="page-item"><a class="page-link" href="#">Previous</a></li>
-                                        <li class="page-item"><a class="page-link" href="#">1</a></li>
-                                        <li class="page-item"><a class="page-link" href="#">2</a></li>
-                                        <li class="page-item"><a class="page-link" href="#">3</a></li>
-                                        <li class="page-item"><a class="page-link" href="#">Next</a></li>
-                                        </ul>
-                                    </nav>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- end pagination -->
-
-                    </div>                    
-                </div>
+                </article>
             </div>
-        </article>
-      </div>
+        </div>
     </div>
-  </div>
 </main>
