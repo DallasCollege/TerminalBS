@@ -150,6 +150,10 @@ blockquote {
   padding: 10px 0 20px 30px
 }
 
+code {
+  background: #6D0000
+}
+
 .col-md-8 .container {
   width: auto
 }
