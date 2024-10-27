@@ -3219,6 +3219,10 @@ h2.accordion-header, h3.accordion-header, h4.accordion-header {margin-top: .375e
   background:#e5e2d6
 }
 
+.accordion-item {
+  border:0 solid
+}
+
 .accordion-item-quiet .accordion-header button {
   background:transparent
 }
