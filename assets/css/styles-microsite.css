@@ -260,6 +260,11 @@ body {
     margin-right: -1rem
 }
 
+#l-header-desktop nav.nav-secondary {
+display:inline-block
+}
+
+
 .open .dropdown-menu a {
     color: #333 !important
 }

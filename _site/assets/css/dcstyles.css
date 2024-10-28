@@ -259,6 +259,10 @@ ul.dropdown-menu {
   margin-bottom: 0
 }
 
+#l-nav-primary nav.primary-nav {
+  height:68px;
+}
+
 #l-header-desktop .container-fluid {
   max-width: 1170px
 }
@@ -266,6 +270,8 @@ ul.dropdown-menu {
 #l-nav-utility, #l-nav-primary {
   font-weight: 600
 }
+
+
 
 #l-nav-utility .navbar-nav>li>a {
   color: #000;
@@ -346,9 +352,14 @@ li.navbar-nav--seperator:before {
   height: 3.5em
 }
 
+#l-header-desktop .site-search {
+  display:inline
+}
+
 #l-header-desktop .search-slot {
   float: right;
-  width: 300px
+  width: 300px;
+  display:inline-block
 }
 
 #l-header-desktop.l-header-desktop--compact .logo-bar-slot__img {
@@ -399,7 +410,8 @@ li.navbar-nav--seperator:before {
 }
 
 #l-header-desktop .nav-secondary {
-  margin-right: 2em
+  margin-right: 2em;
+  display: inline-block;
 }
 
 #l-header-desktop .nav-secondary .button {
@@ -1472,6 +1484,8 @@ main.affix {
 .pgs-navbar--sidebar .nav {
   width: 100% !important
 }
+
+
 
 .pgs-navbar--sidebar li {
   margin-bottom: 2px
@@ -8178,6 +8192,10 @@ fieldset legend {
 fieldset label.t4-functional {
 font-size: 18px;
 font-weight: 700;
+}
+
+form.t4-functional-search {
+  display:inline;
 }
 
 /*
