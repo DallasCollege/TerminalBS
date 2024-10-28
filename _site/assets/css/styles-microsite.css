@@ -132,9 +132,14 @@
     color: #fff
 }
 
-#l-header-desktop.l-header-desktop--microsite .logo-bar-slot__img {
-    height: 2rem;
-    margin-right: 2rem
+.logo-bar-slot img {
+    display: inline-block;
+    height: 1.5em;
+  }
+
+  .logo-bar-slot img {
+    height: 1.25em;
+    margin-right: 1.5em;
 }
 
 #l-header-desktop.l-header-desktop--microsite .logo-bar-slot__img:hover {
