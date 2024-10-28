@@ -2579,6 +2579,13 @@ img.bio-image.pull-left, .pull-left.thumbnail, img.bio-image.pull-right, .pull-r
   padding: 2em
 }
 
+.content-image-box .cib-content h2 {
+  font-weight: 300;
+  font-size: 2em;
+  display: block;
+}
+
+
 .content-image-box .cib-content h2:first-child, .content-image-box .cib-content h3:first-child, .content-image-box .cib-content h4:first-child, .content-image-box .cib-content h5:first-child, .content-image-box .cib-content h6:first-child {
   margin-top: 0
 }
