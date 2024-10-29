@@ -3575,17 +3575,6 @@ ol+.pgs-accordion {
   min-height: 7.5rem
 }
 
-.pgs-people-card__img img {
-  width: 50px;
-  max-width:100%;
-  height: 50px;
-  border-radius: 50%;
-  text-align: center;
-  margin: .25em 0 -2em .25em;
-  background-color: #66645e;
-}
-
-
 .pgs-people-sd-card__img img {
   width: 75px;
   max-width:100%;
@@ -8357,8 +8346,38 @@ a:hover .news-image img {
   margin-right:auto;
 }
 
+.cib-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
 .news-search-thumbnail img {
   border-radius: var(--bs-border-radius) !important;
   margin-top: 1rem !important;
   height: auto;
+}
+
+.event-thumb img {
+  border-radius: var(--bs-border-radius) !important;
+  margin-top: 1rem !important;
+  max-width: 100%;
+  height: auto;
+}
+
+.event-participant img {
+  width: 75px;
+  height: 75px;
+  border-radius: 50% !important;
+}
+
+.pgs-people-card__img img{
+  width: 50px;
+  height: 50px;
+  max-width:100%;
+  border-radius: 50%;
+  text-align: center;
+  margin: .25em 0 -2em .25em;
+  background-color: #66645e;
+  border-radius: 50% !important;
 }
