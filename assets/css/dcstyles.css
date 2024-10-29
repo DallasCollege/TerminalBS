@@ -2682,7 +2682,7 @@ img.bio-image.pull-left, .pull-left.thumbnail, img.bio-image.pull-right, .pull-r
 
 .pgs-org-card__body {
   padding: 1.5rem;
-  text-align: right;
+  /* text-align: right; */
   border-radius: 0 0 3px 3px
 }
 
@@ -2694,6 +2694,11 @@ img.bio-image.pull-left, .pull-left.thumbnail, img.bio-image.pull-right, .pull-r
   padding: 1.5rem 1.5rem 3rem
 }
 
+.pgs-org-card__body:has(.button) {
+  padding: 1.5rem 1.5rem 3rem
+}
+
+
 ul.pgs-org-card__list {
   padding-bottom: 0;
   margin-left: 2rem;
@@ -2703,19 +2708,45 @@ ul.pgs-org-card__list {
   margin-bottom: .5rem
 }
 
-.pgs-org-card__body--w-btn ul.pgs-org-card__list {
-  margin-bottom: 2rem
+.pgs-org-card__body ul, .pgs-org-card__body p:last-of-type {
+  margin-bottom: 3rem
+}
+
+.pgs-org-card__body.text-center ul, .pgs-org-card__body.text-center  p {
+  text-align:center;
 }
 
 ul.pgs-org-card__list .ico {
   color: #99968d
 }
 
-.pgs-org-card__btn {
-  position: absolute;
-  right: 1rem;
-  bottom: 1rem;
+.pgs-org-card__body a.button {
+  position:absolute;
+  bottom:1rem;
+  right:1rem;
+  margin-top:auto !important;
+}  
+
+ .pgs-org-card__body.text-center {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center children horizontally */
+  justify-content: flex-end; /* Align children to the bottom */
 }
+
+.pgs-org-card__body.text-center a.button {
+  position: static; /* Remove absolute positioning */
+  margin-top: auto !important;
+  display: inline-block; /* Prevents the button from taking full width */
+  width: auto; /* Ensures the button's width is only as wide as its content */
+  text-align: center; /* Centers the text inside the button */
+}
+
+/* .pgs-org-card__body.text-center a.button {
+  position: static; /* Remove absolute positioning */
+  margin-top: auto !important;
+}  */
+
 
 .cta-box-1:before, .content-image-box:before, .content-box-1:before, .content-box-2:before, .content-box-3:before {
   display: table;
@@ -8315,7 +8346,6 @@ a:hover .news-image img {
 
 .content-image-image {
   padding:2em;
-
 }
 
 .content-image-image img {
