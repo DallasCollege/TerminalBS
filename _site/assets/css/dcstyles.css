@@ -8271,14 +8271,14 @@ a:hover .news-image img {
   box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.25), 0 4px 6px -2px rgba(0, 0, 0, 0.12);
 }
 
-.col-3.news-thumbnail.float-start {
+.news-thumbnail.float-start {
   padding-left:0;
   margin-left:0;
   margin-right:1.5rem;
   margin-bottom:.75rem;
 }
 
-.col-3.news-thumbnail.float-end {
+.news-thumbnail.float-end {
   padding-right:0;
   margin-right:0;
   margin-left:1.5rem;
