@@ -1,48 +1,37 @@
-<!DOCTYPE html>
-<html dir="ltr" lang="en-US">
-
 {% include head.html %}
 
-<style>
-    hr {margin:3rem}
-</style>
-<body>
+{% include header.html %}
 
-  {% include header.html %}
+{% include interior/content_featured-breadcrumb.html %}
 
-  {% include interior/content_featured-breadcrumb.html %}
-
-  <div class="pgs-banner pgs-banner--interior"></div>
-    <style>
-        .pgs-banner {
-            background-image: url("https://www.dallascollege.edu/PublishingImages/banner-1600x512/fall-2020-1600x512.jpg");
-        }
-    </style>  
+<div class="pgs-banner pgs-banner--interior"
+    style="background-image: url('https://www.dallascollege.edu/cd/schools/publishingimages/student-banner-image.jpg');">
 </div>
 
 <div id="t4-bodyContainer">
 
 
-<main id="main__body">
-
+    <main id="main__body">
         <div class="container">
             <div class="row">
 
                 {% include interior/content_featured-sidebar.html %}
 
-                    <div class="col-md-8 order-md-first">
-                        <article>
+                <div class="col-md-8 order-md-first">
+                    <article>
                         {{ content }}
-                        </article>
-                    </div>
-   
+                    </article>
                 </div>
+
             </div>
         </div>
 
-</main>
+    </main>
 
-  {% include footer.html %}
+</div>
+
+{% include footer.html %}
 
 </body>
+
 </html>
