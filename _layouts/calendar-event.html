@@ -1,27 +1,20 @@
-<!DOCTYPE html>
-<html dir="ltr" lang="en-US">
-
 {% include head.html %}
 
-<body>
+{% include header.html %}
 
-  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TDGX39L" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-
-  {% include header.html %}
-
-  {% include interior/content_featured-breadcrumb.html %}
+{% include interior/content_featured-breadcrumb.html %}
 
 
 
-  <div id="t4-bodyContainer">
-    
+<div id="t4-bodyContainer">
 
-      {% include interior/calendar-event-content.html %}
 
-    </div>
-  </div>
+  {% include interior/calendar-event-content.html %}
 
-  {% include footer.html %}
+</div>
+
+{% include footer.html %}
 
 </body>
+
 </html>

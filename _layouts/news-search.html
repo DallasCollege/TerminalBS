@@ -1,44 +1,38 @@
-<!DOCTYPE html>
-<html dir="ltr" lang="en-US">
-
 {% include head.html %}
 
-<body>
+{% include header.html %}
 
-  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TDGX39L" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- site notice -->
+<div class="site-notices bg-info">
+    <div class="container">
+        <div class="row min-height-100">
+            <div class="col-2 d-flex justify-content-center align-items-center p-2">
+                <span aria-hidden="true" class="ico fas fa-info-circle icon-3x"></span>
+            </div>
 
-  {% include header.html %}
-
-          <!-- site notice -->
-          <div class="site-notices bg-info">
-            <div class="container">
-                <div class="row min-height-100">
-                    <div class="col-2 d-flex justify-content-center align-items-center p-2">
-                            <span aria-hidden="true" class="ico fas fa-info-circle icon-3x"></span>
-                    </div>
-                    
-                    <div class="col-9 p-3">
-                        <p><strong>This is an info site notice</strong>. It should close similar to the functionality that's on the <a href="https://samplesite-01-us-east-1.terminalfour.net/home-alternate/">Terminalfour sample site</a>. It should appear above the breadcrumbs on each layout when activated.</p>
-                    </div>
-                    <div class="col-1 p-3 d-flex justify-content-center align-items-center">
-                        <span aria-hidden="true" class="ico fas fa-times-circle icon-lg"></span>
-                    </div>
-                </div>
+            <div class="col-9 p-3">
+                <p><strong>This is an info site notice</strong>. It should close similar to the functionality that's on
+                    the <a href="https://samplesite-01-us-east-1.terminalfour.net/home-alternate/">Terminalfour sample
+                        site</a>. It should appear above the breadcrumbs on each layout when activated.</p>
+            </div>
+            <div class="col-1 p-3 d-flex justify-content-center align-items-center">
+                <span aria-hidden="true" class="ico fas fa-times-circle icon-lg"></span>
             </div>
         </div>
-        <!-- end site notice -->
-  {% include interior/content_featured-breadcrumb.html %}
-
-
-  <div id="t4-bodyContainer">
-    
-
-      {% include interior/news-search-content.html %}
-
     </div>
-  </div>
+</div>
+<!-- end site notice -->
+{% include interior/content_featured-breadcrumb.html %}
 
-  {% include footer.html %}
+
+<div id="t4-bodyContainer">
+
+    {% include interior/news-search-content.html %}
+
+</div>
+
+{% include footer.html %}
 
 </body>
+
 </html>

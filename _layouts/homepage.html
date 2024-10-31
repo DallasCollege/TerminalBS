@@ -1,43 +1,24 @@
-<!DOCTYPE html>
-<html dir="ltr" lang="en-US">
-
 {% include head.html %}
 
-<body>
+{% include header.html %}
 
-  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TDGX39L" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<div id="pgs-bodyContainer">  
 
-  {% include header.html %}
-
-  <div id="t4-bodyContainer">
-    
-
-      <header>
-        <style>
-          .pgs-banner__image {
-            background-image: url("{{ site.baseurl }}/assets/img/homepage/2024-spring-v4-1600x512.jpg");
-          }
-        </style>
-        <div class="pgs-banner pgs-banner--grand shadow-2">
-          <div class="pgs-banner__image">
-          </div>
-          <div class="pgs-banner__title">
-            <div id="ctl00_PlaceHolderMain_ctl02_label" style='display:none'>Page_Content_2</div>
-            <div id="ctl00_PlaceHolderMain_ctl02__ControlWrapper_RichHtmlField" class="ms-rtestate-field" style="display:inline" aria-labelledby="ctl00_PlaceHolderMain_ctl02_label">
-              <h2 class="pgs-banner__h1 h1">Stay On Track<br></h2>
-              <p class="pgs-banner__p">Register for Wintermester and Spring 2024 classes. Find flexible class options to fit your schedule.</p>
-              <p class="pgs-banner__p text-end">
-                <a href="/admissions/registration/Pages/default.aspx" class="button button-sm cwhite pgs-banner__button button-md cta">Register Now</a>
-              </p>
-            </div>
-          </div>
-        </div>
-      </header>
+  <div class="pgs-banner pgs-banner--grand shadow-2">
+    <div class="pgs-banner__image" style="background-image: url('https://www.dallascollege.edu/PublishingImages/banner-1600x512/2024-summer-fall-v5-1600x512.jpg');">
+    </div>
+    <div class="pgs-banner__title">
+      <h2 class="pgs-banner__h1 h1">Spring Registration Is Open for All Students</h2>
+      <p class="pgs-banner__p">Don’t wait! Sign up early to get the classes you want.</p>
+      <p class="pgs-banner__p text-end">
+      <a href="/admissions/registration/Pages/default.aspx" class="button button-sm cwhite pgs-banner__button button-md cta">Register Now</a>
+      </p>
+    </div>
+  </div>
 
       {% include content_homepage.html %}
 
     </div>
-  </div>
 
   {% include footer.html %}
 
