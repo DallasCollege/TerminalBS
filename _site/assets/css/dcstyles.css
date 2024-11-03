@@ -6830,6 +6830,10 @@ Cards: Flexcards, Award Cards, Org Cards
   padding: 1rem;
 }
 
+.row.award-box {
+  margin-bottom:2rem;
+}
+
 /* 
  @media (min-width: 576px) {
   .card-group {
