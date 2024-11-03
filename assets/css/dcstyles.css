@@ -6821,11 +6821,17 @@ a:focus>img:not(.logo-bar-slot__img) {
 
 /*
 **************************************************
-Flexcards
+Cards: Flexcards, Award Cards, Org Cards
 **************************************************
  */
 
-@media (min-width: 576px) {
+
+ .card-button {
+  padding: 1rem;
+}
+
+/* 
+ @media (min-width: 576px) {
   .card-group {
     display: table;
     width: 100%;
@@ -6836,16 +6842,18 @@ Flexcards
   .card-group .card {
     display: table-cell;
     vertical-align: top
-  }
+  } */
 
-  .card-group>.card:not(:first-child) {
+  /* .card-group>.card:not(:first-child) {
     border-top-left-radius: 4px;
     border-bottom-left-radius: 4px;
-  }
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+  } */
 
 }
 
-.card {
+/* .card {
   position: relative;
   margin-bottom: .75em;
   border: 1px solid rgba(0, 0, 0, 0.16);
@@ -6853,20 +6861,20 @@ Flexcards
   display: block;
   margin: 1em 0 2em 0;
   max-width:50%;
-}
+  min-width:250px;
+} */
 
-@media (max-width: 575px) {
+/* @media (max-width: 575px) {
   .card {
     width:100%;
     max-width: 100%;
     max-width:auto;
   }
-}
+} */
 
-
-.card-block, .card-button {
+/* .card-block, .card-button {
   padding: 1.25em
-}
+} */
 
 .card-title, span.card-title, h2.card-title, h3.card-title, h4.card-title, h5.card-title {
   display: block;
@@ -6876,7 +6884,7 @@ Flexcards
   margin: 0 0 .75em
 }
 
-.card-img-top img {
+.card img {
   width: 100%;
   border-top-left-radius: .25em;
   border-top-right-radius: .25em;
@@ -6885,7 +6893,7 @@ Flexcards
 }
 
 .card-text:last-of-type {
-  margin: 0 0 3.5em
+  margin: 0 0 1rem
 }
 
 ul.card-list {
@@ -6920,6 +6928,8 @@ ul.card-list {
 .card-title, span.card-title, h2.card-title, h3.card-title, h4.card-title, h5.card-title {
   font-size: 1.33em
 }
+
+/* End Cards */
 
 ul.contact-info, ul.list-icons {
   list-style-type: none;
@@ -8391,3 +8401,16 @@ a:hover .news-image img {
   background-color: #66645e;
   border-radius: 50% !important;
 }
+
+
+/*
+**************************************************
+Full Width Styles for T4
+**************************************************
+ */
+
+.no-sidebar .accordion {
+  max-width:80%;
+  margin-left: auto;
+  margin-right:auto;
+ }
