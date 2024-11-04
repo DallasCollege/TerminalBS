@@ -3981,7 +3981,8 @@ a .txt-img-overlay__text {
 
 .full-width-row {
   position: relative;
-  width: 98vw;
+  /* width: 98vw; */
+  width:100vw;
   left: calc(-50vw + 50%);
   /*! padding-left:15px;  NOTE - removed 8/25/17 - causing issues*/
   /*! padding-right:15px; */
@@ -3989,8 +3990,8 @@ a .txt-img-overlay__text {
 
 @media (min-width: 576px) {
   .full-width-row {
-  width: 98.5vw;
-
+  /* width: 98.5vw; */
+  width:100vw;
   }
 }
 
