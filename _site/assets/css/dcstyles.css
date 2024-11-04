@@ -2658,10 +2658,32 @@ img.bio-image.pull-left, .pull-left.thumbnail, img.bio-image.pull-right, .pull-r
   font-size: 3rem
 }
 
-.pgs-org-card {
-  margin-bottom: 2rem;
+/* Org Cards */
+
+.t4-org-card {
+  margin-bottom: 1rem;
   position: relative;
+  border:0 solid
 }
+
+.t4-org-card__heading, h2.t4-org-card__heading, h3.t4-org-card__heading, h4.t4-org-card__heading, h5.tf-org-card__heading {
+  display: block;
+  padding: 1rem;
+  font-size: 1.25rem;
+  margin: 0;
+  border-radius: 3px 3px 0 0
+}
+
+.t4-org-card__heading .ico {
+  margin-right: .5rem
+}
+
+.pgs-org-card {
+  margin-bottom: 1rem;
+  position: relative;
+  border:0 solid
+}
+
 
 .pgs-org-card.border-cprimary, .pgs-org-card.border-csecondary {
   border-width: 1px;
@@ -2837,14 +2859,23 @@ ul.pgs-org-card__list .ico {
   font-size: 3em
 }
 
-.data-box .cb-mainico.img-circle, .data-box .cb-mainico.rounded-circle, .data-box .cb-mainico.img-rounded, .data-box .cb-mainico.ico-circle {
-  margin-bottom: 1em
-}
-
 .cb-mainico.ico-block {
   margin: -1.5em -1.5em 1.5em -1.5em;
   border-radius: 2px
 }
+
+/* Data Box */
+
+.row > .data-boxes:only-child {
+margin-left:auto;
+margin-right:auto;
+}
+
+.data-box .cb-mainico.img-circle, .data-box .cb-mainico.rounded-circle, .data-box .cb-mainico.img-rounded, .data-box .cb-mainico.ico-circle {
+  margin-bottom: 1em
+}
+
+
 
 .data-box, .data-box-icon {
   text-align: center;
@@ -2941,7 +2972,8 @@ ul.pgs-org-card__list .ico {
 }
 
 .event-card .sub-event img {
-  width: 32px;
+  width: 64px;
+  height:64px;
   margin-bottom: 0px;
   margin-right: .5em
 }
@@ -5931,9 +5963,13 @@ a:hover {
   text-decoration: none
 }
 
-article *:not(.bg-cprimary):not(.bg-cprimary-lt):not(.bg-cprimary-dk):not(.bg-cprimary-gr):not(.cprimary):not(.cprimary-lt):not(.cprimary-dk):not(.cprimary-gr):not(.bg-csecondary):not(.bg-cgrey-80) a:not(.pgs-org-card__heading a):not(.pgs-tile):not(.button):not(.collapsible):not(.grand-button):hover,
-article a:not(.pgs-org-card__heading a):hover {
+article a:not(.bg-cprimary *):not(.bg-cprimary-lt *):not(.bg-cgrey-80 *):not(.bg-cprimary-dk *):not(.bg-cprimary-gr *):not(.cprimary *):not(.cprimary-lt *):not(.cprimary-dk *):not(.cprimary-gr *):not(.bg-csecondary *):not(.t4-org-card__heading *):not(.t4-tile *):not(.button *):not(.card-button *):not(.collapsible *):not(.grand-button *):hover,
+article a:not(.bg-cprimary *):not(.bg-cprimary-lt *):not(.bg-cgrey-80 *):not(.bg-cprimary-dk *):not(.bg-cprimary-gr *):not(.cprimary *):not(.cprimary-lt *):not(.cprimary-dk *):not(.cprimary-gr *):not(.bg-csecondary *):not(.t4-org-card__heading *):not(.t4-tile *):not(.button *):not(.card-button *):not(.collapsible *):not(.grand-button *):focus {
   color: #BF1717;
+}
+
+.card-button a.button:hover, .card-header a:hover {
+  color: inherit; /* Ensure the button retains its original color on hover */
 }
 
 article .cprimary a:not(.button):hover, article .cprimary-lt a:not(.button):hover, article .cprimary-dk a:not(.button):hover, article .cprimary-gr a:not(.button):hover, article .bg-cprimary a:not(.button):hover, article .bg-cprimary-lt a:not(.button):hover, article .bg-cprimary-dk a:not(.button):hover, article .bg-cprimary-gr a:not(.button):hover {
@@ -7598,12 +7634,13 @@ a.grand-button.bg-cgrey-60:hover, a.grand-button.bg-cgrey-60:focus, a.button.bg-
   border-color: #333 !important
 }
 
-a.grand-button.bg-cgrey-60:hover, a.grand-button.bg-cgrey-60:focus, a.button.bg-cgrey-80:hover, a.button.bg-cgrey-80:focus {
-  background-color: #4d4d4d
+a.grand-button.bg-cgrey-80:hover, a.grand-button.bg-cgrey-80:focus, a.button.bg-cgrey-80:hover, a.button.bg-cgrey-80:focus {
+  background-color: #4d4d4d;
+  color:#ffffff;
 }
 
 @media screen {
-  a.bg-cprimary, a.cprimary, a.bg-cprimary-gr, a.cprimary-gr, a.bg-cprimary-dk, a.cprimary-dk, a.bg-csecondary, a.csecondary, a.bg-csecondary-gr, a.csecondary-gr, a.bg-csecondary-dk, a.csecondary-dk, a.bg-cblack, a.cblack, a.bg-cgrey-60, a.text-cgrey-80 {
+  a.bg-cprimary, a.cprimary, a.bg-cprimary-gr, a.cprimary-gr, a.bg-cprimary-dk, a.cprimary-dk, a.bg-csecondary, a.csecondary, a.bg-csecondary-gr, a.csecondary-gr, a.bg-csecondary-dk, a.csecondary-dk, a.bg-cblack, a.cblack, a.bg-cgrey-60, a.bg-cgrey-80, a.text-cgrey-80 {
     color: #fff !important
   }
 
@@ -8305,6 +8342,7 @@ a:hover .news-image img {
 
 .news-thumbnail .caption {
   margin-top:.5rem;
+  font-size:.85rem;
 }
 
 .video-container {
@@ -8414,7 +8452,13 @@ Full Width Styles for T4
  */
 
 .no-sidebar .accordion {
-  max-width:80%;
+  max-width:60%;
+  margin-left: auto;
+  margin-right:auto;
+ }
+
+ .no-sidebar .pgs-grand-dropdown {
+  max-width:60%;
   margin-left: auto;
   margin-right:auto;
  }
