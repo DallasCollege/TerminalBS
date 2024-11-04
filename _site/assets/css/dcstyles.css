@@ -8434,7 +8434,8 @@ a:hover .news-image img {
   border-radius: 50% !important;
 }
 
-.pgs-people-card__img img{
+
+.pgs-people-card__img img {
   width: 50px;
   height: 50px;
   max-width:100%;
@@ -8445,6 +8446,12 @@ a:hover .news-image img {
   border-radius: 50% !important;
 }
 
+@media screen and (max-width: 575px){
+  .pgs-people-card__img img {
+    width: 40px;
+    height: 40px;
+    max-width:100%;
+  }
 
 /*
 **************************************************
