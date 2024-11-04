@@ -516,25 +516,60 @@
 
 
     <main id="main__body">
-        <div class="container no-sidebar">
-            <article>
-                <h1 class="page-header--xl">Flexbox Cards</h1>
+        <div class="container">
+            <div class="row">
+
+                <!-- Sidebar Begin -->
+
+<aside id="sidebar" class="sidebar col-md-3 offset-md-1 order-md-last">
+  <div class="sidebar-img">
+    <img alt="An older woman and a younger woman reading a book together" src="https://www.dallascollege.edu/resources/accessibility-services/PublishingImages/services-disability-ada-464x464.jpg">
+  </div>
+
+
+
+    <nav class="navbar pgs-navbar--sidebar navbar-expand-md">
+     <div class="container-fluid p-0"> 
+
+
+<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#pgs-navbar--sidebar__collapse" aria-controls="pgs-navbar--sidebar__collapse" aria-expanded="false" aria-label="Toggle navigation">
+  [Site] Menu
+  <span class="ico fas fa-chevron-circle-down" aria-hidden="true"></span>
+</button>
+    
+      <div class="collapse navbar-collapse" id="pgs-navbar--sidebar__collapse">
+        <ul class="nav navbar-nav flex-column" role="menu">
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="#">Interior Layouts</a>
+          </li>
+          <li role="menuitem" class="nav-item"><a href="pegasus/typography.html">Typography</a></li>
+          <li role="menuitem" class="nav-item"><a href="pegasus/action-links.html">Action Links</a></li>
+          <li role="menuitem" class="nav-item"><a href="pegasus/accordion.html">Accordions</a></li>
+          <li role="menuitem" class="nav-item"><a href="pegasus/award-cards.html">Award Card</a></li>
+          <li role="menuitem" class="nav-item"><a href="pegasus/buttons.html">Buttons</a></li>
+          <li role="menuitem" class="nav-item"><a href="pegasus/cta.html">Calls to Action Stripe</a></li>
+          <li role="menuitem" class="nav-item"><a href="pegasus/colors.html">Colors</a></li>
+          <li role="menuitem" class="nav-item"><a href="pegasus/cib.html">Content & Image Boxes</a></li>
+
+
+        </ul>
+      </div>
+    </div>
+  </nav>
+    <div id="scnbox" class="text-success border border-success height-sm-100 text-align-center p-3">
+      <div id="scnboxtext" class="h6 text-success no-margin">Here's a place for HTML content to be setup as an "ad" on
+          pages based on tags.
+      </div>
+    </div>
+</aside>
+
+<!-- end sidebar -->
+
+                <div class="col-md-8 order-md-first">
+                    <article>
+                        <h1 class="page-header--xl">Flexbox Cards</h1>
 
 <h2>Flexbox: Standard</h2>
-
-
-<!-- <div class="card shadow-sm">
-    <div class="card-img-top">
-        <img src="https://dallascollege.github.io/TerminalBS/assets/img/students2.jpg" alt="Insert Alt Description">
-    </div>
-    <div class="card-body">
-        <h3 class="card-title"><a href="#">Financial Aid Step by Step</a></h3>
-        <p class="card-text"><a href="#">Browse online job listings</a> for full- and part-time job opportunities in the
-            Dallas metroplex, or post your resumé and let employers find you. Specialized sites also are available for
-            health care students and internship seekers.</p>
-        <span class="link"><a href="#" class="button bg-cprimary button-mn">Link</a></span>
-    </div>
-</div> -->
 
 <div class="row row-cols-1 row-cols-sm-2 g-4">
     <div class="col">
@@ -669,76 +704,14 @@
 
 
 
+                    </article>
+                </div>
 
+            </div>
+        </div>
 
-
-    <!-- <div class="card-group">
-    <div class="card shadow-sm">
-        <div class="card-img-top">
-            <img src="https://dallascollege.github.io/TerminalBS/assets/img/students2.jpg" alt="Insert Alt Description">
-        </div>
-        <div class="card-body">
-            <h3 class="card-title"><a href="#">Financial Aid Step by Step</a></h3>
-            <p class="card-text"><a href="#">Browse online job listings</a> for full- and part-time job opportunities in
-                the Dallas metroplex, or post your resumé and let employers find you. Specialized sites also are
-                available for
-                health care students and internship seekers.</p>
-            <span class="link"><a href="#" class="button bg-cprimary button-mn">Link</a></span>
-        </div>
-    </div>
-    <div class="card cprimary-lt shadow-sm">
-        <div class="card-img-top">
-            <img src="https://dallascollege.github.io/TerminalBS/assets/img/students2.jpg" alt="Insert Alt Description">
-        </div>
-        <div class="card-body">
-            <h3 class="card-title"><a href="#">Financial Aid Step by Step</a></h3>
-            <p class="card-text">Career services include individual <a href="#">career counseling</a>, career
-                assessment, computerized career guidance programs, resume assistance and mock interviewing. Browse
-                online job listings for
-                full- and part-time job opportunities in the Dallas metroplex, or post your resumé and let employers
-                find you. Specialized sites also are available for health care students and internship seekers.</p>
-            <span class="link"><a href="#" class="button bg-cprimary button-mn">Don't Use Learn More</a></span>
-        </div>
-    </div>
-    <div class="card bg-cprimary shadow-sm">
-        <div class="card-img-top">
-            <img src="https://dallascollege.github.io/TerminalBS/assets/img/students2.jpg" alt="Insert Alt Description">
-        </div>
-        <div class="card-body">
-            <h3 class="card-title"><a href="#">Financial Aid Step by Step</a></h3>
-            <p class="card-text">The campuses of Dallas College offer numerous <a href="#">career fairs</a> and
-                on-campus recruiting events.</p>
-            <span class="link"><a href="#" class="button bg-cwhite button-mn">Read the Step by Step <span
-                        aria-hidden="true" class="ico fab fa-youtube ico-right"></span> </a></span>
-        </div>
-    </div>
-    <div class="card bg-cprimary shadow-sm">
-        <div class="card-img-top">
-            <img src="https://dallascollege.github.io/TerminalBS/assets/img/students2.jpg" alt="Insert Alt Description">
-        </div>
-        <div class="card-body">
-            <h3 class="card-title"><a href="#">Financial Aid Step by Step</a></h3>
-            <p class="card-text">The campuses of Dallas College offer numerous <a href="#">career fairs</a> and
-                on-campus recruiting events.</p>
-            <span class="link"><a href="#" class="button bg-cwhite button-mn">Read the Step by Step <span aria-hidden="true" class="ico fab fa-youtube ico-right"></span> </a></span>
-        </div>
-    </div>
-    <div class="card bg-cprimary shadow-sm">
-        <div class="card-img-top">
-            <img src="https://dallascollege.github.io/TerminalBS/assets/img/students2.jpg" alt="Insert Alt Description">
-        </div>
-        <div class="card-body">
-            <h3 class="card-title"><a href="#">Financial Aid Step by Step</a></h3>
-            <p class="card-text">The campuses of Dallas College offer numerous <a href="#">career fairs</a> and
-                on-campus recruiting events.</p>
-            <span class="link"><a href="#" class="button bg-cwhite button-mn">Read the Step by Step <span aria-hidden="true" class="ico fab fa-youtube ico-right"></span> </a></span>
-        </div>
-    </div>
-</div> -->
-            </article>
-
-        </div>        
     </main>
+
 </div>
 
 <footer id="l-footer" class="bg-cprimary-dk">
