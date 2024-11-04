@@ -513,280 +513,426 @@
 </div>
 
 <div id="t4-bodyContainer">
-    <main id="main__body" class="no-sidebar">
+
+
+    <main id="main__body" class="sidebar">
         <div class="container">
             <div class="row">
-                <div class="col-12">
+
+                <!-- Sidebar Begin -->
+
+<aside id="sidebar" class="sidebar col-md-3 offset-md-1 order-md-last">
+  <div class="sidebar-img">
+    <img alt="An older woman and a younger woman reading a book together" src="https://www.dallascollege.edu/resources/accessibility-services/PublishingImages/services-disability-ada-464x464.jpg">
+  </div>
+
+
+
+    <nav class="navbar pgs-navbar--sidebar navbar-expand-md">
+     <div class="container-fluid p-0"> 
+
+
+<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#pgs-navbar--sidebar__collapse" aria-controls="pgs-navbar--sidebar__collapse" aria-expanded="false" aria-label="Toggle navigation">
+  [Site] Menu
+  <span class="ico fas fa-chevron-circle-down" aria-hidden="true"></span>
+</button>
+    
+      <div class="collapse navbar-collapse" id="pgs-navbar--sidebar__collapse">
+        <ul class="nav navbar-nav flex-column" role="menu">
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="#">Interior Layouts</a>
+          </li>
+          <li role="menuitem" class="nav-item"><a href="pegasus/typography.html">Typography</a></li>
+          <li role="menuitem" class="nav-item"><a href="pegasus/action-links.html">Action Links</a></li>
+          <li role="menuitem" class="nav-item"><a href="pegasus/accordion.html">Accordions</a></li>
+          <li role="menuitem" class="nav-item"><a href="pegasus/award-cards.html">Award Card</a></li>
+          <li role="menuitem" class="nav-item"><a href="pegasus/buttons.html">Buttons</a></li>
+          <li role="menuitem" class="nav-item"><a href="pegasus/cta.html">Calls to Action Stripe</a></li>
+          <li role="menuitem" class="nav-item"><a href="pegasus/colors.html">Colors</a></li>
+          <li role="menuitem" class="nav-item"><a href="pegasus/cib.html">Content & Image Boxes</a></li>
+
+
+        </ul>
+      </div>
+    </div>
+  </nav>
+    <div id="scnbox" class="text-success border border-success height-sm-100 text-align-center p-3">
+      <div id="scnboxtext" class="h6 text-success no-margin">Here's a place for HTML content to be setup as an "ad" on
+          pages based on tags.
+      </div>
+    </div>
+</aside>
+
+<!-- end sidebar -->
+
+                <div class="col-md-8 order-md-first">
                     <article>
-                        <h1 class="page-header--xl">Colors</h1>
+                        <h1 class="page-header--xl">Event Cards</h1>
 
+<h2>Event Cards: Standard</h2>
 
-<p>Additional color variables can be found in <a href="https://www.dallascollege.edu/about/style/documents/pegasus/elements/colors.html">the PEGASUS documentation</a>.</p>
-
-<div class="row extra-space">
-    <div class="col-sm-4 text-center">
-        <h3>cprimary</h3>
-        <p>Dallas College Blue</p>
-        <div class="bg-cprimary color-swatch rounded-circle width-100 d-flex justify-content-center align-items-center mx-auto">
-            <p class="cb-title-lg">Aa</p>
-        </div>
-        <div class="spacer-2"></div>
-        <h4>Apply as Background Color</h4>
-        <code class="lead">.bg-cprimary</code><p></p>
-            <code class="language-css">background:#003385;
-color:#fffff;</code>
+<div class="event-card shadow-2">
+  <div class="event-head">
+    <div class="row bg-cprimary-lt align-items-baseline">
+      <div class="col-md-2 col-sm-3 event-time">
+        <h3 class="h4">9 a.m.</h3>
+      </div>
+      <div class="col-md-7 col-sm-9 event-card-title">
+        <span class="h4">Keynote Presentation: To Infinity And Beyond</span>
+      </div>
+      <div class="col-md-3 offset-md-0 col-sm-9 offset-sm-3 event-location">
+        <a href="#"><span class="text-cprimary ico fas fa-map-marker-alt ico-left"></span><span class="visually-hidden">Location: </span>Lone
+          Star Lobby</a>
+      </div>
     </div>
-    <div class="col-sm-4 text-center">
-        <h3>csecondary</h3>
-        <p>Dallas College Red</p>
-        <div class="bg-csecondary color-swatch rounded-circle width-100 d-flex justify-content-center align-items-center mx-auto">
-            <p class="cb-title-lg">Aa</p>
-        </div>
-        <div class="spacer-2"></div>
-        <h4>Apply as Background Color</h4>
-        <code class="lead">.bg-csecondary</code><p></p>
-        <code class="language-css">background:#E52626;
-color:#fffff;</code>
-    </div>
-    <div class="col-sm-4 text-center">
-        <h3>cgrey</h3>
-        <p>Dallas College Silver Adapted</p>
-        <div class="bg-cgrey color-swatch rounded-circle width-100 d-flex justify-content-center align-items-center mx-auto">
-            <p class="cb-title-lg">Aa</p>
-        </div>
-        <div class="spacer-2"></div>
-        <h4>Apply as Background Color</h4>
-        <code class="lead">.bg-cgrey</code><p></p>
-      <code class="language-css">background:#E5E2D6;
-color:#000000;</code>
-    </div>
+  </div>
 </div>
 
-<h2>Color Variations</h2>
+<div class="spacer-3"></div>
 
-<div class="row extra-space">
-    <div class="col-md-4 text-center">
-        <h4 class="h3">cprimary-lt</h4>
-        <div class="color-swatch img-circle bg-cprimary-lt">
-            <p>Aa</p>
-        </div>
-        <div class="spacer-2"></div>
-        <h5 class="h4">Apply as Background Color</h5>
-        <p>
-            <code class="lead">.bg-cprimary-lt</code></p>
-        <code class="language-css">background:#E9F2FF;
-color:#000000;</code>
-    </div>
 
-    <div class="col-md-4 text-center">
-        <h4 class="h3">cprimary-dk</h4>
-        <div class="color-swatch img-circle bg-cprimary-dk">
-            <p>Aa</p>
-        </div>
-        <div class="spacer-2"></div>
-        <h5 class="h4">Apply as Background Color</h5>
-        <p>
-            <code class="lead">.bg-cprimary-dk</code></p>
-        <code class="language-css">background:#001E49;
-color:#FFFFFF;</code>
+<h2>Event Cards: Standard With Details</h2>
+
+<p>The standard card with details, for implementation will include the blue event-head bar, the event-body (optional),
+  which will be an HTML block, and the event-footer (optional).</p>
+<div class="event-card shadow-2">
+  <div class="event-head">
+    <div class="row bg-cprimary-lt align-items-baseline">
+      <div class="col-md-2 col-sm-3 event-time">
+        <h3 class="h4">Noon <span>to 9 a.m.</span></h3>
+      </div>
+      <div class="col-md-7 col-sm-9 event-card-title">
+        <span class="h4">General Session</span>
+      </div>
+      <div class="col-md-3 offset-md-0 col-sm-9 offset-sm-3 event-location">
+        <a href="#"><span class="text-cprimary ico fas fa-map-marker-alt ico-left"></span><span class="visually-hidden">Location: </span>Lone
+          Star Lobby</a>
+      </div>
     </div>
-    <div class="col-md-4 text-center">
-        <h4 class="h3">cprimary-gr</h4>
-        <div class="color-swatch img-circle bg-cprimary-gr">
-            <p>Aa</p>
+  </div>
+  <div class="event-body">
+    <div class="row">
+      <div class="col-md-9 offset-md-2 col-sm-9 offset-sm-3">
+        <ul class="row list-unstyled">
+          <li class="col-md-6 event-participant">
+            <img src="https://dallascollege.github.io/TerminalBS/assets/img/rkent-100x100.jpg" alt="">
+            <div class="participant-name"><a href="#">Roy Kent</a> <span class="participant-title">Assistant Coach, AFC
+                Richmond</span> </div>
+          </li>
+          <li class="col-md-6 event-participant">
+            <img src="https://dallascollege.github.io/TerminalBS/assets/img/cbeard-100x100.jpg" alt="">
+            <div class="participant-name">Willis "Coach" Beard <span class="participant-title">Assistant Coach, AFC
+                Richmond</span> </div>
+          </li>
+        </ul>
+        <div class="event-description">
+          <p>The content in this white area will just be the HTML for each event info.</p>
         </div>
-        <div class="spacer-2"></div>
-        <h5 class="h4">Apply as Background Color</h5>
-        <p>
-            <code class="lead">.bg-cprimary-gr</code></p>
-        <code class="language-css">background: linear-gradient( $cprimary, darken($cprimary, 7%));
-color:#FFFFFF;</code>
+      </div>
     </div>
+  </div>
+  <div class="event-footer">
+    <div class="row">
+      <div class="ccol-md-9 offset-md-2 col-sm-9 offset-sm-3">
+        <ul class="list-inline list-unstyled">
+          <li>
+            <a href="#"><span class="text-cprimary ico fas fa-download ico-left" aria-hidden="true"></span>Download
+              Slides</a>
+          </li>
+          <li>
+            <a href="#"><span class="text-cprimary ico fas fa-play-circle ico-left" aria-hidden="true"></span>Watch
+              Video Recording</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
 </div>
 
-<div class="row extra-space">
-    <div class="col-md-4 text-center">
-        <h4 class="h3">csecondary-lt</h4>
-        <div class="color-swatch img-circle bg-csecondary-lt">
-            <p>Aa</p>
-        </div>
-        <div class="spacer-2"></div>
-        <h5 class="h4">Apply as Background Color</h5>
-        <p><code class="lead">.bg-csecondary-lt</code></p>
-        <code class="language-css">background:#FFE9E9;
-color:#000000;</code>
-    </div>
+<div class="spacer-3"></div>
 
-    <div class="col-md-4 text-center">
-        <h4 class="h3">csecondary-dk</h4>
-        <div class="color-swatch img-circle bg-csecondary-dk">
-            <p>Aa</p>
-        </div>
-        <div class="spacer-2"></div>
-        <h5 class="h4">Apply as Background Color</h5>
-        <p><code class="lead">.bg-csecondary-dk</code></p>
-        <code class="language-css">background:#6D0000;
-color:#FFFFFF;</code>
+<h2>Event Cards: With Description</h2>
+
+<div class="event-card shadow-2">
+  <div class="event-head">
+    <div class="row bg-cprimary-lt align-items-baseline">
+      <div class="col-md-2 col-sm-3 event-time">
+        <h3 class="h4">9 a.m.</h3>
+      </div>
+      <div class="col-md-7 col-sm-9 event-card-title">
+        <span class="h4">Keynote Presentation: To Infinity And Beyond</span>
+      </div>
+      <div class="col-md-3 offset-md-0 col-sm-9 offset-sm-3 event-location">
+        <a href="#"><span class="text-cprimary ico fas fa-map-marker-alt ico-left"></span><span class="visually-hidden">Location: </span>Lone
+          Star Lobby</a>
+      </div>
     </div>
-    <div class="col-md-4 text-center">
-        <h4 class="h3">csecondary-gr</h4>
-        <div class="color-swatch img-circle bg-csecondary-gr">
-            <p>Aa</p>
+  </div>
+  <div class="event-body">
+    <div class="row">
+      <div class="col-md-9 offset-md-2 col-sm-9 offset-sm-3">
+        <div class="event-description">
+          <p>Kevin is a thought leader...</p>
         </div>
-        <div class="spacer-2"></div>
-        <h5 class="h4">Apply as Background Color</h5>
-        <p>
-            <code class="lead">.bg-csecondary-gr</code></p>
-        <code class="text-left language-css">background:linear-gradient ($csecondary, darken($csecondary, 7%));
-            color:#FFFFFF;</code>
+      </div>
     </div>
+  </div>
 </div>
 
-<h2>Grey Spectrum</h2>
+<div class="spacer-3"></div>
 
-<div class="row extra-space">
-    <div class="col-md-4 text-center">
-        <h4 class="h3">cwhite</h4>
-        <p>0% Dark</p>
-        <div class="color-swatch img-circle bg-cwhite shadow-1">
-            <p>Aa</p>
-        </div>
-        <div class="spacer-2"></div>
-        <h5 class="h4">Apply as Background Color</h5>
-        <p>
-            <code class="lead">.bg-cwhite</code></p>
-        <code class=" text-start language-css">background:#FFFFFF;
-color:#000000;</code>
-    </div>
-    <div class="col-md-4 text-center">
-        <h4 class="h3">cgrey-05</h4>
-        <p>5% Dark</p>
-        <div class="color-swatch img-circle bg-cgrey-05">
-            <p>Aa</p>
-        </div>
-        <div class="spacer-2"></div>
-        <h5 class="h4">Apply as Background Color</h5>
-        <p>
-            <code class="lead">.bg-cgrey-05</code></p>
-        <code class=" text-start language-css">background:#F7F3E8;
-color:#000000;</code>
-    </div>
 
-    <div class="col-md-4 text-center">
-        <h4 class="h3">cgrey</h4>
-        <p>10% Dark</p>
-        <div class="color-swatch img-circle bg-cgrey">
-            <p>Aa</p>
-        </div>
-        <div class="spacer-2"></div>
-        <h5 class="h4">Apply as Background Color</h5>
-        <p>
-            <code class="lead">.bg-cgrey</code></p>
-        <code class=" text-start language-css">background:#E5E2D6;
-color:#FFFFFF;</code>
+<h2>Event Cards: With Footer</h2>
+<div class="event-card shadow-2">
+  <div class="event-head">
+    <div class="row bg-cprimary-lt align-items-baseline">
+      <div class="col-md-2 col-sm-3 event-time">
+        <h3 class="h4">9 a.m.</h3>
+      </div>
+      <div class="col-md-7 col-sm-9 event-card-title">
+        <span class="h4">Keynote Presentation: To Infinity And Beyond</span>
+      </div>
+      <div class="col-md-3 offset-md-0 col-sm-9 offset-sm-3 event-location">
+        <a href="#"><span class="text-cprimary ico fas fa-map-marker-alt ico-left"></span><span class="visually-hidden">Location: </span>Lone
+          Star Lobby</a>
+      </div>
     </div>
-    <div class="col-md-4 text-center">
-        <h4 class="h3">cgrey-20</h4>
-        <p>20% (17%) Dark</p>
-        <div class="color-swatch img-circle bg-cgrey-20">
-            <p>Aa</p>
-        </div>
-        <div class="spacer-2"></div>
-        <h5 class="h4">Apply as Background Color</h5>
-        <p>
-            <code class="lead">.bg-cgrey-20</code></p>
-            <code class=" text-start language-css">background:#D6D2C4;
-color:#000000;</code>
+  </div>
+  <div class="event-footer">
+    <div class="row">
+      <div class="col-md-9 offset-md-2 col-sm-9 offset-sm-3">
+        <ul class="list-inline list-unstyled">
+          <li><a href="#"><span class="text-cprimary ico fas fa-download ico-left" aria-hidden="true"></span>Download
+              Slides</a></li>
+          <li><a href="#"><span class="text-cprimary ico fas fa-play-circle ico-left" aria-hidden="true"></span>Watch
+              Video Recording</a></li>
+        </ul>
+      </div>
     </div>
-    <div class="col-md-4 text-center">
-        <h4 class="h3">cgrey-40</h4>
-        <p>40% Dark</p>
-        <div class="color-swatch img-circle bg-cgrey-40">
-            <p>Aa</p>
-        </div>
-        <div class="spacer-2"></div>
-        <h5 class="h4">Apply as Background Color</h5>
-        <p><code class="lead">.bg-cgrey-40</code></p>
-        <code class=" text-start language-css">background:#99968D;
-color:#000000;</code>
-    </div>
-    <div class="col-md-4 text-center">
-        <h4 class="h3">cgrey-60</h4>
-        <p>60% Dark</p>
-        <div class="color-swatch img-circle bg-cgrey-60">
-            <p>Aa</p>
-        </div>
-        <div class="spacer-2"></div>
-        <h5 class="h4">Apply as Background Color</h5>
-        <p><code class="lead">.bg-cgrey-60</code></p>
-        <code class=" text-start language-css">background:#66645E;
-color:#FFFFFF;</code>
-    </div>
-    <div class="col-md-4 text-center">
-        <h4 class="h3">cgrey-80</h4>
-        <p>80% Dark</p>
-        <div class="color-swatch img-circle bg-cgrey-80">
-            <p>Aa</p>
-        </div>
-        <div class="spacer-2"></div>
-        <h5 class="h4">Apply as Background Color</h5>
-        <p>
-            <code class="lead">.bg-cgrey-80</code></p>
-        <code class=" text-start language-css">background: #333333;
-color:#FFFFFF;</code>
-    </div>
-    <div class="col-md-4 text-center">
-        <h4 class="h3">cblack</h4>
-        <p>100% Dark</p>
-        <div class="color-swatch img-circle bg-cblack">
-            <p>Aa</p>
-        </div>
-        <div class="spacer-2"></div>
-        <h5 class="h4">Apply as Background Color</h5>
-        <p>
-            <code class="lead">.bg-cblack</code></p>
-        <code class=" text-start language-css">background: #000000;
-color:#FFFFFF;</code>
-    </div>
+  </div>
 </div>
 
-<h2>Contextual Colors</h2>
-<div class="row">
-<div class="col-3">
-<h4>Success<br>.bg-success</h4>
-<div class="color-swatch bg-success p-2">
-    <p>There are seven campuses of Dallas College.</p>
-</div>
-</div>
+<div class="spacer-3"></div>
 
-<div class="col-3">
-    <h4>Info<br>.bg-info</h4>
-    <div class="color-swatch bg-info p-2">
-        <p>There are seven campuses of Dallas College.</p>
+<p>The layouts below are examples of how the full card can work with the HTML blocks.</p>
+
+<h2>Event Cards: Full Features</h2>
+<div class="event-card shadow-2">
+  <div class="event-head">
+    <div class="row bg-cprimary-lt align-items-baseline">
+      <div class="col-md-2 col-sm-3 event-time">
+        <h3 class="h4">Noon <span>to 9 a.m.</span></h3>
+      </div>
+      <div class="col-md-7 col-sm-9 event-card-title">
+        <span class="h4">General Session</span>
+      </div>
+      <div class="col-md-3 offset-md-0 col-sm-9 offset-sm-3 event-location">
+        <a href="#"><span class="text-cprimary ico fas fa-map-marker-alt ico-left"></span><span class="visually-hidden">Location: </span>Lone
+          Star Lobby</a>
+      </div>
     </div>
-</div>
+  </div>
+  <div class="event-body">
+    <div class="row">
+      <div class="col-md-9 offset-md-2 col-sm-9 offset-sm-3">
+        <ul class="row list-unstyled">
+          <li class="col-md-6 event-participant">
+            <img src="https://dallascollege.github.io/TerminalBS/assets/img/rkent-100x100.jpg" alt="">
+            <div class="participant-name"><a href="#">Roy Kent</a> <span class="participant-title">Assistant Coach, AFC
+                Richmond</span> </div>
+          </li>
+          <li class="col-md-6 event-participant">
+            <img src="https://dallascollege.github.io/TerminalBS/assets/img/cbeard-100x100.jpg" alt="">
+            <div class="participant-name">Willis "Coach" Beard <span class="participant-title">Assistant Coach, AFC
+                Richmond</span> </div>
+          </li>
+        </ul>
+        <div class="event-description">
+          <p>Kevin is a thought leader in the field of sustainability, having taught at over seven different
+            universities and written four acclaimed books, including: “Return on Sustainability: How Business Can
+            Increase Profitability &amp; Address Climate Change in an Uncertain Economy,” “Making Sustainability Stick,”
+            and “An Introduction to Sustainable Business.” He is on the cutting edge of online teaching, as he has
+            successfully “flipped the classroom” with his multimedia online materials and videos that have made the
+            online experience much more student-friendly.</p>
+        </div>
+        <div class="sub-event">
+          <h4 class="h5 page-header">Greetings from the Coach<br></h4>
+          <ul class="row list-unstyled">
+            <li class="col-12 event-participant">
+              <img src="https://dallascollege.github.io/TerminalBS/assets/img/tlasso-100x100.jpg" alt="">
+              <div class="participant-name">Ted Lasso
+                <span class="participant-title">Head Coach, AFC Richmond</span>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="sub-event">
+          <h4 class="h5 page-header">A Conversation with Rebecca Welton</h4>
+          <ul class="row list-unstyled">
+            <li class="col-12 event-participant">
+              <img src="https://dallascollege.github.io/TerminalBS/assets/img/rwelton-100x100.jpg" alt="">
+              <div class="participant-name">Rebecca Welton
+                <span class="participant-title">Owner, AFC Richmond</span>
+              </div>
+            </li>
+            <li class="col-12 event-participant">
+              <img src="https://dallascollege.github.io/TerminalBS/assets/img/tcrimm-100x100.jpg" alt="">
+              <div class="participant-name">Trent Crimm
+                <span class="participant-title">Bestselling Author</span>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="sub-event">
+          <h4 class="h5 page-header">Keynote Speaker</h4>
+          <ul class="row list-unstyled">
+            <li class="col-12 event-participant">
+              <img src="https://dallascollege.github.io/TerminalBS/assets/img/tlasso-100x100.jpg" alt="">
+              <div class="participant-name">Ted Lasso
+                <span class="participant-title">Head Coach, AFC Richmond</span>
+              </div>
+            </li>
+          </ul>
+        </div>
 
-<div class="col-3">
-    <h4>Warning<br>.bg-warning</h4>
-    <div class="color-swatch bg-warning p-2">
-        <p>There are seven campuses of Dallas College.</p>
+        <div class="sub-event">
+          <h4 class="h5 page-header">Chancellor's Award Presentation</h4>
+        </div>
+        <div class="sub-event">
+          <h4 class="h5 page-header">Employee Giving Campaign Announcement</h4>
+        </div>
+        <div class="sub-event">
+          <h4 class="h5 page-header">Closing Remarks</h4>
+        </div>
+      </div>
     </div>
-</div>
-
-<div class="col-3">
-    <h4>Danger<br>.bg-danger</h4>
-    <div class="color-swatch bg-danger p-2">
-        <p>There are seven campuses of Dallas College.</p>
+  </div>
+  <div class="event-footer">
+    <div class="row">
+      <div class="ccol-md-9 offset-md-2 col-sm-9 offset-sm-3">
+        <ul class="list-inline list-unstyled">
+          <li>
+            <a href="#"><span class="text-cprimary ico fas fa-download ico-left" aria-hidden="true"></span>Download
+              Slides</a>
+          </li>
+          <li>
+            <a href="#"><span class="text-cprimary ico fas fa-play-circle ico-left" aria-hidden="true"></span>Watch
+              Video Recording</a>
+          </li>
+        </ul>
+      </div>
     </div>
+  </div>
 </div>
 
+<div class="spacer-3"></div>
+
+
+
+
+<h2>Event Cards: Speaker Info</h2>
+
+<div class="event-card shadow-2">
+  <div class="event-head">
+    <div class="row bg-cprimary-lt align-items-baseline">
+      <div class="col-md-2 col-sm-3 event-time">
+        <h3 class="h4">9 a.m.</h3>
+      </div>
+      <div class="col-md-7 col-sm-9 event-card-title">
+        <span class="h4">Keynote Presentation: To Infinity And Beyond</span>
+      </div>
+      <div class="col-md-3 offset-md-0 col-sm-9 offset-sm-3 event-location">
+        <a href="#"><span class="text-cprimary ico fas fa-map-marker-alt ico-left"></span><span class="visually-hidden">Location: </span>Lone
+          Star Lobby</a>
+      </div>
+    </div>
+  </div>
+  <div class="event-body">
+    <div class="row">
+      <div class="col-md-9 offset-md-2 col-sm-9 offset-sm-3">
+        <ul class="list-unstyled">
+          <li class="event-participant">
+            <img src="https://dallascollege.github.io/TerminalBS/assets/img/cbeard-100x100.jpg" alt="">
+            <div class="participant-name">Willis "Coach" Beard <span class="participant-title">Assistant Coach, AFC
+                Richmond</span> </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="spacer-3"></div>
+
+
+
+<h2>Event Cards: Sub-Events</h2>
+
+<div class="event-card shadow-2">
+  <div class="event-head">
+    <div class="row bg-cprimary-lt align-items-baseline">
+      <div class="col-md-2 col-sm-3 event-time">
+        <h3 class="h4">Noon</h3>
+      </div>
+      <div class="col-md-7 col-sm-9 event-card-title">
+        <span class="h4">General Session</span>
+      </div>
+      <div class="col-md-3 offset-md-0 col-sm-9 offset-sm-3 event-location">
+        <a href="#"><span class="text-cprimary ico fas fa-map-marker-alt ico-left"></span><span class="visually-hidden"><span class="visually-hidden">Location: </span></span>Lone Star Lobby</a>
+      </div>
+    </div>
+  </div>
+  <div class="event-body">
+    <div class="row">
+      <div class="col-md-9 offset-md-2 col-sm-9 offset-sm-3">
+        <div class="sub-event">
+          <h4 class="h5 page-header">A Conversation with Rebecca Welton</h4>
+          <ul class="row list-unstyled">
+            <li class="col-md-12 event-participant">
+              <img src="https://dallascollege.github.io/TerminalBS/assets/img/rwelton-100x100.jpg" alt="">
+              <div class="participant-name">Rebecca Welton
+                <span class="participant-title">Owner, AFC Richmond</span>
+              </div>
+            </li>
+            <li class="col-md-12 event-participant">
+              <img src="https://dallascollege.github.io/TerminalBS/assets/img/tcrimm-100x100.jpg" alt="">
+              <div class="participant-name">Trent Crimm
+                <span class="participant-title">Bestselling Author</span>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="sub-event">
+          <h4 class="h5 page-header">Keynote Speaker</h4>
+          <ul class="row list-unstyled">
+            <li class="col-md-12 event-participant">
+              <img src="https://dallascollege.github.io/TerminalBS/assets/img/nshelley-100x100.jpg" alt="">
+              <div class="participant-name">
+                Nathan Shelley
+                <span class="participant-title">Assistant Coach, AFC Richmond</span>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="sub-event">
+          <h4 class="h5 page-header">Chancellor's Award Presentation</h4>
+        </div>
+        <div class="sub-event">
+          <h4 class="h5 page-header">Closing Remarks</h4>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>
 
                     </article>
                 </div>
+
             </div>
         </div>
+
     </main>
+
 </div>
 
 <footer id="l-footer" class="bg-cprimary-dk">

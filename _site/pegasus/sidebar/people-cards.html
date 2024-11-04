@@ -513,280 +513,692 @@
 </div>
 
 <div id="t4-bodyContainer">
-    <main id="main__body" class="no-sidebar">
+
+
+    <main id="main__body" class="sidebar">
         <div class="container">
             <div class="row">
-                <div class="col-12">
+
+                <!-- Sidebar Begin -->
+
+<aside id="sidebar" class="sidebar col-md-3 offset-md-1 order-md-last">
+  <div class="sidebar-img">
+    <img alt="An older woman and a younger woman reading a book together" src="https://www.dallascollege.edu/resources/accessibility-services/PublishingImages/services-disability-ada-464x464.jpg">
+  </div>
+
+
+
+    <nav class="navbar pgs-navbar--sidebar navbar-expand-md">
+     <div class="container-fluid p-0"> 
+
+
+<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#pgs-navbar--sidebar__collapse" aria-controls="pgs-navbar--sidebar__collapse" aria-expanded="false" aria-label="Toggle navigation">
+  [Site] Menu
+  <span class="ico fas fa-chevron-circle-down" aria-hidden="true"></span>
+</button>
+    
+      <div class="collapse navbar-collapse" id="pgs-navbar--sidebar__collapse">
+        <ul class="nav navbar-nav flex-column" role="menu">
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="#">Interior Layouts</a>
+          </li>
+          <li role="menuitem" class="nav-item"><a href="pegasus/typography.html">Typography</a></li>
+          <li role="menuitem" class="nav-item"><a href="pegasus/action-links.html">Action Links</a></li>
+          <li role="menuitem" class="nav-item"><a href="pegasus/accordion.html">Accordions</a></li>
+          <li role="menuitem" class="nav-item"><a href="pegasus/award-cards.html">Award Card</a></li>
+          <li role="menuitem" class="nav-item"><a href="pegasus/buttons.html">Buttons</a></li>
+          <li role="menuitem" class="nav-item"><a href="pegasus/cta.html">Calls to Action Stripe</a></li>
+          <li role="menuitem" class="nav-item"><a href="pegasus/colors.html">Colors</a></li>
+          <li role="menuitem" class="nav-item"><a href="pegasus/cib.html">Content & Image Boxes</a></li>
+
+
+        </ul>
+      </div>
+    </div>
+  </nav>
+    <div id="scnbox" class="text-success border border-success height-sm-100 text-align-center p-3">
+      <div id="scnboxtext" class="h6 text-success no-margin">Here's a place for HTML content to be setup as an "ad" on
+          pages based on tags.
+      </div>
+    </div>
+</aside>
+
+<!-- end sidebar -->
+
+                <div class="col-md-8 order-md-first">
                     <article>
-                        <h1 class="page-header--xl">Colors</h1>
+                        <h1 class="page-header--xl">People Cards</h1>
 
+<h2>People Cards: Full Details</h2>
 
-<p>Additional color variables can be found in <a href="https://www.dallascollege.edu/about/style/documents/pegasus/elements/colors.html">the PEGASUS documentation</a>.</p>
-
-<div class="row extra-space">
-    <div class="col-sm-4 text-center">
-        <h3>cprimary</h3>
-        <p>Dallas College Blue</p>
-        <div class="bg-cprimary color-swatch rounded-circle width-100 d-flex justify-content-center align-items-center mx-auto">
-            <p class="cb-title-lg">Aa</p>
+<div class="pgs-people-card pgs-people-card--quiet pgs-people-card--compact">
+    <div class="row">
+        <div class="col-2 col-md-2 p-0 text-center pgs-people-card__col pgs-people-card__img">
+          <img src="https://www.dallascollege.edu/about/style/documents/pegasus/assets/jbartlet-100x100.jpg" alt="Josiah Bartlet">
         </div>
-        <div class="spacer-2"></div>
-        <h4>Apply as Background Color</h4>
-        <code class="lead">.bg-cprimary</code><p></p>
-            <code class="language-css">background:#003385;
-color:#fffff;</code>
+        <div class="col-10 col-md-10 col-lg-3 pgs-people-card__col">
+          <h3 class="pgs-people-card__name">Josiah Bartlet<br><small>DR, BSN</small></h3>
+          <ul class="list-unstyled">
+            <li>President of the United States</li>
+          </ul>
+          <div class="spacer-1 d-lg-none d-md-none"></div>
+        </div>
+        <div class="col-6 col-lg-3 pgs-people-card__col">
+          <ul class="fa-ul">
+            <li><span class="fa-li"><span aria-hidden="true" class="ico fas fa-university"></span></span>White House</li>
+            <li><span class="fa-li"><span aria-hidden="true" class="ico fas fa-phone"></span></span>202-555-1234</li>
+            <li><span class="fa-li"><span aria-hidden="true" class="ico fas fa-envelope"></span></span><a href="mailto:jbartlet@whitehouse.gov">Email Josiah</a></li>
+            <li><span class="fa-li"><span aria-hidden="true" class="ico fab fa-linkedin icon"></span></span><a href="#">LinkedIn</a></li>
+            <li><span class="fa-li"><span aria-hidden="true" class="ico fas fa-clipboard-check"></span></span><a href="#">Credentials</a></li>
+          </ul>
+        </div>
+        <div class="col-6 col-lg-4 pgs-people-card__col">
+          <ul class="fa-ul">
+            <li><span class="fa-li"><span aria-hidden="true" class="ico fas fa-clock"></span></span><strong>Remote Day: </strong>Thurs, 8 a.m.-5 p.m.</li>
+            <li><span class="fa-li"><span aria-hidden="true" class="ico fas fa-clock"></span></span><strong>Late Days: </strong>Mon, 10 a.m.-7 p.m.</li>
+            <li><span class="fa-li"><span aria-hidden="true" class="ico fas fa-clock"></span></span><strong>Reg. Days: </strong>Tues, Wed &amp; Fri, 8 a.m.-5 p.m.</li>
+          </ul>
+        </div>
+      </div>
+
+  <div class="row">
+    <div class="col-md-12">
+
+      <div class="accordion pgs-accordion pgs-accordion--quiet pgs-accordion--sm" id="accordion-bartlet">
+        <h4>
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-bartlet" aria-expanded="false" aria-controls="collapse-bartlet"> Specialties
+          </button>
+        </h4>
+        <div id="collapse-bartlet" class="accordion-collapse collapse">
+          <div class="accordion-body">
+            <ul class="row-count-2 mb-0">
+              <li>school nursing</li>
+              <li>college nursing</li>
+              <li>home health</li>
+              <li>med-surg. neuro</li>
+              <li>hospice</li>
+              <li>med surg telemetry</li>
+              <li>nurse preceptor</li>
+              <li>stroke</li>
+              <li>CPR, first aid</li>
+            </ul>
+            <h5>Interests:</h5>
+            <ul class="row-count-2 mb-0">
+              <li>health education</li>
+              <li>wellness</li>
+              <li>preventative care</li>
+            </ul>
+          </div>
+        </div>
+      </div>
     </div>
-    <div class="col-sm-4 text-center">
-        <h3>csecondary</h3>
-        <p>Dallas College Red</p>
-        <div class="bg-csecondary color-swatch rounded-circle width-100 d-flex justify-content-center align-items-center mx-auto">
-            <p class="cb-title-lg">Aa</p>
-        </div>
-        <div class="spacer-2"></div>
-        <h4>Apply as Background Color</h4>
-        <code class="lead">.bg-csecondary</code><p></p>
-        <code class="language-css">background:#E52626;
-color:#fffff;</code>
+  </div>
+</div>
+
+<div class="pgs-people-card pgs-people-card--quiet pgs-people-card--compact">
+    <div class="row">
+      <div class="col-2 col-md-2 p-0 text-center pgs-people-card__col pgs-people-card__img">
+      <img src="https://www.dallascollege.edu/about/style/documents/pegasus/assets/lmcgarry-100x100.jpg" alt="Leo McGarry">
     </div>
-    <div class="col-sm-4 text-center">
-        <h3>cgrey</h3>
-        <p>Dallas College Silver Adapted</p>
-        <div class="bg-cgrey color-swatch rounded-circle width-100 d-flex justify-content-center align-items-center mx-auto">
-            <p class="cb-title-lg">Aa</p>
+    <div class="col-10 col-md-10 col-lg-3 pgs-people-card__col">
+      <h3 class="pgs-people-card__name">Leo McGarry<br><small>DR</small></h3>
+      <ul class="list-unstyled">
+        <li>White House Chief of Staff</li>
+      </ul>
+      <div class="spacer-1 d-lg-none d-md-none"></div>
+    </div>
+    <div class="col-6 col-lg-3 pgs-people-card__col">
+      <ul class="fa-ul">
+        <li><span class="fa-li"><span aria-hidden="true" class="ico fas fa-university"></span></span>West Wing, White House</li>
+        <li><span class="fa-li"><span aria-hidden="true" class="ico fas fa-phone"></span></span>202-555-5678</li>
+        <li><span class="fa-li"><span aria-hidden="true" class="ico fas fa-envelope"></span></span><a href="mailto:LeoMcGarry@whitehouse.gov">Email Leo</a></li>
+        <li><a href="#"><span class="fa-li"><span aria-hidden="true" class="ico fab fa-linkedin icon"></span></span>LinkedIn</a></li>
+        <li><a href="#"><span class="fa-li"><span aria-hidden="true" class="ico fas fa-clipboard-check"></span></span>Credentials</a></li>
+      </ul>
+    </div>
+    <div class="col-6 col-lg-4 pgs-people-card__col">
+      <ul class="fa-ul">
+        <li><span class="fa-li"><span aria-hidden="true" class="ico fas fa-clock"></span></span><strong>Remote Day: </strong>Thurs, 8 a.m.-5 p.m.</li>
+        <li><span class="fa-li"><span aria-hidden="true" class="ico fas fa-clock"></span></span><strong>Late Days: </strong>Mon, 10 a.m.-7 p.m.</li>
+        <li><span class="fa-li"><span aria-hidden="true" class="ico fas fa-clock"></span></span><strong>Reg. Days: </strong>Tues, Wed &amp; Fri, 8 a.m.-5 p.m.</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-md-12">
+      <div class="accordion pgs-accordion pgs-accordion--quiet pgs-accordion--sm" id="accordion-mcgarry">
+        <h4>
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-mcgarry"  aria-expanded="false" aria-controls="collapse-mcgarry">Specialties</button>
+        </h4>
+        <div id="collapse-mcgarry" class="accordion-collapse collapse">
+          <div class="accordion-body">
+            <ul class="row-count-2 mb-0">
+              <li>school nursing</li>
+              <li>college nursing</li>
+              <li>home health</li>
+              <li>med-surg. neuro</li>
+              <li>hospice</li>
+              <li>med surg telemetry</li>
+              <li>nurse preceptor</li>
+              <li>stroke</li>
+              <li>CPR, first aid</li>
+            </ul>
+            <h5>Interests:</h5>
+            <ul class="row-count-2 mb-0">
+              <li>health education</li>
+              <li>wellness</li>
+              <li>preventative care</li>
+            </ul>
+          </div>
         </div>
-        <div class="spacer-2"></div>
-        <h4>Apply as Background Color</h4>
-        <code class="lead">.bg-cgrey</code><p></p>
-      <code class="language-css">background:#E5E2D6;
-color:#000000;</code>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="spacer-3"></div>
+
+<h2>People Cards: Standard With Academic Degrees</h2>
+
+
+<div class="row d-flex align-items-start">
+    <div class="col-12 col-xl-6 d-flex">
+      <div class="pgs-people-card pgs-people-card--quiet pgs-people-card--compact d-flex flex-column w-100">
+        <div class="row flex-grow-1">
+          <div class="col-2 p-0 text-center pgs-people-card__col pgs-people-card__img">
+            <img src="https://www.dallascollege.edu/about/style/documents/pegasus/assets/jbartlet-100x100.jpg" alt="">
+          </div>
+          <div class="col-10 col-md-5 pgs-people-card__col">
+            <h3 class="pgs-people-card__name">Josiah Bartlet<br><small>BS, RN</small></h3>
+            <ul class="list-unstyled">
+              <li>President of the United States</li>
+            </ul>
+          </div>
+          <div class="offset-2 col-10 offset-md-0 col-md-5 pgs-people-card__col d-flex flex-column flex-grow-1">
+            <ul class="fa-ul mt-3 mt-md-0 ms-0 ms-md-2">
+              <li><span class="fa-li"><span aria-hidden="true" class="ico fas fa-university"></span></span>White House, Oval Office</li>
+              <li><span class="fa-li"><span aria-hidden="true" class="ico fas fa-phone"></span></span>202-555-1234</li>
+              <li><span class="fa-li"><span aria-hidden="true" class="ico fas fa-envelope"></span></span><a href="mailto:jbartlet@whitehouse.gov">Email Josiah</a></li>
+              <li><a href="#"><span class="fa-li"><span aria-hidden="true" class="ico fab fa-linkedin icon"></span></span>LinkedIn</a></li>
+              <li><a href="#"><span class="fa-li"><span aria-hidden="true" class="ico fas fa-id-card"></span></span><span class="sr-only"></span>Credentials</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="row flex-grow-0">
+          <div class="col-md-12">
+            <div class="flex-grow-0 accordion pgs-accordion pgs-accordion--quiet pgs-accordion--sm" id="accordion-bartlet2">
+              <h4>
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-bartlet2" aria-expanded="false" aria-controls="collapse-bartlet2">Specialties
+                </button>
+              </h4>
+              <div id="collapse-bartlet2" class="accordion-collapse collapse">
+                <div class="accordion-body">
+                  <ul class="row-count-2 mb-0">
+                    <li>economics</li>
+                    <li>New Hampshire history</li>
+                    <li>diplomacy</li>
+                    <li>crisis management</li>
+                  </ul>
+                  <h5>Interests:</h5>
+                  <ul class="row-count-2 mb-0">
+                    <li>ethics</li>
+                    <li>national parks</li>
+                    <li>Notre Dame football</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="col-12 col-xl-6 d-flex">
+      <div class="pgs-people-card pgs-people-card--quiet pgs-people-card--compact d-flex flex-column w-100">
+        <div class="row flex-grow-1">
+          <div class="col-2 p-0 text-center pgs-people-card__col pgs-people-card__img">
+          <img src="https://www.dallascollege.edu/about/style/documents/pegasus/assets/lmcgarry-100x100.jpg" alt="">
+        </div>
+        <div class="col-10 col-md-5 pgs-people-card__col">
+          <h3 class="pgs-people-card__name">Leo McGarry<br><small>M.S.N. APRN, CNM</small></h3>
+          <ul class="list-unstyled">
+            <li>White House Chief of Staff</li>
+          </ul>
+        </div>
+        <div class="offset-2 col-10 offset-md-0 col-md-5 pgs-people-card__col d-flex flex-column flex-grow-1">
+          <ul class="fa-ul mt-3 mt-md-0 ms-0 ms-md-2">
+            <li><span class="fa-li"><span aria-hidden="true" class="ico fas fa-university"></span></span>West Wing, White House</li>
+            <li><span class="fa-li"><span aria-hidden="true" class="ico fas fa-phone"></span></span>202-555-5678</li>
+            <li><span class="fa-li"><span aria-hidden="true" class="ico fas fa-envelope"></span></span><a href="mailto:LeoMcGarry@whitehouse.gov">Email Leo</a></li>
+            <li><a href="#"><span class="fa-li"><span aria-hidden="true" class="ico fab fa-linkedin icon"></span></span>LinkedIn</a></li>
+            <li><a href="#"><span class="fa-li"><span aria-hidden="true" class="ico fas fa-id-card"></span></span><span class="sr-only"></span>Credentials</a></li>
+          </ul>
+        </div>
+      </div>
+
+        <div class="row flex-grow-0">
+          <div class="col-md-12">
+            <div class="flex-grow-0 accordion pgs-accordion pgs-accordion--quiet pgs-accordion--sm" id="accordion-leo2">
+              <h4>
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-leo2" aria-expanded="false" aria-controls="collapse-leo2">Specialties
+                </button>
+              </h4>
+              <div id="collapse-leo2" class="accordion-collapse collapse">
+                <div class="accordion-body">
+                  <ul class="row-count-2 mb-0">
+                    <li>political strategy</li>
+                    <li>legislative affairs</li>
+                    <li>labor management</li>
+                    <li>leadership</li>
+                    <li>public speaking</li>
+                  </ul>
+                  <h5>Interests:</h5>
+                  <ul class="row-count-2 mb-0">
+                    <li>history</li>
+                    <li>sports</li>
+                    <li>fine dining</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+  </div>
+</div>
+
+  <div class="spacer-3"></div>
+
+  <h2>People Cards: Standard</h2>
+
+  <div class="row d-flex align-items-stretch">
+    <div class="col-12 col-xl-6 d-flex">
+      <div class="pgs-people-card pgs-people-card--quiet pgs-people-card--compact d-flex flex-column w-100">
+          <div class="row flex-grow-1">
+              <div class="col-2 p-0 d-none d-sm-block pgs-people-card__col pgs-people-card__img">
+                    <img src="https://www.dallascollege.edu/about/style/documents/pegasus/assets/jbartlet-100x100.jpg" alt="">
+                </div>
+                <div class="col-6 col-sm-4 col-md-5 pgs-people-card__col d-flex flex-column">
+                    <h3 class="pgs-people-card__name">Josiah Bartlet</h3>
+                    <ul class="list-unstyled flex-grow-1">
+                        <li>President of the United States</li>
+                    </ul>
+                </div>
+                <div class="col-6 col-sm-4 col-md-5 pgs-people-card__col d-flex flex-column flex-grow-1">
+                  <ul class="fa-ul flex-grow-1">
+                        <li><span class="fa-li"><span aria-hidden="true" class="ico fas fa-university"></span></span>White House, Oval Office</li>
+                        <li><span class="fa-li"><span aria-hidden="true" class="ico fas fa-phone"></span></span>202-555-1234</li>
+                        <li><span class="fa-li"><span aria-hidden="true" class="ico fas fa-envelope"></span></span><a href="mailto:jbartlet@whitehouse.gov">Email Josiah</a></li>
+                        <li><a href="#"><span class="fa-li"><span aria-hidden="true" class="ico fas fa-id-card"></span></span><span class="sr-only"></span>Credentials</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-12 col-xl-6 d-flex">
+      <div class="pgs-people-card pgs-people-card--quiet pgs-people-card--compact d-flex flex-column w-100">
+          <div class="row flex-grow-1">
+              <div class="col-2 p-0 d-none d-sm-block pgs-people-card__col pgs-people-card__img">
+                    <img src="https://www.dallascollege.edu/about/style/documents/pegasus/assets/lmcgarry-100x100.jpg" alt="">
+                </div>
+                <div class="col-6 col-sm-4 col-md-5 pgs-people-card__col d-flex flex-column">
+                    <h3 class="pgs-people-card__name">Leo McGarry</h3>
+                    <ul class="list-unstyled flex-grow-1">
+                        <li>White House Chief of Staff</li>
+                    </ul>
+                </div>
+                <div class="col-6 col-sm-4 col-md-5 pgs-people-card__col d-flex flex-column flex-grow-1">
+                  <ul class="fa-ul flex-grow-1">
+                        <li><span class="fa-li"><span aria-hidden="true" class="ico fas fa-university"></span></span>White House, West Wing</li>
+                        <li><span class="fa-li"><span aria-hidden="true" class="ico fas fa-phone"></span></span>202-555-5678</li>
+                        <li><span class="fa-li"><span aria-hidden="true" class="ico fas fa-envelope"></span></span><a href="mailto:lmcgarry@whitehouse.gov">Email Leo</a></li>
+                        <li><a href="#"><span class="fa-li"><span aria-hidden="true" class="ico fab fa-linkedin icon"></span></span>LinkedIn</a></li>
+                        <li><a href="#"><span class="fa-li"><span aria-hidden="true" class="ico fas fa-id-card"></span></span><span class="sr-only"></span>Credentials</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-12 col-xl-6 d-flex">
+      <div class="pgs-people-card pgs-people-card--quiet pgs-people-card--compact d-flex flex-column w-100">
+          <div class="row flex-grow-1">
+              <div class="col-2 p-0 d-none d-sm-block pgs-people-card__col pgs-people-card__img">
+                    <img src="https://www.dallascollege.edu/about/style/documents/pegasus/assets/ccregg-100x100.jpg" alt="">
+                </div>
+                <div class="col-6 col-sm-4 col-md-5 pgs-people-card__col d-flex flex-column">
+                    <h3 class="pgs-people-card__name">C.J. Cregg</h3>
+                    <ul class="list-unstyled flex-grow-1">
+                        <li>White House Press Secretary</li>
+                    </ul>
+                </div>
+                <div class="col-6 col-sm-4 col-md-5 pgs-people-card__col d-flex flex-column flex-grow-1">
+                  <ul class="fa-ul flex-grow-1">
+                        <li><span class="fa-li"><span aria-hidden="true" class="ico fas fa-university"></span></span>White House, Press Room</li>
+                        <li><span class="fa-li"><span aria-hidden="true" class="ico fas fa-phone"></span></span>202-555-9876</li>
+                        <li><span class="fa-li"><span aria-hidden="true" class="ico fas fa-envelope"></span></span><a href="mailto:ccregg@whitehouse.gov">Email C.J.</a></li>
+                        <li><a href="#"><span class="fa-li"><span aria-hidden="true" class="ico fab fa-linkedin icon"></span></span>LinkedIn</a></li>
+                        <li><a href="#"><span class="fa-li"><span aria-hidden="true" class="ico fas fa-id-card"></span></span><span class="sr-only"></span>Credentials</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-12 col-xl-6 d-flex">
+      <div class="pgs-people-card pgs-people-card--quiet pgs-people-card--compact d-flex flex-column w-100">
+          <div class="row flex-grow-1">
+              <div class="col-2 p-0 d-none d-sm-block pgs-people-card__col pgs-people-card__img">
+                    <img src="https://www.dallascollege.edu/about/style/documents/pegasus/assets/tzieglar-100x100.jpg" alt="">
+                </div>
+                <div class="col-6 col-sm-4 col-md-5 pgs-people-card__col d-flex flex-column">
+                    <h3 class="pgs-people-card__name">Toby Ziegler</h3>
+                    <ul class="list-unstyled flex-grow-1">
+                        <li>White House Communications Director</li>
+                    </ul>
+                </div>
+                <div class="col-6 col-sm-4 col-md-5 pgs-people-card__col d-flex flex-column flex-grow-1">
+                  <ul class="fa-ul flex-grow-1">
+                        <li><span class="fa-li"><span aria-hidden="true" class="ico fas fa-university"></span></span>White House, West Wing</li>
+                        <li><span class="fa-li"><span aria-hidden="true" class="ico fas fa-phone"></span></span>202-555-6543</li>
+                        <li><span class="fa-li"><span aria-hidden="true" class="ico fas fa-envelope"></span></span><a href="mailto:tziegler@whitehouse.gov">Email Toby</a></li>
+                        <li><a href="#"><span class="fa-li"><span aria-hidden="true" class="ico fas fa-id-card"></span></span><span class="sr-only"></span>Credentials</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
     </div>
 </div>
 
-<h2>Color Variations</h2>
 
-<div class="row extra-space">
-    <div class="col-md-4 text-center">
-        <h4 class="h3">cprimary-lt</h4>
-        <div class="color-swatch img-circle bg-cprimary-lt">
-            <p>Aa</p>
-        </div>
-        <div class="spacer-2"></div>
-        <h5 class="h4">Apply as Background Color</h5>
-        <p>
-            <code class="lead">.bg-cprimary-lt</code></p>
-        <code class="language-css">background:#E9F2FF;
-color:#000000;</code>
-    </div>
 
-    <div class="col-md-4 text-center">
-        <h4 class="h3">cprimary-dk</h4>
-        <div class="color-swatch img-circle bg-cprimary-dk">
-            <p>Aa</p>
-        </div>
-        <div class="spacer-2"></div>
-        <h5 class="h4">Apply as Background Color</h5>
-        <p>
-            <code class="lead">.bg-cprimary-dk</code></p>
-        <code class="language-css">background:#001E49;
-color:#FFFFFF;</code>
-    </div>
-    <div class="col-md-4 text-center">
-        <h4 class="h3">cprimary-gr</h4>
-        <div class="color-swatch img-circle bg-cprimary-gr">
-            <p>Aa</p>
-        </div>
-        <div class="spacer-2"></div>
-        <h5 class="h4">Apply as Background Color</h5>
-        <p>
-            <code class="lead">.bg-cprimary-gr</code></p>
-        <code class="language-css">background: linear-gradient( $cprimary, darken($cprimary, 7%));
-color:#FFFFFF;</code>
-    </div>
-</div>
 
-<div class="row extra-space">
-    <div class="col-md-4 text-center">
-        <h4 class="h3">csecondary-lt</h4>
-        <div class="color-swatch img-circle bg-csecondary-lt">
-            <p>Aa</p>
+  <h2>People Cards: Standard No Photos</h2>
+
+  <div class="row d-flex align-items-stretch">
+    <div class="col-12 col-xl-6 d-flex">
+      <div class="pgs-people-card pgs-people-card--quiet pgs-people-card--compact d-flex flex-column w-100">
+        <div class="row">
+          <div class="col-6 pgs-people-card__col d-flex flex-column" style="padding-left: 0;">
+            <h3 class="pgs-people-card__name">Josiah Bartlet</h3>
+            <ul class="list-unstyled">
+              <li>President of the United States</li>
+            </ul>
+          </div>
+          <div class="col-6 pgs-people-card__col d-flex flex-column flex-grow-1" style="padding-left: 0;">
+            <ul class="fa-ul flex-grow-1">
+              <li><span class="fa-li"><span aria-hidden="true" class="ico fas fa-university"></span></span>White House, Oval Office</li>
+              <li><span class="fa-li"><span aria-hidden="true" class="ico fas fa-phone"></span></span>202-555-1234</li>
+              <li><span class="fa-li"><span aria-hidden="true" class="ico fas fa-envelope"></span></span><a href="mailto:jbartlet@whitehouse.gov">Email Josiah</a></li>
+              <li><a href="#"><span class="fa-li"><span aria-hidden="true" class="ico fas fa-id-card"></span></span><span class="sr-only"></span>Credentials</a></li>
+            </ul>
+          </div>
         </div>
-        <div class="spacer-2"></div>
-        <h5 class="h4">Apply as Background Color</h5>
-        <p><code class="lead">.bg-csecondary-lt</code></p>
-        <code class="language-css">background:#FFE9E9;
-color:#000000;</code>
+      </div>
     </div>
 
-    <div class="col-md-4 text-center">
-        <h4 class="h3">csecondary-dk</h4>
-        <div class="color-swatch img-circle bg-csecondary-dk">
-            <p>Aa</p>
+    <div class="col-12 col-xl-6 d-flex">
+      <div class="pgs-people-card pgs-people-card--quiet pgs-people-card--compact d-flex flex-column w-100">
+        <div class="row">
+          <div class="col-6 pgs-people-card__col d-flex flex-column" style="padding-left: 0;">
+            <h3 class="pgs-people-card__name">Leo McGarry</h3>
+            <ul class="list-unstyled">
+              <li>White House Chief of Staff</li>
+            </ul>
+          </div>
+          <div class="col-6 pgs-people-card__col d-flex flex-column flex-grow-1" style="padding-left: 0;">
+            <ul class="fa-ul flex-grow-1">
+              <li><span class="fa-li"><span aria-hidden="true" class="ico fas fa-university"></span></span>White House, West Wing</li>
+              <li><span class="fa-li"><span aria-hidden="true" class="ico fas fa-phone"></span></span>202-555-5678</li>
+              <li><span class="fa-li"><span aria-hidden="true" class="ico fas fa-envelope"></span></span><a href="mailto:lmcgarry@whitehouse.gov">Email Leo</a></li>
+              <li><a href="#"><span class="fa-li"><span aria-hidden="true" class="ico fas fa-id-card"></span></span><span class="sr-only"></span>Credentials</a></li>
+            </ul>
+          </div>
         </div>
-        <div class="spacer-2"></div>
-        <h5 class="h4">Apply as Background Color</h5>
-        <p><code class="lead">.bg-csecondary-dk</code></p>
-        <code class="language-css">background:#6D0000;
-color:#FFFFFF;</code>
-    </div>
-    <div class="col-md-4 text-center">
-        <h4 class="h3">csecondary-gr</h4>
-        <div class="color-swatch img-circle bg-csecondary-gr">
-            <p>Aa</p>
-        </div>
-        <div class="spacer-2"></div>
-        <h5 class="h4">Apply as Background Color</h5>
-        <p>
-            <code class="lead">.bg-csecondary-gr</code></p>
-        <code class="text-left language-css">background:linear-gradient ($csecondary, darken($csecondary, 7%));
-            color:#FFFFFF;</code>
-    </div>
-</div>
-
-<h2>Grey Spectrum</h2>
-
-<div class="row extra-space">
-    <div class="col-md-4 text-center">
-        <h4 class="h3">cwhite</h4>
-        <p>0% Dark</p>
-        <div class="color-swatch img-circle bg-cwhite shadow-1">
-            <p>Aa</p>
-        </div>
-        <div class="spacer-2"></div>
-        <h5 class="h4">Apply as Background Color</h5>
-        <p>
-            <code class="lead">.bg-cwhite</code></p>
-        <code class=" text-start language-css">background:#FFFFFF;
-color:#000000;</code>
-    </div>
-    <div class="col-md-4 text-center">
-        <h4 class="h3">cgrey-05</h4>
-        <p>5% Dark</p>
-        <div class="color-swatch img-circle bg-cgrey-05">
-            <p>Aa</p>
-        </div>
-        <div class="spacer-2"></div>
-        <h5 class="h4">Apply as Background Color</h5>
-        <p>
-            <code class="lead">.bg-cgrey-05</code></p>
-        <code class=" text-start language-css">background:#F7F3E8;
-color:#000000;</code>
+      </div>
     </div>
 
-    <div class="col-md-4 text-center">
-        <h4 class="h3">cgrey</h4>
-        <p>10% Dark</p>
-        <div class="color-swatch img-circle bg-cgrey">
-            <p>Aa</p>
+    <div class="col-12 col-xl-6 d-flex">
+        <div class="pgs-people-card pgs-people-card--quiet pgs-people-card--compact d-flex flex-column w-100">
+          <div class="row">
+            <div class="col-6 pgs-people-card__col d-flex flex-column" style="padding-left: 0;">
+            <h3 class="pgs-people-card__name">C.J. Cregg</h3>
+            <ul class="list-unstyled">
+              <li>White House Press Secretary</li>
+            </ul>
+          </div>
+          <div class="col-6 pgs-people-card__col d-flex flex-column flex-grow-1" style="padding-left: 0;">
+            <ul class="fa-ul flex-grow-1">
+              <li><span class="fa-li"><span aria-hidden="true" class="ico fas fa-university"></span></span>White House, Press Room</li>
+              <li><span class="fa-li"><span aria-hidden="true" class="ico fas fa-phone"></span></span>202-555-9876</li>
+              <li><span class="fa-li"><span aria-hidden="true" class="ico fas fa-envelope"></span></span><a href="mailto:ccregg@whitehouse.gov">Email C.J.</a></li>
+              <li><a href="#"><span class="fa-li"><span aria-hidden="true" class="ico fab fa-linkedin icon"></span></span>LinkedIn</a></li>
+              <li><a href="#"><span class="fa-li"><span aria-hidden="true" class="ico fas fa-id-card"></span></span><span class="sr-only"></span>Credentials</a></li>
+            </ul>
+          </div>
         </div>
-        <div class="spacer-2"></div>
-        <h5 class="h4">Apply as Background Color</h5>
-        <p>
-            <code class="lead">.bg-cgrey</code></p>
-        <code class=" text-start language-css">background:#E5E2D6;
-color:#FFFFFF;</code>
+      </div>
     </div>
-    <div class="col-md-4 text-center">
-        <h4 class="h3">cgrey-20</h4>
-        <p>20% (17%) Dark</p>
-        <div class="color-swatch img-circle bg-cgrey-20">
-            <p>Aa</p>
-        </div>
-        <div class="spacer-2"></div>
-        <h5 class="h4">Apply as Background Color</h5>
-        <p>
-            <code class="lead">.bg-cgrey-20</code></p>
-            <code class=" text-start language-css">background:#D6D2C4;
-color:#000000;</code>
-    </div>
-    <div class="col-md-4 text-center">
-        <h4 class="h3">cgrey-40</h4>
-        <p>40% Dark</p>
-        <div class="color-swatch img-circle bg-cgrey-40">
-            <p>Aa</p>
-        </div>
-        <div class="spacer-2"></div>
-        <h5 class="h4">Apply as Background Color</h5>
-        <p><code class="lead">.bg-cgrey-40</code></p>
-        <code class=" text-start language-css">background:#99968D;
-color:#000000;</code>
-    </div>
-    <div class="col-md-4 text-center">
-        <h4 class="h3">cgrey-60</h4>
-        <p>60% Dark</p>
-        <div class="color-swatch img-circle bg-cgrey-60">
-            <p>Aa</p>
-        </div>
-        <div class="spacer-2"></div>
-        <h5 class="h4">Apply as Background Color</h5>
-        <p><code class="lead">.bg-cgrey-60</code></p>
-        <code class=" text-start language-css">background:#66645E;
-color:#FFFFFF;</code>
-    </div>
-    <div class="col-md-4 text-center">
-        <h4 class="h3">cgrey-80</h4>
-        <p>80% Dark</p>
-        <div class="color-swatch img-circle bg-cgrey-80">
-            <p>Aa</p>
-        </div>
-        <div class="spacer-2"></div>
-        <h5 class="h4">Apply as Background Color</h5>
-        <p>
-            <code class="lead">.bg-cgrey-80</code></p>
-        <code class=" text-start language-css">background: #333333;
-color:#FFFFFF;</code>
-    </div>
-    <div class="col-md-4 text-center">
-        <h4 class="h3">cblack</h4>
-        <p>100% Dark</p>
-        <div class="color-swatch img-circle bg-cblack">
-            <p>Aa</p>
-        </div>
-        <div class="spacer-2"></div>
-        <h5 class="h4">Apply as Background Color</h5>
-        <p>
-            <code class="lead">.bg-cblack</code></p>
-        <code class=" text-start language-css">background: #000000;
-color:#FFFFFF;</code>
-    </div>
-</div>
 
-<h2>Contextual Colors</h2>
+    <div class="col-12 col-xl-6 d-flex">
+        <div class="pgs-people-card pgs-people-card--quiet pgs-people-card--compact d-flex flex-column w-100">
+          <div class="row">
+            <div class="col-6 pgs-people-card__col d-flex flex-column" style="padding-left: 0;">
+            <h3 class="pgs-people-card__name">Toby Ziegler</h3>
+            <ul class="list-unstyled">
+              <li>White House Communications Director</li>
+            </ul>
+          </div>
+          <div class="col-6 pgs-people-card__col d-flex flex-column flex-grow-1" style="padding-left: 0;">
+            <ul class="fa-ul flex-grow-1">
+              <li><span class="fa-li"><span aria-hidden="true" class="ico fas fa-university"></span></span>White House, West Wing</li>
+              <li><span class="fa-li"><span aria-hidden="true" class="ico fas fa-phone"></span></span>202-555-6543</li>
+              <li><span class="fa-li"><span aria-hidden="true" class="ico fas fa-envelope"></span></span><a href="mailto:tziegler@whitehouse.gov">Email Toby</a></li>
+              <li><a href="#"><span class="fa-li"><span aria-hidden="true" class="ico fas fa-id-card"></span></span><span class="sr-only"></span>Credentials</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+
+
+<h2>People Cards: Quiet Mode</h2>
+
 <div class="row">
-<div class="col-3">
-<h4>Success<br>.bg-success</h4>
-<div class="color-swatch bg-success p-2">
-    <p>There are seven campuses of Dallas College.</p>
-</div>
+  <div class="col-sm-6 d-flex">
+      <div class="pgs-people-card pgs-people-card--quiet pgs-people-card--compact flex-fill">
+          <div class="row">
+            <div class="col-sm-4 p-0 text-center d-none d-sm-block pgs-people-card__col pgs-people-card__img">
+                  <img src="https://www.dallascollege.edu/about/style/documents/pegasus/assets/jbartlet-100x100.jpg" alt="Josiah Bartlet">
+              </div>
+              <div class="col-12 col-sm-8 pgs-people-card__col">
+                  <h3 class="pgs-people-card__name">Josiah Bartlet</h3>
+                  <ul class="list-unstyled">
+                      <li>President of the United States</li>
+                  </ul>
+              </div>
+          </div>
+      </div>
+  </div>
+
+  <div class="col-sm-6 d-flex">
+      <div class="pgs-people-card pgs-people-card--quiet pgs-people-card--compact flex-fill">
+          <div class="row">
+            <div class="col-sm-4 p-0 text-center d-none d-sm-block pgs-people-card__col pgs-people-card__img">
+                  <img src="https://www.dallascollege.edu/about/style/documents/pegasus/assets/lmcgarry-100x100.jpg" alt="Leo McGarry">
+              </div>
+              <div class="col-12 col-sm-8 pgs-people-card__col">
+                  <h3 class="pgs-people-card__name">Leo McGarry</h3>
+                  <ul class="list-unstyled">
+                      <li>White House Chief of Staff</li>
+                  </ul>
+              </div>
+          </div>
+      </div>
+  </div>
+
+  <div class="col-sm-6 d-flex">
+      <div class="pgs-people-card pgs-people-card--quiet pgs-people-card--compact flex-fill">
+          <div class="row">
+            <div class="col-sm-4 p-0 text-center d-none d-sm-block pgs-people-card__col pgs-people-card__img">
+                  <img src="https://www.dallascollege.edu/about/style/documents/pegasus/assets/ccregg-100x100.jpg" alt="C.J. Cregg">
+              </div>
+              <div class="col-12 col-sm-8 pgs-people-card__col">
+                  <h3 class="pgs-people-card__name">C.J. Cregg</h3>
+                  <ul class="list-unstyled">
+                      <li>White House Press Secretary</li>
+                  </ul>
+              </div>
+          </div>
+      </div>
+  </div>
+
+  <div class="col-sm-6 d-flex">
+      <div class="pgs-people-card pgs-people-card--quiet pgs-people-card--compact flex-fill">
+          <div class="row">
+            <div class="col-sm-4 p-0 text-center d-none d-sm-block pgs-people-card__col pgs-people-card__img">
+                  <img src="https://www.dallascollege.edu/about/style/documents/pegasus/assets/jlyman-100x100.jpg" alt="Josh Lyman">
+              </div>
+              <div class="col-12 col-sm-8 pgs-people-card__col">
+                  <h3 class="pgs-people-card__name">Josh Lyman</h3>
+                  <ul class="list-unstyled">
+                      <li>Deputy Chief of Staff</li>
+                  </ul>
+              </div>
+          </div>
+      </div>
+  </div>
+
+  <div class="col-sm-6 d-flex">
+      <div class="pgs-people-card pgs-people-card--quiet pgs-people-card--compact flex-fill">
+          <div class="row">
+            <div class="col-sm-4 p-0 text-center d-none d-sm-block pgs-people-card__col pgs-people-card__img">
+                  <img src="https://www.dallascollege.edu/about/style/documents/pegasus/assets/tzieglar-100x100.jpg" alt="Toby Ziegler">
+              </div>
+              <div class="col-12 col-sm-8 pgs-people-card__col">
+                  <h3 class="pgs-people-card__name">Toby Ziegler</h3>
+                  <ul class="list-unstyled">
+                      <li>White House Communications Director</li>
+                  </ul>
+              </div>
+          </div>
+      </div>
+  </div>
+
+  <div class="col-sm-6 d-flex">
+      <div class="pgs-people-card pgs-people-card--quiet pgs-people-card--compact flex-fill">
+          <div class="row">
+              <div class="col-sm-4 p-0 text-center d-none d-sm-block pgs-people-card__col pgs-people-card__img">
+                  <img src="https://www.dallascollege.edu/about/style/documents/pegasus/assets/sseaborn-100x100.jpg" alt="Sam Seaborn">
+              </div>
+              <div class="col-12 col-sm-8 pgs-people-card__col">
+                  <h3 class="pgs-people-card__name">Sam Seaborn</h3>
+                  <ul class="list-unstyled">
+                      <li>Deputy Communications Director</li>
+                  </ul>
+              </div>
+          </div>
+      </div>
+  </div>
 </div>
 
-<div class="col-3">
-    <h4>Info<br>.bg-info</h4>
-    <div class="color-swatch bg-info p-2">
-        <p>There are seven campuses of Dallas College.</p>
+
+<h2>People Cards: Quiet Mode No Photo</h2>
+
+<div class="row">
+    <div class="col-md-4 col-sm-6">
+        <div class="pgs-people-card pgs-people-card--quiet pgs-people-card--compact height-md-125 height-sm-125">
+            <div class="row">
+                <div class="col-md-12 col-sm-12 col-12 pgs-people-card__col ps-0">
+                    <h3 class="pgs-people-card__name">Josiah Bartlet</h3>
+                    <ul class="list-unstyled">
+                        <li>President of the United States</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
     </div>
-</div>
 
-<div class="col-3">
-    <h4>Warning<br>.bg-warning</h4>
-    <div class="color-swatch bg-warning p-2">
-        <p>There are seven campuses of Dallas College.</p>
+    <div class="col-md-4 col-sm-6">
+        <div class="pgs-people-card pgs-people-card--quiet pgs-people-card--compact height-md-125 height-sm-125">
+            <div class="row">
+                <div class="col-md-12 col-sm-12 col-12 pgs-people-card__col ps-0">
+                    <h3 class="pgs-people-card__name">Leo McGarry</h3>
+                    <ul class="list-unstyled">
+                        <li>White House Chief of Staff</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
     </div>
-</div>
 
-<div class="col-3">
-    <h4>Danger<br>.bg-danger</h4>
-    <div class="color-swatch bg-danger p-2">
-        <p>There are seven campuses of Dallas College.</p>
+    <div class="col-md-4 col-sm-6">
+        <div class="pgs-people-card pgs-people-card--quiet pgs-people-card--compact height-md-125 height-sm-125">
+            <div class="row">
+                <div class="col-md-12 col-sm-12 col-12 pgs-people-card__col ps-0">
+                    <h3 class="pgs-people-card__name">C.J. Cregg</h3>
+                    <ul class="list-unstyled">
+                        <li>White House Press Secretary</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
     </div>
-</div>
 
+    <div class="col-md-4 col-sm-6">
+        <div class="pgs-people-card pgs-people-card--quiet pgs-people-card--compact height-md-125 height-sm-125">
+            <div class="row">
+                <div class="col-md-12 col-sm-12 col-12 pgs-people-card__col ps-0">
+                    <h3 class="pgs-people-card__name">Josh Lyman</h3>
+                    <ul class="list-unstyled">
+                        <li>Deputy Chief of Staff</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-4 col-sm-6">
+        <div class="pgs-people-card pgs-people-card--quiet pgs-people-card--compact height-md-125 height-sm-125">
+            <div class="row">
+                <div class="col-md-12 col-sm-12 col-12 pgs-people-card__col ps-0">
+                    <h3 class="pgs-people-card__name">Toby Ziegler</h3>
+                    <ul class="list-unstyled">
+                        <li>White House Communications Director</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-4 col-sm-6">
+        <div class="pgs-people-card pgs-people-card--quiet pgs-people-card--compact height-md-125 height-sm-125">
+            <div class="row">
+                <div class="col-md-12 col-sm-12 col-12 pgs-people-card__col ps-0">
+                    <h3 class="pgs-people-card__name">Sam Seaborn</h3>
+                    <ul class="list-unstyled">
+                        <li>Deputy Communications Director</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
 
                     </article>
                 </div>
+
             </div>
         </div>
+
     </main>
+
 </div>
 
 <footer id="l-footer" class="bg-cprimary-dk">
