@@ -8457,6 +8457,12 @@ Full Width Styles for T4
   margin-right:auto;
  }
 
+ .no-sidebar .video-container .accordion {
+  max-width: initial;
+  margin-left: initial;
+  margin-right: initial;
+}
+
  .no-sidebar .pgs-grand-dropdown {
   max-width:60%;
   margin-left: auto;
