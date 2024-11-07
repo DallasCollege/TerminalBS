@@ -2767,8 +2767,13 @@ ul.pgs-org-card__list .ico {
 
 /* .pgs-org-card__body.text-center a.button {
   position: static; /* Remove absolute positioning */
-  margin-top: auto !important;
-}  */
+  /* margin-top: auto !important;
+}  */ 
+
+.col.flexbox {
+  margin-left:auto;
+  margin-right:auto;
+}
 
 
 .cta-box-1:before, .content-image-box:before, .content-box-1:before, .content-box-2:before, .content-box-3:before {
