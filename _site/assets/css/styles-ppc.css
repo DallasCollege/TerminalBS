@@ -112,6 +112,7 @@ h1, .h1 { font-size: 1.8rem; }
     display:none;
   }
 }
+
 .pgs-banner--sub-landing, .pgs-banner--sub-landing .pgs-banner__image {
     min-height: 25em;
 }
@@ -133,4 +134,15 @@ h1, .h1 { font-size: 1.8rem; }
 #l-header-mobile .navbar-utility ul.navbar-nav {
   float: right;
   width: 100%
+}
+
+@media screen and (min-width: 767px) and (max-width: 991px) {
+  .pgs-banner__h1.logo-bar-slot.pb-0 {
+      text-align: center;
+      margin-right:0px;
+  }
+
+  h1.text-cwhite.site-title {
+    margin-left: 0px;
+  }
 }
