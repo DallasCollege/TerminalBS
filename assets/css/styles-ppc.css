@@ -19,11 +19,6 @@
     -o-box-shadow: 0px 0px 24px 0px rgba(0, 0, 0, 0.7);
     -webkit-box-shadow: 0px 0px 24px 0px rgba(0, 0, 0, 0.7);
 }
-.pgs-banner--sub-landing .pgs-banner__title {
-    top: 0;
-    bottom: auto;
-    margin-top: 0;
-}
 #formbox {
   text-align:center;
 }
@@ -56,12 +51,6 @@
 .dropdown-menu li { margin: 0.5em 0; }
 .navbar a { text-decoration: none; }
 
-.pgs-banner--sub-landing .pgs-banner__title {
-  position:relative;
-	background-color: rgba(0,30,73, 1.0);
-	border-bottom: 2px solid #000;
-}
-
 #l-nav-utility .nav .open>a, #l-nav-utility .nav .open>a:hover, #l-nav-utility .nav .open>a:focus, #l-nav-utility .navbar-nav>li>a:hover, #l-nav-utility .navbar-nav>li>a:focus, #l-nav-utility .dropdown-menu>li>a:hover, #l-nav-utility .dropdown-menu>li>a:focus {
 }
 #l-header-mobile .navbar-nav a, #l-header-mobile .navbar-nav.navbar-secondary a {
@@ -89,7 +78,7 @@ h1, .h1 { font-size: 1.8rem; }
   .main-form { margin-top: 20px; }
 }
 
-@media screen and (max-width: 991px){
+@media screen and (max-width: 767px){
   .pgs-banner__h1 .site-title {
     display: block;
     text-align: center;
@@ -101,8 +90,19 @@ h1, .h1 { font-size: 1.8rem; }
     margin: 10px auto 15px auto;
   }
 }
+
+.pgs-banner--sub-landing .pgs-banner__title {
+  display:none;
+}
 @media screen and (max-width: 767px) {
   .pgs-banner--sub-landing .pgs-banner__title {
+    display:block;
+    top: 0;
+    bottom: auto;
+    margin-top: 0;
+    position:relative;
+  	background-color: rgba(0,30,73, 1.0);
+  	border-bottom: 2px solid #000;
     position: absolute;
     background-color: rgba(0,30,73,0.8);
     border-top: 2px solid #000;
