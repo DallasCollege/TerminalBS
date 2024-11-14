@@ -1183,9 +1183,11 @@ main.affix {
     padding: 1em 1em
   }
 
+  /* 
+  unclear of this need
   #l-header-desktop .hidden-sm {
     display: none !important
-  }
+  } */
 
   #l-header-desktop .logo-bar-slot {
     padding: .5em 0
