@@ -5973,8 +5973,8 @@ a:hover {
   text-decoration: none
 }
 
-article a:not(.bg-cprimary *):not(.bg-cprimary-lt *):not(.bg-cgrey-80 *):not(.bg-cprimary-dk *):not(.bg-cprimary-gr *):not(.cprimary *):not(.cprimary-lt *):not(.cprimary-dk *):not(.cprimary-gr *):not(.bg-csecondary *):not(.t4-org-card__heading *):not(.t4-tile *):not(.button *):not(.card-button *):not(.collapsible *):not(.grand-button *):hover,
-article a:not(.bg-cprimary *):not(.bg-cprimary-lt *):not(.bg-cgrey-80 *):not(.bg-cprimary-dk *):not(.bg-cprimary-gr *):not(.cprimary *):not(.cprimary-lt *):not(.cprimary-dk *):not(.cprimary-gr *):not(.bg-csecondary *):not(.t4-org-card__heading *):not(.t4-tile *):not(.button *):not(.card-button *):not(.collapsible *):not(.grand-button *):focus {
+article a:not(.bg-cprimary *):not(.bg-cprimary-lt *):not(.bg-cgrey-80 *):not(.bg-cprimary-dk *):not(.bg-cprimary-gr *):not(.cprimary *):not(.cprimary-lt *):not(.cprimary-dk *):not(.cprimary-gr *):not(.bg-csecondary *):not(.t4-org-card__heading *):not(.t4-tile *):not(.button *):not(.card-button *):not(.collapsible *):not(.grand-button *):not(.button-ghost):hover,
+article a:not(.bg-cprimary *):not(.bg-cprimary-lt *):not(.bg-cgrey-80 *):not(.bg-cprimary-dk *):not(.bg-cprimary-gr *):not(.cprimary *):not(.cprimary-lt *):not(.cprimary-dk *):not(.cprimary-gr *):not(.bg-csecondary *):not(.t4-org-card__heading *):not(.t4-tile *):not(.button *):not(.card-button *):not(.collapsible *):not(.grand-button *):not(.button-ghost):focus {
   color: #BF1717;
 }
 
@@ -6034,7 +6034,7 @@ button:hover, .button:hover {
 
 .button-ghost.border-cprimary:hover, .button-ghost.border-cprimary:focus, .button-ghost.cprimary-border:hover, .button-ghost.cprimary-border:focus {
   background-color: #003385;
-  color: #fff
+  color: #ffffff;
 }
 
 .button-ghost.border-cprimary-lt:hover, .button-ghost.border-cprimary-lt:focus, .button-ghost.cprimary-lt-border:hover, .button-ghost.cprimary-lt-border:focus {
@@ -6043,17 +6043,17 @@ button:hover, .button:hover {
 
 .button-ghost.border-cprimary-dk:hover, .button-ghost.border-cprimary-dk:focus, .button-ghost.cprimary-dk-border:hover, .button-ghost.cprimary-dk-border:focus {
   background-color: #001E49;
-  color: #fff
+  color: #ffffff;
 }
 
 .button-ghost.border-csecondary:hover, .button-ghost.border-csecondary:focus, .button-ghost.csecondary-border:hover, .button-ghost.csecondary-border:focus {
   background-color: #e52626;
-  color: #fff
+  color: #ffffff;
 }
 
 .button-ghost.border-csecondary-dk:hover, .button-ghost.border-csecondary-dk:focus, .button-ghost.csecondary-dk-border:hover, .button-ghost.csecondary-dk-border:focus {
   background-color: #6d0000;
-  color: #fff
+  color: #ffffff;
 }
 
 .button-ghost.border-cwhite:hover, .button-ghost.border-cwhite:focus, .button-ghost.cwhite-border:hover, .button-ghost.cwhite-border:focus {
@@ -6066,12 +6066,12 @@ button:hover, .button:hover {
 
 .button-ghost.border-cgrey-60:hover, .button-ghost.cgrey-60-border:focus {
   background-color: #66645e;
-  color: #fff
+  color: #ffffff;
 }
 
 .button-ghost.border-cgrey-80:hover, .button-ghost.cgrey-80-border:focus {
   background-color: #333;
-  color: #fff
+  color: #ffffff;
 }
 
 a.grand-button:hover, a.grand-button:focus, a.grand-photo-button:hover, a.grand-photo-button:focus, a.grand-photo-button-lg:hover, a.grand-photo-button-lg:focus {
