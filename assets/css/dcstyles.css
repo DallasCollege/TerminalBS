@@ -168,7 +168,7 @@ img {
   width: auto
 }
 
-/* no idea why this is set smaller than the normal container
+/* jb: no idea why this is set smaller than the normal container
 @media (min-width: 1200px) {
   .full-width-row .container {
     width: 1170px
@@ -176,7 +176,7 @@ img {
 } */
 
 .skiptocontent a, #skiptocontent a {
-  -webkit-transition: top 1s ease-out, background .5s linear;
+  background: #6D0000;
   border-bottom: 1px solid white;
   border-bottom-right-radius: 8px;
   border-right: 1px solid white;
@@ -187,7 +187,8 @@ img {
   position: absolute;
   top: -64px;
   transition: top 1s ease-out, background .5s linear;
-  z-index: 100
+  -webkit-transition: top 1s ease-out, background .5s linear;
+  z-index: 100;
 }
 
 .skiptocontent a:focus, #skiptocontent a:focus, .skiptocontent a:hover, #skiptocontent a:hover {
@@ -199,9 +200,6 @@ img {
   top: 0;
   transition: top .1s ease-in, background .5s linear
 }
-
-
-
 
 /* headers and navigation  */
 
@@ -695,6 +693,10 @@ width: 100vw;
 /*  footers */
 
 .list-group-item { background-color:transparent; border:0; margin:0 !important; }
+
+footer h1, footer .h1, footer h2, footer .h2, footer h3, footer .h3, footer h4, footer .h4, footer h5, footer .h5, footer h6, footer .h6 {
+  color:#ffffff;
+}
 
 footer#l-footer {
   font-size: .8125rem
