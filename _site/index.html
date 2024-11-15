@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html dir="ltr" lang="en-US">
+<html dir="ltr" lang="en-US" class="no-js">
 
 <head>
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -28,7 +28,8 @@
 
   <script src="/assets/js/bootstrap.bundle.min.js"></script>
 
-
+  <!-- swap html class from .no-js to .js when javascript is present -->
+  <script>document.getElementsByTagName('html')[0].setAttribute('class', 'js')</script>
 
   <link rel="apple-touch-icon" sizes="57x57" href="https://www.dallascollege.edu/icons/favicons/apple-icon-57x57.png">
   <link rel="apple-touch-icon" sizes="60x60" href="https://www.dallascollege.edu/icons/favicons/apple-icon-60x60.png">
@@ -501,10 +502,6 @@
 
       <main id="main__body" class="home">
 
-  <article>
-
-
-
     <!-- Content Area Begin -->
 
 
@@ -906,7 +903,7 @@
                         href="/about/rlc/pages/default.aspx">Richland</a></h3>
                     <p>North Dallas/Richardson</p>
                     <h3 class="mt-4 mb-0"><a class="underline-inv"
-                        href="/about/pages/locations.aspx">See all centers and locations</a></span>
+                        href="/about/pages/locations.aspx">See all centers and locations</a></h3>
                   </div>
                 </div>
 
@@ -1180,7 +1177,6 @@
       </section>
     </div>
 
-  </article>
 </main>
 
     </div>
