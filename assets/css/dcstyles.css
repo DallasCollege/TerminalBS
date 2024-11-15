@@ -8460,6 +8460,7 @@ a:hover .news-image img {
     height: 40px;
     max-width:100%;
   }
+}
 
 /*
 **************************************************
@@ -8492,3 +8493,25 @@ Full Width Styles for T4
     margin-right: initial;
    }
   }
+
+
+/*
+**************************************************
+No Javascript Style
+**************************************************
+ */
+
+
+ .no-js .navbar .navbar-nav {
+  display:block !important;
+  position:relative !important;
+}
+
+.no-js .collapse:not(.show) {
+  display:block !important;
+}
+
+ .no-js .pgs-grand-dropdown .dropdown-menu {
+  display:block !important;
+  position:relative !important;
+}
