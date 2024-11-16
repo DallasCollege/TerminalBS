@@ -8508,10 +8508,32 @@ No Javascript Style
 }
 
 .no-js .collapse:not(.show) {
-  display:block !important;
+  display:block;
 }
 
  .no-js .pgs-grand-dropdown .dropdown-menu {
   display:block !important;
   position:relative !important;
+}
+
+.no-js-nav .row-header {
+  display:inline
+}
+
+.no-js-nav ul {
+  list-style:none;
+  display:inline;
+  margin-left:0;
+  padding-left:0;
+}
+
+.no-js-nav li {
+  margin:1rem 1rem 1.5rem 0;
+  display:inline;
+  padding-left:0;
+  line-height: 2.5;
+}
+
+.no-js #top-utility-nav, .no-js #l-nav-utility, .no-js button.navbar-toggler, .no-js #l-header-mobile__menu, .no-js .accordion .accordion-button::after, .no-js .accordion .accordion-button::before {
+  display:none;
 }
