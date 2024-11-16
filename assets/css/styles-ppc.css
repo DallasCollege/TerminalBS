@@ -141,7 +141,9 @@ h1, .h1 { font-size: 1.8rem; }
       text-align: center;
       margin-right:0px;
   }
-
+  .logo-bar-slot img {
+    margin: 0 auto;
+  }
   h1.text-cwhite.site-title {
     margin-left: 0px;
   }
