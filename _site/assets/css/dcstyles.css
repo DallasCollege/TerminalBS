@@ -1186,7 +1186,7 @@ main.affix {
     padding: 1em 1em
   }
 
-  /* 
+  /*
   unclear of this need
   #l-header-desktop .hidden-sm {
     display: none !important
@@ -2777,7 +2777,7 @@ ul.pgs-org-card__list .ico {
 /* .pgs-org-card__body.text-center a.button {
   position: static; /* Remove absolute positioning */
   /* margin-top: auto !important;
-}  */ 
+}  */
 
 .col.flexbox {
   margin-left:auto;
@@ -6906,7 +6906,7 @@ Cards: Flexcards, Award Cards, Org Cards
   margin-bottom:2rem;
 }
 
-/* 
+/*
  @media (min-width: 576px) {
   .card-group {
     display: table;
@@ -8390,6 +8390,13 @@ a:hover .news-image img {
 
 .video-container .ratio {
   margin-bottom:1rem;
+}
+
+.video-container .ratio:focus {
+  /* outline: 0.225rem solid #4D90FE !important; */
+  outline:none;
+  -webkit-box-shadow: 0 0 0 0.0825rem #fff, 0 0 0.0625rem 0.225rem #4D90FE !important;
+  box-shadow: 0 0 0 0.0825rem #fff, 0 0 0.0625rem 0.225rem #4D90FE !important;
 }
 
 .gps-icon img {
