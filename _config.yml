@@ -33,8 +33,6 @@ github_username:  jekyll
 
 # Build settings
 theme: minima
-feed:
-  disable_in_development: true
 plugins:
 
 # Exclude from processing.
