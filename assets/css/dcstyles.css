@@ -748,6 +748,7 @@ footer a:not(.button):hover, footer a:not(.button):focus {
   margin-right: 1rem
 }
 
+
 #l-footer__main {
   padding: 2rem 0
 }
@@ -2215,6 +2216,10 @@ ul.button-group li:first-child .button {
 
 ul.button-group li:last-child .button {
   border-radius: 0 4px 4px 0
+}
+
+ul.button-group li:only-child .button {
+  border-radius: 4px
 }
 
 ul.button-group--justified {
@@ -5973,8 +5978,8 @@ a:hover {
   text-decoration: none
 }
 
-article a:not(.bg-cprimary *):not(.bg-cprimary-lt *):not(.bg-cgrey-80 *):not(.bg-cprimary-dk *):not(.bg-cprimary-gr *):not(.cprimary *):not(.cprimary-lt *):not(.cprimary-dk *):not(.cprimary-gr *):not(.bg-csecondary *):not(.t4-org-card__heading *):not(.t4-tile *):not(.button *):not(.card-button *):not(.collapsible *):not(.grand-button *):not(.button-ghost):hover,
-article a:not(.bg-cprimary *):not(.bg-cprimary-lt *):not(.bg-cgrey-80 *):not(.bg-cprimary-dk *):not(.bg-cprimary-gr *):not(.cprimary *):not(.cprimary-lt *):not(.cprimary-dk *):not(.cprimary-gr *):not(.bg-csecondary *):not(.t4-org-card__heading *):not(.t4-tile *):not(.button *):not(.card-button *):not(.collapsible *):not(.grand-button *):not(.button-ghost):focus {
+article a:not(.bg-cprimary *):not(.bg-cprimary-lt *):not(.bg-cgrey-80 *):not(.bg-cprimary-dk *):not(.bg-cprimary-gr *):not(.cprimary *):not(.cprimary-lt *):not(.cprimary-dk *):not(.cprimary-gr *):not(.bg-csecondary *):not(.bg-csecondary-dk *):not(.t4-org-card__heading *):not(.t4-tile *):not(.button *):not(.card-button *):not(.collapsible *):not(.grand-button *):not(.button-ghost):hover,
+article a:not(.bg-cprimary *):not(.bg-cprimary-lt *):not(.bg-cgrey-80 *):not(.bg-cprimary-dk *):not(.bg-cprimary-gr *):not(.cprimary *):not(.cprimary-lt *):not(.cprimary-dk *):not(.cprimary-gr *):not(.bg-csecondary *):not(.bg-csecondary-dk *):not(.t4-org-card__heading *):not(.t4-tile *):not(.button *):not(.card-button *):not(.collapsible *):not(.grand-button *):not(.button-ghost):focus {
   color: #BF1717;
 }
 
@@ -6518,7 +6523,7 @@ a:focus>img:not(.logo-bar-slot__img) {
 }
 
 .cta-stripe {
-  padding: 2.25em 1em 5.25em 1em
+  padding: 1.575rem;
 }
 
 .cta-stripe-text {
@@ -6527,6 +6532,27 @@ a:focus>img:not(.logo-bar-slot__img) {
   font-weight: 600;
   margin-bottom: 0
 }
+
+.cta-stripe__buttons {
+  text-align: right
+}
+
+.cta-stripe__buttons .button {
+  margin-bottom: 0
+}
+
+.cta-stripe .cta-stripe__headline {
+  font-size: 1.25rem;
+  margin: 0;
+  padding: .5rem 0;
+  font-family: "Montserrat", "Open Sans", Helvetica, Arial, sans-serif
+}
+
+.cta-stripe .cta-stripe__headline .ico {
+  margin-right: 1rem
+}
+
+
 
 .fa-rotate-180 {
   -webkit-transform: rotate(180deg);
