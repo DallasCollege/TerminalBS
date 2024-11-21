@@ -5978,7 +5978,7 @@ a:hover {
   text-decoration: none
 }
 
-article a:not(.bg-cprimary *):not(.bg-cprimary-lt *):not(.bg-cgrey-80 *):not(.bg-cprimary-dk *):not(.bg-cprimary-gr *):not(.cprimary *):not(.cprimary-lt *):not(.cprimary-dk *):not(.cprimary-gr *):not(.bg-csecondary *):not(.bg-csecondary-dk *):not(.t4-org-card__heading *):not(.t4-tile *):not(.button *):not(.card-button *):not(.collapsible *):not(.grand-button *):not(.button-ghost):hover,
+#main__body.home a:hover, #main__body.home a:focus, article a:not(.bg-cprimary *):not(.bg-cprimary-lt *):not(.bg-cgrey-80 *):not(.bg-cprimary-dk *):not(.bg-cprimary-gr *):not(.cprimary *):not(.cprimary-lt *):not(.cprimary-dk *):not(.cprimary-gr *):not(.bg-csecondary *):not(.bg-csecondary-dk *):not(.t4-org-card__heading *):not(.t4-tile *):not(.button *):not(.card-button *):not(.collapsible *):not(.grand-button *):not(.button-ghost):hover,
 article a:not(.bg-cprimary *):not(.bg-cprimary-lt *):not(.bg-cgrey-80 *):not(.bg-cprimary-dk *):not(.bg-cprimary-gr *):not(.cprimary *):not(.cprimary-lt *):not(.cprimary-dk *):not(.cprimary-gr *):not(.bg-csecondary *):not(.bg-csecondary-dk *):not(.t4-org-card__heading *):not(.t4-tile *):not(.button *):not(.card-button *):not(.collapsible *):not(.grand-button *):not(.button-ghost):focus {
   color: #BF1717;
 }
@@ -8069,11 +8069,11 @@ News Container Layouts
 .news-container a  {
   font-size: 16px;
   font-weight: 600;
-  text-decoration: none;
+  /*text-decoration: none;*/
 }
 
 .news-container a:hover, a.news-title h3:hover {
-  text-decoration:underline;
+  /*text-decoration:underline;*/
   color:#BF1717;
 }
 
@@ -8169,7 +8169,7 @@ h2.news-module-no-left-margin {
 }
 .news-container {
   margin-bottom: 15px;
-  overflow: auto;
+  /* overflow: auto; --- this is hiding the focus outline, must disable for now */
 	/* min-height: 110px; */
 }
 .news-summary > p.small {
@@ -8327,8 +8327,9 @@ fieldset legend {
 }
 
 fieldset label.t4-functional {
-font-size: 18px;
-font-weight: 700;
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: .5rem;
 }
 
 form.t4-functional-search {
