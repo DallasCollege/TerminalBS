@@ -1,0 +1,184 @@
+{% include head.html %}
+
+{% include header.html %}
+
+<link rel="stylesheet" href="{{ site.baseurl }}/assets/css/sandbox.css">
+
+<!-- site notice 
+<div class="site-notices bg-info">
+  <div class="container">
+    <div class="row min-height-100 flex-nowrap">
+      <div class="col-2 d-flex justify-content-center align-items-center p-2">
+        <span aria-hidden="true" class="ico fas fa-info-circle icon-3x"></span>
+      </div>
+      <div class="col-9 p-3 my-3">
+        <p><strong>N Building at Dallas College Eastfield Campus</strong> is where you can find the Dallas
+          College Police Station.</p>
+      </div>
+      <div class="col-1 p-3 d-flex justify-content-center align-items-center">
+        <span aria-hidden="true" class="ico fas fa-times-circle icon-lg"></span>
+      </div>
+    </div>
+  </div>
+</div>
+end site notice -->
+
+
+<div class="pgs-banner pgs-banner--double">
+  <div class="container-fluid">
+    <div class="row row--flex-md">
+
+      <div class="col-md-6 order-md-2 pgs-banner__image"
+        style="background-image: url('https://www.dallascollege.edu/cd/credit/world-languages/PublishingImages/world-lang-banner-1200x300.jpg');">
+      </div>
+
+      <div class="col-md-6 order-md-1 pgs-banner__title">
+        <div class="row row--flex-md align-items-center">
+          <div class="offset-1 col-10 pgs-banner__inner">
+            <h1 class="pgs-banner__h1">Digital Art and Design</h1><br>
+            <a href="#" class="button bg-cgrey button-mn">Certificates</a> <a href="#" class="button bg-cgrey  button-mn">Technical Degree</a><br>
+            <a href="#" class="button bg-cgrey">Request More Info</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- sub level nav -->
+<div class="pgs-banner__sub-nav bg-cgrey-05">
+  <div class="offset-lg-1 col-lg-10">
+    <nav class="navbar pgs-navbar--banner pgs-navbar--home navbar-expand-lg" aria-label="Student Quick Links">
+      <div class="container-fluid">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+          data-bs-target="#pgs-navbar--banner__collapse" aria-controls="pgs-navbar--banner__collapse"
+          aria-expanded="false" aria-label="Toggle navigation">
+          [Site] Quick Links<span aria-hidden="true" class="ico-right ico fas fa-chevron-circle-down "></span>
+        </button>
+
+        <div class="navbar-collapse justify-content-sm-center collapse" id="pgs-navbar--banner__collapse">
+          <ul class="navbar-nav mb-2 mb-md-0 d-flex flex-wrap text-center">
+            <li class="nav-item flex-fill"><a class="nav-link" href="#">Overview</a></li>
+            <li class="nav-item flex-fill"><a class="nav-link" href="#">Career Outlook</a></li>
+            <li class="nav-item flex-fill"><a class="nav-link" href="#">Program Paths</a></li>
+                <li class="nav-item flex-fill"><a class="nav-link" href="#">About</a></li>
+                    <li class="nav-item flex-fill"><a class="nav-link" href="#">Contact Us</a></li>
+                        <li class="nav-item flex-fill"><a class="nav-link" href="#">Get Started</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </div>
+</div>
+<!-- end sub level nav -->
+
+<div id="t4-bodyContainer">
+  <main id="main__body" class="no-sidebar">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <article>
+
+            <!-- Content Area Begin -->
+
+<div class="row">
+    <div class="col-sm-7">
+
+        {% include_relative intro.html %}
+
+    </div>
+    <div class="offset-sm-1 col-sm-4">
+        
+        {% include_relative metadata.html %}
+
+    </div>
+</div>
+
+<div class="row my-5">
+    <div class="col-12">
+
+
+        {% include_relative program-glance.html %}
+    </div>
+</div>
+
+
+<div class="row my-5">
+    <div class="col-12">
+
+        
+        {% include_relative jobs.html %}
+    </div>
+</div>
+
+<div class="row my-5">
+    <div class="col-12">
+
+
+        {% include_relative pathways.html %}
+
+    </div>
+</div>
+
+<div class="row my-5">
+    <div class="offset-sm-2 col-sm-8">
+
+
+        {% include_relative special.html %}
+    </div>
+</div>
+
+<div class="full-width-row bg-cgrey-40 p-5">
+    <div class="container">
+
+        <div class="row">
+            <div class="offset-sm-2 col-sm-8">
+
+                {% include_relative dc-info.html %}
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<div class="full-width-row bg-cgrey p-5">
+    <div class="container">
+
+        <div class="row">
+            <div class="col-sm-7">
+                {% include_relative rfi-content.html %}
+            </div>
+            <div class="offset-sm-1 col-sm-4 p-4">
+                (placeholder form for now)
+                {% include ppc-form.html %}
+            </div>
+        </div>
+
+    </div>
+</div>
+
+
+<div class="row my-5">
+    <div class="col-12">
+
+        {% include_relative related.html %}
+    </div>
+</div>
+
+
+
+
+            <!-- end Content Area-->
+
+          </article>
+        </div>
+      </div>
+    </div>
+  </main>
+</div>
+
+{% include footer.html %}
+
+</body>
+
+</html>
