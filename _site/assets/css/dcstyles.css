@@ -3876,16 +3876,16 @@ ul.pgs-action-link-list {
   padding-left: 0
 }
 
-.pgs-action-link {
+.pgs-action-link, .pgs-action-link-list a {
+  font-weight: 700;
   margin-right: 2rem;
-  font-weight: 700
 }
 
 .pgs-action-link--quiet {
   font-weight: 400
 }
 
-.pgs-action-link .ico {
+.pgs-action-link .ico, .pgs-action-link-list a .ico {
   margin-right: -1rem;
   transition: all 0.15s ease 0s
 }
@@ -3902,15 +3902,16 @@ ul.pgs-action-link-list {
   margin-right: -1rem
 }
 
-.pgs-action-link-list li:last-child .pgs-action-link, .pgs-action-link-list--center li:last-child .pgs-action-link, .pgs-action-link-list li:last-child .pgs-action-link, .pgs-action-link-list li:last-child .pgs-action-link--quiet {
+.pgs-action-link-list li:last-child .pgs-action-link, .pgs-action-link-list--center li:last-child .pgs-action-link, .pgs-action-link-list li:last-child .pgs-action-link, .pgs-action-link-list li:last-child .pgs-action-link--quiet,
+.pgs-action-link-list li:last-child a, .pgs-action-link-list--center li:last-child a, .pgs-action-link-list li:last-child a, .pgs-action-link-list li:last-child .pgs-action-link--quiet {
   margin-right: 0
 }
 
-*:not(ul) .pgs-action-link .ico {
+*:not(ul) .pgs-action-link .ico, *:not(ul) .pgs-action-link-list a .ico {
   margin-right: .5rem
 }
 
-*:not(ul) .pgs-action-link:hover .ico {
+*:not(ul) .pgs-action-link:hover .ico, *:not(ul) .pgs-action-link-list a:hover .ico {
   margin-right: .25rem;
   margin-left: .25rem
 }
@@ -4188,6 +4189,15 @@ a.button.button-off {
   padding-right: .5rem;
   padding-left: .5rem;
   margin-right: .5rem
+}
+
+/* updated to allow list inline without additional classes on li */
+ul.list-inline li {
+  display:inline
+}
+
+ul.list-inline li:not(:last-child) {
+  margin-right: .5rem;
 }
 
 caption {
