@@ -1,33 +1,67 @@
 ---
 permalink: /404.html
-layout: default
 ---
 
-<style type="text/css" media="screen">
-  .container {
-    margin: 10px auto;
-    max-width: 600px;
-    text-align: center;
-  }
-  h1 {
-    margin: 30px 0;
-    font-size: 4em;
-    line-height: 1;
-    letter-spacing: -1px;
-  }
-</style>
 
-<div class="container">
-<div class="row">
+{% include head.html %}
 
-<div class="col-sm-7"><h1 class="margin-top-0">404! ​​​​Uh-oh! Something’s missing.​​</h1>
-  <p class="lead">The page might have been moved or deleted.​​</p>
-  <ul>
-    <li>Please check for a typo in the URL.<br></li>
-    <li>You can also try searching for the content on our site or browsing for the information in our <a href="/website/pages/sitemap.aspx">sitemap</a> or 
-               <a href="/website/Pages/siteindex.aspx">A-Z Index</a>. </li>
-    <li>If that doesn’t fix things, <a href="/website/Pages/feedback.aspx">let us know</a>.</li>
-  </ul>
+{% include header.html %}
+
+<div id="t4-bodyContainer">
+  <main id="main__body">
+
+    <!-- title -->
+    <h1 class="visually-hidden">
+      Dallas College: Education That Works
+    </h1>
+
+
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-7">
+          <h1 class="margin-top-0">​​​Uh-oh! Something’s missing.<br></h1>
+          <p class="lead">The page might have been moved or deleted.<br></p>
+          <ul>
+            <li>Please check for a typo in the URL.<br></li>
+            <li>You can also try searching for the content on our site or browsing for the information in our
+              <a href="/website/pages/sitemap.aspx">sitemap</a> or
+              <a href="/website/Pages/siteindex.aspx">A-Z Index</a>.
+            </li>
+            <li>If that doesn’t fix things,
+              <a href="/website/Pages/feedback.aspx">let us know</a>.<br>
+            </li>
+          </ul>
+          <h2>Ready to Apply?</h2>
+          <p>Visit our
+            <a href="/admissions/pages/default.aspx" class="cta-admissions">Admissions and Registration</a> site to
+            learn more.
+          </p>
+          <ul class="fa-ul">
+            <li>
+              <span class="ico fas fa-chevron-right"></span><a href="/stuapp">Credit Students: Apply Now</a>
+            </li>
+            <li>
+              <span class="ico fas fa-chevron-right"></span><a href="https://dcccd.tfaforms.net/213">CE/WorkReadyU:
+                Submit an Interest Form</a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-sm-5 text-center">
+          <img src="https://www.dallascollege.edu/PublishingImages/Pages/PageNotFoundError/404-dc.png" alt=""
+            style="margin:0px auto;max-width:250px;"> &nbsp;<br>
+        </div>
+      </div>
+
+    </div>
 </div>
-  
+
+</main>
 </div>
+
+{% include footer.html %}
+
+</body>
+
+</html>
+
+<div id="pgs-bodyContainer">
