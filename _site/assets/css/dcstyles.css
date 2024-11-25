@@ -3346,7 +3346,8 @@ h2.accordion-header, h3.accordion-header, h4.accordion-header {margin-top: .375e
   background:#F7F3E8
 }
 
-  .accordion-item:first-of-type { border-top: 0}
+.accordion-item:first-of-type { border-top: 0}
+
 .accordion-item {margin-top:5px; margin-bottom:5px}
 
 
