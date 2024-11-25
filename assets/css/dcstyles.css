@@ -6009,6 +6009,9 @@ a:not(.button):focus, #l-header-desktop a:not(.button):hover, #sidebar a:not(.bu
   border-radius: 0.25rem;
   outline: 2px solid #4D90FE
 }
+.bg-csecondary a:not(.button):focus, .bg-csecondary-dk a:not(.button):focus {
+    outline: 2px solid #b8d3ff;
+}
 
 #sidebar a:not(.button):hover, .pgs-navbar--banner a:hover {
   border-radius: 0
