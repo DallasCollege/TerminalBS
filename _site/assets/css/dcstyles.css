@@ -4372,6 +4372,33 @@ a .t4-tile-overlay, .t4-tile-overlay {
 
 /* End T4 Tiles */
 
+.border-business {
+  border-bottom:solid 4px #249E31;
+}
+
+.border-arts {
+  border-bottom:solid 4px #C00D1E;
+}
+
+.border-education {
+  border-bottom:solid 4px #93328E;
+}
+
+.border-health {
+  border-bottom:solid 4px #248ED8;
+}
+
+.border-lps {
+  border-bottom:solid 4px #1E22AA;
+}
+
+.border-manufacturing {
+  border-bottom:solid 4px #95614D;
+}
+
+.border-stem {
+  border-bottom:solid 4px #FF7500;
+}
 
 @media screen and (min-width: 350px) and (max-width: 500px) {
   #LayoutBody .hero-overlay-fixed {
