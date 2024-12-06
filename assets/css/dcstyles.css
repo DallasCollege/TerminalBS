@@ -4220,7 +4220,11 @@ caption {
   max-width: 300px
 }
 
-/* School Blocks */
+/*
+**************************************************
+School Blocks
+**************************************************
+ */
 
 .pgs-tile--business {
   background: linear-gradient(0deg, rgba(26, 112, 35, 0.85), rgba(26, 112, 35, 0.85)), url('https://www.dallascollege.edu/PublishingImages/home/path-business-400x300.jpg');
@@ -4273,7 +4277,11 @@ caption {
 
 /* End School Blocks */
 
-/* New T4 Tiles */
+/*
+**************************************************
+New T4 Tiles
+**************************************************
+ */
 
 a .t4-tile, .t4-tile {
   display: block;
@@ -4372,6 +4380,12 @@ a .t4-tile-overlay, .t4-tile-overlay {
 
 /* End T4 Tiles */
 
+/*
+**************************************************
+School Border Colors
+**************************************************
+*/
+
 .border-business {
   border-bottom:solid 4px #249E31;
 }
@@ -4400,11 +4414,19 @@ a .t4-tile-overlay, .t4-tile-overlay {
   border-bottom:solid 4px #FF7500;
 }
 
+/* End School Border Colors */
+
 @media screen and (min-width: 350px) and (max-width: 500px) {
   #LayoutBody .hero-overlay-fixed {
     margin: 2em auto 2em auto
   }
 }
+
+/*
+**************************************************
+Helper and Utility Classes
+**************************************************
+*/
 
 #LayoutBody .hero-overlay h2.title {
   margin-top: 0
@@ -4797,6 +4819,13 @@ ol.list-margin-5 li, ul.list-margin-5 li {
   box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.5)
 }
 
+
+/*
+**************************************************
+Width and Height Classes
+**************************************************
+*/
+
 .wide-6 {
   width: 50%
 }
@@ -4912,6 +4941,7 @@ ol.list-margin-5 li, ul.list-margin-5 li {
   height: 400px;
   max-width: 100%
 }
+
 
 @media screen and (min-width: 0px) {
   .height-xxs-12, .child-height-xxs-12 [class*="col-"] {
@@ -5950,6 +5980,9 @@ img.width-200 {
   max-width: 100%
 }
 
+/* End Width and Height Classes */
+
+
 .pgs-img-frame {
   border-bottom: 6px solid #e52626
 }
@@ -6016,6 +6049,7 @@ a:hover {
   text-decoration: none
 }
 
+/* The Beast - Controls classes that should not change to red on focus or hover */
 #main__body.home a:hover, #main__body.home a:focus, article a:not(.bg-cprimary *):not(.bg-cprimary-lt *):not(.bg-cgrey-80 *):not(.bg-cprimary-dk *):not(.bg-cprimary-gr *):not(.cprimary *):not(.cprimary-lt *):not(.cprimary-dk *):not(.cprimary-gr *):not(.bg-csecondary *):not(.bg-csecondary-dk *):not(.t4-org-card__heading *):not(.t4-tile *):not(.button *):not(.card-button *):not(.collapsible *):not(.grand-button *):not(.button-ghost):hover,
 article a:not(.bg-cprimary *):not(.bg-cprimary-lt *):not(.bg-cgrey-80 *):not(.bg-cprimary-dk *):not(.bg-cprimary-gr *):not(.cprimary *):not(.cprimary-lt *):not(.cprimary-dk *):not(.cprimary-gr *):not(.bg-csecondary *):not(.bg-csecondary-dk *):not(.t4-org-card__heading *):not(.t4-tile *):not(.button *):not(.card-button *):not(.collapsible *):not(.grand-button *):not(.button-ghost):focus {
   color: #BF1717;
