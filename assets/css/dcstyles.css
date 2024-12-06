@@ -887,6 +887,16 @@ footer#l-footer #l-footer__fine-print .small-print li:last-child {
   margin-bottom: 3rem
 }
 
+#main__body.ppc-sidebar {
+  margin-top: 0;
+  margin-bottom:3rem;
+}
+
+#main__body.home {
+  margin-top: 0px;
+}
+
+
 main.affix {
   position: static
 }
@@ -1267,10 +1277,10 @@ main.affix {
     padding-top: 50px
   }
 
-  #main__body {
+  /* #main__body {
     margin-top: 2rem;
     margin-bottom: 2rem
-  }
+  } */
 
   .l-footer__main__popular-items__box {
     padding: 1rem !important
@@ -1881,13 +1891,10 @@ a.pgs-calendar__event {
   margin-bottom: .25rem
 }
 
-#main__body {
+/* #main__body {
   margin-top: 48px;
-}
+} */
 
-#main__body.home {
-  margin-top: 0px;
-}
 
 .pgs-navbar--home {
   font-weight: 800;
