@@ -4208,6 +4208,10 @@ ul.list-inline li:not(:last-child) {
   margin-right: .5rem;
 }
 
+ul.button-group li.list-inline-item {
+  margin:.05rem;
+}
+
 caption {
   color: #66645e;
   font-size: .875rem
@@ -6633,6 +6637,17 @@ a:focus>img:not(.logo-bar-slot__img) {
 .cta-stripe .cta-stripe__headline .ico {
   margin-right: 1rem
 }
+
+.cta-stripe ul.button-group li.list-inline-item {
+  margin:.05rem;
+}
+
+@media screen and (max-width: 991px) {
+  .cta-stripe__buttons, .cta-stripe__headline {
+  text-align:center;
+  }
+}
+
 
 
 
