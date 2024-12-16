@@ -3,3 +3,7 @@
 /* .pgs-banner--double .pgs-banner__title {
  background-color:#99968d;   
 } */
+
+.form-group input, .form-group select {
+    margin-bottom:20px
+}
