@@ -2189,6 +2189,10 @@ a.button, button.button, input.button {
   text-decoration: none
 }
 
+input.button.button-block {
+  width:100%;
+}
+
 a.button[class*="border"], button.button[class*="border"], input.button[class*="border"] {
   border-width: 1px;
   border-style: solid
