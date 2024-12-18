@@ -6808,7 +6808,7 @@ a:focus>img:not(.logo-bar-slot__img) {
   line-height: 1.75em
 }
 
-.testimonial-quote:before {
+.t4-testimonial-quote:before {
   position: absolute;
   content: '';
   top: 0;
@@ -6820,19 +6820,18 @@ a:focus>img:not(.logo-bar-slot__img) {
   height: 96px
 }
 
+
 .t4-testimonial-quote-secondary:before {
   position: absolute;
   content: '';
   top: 0;
   left: -112px;
-  background-image: url("https://www.dallascollege.edu/PublishingImages/icons/dc-quotes-open-csecondary.svg");
+  background-image: url("https://www.dallascollege.edu/PublishingImages/icons/dc-quotes-open-cprimary-lt.svg");
   background-repeat: no-repeat;
   background-size: contain;
   width: 96px;
   height: 96px
 }
-
-
 
 
 .testimonial--mega .testimonial-quote:after {
@@ -6979,7 +6978,7 @@ a:focus>img:not(.logo-bar-slot__img) {
     content: '';
     top: 0;
     left: -90px;
-    background-image: url("https://www.dallascollege.edu/PublishingImages/icons/dc-quotes-open-csecondary.svg");
+    background-image: url("https://www.dallascollege.edu/PublishingImages/icons/dc-quotes-open-cprimary-lt.svg");
     background-repeat: no-repeat;
     background-size: contain;
     width: 96px;
@@ -6987,6 +6986,7 @@ a:focus>img:not(.logo-bar-slot__img) {
     z-index:-1
   }
 }
+
 .t4-testimonial--mega .t4-testimonial-quote blockquote {
   font-size:1.5rem;
 }
