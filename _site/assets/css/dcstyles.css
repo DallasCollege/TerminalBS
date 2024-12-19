@@ -8500,6 +8500,16 @@ form.t4-functional-search {
   justify-content: flex-end;
 }
 
+.pgs-banner--double .pgs-banner__title {
+  background-color:#003385;   
+} 
+ 
+.form-group input, .form-group select {
+     margin-bottom:20px
+}
+ 
+
+
 /*
 **************************************************
 Image Styles for T4
