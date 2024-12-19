@@ -1,13 +1,5 @@
 /* Sandbox CSS */
 
-.pgs-banner--double .pgs-banner__title {
- background-color:#003385;   
-} 
-
-.form-group input, .form-group select {
-    margin-bottom:20px
-}
-
 .nav .nav-item button.active {
     background-color: transparent;
     color: var(--bs-danger) !important;
