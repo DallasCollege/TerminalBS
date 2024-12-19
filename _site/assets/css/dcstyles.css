@@ -8479,6 +8479,27 @@ form.t4-functional-search {
   display:inline;
 }
 
+.program-compare .row {
+  display:flex;
+  flex-wrap:wrap;  
+}
+
+.program-compare-box {
+  display:flex;
+  flex-direction:column;
+  height:100%
+}
+
+.program-compare-summary {
+  flex: 1;
+}
+
+.program-compare-details {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
 /*
 **************************************************
 Image Styles for T4
