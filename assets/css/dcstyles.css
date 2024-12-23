@@ -4192,15 +4192,21 @@ a.button.button-off {
   color:#333333;
 }
 
-.list-inline>li {
-  padding-right: 16px;
-  padding-left: 4px
+
+ul.list-inline>li:not(:last-child) {
+  padding-right: 1rem;
+  padding-left: .25rem
 }
+
+ul.list-inline>li:last-of-type {
+  padding-right: 0 !important; 
+} 
 
 .list-inline>li.label {
   padding-right: .5rem;
   padding-left: .5rem;
   margin-right: .5rem
+
 }
 
 /* updated to allow list inline without additional classes on li */
@@ -8508,6 +8514,14 @@ form.t4-functional-search {
      margin-bottom:20px
  }
  
+.program-glance {
+  padding:2rem;
+  margin-bottom:2rem;
+}
+
+.program-glance p, .program-glance li {
+  font-size:.875rem;
+}
 
 
 /*
