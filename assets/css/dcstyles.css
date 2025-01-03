@@ -8523,10 +8523,14 @@ form.t4-functional-search {
   font-size:.875rem;
 }
 
+@media screen and (min-width: 769px) {
 #pathway-contact {
   position:relative;
-  bottom:125px;
+  bottom: 120px;
+  margin-bottom: -100px !important;
 }
+}
+
 
 
 /*
@@ -8620,7 +8624,7 @@ a:hover .news-image img {
   margin-left: auto !important;
 }
 
-@media screen and (max-width: 769px){
+@media screen and (max-width: 769px) {
   .gps-icon img {
   width:50px;
   height:50px;
