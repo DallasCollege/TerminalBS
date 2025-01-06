@@ -8542,7 +8542,7 @@ form.t4-functional-search {
   line-height:1.25 !important;
   font-weight:700
 }
-.jobs-arrow {
+#jobs .jobs-arrow {
   max-width: 25px; height:auto;
   align:top
 }
