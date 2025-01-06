@@ -8523,6 +8523,10 @@ form.t4-functional-search {
   font-size:.875rem;
 }
 
+ul.credential-info-list li {
+  margin-bottom:0
+}
+
 #jobs .jobs-data {
   font-size:1.875rem;
   font-weight:800;
@@ -8566,6 +8570,13 @@ form.t4-functional-search {
 }
 }
 
+#pathway-contact .contact-card {
+  border-radius: 4px 4px 0px 0px; 
+  border-bottom:6px solid; 
+  border-top:0; 
+  border-left:0; 
+  border-right:0;
+}
 
 
 /*
