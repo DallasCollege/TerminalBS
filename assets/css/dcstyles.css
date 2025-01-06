@@ -8542,9 +8542,20 @@ form.t4-functional-search {
   line-height:1.25 !important;
   font-weight:700
 }
+
+#jobs ul.jobs-skills {
+  font-size:.75rem;
+  line-height:.8rem;
+  margin-bottom:0;
+}
+
+#jobs ul.jobs-skills li {
+  padding-left:0;
+}
+
 #jobs .jobs-arrow {
   max-width: 25px; height:auto;
-  align:top
+  align:top;
 }
 
 @media screen and (min-width: 769px) {
