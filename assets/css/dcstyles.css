@@ -8492,14 +8492,30 @@ form.t4-functional-search {
   flex-wrap:wrap;  
 }
 
+@media screen and (min-width: 1200px) {
+
+.program-compare-title {
+  min-height:115px
+}
+.program-compare-title h2 {
+  margin-top:1rem;
+}
+
+.program-compare-locations {
+  min-height:175px
+}
+
+}
+
 .program-compare-box {
   display:flex;
   flex-direction:column;
-  height:100%
+  height:100%;
 }
 
 .program-compare-summary {
   flex: 1;
+
 }
 
 .program-compare-details {
@@ -8523,6 +8539,7 @@ form.t4-functional-search {
 
 .program-glance p, .program-glance li {
   font-size:.875rem;
+  white-space: nowrap;
 }
 
 ul.credential-info-list li {
