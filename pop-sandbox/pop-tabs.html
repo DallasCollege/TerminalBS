@@ -1,36 +1,3 @@
-<script>
-    document.addEventListener('DOMContentLoaded', function() {
-// Function to fetch and display catalog program data
-async function fetchCatalogProgram() {
-    const url = 'http://dallas.apis.acalog.com/v1/content?key=5d3fb072555773d28bb6c45dee0e688b8ce5a29c&format=xml&method=getItems&type=programs&ids[]=426&catalog=4';
-    
-    try {
-        const response = await fetch(url);
-        const xmlText = await response.text();
-        const parser = new DOMParser();
-        const xmlDoc = parser.parseFromString(xmlText, "application/xml");
-
-        // Extract the relevant content from the XML
-        const programContent = xmlDoc.getElementsByTagName('program').textContent;
-
-        // Update the modal content
-        document.querySelector('#exampleModalwc1 .modal-body').innerHTML = programContent;
-
-        // Open the modal
-        const modal = new bootstrap.Modal(document.getElementById('exampleModalwc1'));
-        modal.show();
-    } catch (error) {
-        console.error('Error fetching catalog program:', error);
-    }
-}
-
-// Event listener for the link click
-document.getElementById('catalogLinkwc1').addEventListener('click', fetchCatalogProgram);
-});
-
-</script>
-
-
 <ul class="nav nav-pills mb-3 border-0 img-offset-top-6-md" id="pills-tab" role="tablist">
     <li class="nav-item" role="presentation">
         <button class="nav-link text-primary fw-semibold active position-relative" id="pills-home-tab"
@@ -69,10 +36,9 @@ document.getElementById('catalogLinkwc1').addEventListener('click', fetchCatalog
                     <hr>
                     <div class="row small">
                         <ul class="px-4 mb-0 list-unstyled credential-info-list">
-                            <li><a href="#" data-bs-toggle="modal" data-bs-target="#exampleModalwc1" id="catalogLinkwc1">Digital
+                            <li><a href="#" data-bs-toggle="modal" data-bs-target="#exampleModalwc1">Digital
                                     Interface Design</a></li>
-                            <li><a href="https://catalog.dallascollege.edu/content.php?catoid=2&navoid=374"
-                                    data-bs-toggle="modal" data-bs-target="#exampleModalwc2">Digital
+                            <li><a href="#" data-bs-toggle="modal" data-bs-target="#exampleModalwc1">Digital
                                     Photography/Video </a></li>
                         </ul>
                     </div>
@@ -83,12 +49,11 @@ document.getElementById('catalogLinkwc1').addEventListener('click', fetchCatalog
                         <div class="modal-dialog modal-xl">
                             <div class="modal-content">
                                 <div class="modal-header">
-                                    <h1 class="modal-title fs-5" id="exampleModalLabelwc1">Digital Interface Design</h1>
                                     <button type="button" class="btn-close" data-bs-dismiss="modal"
                                         aria-label="Close"></button>
                                 </div>
                                 <div class="modal-body">
-                                    Digital Interface Design
+                                    {% include_relative catalog-demo.html %}
                                 </div>
                                 <div class="modal-footer">
                                     <button type="button" class="btn btn-cprimary"
@@ -104,12 +69,11 @@ document.getElementById('catalogLinkwc1').addEventListener('click', fetchCatalog
                         <div class="modal-dialog modal-xl">
                             <div class="modal-content">
                                 <div class="modal-header">
-                                    <h1 class="modal-title fs-5" id="exampleModalLabelwc2">Digital Photography/Video</h1>
                                     <button type="button" class="btn-close" data-bs-dismiss="modal"
                                         aria-label="Close"></button>
                                 </div>
                                 <div class="modal-body">
-                                    Digital Photography/Video
+                                    {% include_relative catalog-demo.html %}
                                 </div>
                                 <div class="modal-footer">
                                     <button type="button" class="btn btn-cprimary"
@@ -143,19 +107,75 @@ document.getElementById('catalogLinkwc1').addEventListener('click', fetchCatalog
                     <hr>
                     <div class="row small">
                         <ul class="px-4 mb-0 list-unstyled credential-info-list">
-                            <li><a href="https://catalog.dallascollege.edu/content.php?catoid=2&navoid=374">Digital
+                            <li><a href="#" data-bs-toggle="modal" data-bs-target="#exampleModall1c1">Digital
                                     Interface Design</a></li>
-                            <li><a href="https://catalog.dallascollege.edu/content.php?catoid=2&navoid=374">Digital
+                            <li><a href="#" data-bs-toggle="modal" data-bs-target="#exampleModall1c2">Digital
                                     Photography/Video </a></li>
-                            <li><a href="https://catalog.dallascollege.edu/content.php?catoid=2&navoid=374">UX/UI
+                            <li><a href="#" data-bs-toggle="modal" data-bs-target="#exampleModall1c3">UX/UI
                                     Design</a></li>
-                            <li><a href="https://catalog.dallascollege.edu/content.php?catoid=2&navoid=374">Visual
-                                    Design</a></li>
-                            <li><a
-                                    href="https://catalog.dallascollege.edu/content.php?catoid=2&navoid=374">Animation</a>
-                            </li>
                         </ul>
                     </div>
+
+                    <!-- Modal 1 -->
+                    <div class="modal fade" id="exampleModall1c1" tabindex="-1" aria-labelledby="exampleModalLabell1c1"
+                        aria-hidden="true">
+                        <div class="modal-dialog modal-xl">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    {% include_relative catalog-demo.html %}
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-cprimary"
+                                        data-bs-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Modal 2 -->
+                    <div class="modal fade" id="exampleModall1c2" tabindex="-1" aria-labelledby="exampleModalLabell1c2"
+                        aria-hidden="true">
+                        <div class="modal-dialog modal-xl">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    {% include_relative catalog-demo.html %}
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-cprimary"
+                                        data-bs-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Modal 3 -->
+                    <div class="modal fade" id="exampleModall1c3" tabindex="-1" aria-labelledby="exampleModalLabell1c3"
+                        aria-hidden="true">
+                        <div class="modal-dialog modal-xl">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    {% include_relative catalog-demo.html %}
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-cprimary"
+                                        data-bs-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
             </div>
             <div class="col mb-2">
@@ -180,19 +200,75 @@ document.getElementById('catalogLinkwc1').addEventListener('click', fetchCatalog
                     <hr>
                     <div class="row small">
                         <ul class="px-4 mb-0 list-unstyled credential-info-list">
-                            <li><a href="https://catalog.dallascollege.edu/content.php?catoid=2&navoid=374">Digital
+                            <li><a href="#" data-bs-toggle="modal" data-bs-target="#exampleModall1c1">Digital
                                     Interface Design</a></li>
-                            <li><a href="https://catalog.dallascollege.edu/content.php?catoid=2&navoid=374">Digital
+                            <li><a href="#" data-bs-toggle="modal" data-bs-target="#exampleModall1c2">Digital
                                     Photography/Video </a></li>
-                            <li><a href="https://catalog.dallascollege.edu/content.php?catoid=2&navoid=374">UX/UI
+                            <li><a href="#" data-bs-toggle="modal" data-bs-target="#exampleModall1c3">UX/UI
                                     Design</a></li>
-                            <li><a href="https://catalog.dallascollege.edu/content.php?catoid=2&navoid=374">Visual
-                                    Design</a></li>
-                            <li><a
-                                    href="https://catalog.dallascollege.edu/content.php?catoid=2&navoid=374">Animation</a>
-                            </li>
                         </ul>
                     </div>
+
+                    <!-- Modal 1 -->
+                    <div class="modal fade" id="exampleModall1c1" tabindex="-1" aria-labelledby="exampleModalLabell1c1"
+                        aria-hidden="true">
+                        <div class="modal-dialog modal-xl">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    {% include_relative catalog-demo.html %}
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-cprimary"
+                                        data-bs-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Modal 2 -->
+                    <div class="modal fade" id="exampleModall1c2" tabindex="-1" aria-labelledby="exampleModalLabell1c2"
+                        aria-hidden="true">
+                        <div class="modal-dialog modal-xl">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    {% include_relative catalog-demo.html %}
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-cprimary"
+                                        data-bs-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Modal 3 -->
+                    <div class="modal fade" id="exampleModall1c3" tabindex="-1" aria-labelledby="exampleModalLabell1c3"
+                        aria-hidden="true">
+                        <div class="modal-dialog modal-xl">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    {% include_relative catalog-demo.html %}
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-cprimary"
+                                        data-bs-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
             </div>
             <div class="col mb-2">
