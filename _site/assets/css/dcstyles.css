@@ -1512,7 +1512,7 @@ main.affix {
   margin-bottom: 0px
 }
 
-.pgs-navbar--sidebar a {
+.pgs-navbar--sidebar a:not(.button) {
   text-decoration: none;
   background: #e5e2d6;
   font-weight: 500;
@@ -1522,6 +1522,8 @@ main.affix {
   display: block;
   white-space: normal
 }
+
+
 
 .pgs-navbar--sidebar .nav>li:first-of-type a {
   font-family: "Montserrat", "Open Sans", Helvetica, Arial, sans-serif;
