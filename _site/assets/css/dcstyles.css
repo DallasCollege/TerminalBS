@@ -1977,6 +1977,11 @@ a.pgs-calendar__event {
     /* at MD and above, image will be offset, under that image will be normal */
     margin-top: -6rem;
   }
+  .img-offset-top-575-md {
+    /* at MD and above, image will be offset, under that image will be normal */
+    margin-top: -5.75rem;
+  }
+
 }
 
 /* End Offset CSS */
@@ -8581,6 +8586,11 @@ ul.credential-info-list li {
   align:top;
 }
 
+h2#pathways {
+  margin-top:3rem;
+  margin-bottom:5rem;
+}
+
 @media screen and (min-width: 769px) {
 #pathway-contact {
   position:relative;
@@ -8604,11 +8614,12 @@ ul.credential-info-list li {
 }
 
 .nav .nav-item button.active, .nav .nav-item button.focus, .nav .nav-item button.hover {
-  background-color: #F7F3E8;
+  background-color: #E9F2FF;
   color: #001E49
 } 
 
-button#pills-home-tab, button#pills-profile-tab {
+
+button#pills-home-tab, button#pills-profile-tab, button#pills-home-tab2, button#pills-profile-tab2 {
   color: #003385 !important;
 }
 
