@@ -1,9 +1,13 @@
 /* Sandbox CSS */
 
-.nav .nav-item button.active {
-    background-color: transparent;
-    color: var(--bs-danger) !important;
-  }
+.nav .nav-item button.active, .nav .nav-item button.focus, .nav .nav-item button.hover {
+    background-color: #F7F3E8;
+    color: #001E49
+  } 
+
+  button#pills-home-tab, button#pills-profile-tab {
+    color: #003385 !important;!i;!;
+}
   .nav .nav-item button.active::after {
     content: "";
     border-bottom: 4px solid var(--bs-danger);
