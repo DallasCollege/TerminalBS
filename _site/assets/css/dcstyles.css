@@ -8599,7 +8599,8 @@ ul.credential-info-list li {
 }
 
 .badge.rounded-pill.small-pill {
-  padding:12px !important
+  padding:8px;
+  margin:8px
 }
 
 .nav .nav-item button.active, .nav .nav-item button.focus, .nav .nav-item button.hover {
@@ -8608,7 +8609,7 @@ ul.credential-info-list li {
 } 
 
 button#pills-home-tab, button#pills-profile-tab {
-  color: #003385 !important;!i;!;
+  color: #003385 !important;
 }
 
 .nav .nav-item button.active::after {
