@@ -852,7 +852,7 @@
 
                 <h2>What can I earn? Will there be plenty of jobs?</h2>
 <p>Talk about the jobs and how awesome they are. Talk about the jobs and how awesome they are. Talk about the jobs and
-    how awesome they are. Talk about the jobs and how awesome they are.</p>
+    how awesome they are. Talk about the jobs and how awesome they are. The more you learn, the more you can earn.<sup>4</sup></p>
 
 <div class="container p-0">
     <div class="row">
@@ -1061,7 +1061,40 @@
               <div class="container">
 
                 <div class="row">
-                  <ul class="nav nav-pills mb-3 border-0 img-offset-top-6-md" id="pills-tab" role="tablist">
+                  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+// Function to fetch and display catalog program data
+async function fetchCatalogProgram() {
+    const url = 'http://dallas.apis.acalog.com/v1/content?key=5d3fb072555773d28bb6c45dee0e688b8ce5a29c&format=xml&method=getItems&type=programs&ids[]=426&catalog=4';
+    
+    try {
+        const response = await fetch(url);
+        const xmlText = await response.text();
+        const parser = new DOMParser();
+        const xmlDoc = parser.parseFromString(xmlText, "application/xml");
+
+        // Extract the relevant content from the XML
+        const programContent = xmlDoc.getElementsByTagName('program').textContent;
+
+        // Update the modal content
+        document.querySelector('#exampleModalwc1 .modal-body').innerHTML = programContent;
+
+        // Open the modal
+        const modal = new bootstrap.Modal(document.getElementById('exampleModalwc1'));
+        modal.show();
+    } catch (error) {
+        console.error('Error fetching catalog program:', error);
+    }
+}
+
+// Event listener for the link click
+document.getElementById('catalogLinkwc1').addEventListener('click', fetchCatalogProgram);
+});
+
+</script>
+
+
+<ul class="nav nav-pills mb-3 border-0 img-offset-top-6-md" id="pills-tab" role="tablist">
     <li class="nav-item" role="presentation">
         <button class="nav-link text-primary fw-semibold active position-relative" id="pills-home-tab"
             data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home"
@@ -1099,19 +1132,56 @@
                     <hr>
                     <div class="row small">
                         <ul class="px-4 mb-0 list-unstyled credential-info-list">
-                            <li><a href="https://catalog.dallascollege.edu/content.php?catoid=2&navoid=374">Digital
+                            <li><a href="#" data-bs-toggle="modal" data-bs-target="#exampleModalwc1" id="catalogLinkwc1">Digital
                                     Interface Design</a></li>
-                            <li><a href="https://catalog.dallascollege.edu/content.php?catoid=2&navoid=374">Digital
+                            <li><a href="https://catalog.dallascollege.edu/content.php?catoid=2&navoid=374"
+                                    data-bs-toggle="modal" data-bs-target="#exampleModalwc2">Digital
                                     Photography/Video </a></li>
-                            <li><a href="https://catalog.dallascollege.edu/content.php?catoid=2&navoid=374">UX/UI
-                                    Design</a></li>
-                            <li><a href="https://catalog.dallascollege.edu/content.php?catoid=2&navoid=374">Visual
-                                    Design</a></li>
-                            <li><a
-                                    href="https://catalog.dallascollege.edu/content.php?catoid=2&navoid=374">Animation</a>
-                            </li>
                         </ul>
                     </div>
+
+                    <!-- Modal 1 -->
+                    <div class="modal fade" id="exampleModalwc1" tabindex="-1" aria-labelledby="exampleModalLabelwc1"
+                        aria-hidden="true">
+                        <div class="modal-dialog modal-xl">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h1 class="modal-title fs-5" id="exampleModalLabelwc1">Digital Interface Design</h1>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    Digital Interface Design
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-cprimary"
+                                        data-bs-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Modal 2 -->
+                    <div class="modal fade" id="exampleModalwc2" tabindex="-1" aria-labelledby="exampleModalLabelwc2"
+                        aria-hidden="true">
+                        <div class="modal-dialog modal-xl">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h1 class="modal-title fs-5" id="exampleModalLabelwc2">Digital Photography/Video</h1>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    Digital Photography/Video
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-cprimary"
+                                        data-bs-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
             </div>
             <div class="col mb-2">
@@ -1721,6 +1791,7 @@
                 <p class="small"><sup>1</sup>Length of time is based on catalog degree plans. Prerequisites may be required, which are not included in this estimate. For most programs, full-time student status is assumed, a minimum of 12 credit hours per semester.</p>
 <p class="small"><sup>2</sup>Cost is based on tuition rates for program hours for Dallas County residents. The price of most required learning materials (books, software, supplies, etc.) is included with the price of tuition. Visit our <a href="https://www.dallascollege.edu/paying-for-college/pages/default.aspx">Paying for College site</a> to learn more about cost, finaincial aid, scholarships and more.</p>
 <p class="small"><sup>3</sup>Each location offers a unique combination of certificate and degree options. Not all degree and certificate offerings are available for admission/start at all campuses every semester.</p>
+<p class="small"><sup>4</sup>Some employers may only require a certificate, while others may require an associate degree or higher. All jobs data gathered for Dallas/Fort Worth. Source: Dallas College Labor Market Intelligence and Lightcast</p>
 
               </div>
             </div>
