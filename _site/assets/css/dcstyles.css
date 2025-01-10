@@ -8602,6 +8602,26 @@ ul.credential-info-list li {
   padding:12px !important
 }
 
+.nav .nav-item button.active, .nav .nav-item button.focus, .nav .nav-item button.hover {
+  background-color: #F7F3E8;
+  color: #001E49
+} 
+
+button#pills-home-tab, button#pills-profile-tab {
+  color: #003385 !important;!i;!;
+}
+
+.nav .nav-item button.active::after {
+  content: "";
+  border-bottom: 4px solid var(--bs-danger);
+  width: 100%;
+  position: absolute;
+  left: 0;
+  bottom: -1px;
+  border-radius: 5px 5px 0 0;
+}
+
+
 /*
 **************************************************
 Image Styles for T4
