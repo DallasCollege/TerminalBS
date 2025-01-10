@@ -8589,14 +8589,18 @@ ul.credential-info-list li {
 }
 }
 
-#pathway-contact .contact-card {
+.pathway-contact.contact-card {
   border-radius: 4px 4px 0px 0px; 
   border-bottom:6px solid; 
   border-top:0; 
   border-left:0; 
   border-right:0;
+  margin-top:3rem;
 }
 
+.badge.rounded-pill.small-pill {
+  padding:12px !important
+}
 
 /*
 **************************************************
