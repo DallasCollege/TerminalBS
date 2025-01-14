@@ -8477,9 +8477,15 @@ News List layout
 PHP Functional Pages for T4
 **************************************************
  */
-fieldset legend {
+fieldset legend  {
   font-size: 18px;
   font-weight: 700;
+}
+
+fieldset .search-legend {
+  font-size: 18px;
+  font-weight: 700;
+  
 }
 
 fieldset label.t4-functional {
