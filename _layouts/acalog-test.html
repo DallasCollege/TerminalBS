@@ -2,6 +2,8 @@
 
 {% include header.html %}
 
+<link rel="stylesheet" href="http://dallas.catalog.acalog.com/widget-api/widget-api.min.css">
+
 <div class="pgs-banner pgs-banner--double">
   <div class="container-fluid">
     <div class="row row--flex-md">
@@ -93,44 +95,7 @@
               </div>
             </div>
 
-            <div class="row my-5" id="overview">
-              <div class="col-12">
-
-
-                {% include_relative program-glance.html %}
-              </div>
-            </div>
-
-            <div class="row my-5" id="overview-2">
-              <div class="col-12">
-
-
-                {% include_relative program-glance-3.html %}
-              </div>
-            </div>
-
-
-
-
-            <div class="row my-5" id="jobs">
-              <div class="col-12">
-
-
-                {% include_relative jobs.html %}
-              </div>
-            </div>
-
-            <h2 id="pathways">What Can I Study?</h2>
-            <div class="full-width-row bg-cprimary-lt mt-5 p-5">
-              <div class="container">
-
-                <div class="row">
-                  {% include_relative pop-tabs.html %}
-                </div>
-
-              </div>
-            </div>
-
+           
 
 
             <h2 id="pathways">What Can I Study?</h2>
@@ -138,21 +103,14 @@
               <div class="container">
 
                 <div class="row">
-                  {% include_relative pop-tabs2.html %}
+                  {% include acalog-widget-test.html %}
                 </div>
 
               </div>
             </div>
 
 
-            <div class="row my-5">
-              <div class="offset-sm-1 col-sm-10">
-
-                {% include_relative special.html %}
-
-              </div>
-            </div>
-
+        
             <div class="row">
               <div class="offset-sm-1 col-sm-10">
 
@@ -226,53 +184,12 @@
             </div>
 
 
-            <div class="full-width-row bg-cprimary p-5" id="about">
-              <div class="container">
-
-                <div class="row">
-                  <div class="offset-sm-1 col-sm-10">
-
-                    {% include_relative program-stats-info.html %}
-                  </div>
-                </div>
-
-              </div>
-            </div>
+       
 
 
 
 
-            <div class="full-width-row bg-cgrey p-5" id="get-started">
-              <div class="container">
 
-                <div class="row">
-                  <div class="col-12 col-md-6">
-                    {% include_relative rfi-content.html %}
-                  </div>
-                  <div id="popformcontainer" class="col-12 col-md-6 offset-lg-1 col-lg-5 p-4">
-                    {% include_relative ppc-form.html %}
-                  </div>
-                </div>
-
-              </div>
-            </div>
-
-
-            <div class="row my-5" id="related">
-              <div class="col-12">
-                <h2>You Might Also Like</h2>
-
-                {% include_relative related.html %}
-              </div>
-            </div>
-
-            <div class="row my-5" id="footnote">
-              <div class="offset-1 col-10">
-
-                {% include_relative footnote.html %}
-
-              </div>
-            </div>
 
 
 
