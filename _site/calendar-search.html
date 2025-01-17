@@ -841,11 +841,9 @@
                         <hr>
                         <h3>Filter by Location</h3>
                         <fieldset>
-                            <div class="search-legend">Campuses</div>
                             <div class="form-check">
-                                <input type="checkbox" value="dc_dallas_college" id="chkdc_dallas_college"
-                                    name="chkdc_dallas_college" class="form-check-input">
-                                <label class="form-check-label" for="chkdc_dallas_college">Dallas College</label>
+                                <input type="checkbox" value="dc" id="bjp" name="bjp" class="form-check-input">
+                                <label class="form-check-label" for="bjp">Bill J. Priest</label>
                             </div>
                             <div class="form-check">
                                 <input type="checkbox" value="dc_brookhaven" id="chkdc_brookhaven"
@@ -853,43 +851,13 @@
                                 <label class="form-check-label" for="chkdc_brookhaven">Brookhaven</label>
                             </div>
                             <div class="form-check">
+                                <input type="checkbox" value="dc" id="chc" name="chc" class="form-check-input">
+                                <label class="form-check-label" for="chc">Cedar Hill</label>
+                            </div>
+                            <div class="form-check">
                                 <input type="checkbox" value="dc_cedar_valley" id="chkdc_cedar_valley"
                                     name="chkdc_cedar_valley" class="form-check-input">
                                 <label class="form-check-label" for="chkdc_cedar_valley">Cedar Valley</label>
-                            </div>
-                            <div class="form-check">
-                                <input type="checkbox" value="dc_eastfield" id="chkdc_eastfield" name="chkdc_eastfield"
-                                    class="form-check-input">
-                                <label class="form-check-label" for="chkdc_eastfield">Eastfield</label>
-                            </div>
-                            <div class="form-check">
-                                <input type="checkbox" value="dc_el_centro" id="chkdc_el_centro" name="chkdc_el_centro"
-                                    class="form-check-input">
-                                <label class="form-check-label" for="chkdc_el_centro">El Centro</label>
-                            </div>
-                            <div class="form-check">
-                                <input type="checkbox" value="dc_mountain_view" id="chkdc_mountain_view"
-                                    name="chkdc_mountain_view" class="form-check-input">
-                                <label class="form-check-label" for="chkdc_mountain_view">Mountain View</label>
-                            </div>
-                            <div class="form-check">
-                                <input type="checkbox" value="dc_north_lake" id="chkdc_north_lake"
-                                    name="chkdc_north_lake" class="form-check-input">
-                                <label class="form-check-label" for="chkdc_north_lake">North Lake</label>
-                            </div>
-                            <div class="form-check">
-                                <input type="checkbox" value="dc_richland" id="chkdc_richland" name="chkdc_richland"
-                                    class="form-check-input">
-                                <label class="form-check-label" for="chkdc_richland">Richland</label>
-                            </div>
-                            <div class="search-legend">Centers</div>
-                            <div class="form-check">
-                                <input type="checkbox" value="dc" id="bjp" name="bjp" class="form-check-input">
-                                <label class="form-check-label" for="bjp">Bill J. Priest</label>
-                            </div>
-                            <div class="form-check">
-                                <input type="checkbox" value="dc" id="chc" name="chc" class="form-check-input">
-                                <label class="form-check-label" for="chc">Cedar Hill</label>
                             </div>
                             <div class="form-check">
                                 <input type="checkbox" value="dc" id="cc" name="cc" class="form-check-input">
@@ -904,6 +872,16 @@
                                 <label class="form-check-label" for="dhs">Downtown Health Sciences</label>
                             </div>
                             <div class="form-check">
+                                <input type="checkbox" value="dc_eastfield" id="chkdc_eastfield" name="chkdc_eastfield"
+                                    class="form-check-input">
+                                <label class="form-check-label" for="chkdc_eastfield">Eastfield</label>
+                            </div>
+                            <div class="form-check">
+                                <input type="checkbox" value="dc_el_centro" id="chkdc_el_centro" name="chkdc_el_centro"
+                                    class="form-check-input">
+                                <label class="form-check-label" for="chkdc_el_centro">El Centro</label>
+                            </div>
+                            <div class="form-check">
                                 <input type="checkbox" value="dc" id="ic" name="ic" class="form-check-input">
                                 <label class="form-check-label" for="ic">Irving</label>
                             </div>
@@ -912,8 +890,23 @@
                                 <label class="form-check-label" for="lwd">Lancaster Workforce Development</label>
                             </div>
                             <div class="form-check">
+                                <input type="checkbox" value="dc_mountain_view" id="chkdc_mountain_view"
+                                    name="chkdc_mountain_view" class="form-check-input">
+                                <label class="form-check-label" for="chkdc_mountain_view">Mountain View</label>
+                            </div>
+                            <div class="form-check">
+                                <input type="checkbox" value="dc_north_lake" id="chkdc_north_lake"
+                                    name="chkdc_north_lake" class="form-check-input">
+                                <label class="form-check-label" for="chkdc_north_lake">North Lake</label>
+                            </div>
+                            <div class="form-check">
                                 <input type="checkbox" value="dc" id="pgc" name="pgc" class="form-check-input">
                                 <label class="form-check-label" for="pgc">Pleasant Grove</label>
+                            </div>
+                            <div class="form-check">
+                                <input type="checkbox" value="dc_richland" id="chkdc_richland" name="chkdc_richland"
+                                    class="form-check-input">
+                                <label class="form-check-label" for="chkdc_richland">Richland</label>
                             </div>
                             <div class="form-check">
                                 <input type="checkbox" value="dc" id="sdc" name="sdc" class="form-check-input">
@@ -1122,14 +1115,14 @@
                             <div class="row text-center my-5">
                                 <div class="pagination-box">
                                     <div class="pagination-pages">
-                                        <span class="results">Results 1 - 8 of 24</span>
+                                        <span class="results">Results 1 - 10 of 24</span>
 
-                                        <nav aria-label="Page navigation example">
+                                        <nav aria-label="Page navigation">
                                             <ul class="pagination justify-content-center my-4">
-                                                <li class="page-item"><a class="page-link" href="#">Previous</a></li>
-                                                <li class="page-item"><a class="page-link" href="#">1</a></li>
-                                                <li class="page-item"><a class="page-link" href="#">2</a></li>
-                                                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                                <li class="page-item"><a href="#">Previous</a></li>
+                                                <li class="page-item"><a href="#">1</a></li>
+                                                <li class="page-item"><a href="#">2</a></li>
+                                                <li class="page-item"><a href="#">3</a></li>
                                                 <li class="page-item"><a class="page-link" href="#">Next</a></li>
                                             </ul>
                                         </nav>
