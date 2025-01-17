@@ -8639,6 +8639,32 @@ button#pills-home-tab, button#pills-profile-tab, button#pills-home-tab2, button#
 }
 
 
+li.page-item a {
+  position: relative;
+  display: block;
+  padding: .75rem 1rem;
+  border:1px solid #DEE2E6;
+  margin:-1px;
+
+  &:hover {
+    z-index: 2;
+    background-color: #E9F2FF;
+  }
+
+  &:focus {
+    background-color:#E9F2FF;
+    z-index: 2;
+  }
+
+  &.active,
+  .active > & {
+    z-index: 2;
+    background-color:#E9F2FF;
+  }
+
+}
+
+
 /*
 **************************************************
 Image Styles for T4
