@@ -683,14 +683,17 @@
 <div class="acalog" data-acalog-data="programs" data-acalog-catalog-legacy-id="2" data-acalog-program-id="413">Loading...</div>
  
  
-<div class="acalog" data-acalog-data='courses' data-acalog-catalog-legacy-id="2" data-acalog-course-prefix='DSAE' data-acalog-course-code='2264'>Loading...</div>
- 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
 <script src="https://catalog.dallascollege.edu/widget-api/widget-api.min.js"></script>
 <script>
     $('.acalog').acalogWidgetize({
         gateway: 'https://catalog.dallascollege.edu',
     });
+
+    setTimeout(function () {
+        $('#jq_resultsContainer').find('.acalog-close').remove();
+    }, 10000);
+;
 </script>
                 </div>
 
