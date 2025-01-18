@@ -1,19 +1,80 @@
-<a class="acalog" data-acalog-data="programs" data-acalog-catalog-legacy-id="2" data-acalog-program-id="425">Loading...</a>
+<a href="#" class="credential" cat-id="425" data-bs-toggle="modal" data-bs-target="#CredentialModal">Catalog Link 1 - 425</a>
+<a href="#" class="credential" cat-id="413" data-bs-toggle="modal" data-bs-target="#CredentialModal">Catalog Link 2 - 413</a>
 
-<div class="acalog" data-acalog-data="programs" data-acalog-catalog-legacy-id="2" data-acalog-program-id="425">Loading...</div>
+<a href="#" class="credential" gps-id="425" data-bs-toggle="modal" data-bs-target="#CredentialModal">Guided Pathways - 425</a>
 
-<div class="acalog" data-acalog-data="programs" data-acalog-catalog-legacy-id="2" data-acalog-program-id="413">Loading...</div>
- 
- 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+<a href="#" class="credential" ed2go="yes" data-bs-toggle="modal" data-bs-target="#CredentialModal">Ed2Go</a>
+
+
+<!-- <div class="acalog" data-acalog-data="programs" data-acalog-catalog-legacy-id="2" data-acalog-program-id="425">
+    Loading...</div>
+
+<div class="acalog" data-acalog-data="programs" data-acalog-catalog-legacy-id="2" data-acalog-program-id="413">
+    Loading...</div> -->
+
+
+<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
 <script src="https://catalog.dallascollege.edu/widget-api/widget-api.min.js"></script>
-<script>
-    $('.acalog').acalogWidgetize({
-        gateway: 'https://catalog.dallascollege.edu',
+<script src="assets/js/credential-modals.js"></script> -->
+<!-- <script>
+    $(document).ready(function () {
+        console.log('Document is ready');
+        $('.acalog').acalogWidgetize({
+            gateway: 'https://catalog.dallascollege.edu',
+        });
+
+        setTimeout(function () {
+            $('#jq_resultsContainer').find('.acalog-close').remove();
+        }, 10000);
+        console.log('Acalog loads');
+
+        // Event listener for links
+        $('a.credential').on('click', function (event) {
+            event.preventDefault();
+            console.log('Link clicked');
+            var programId = $(this).attr('cat-id');
+            var ed2go = $(this).attr('ed2go');
+            var gpsId = $(this).attr('gps-id');
+
+            console.log('programId:', programId);
+            console.log('ed2go:', ed2go);
+            console.log('gpsId:', gpsId);
+
+            if(programId) {
+                $('#CredentialModal .modal-body').html(
+                    '<div class="acalog" data-acalog-data="programs" data-acalog-catalog-legacy-id="2" data-acalog-program-id="' + programId + '">Loading...</div>');
+                    // Re-initialize acalogWidgetize for the new content
+                    $('.acalog').acalogWidgetize({
+                        gateway: 'https://catalog.dallascollege.edu',
+                    });
+
+            $('#CredentialModal').modal('show');
+            } else if (ed2go === 'yes') {
+                $('#CredentialModal .modal-body').html(
+                    '<div>Ed2Go is a partnership with Dallas College offering online CE. You can find certificates at ed2go.com</div>');
+            } else if (gpsId) {
+                $('#CredentialModal .modal-body').html(
+                    '<div><a href="https://www.dallascollege.edu/cd/gps/pages/gpsmap.aspx?gpsId=' + gpsId + '">View the Guided Pathway</a></div>');
+            }
+
+        });
     });
 
-    setTimeout(function () {
-        $('#jq_resultsContainer').find('.acalog-close').remove();
-    }, 10000);
-;
-</script>
+</script> -->
+
+<div class="modal fade" id="CredentialModal" tabindex="-1" aria-labelledby="CredentialModal" aria-hidden="true">
+    <div class="modal-dialog modal-xl">
+        <div class="modal-content">
+            <div class="modal-header" id="CredentialModal">
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <!-- Content will be dynamically inserted here -->
+                <!-- <div class="acalog" data-acalog-data="programs" data-acalog-catalog-legacy-id="2" data-acalog-program-id="[[VARIABLE]]">Loading...</div> -->
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-cprimary" data-bs-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>

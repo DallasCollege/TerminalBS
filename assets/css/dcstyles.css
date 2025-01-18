@@ -7555,6 +7555,10 @@ a.grand-button.cprimary:hover, a.grand-button.cprimary:focus, a.grand-button.bg-
   color: #001E49
 }
 
+.bg-cprimary a, .cprimary a {
+  color: #ffffff
+}
+
 .border-cprimary-lt, .cprimary-lt-border {
   border-color: #E9F2FF !important
 }
