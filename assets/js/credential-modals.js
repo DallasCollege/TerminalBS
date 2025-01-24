@@ -41,7 +41,7 @@
         // Code for Terminalfour Mockup and testing
         } else if (gpsId) {
             $('#CredentialModal .modal-body').html(
-                '<embed src="/gps-map-embed.html" width="100%" height=2500px onerror="alert(\'URL invalid !!\');" />');
+                '<embed src="{{ site.baseurl }}/gps-map-embed.html" width="100%" height=2500px onerror="alert(\'URL invalid !!\');" />');
         }
         // End for Terminalfour Mockup and testing
 
