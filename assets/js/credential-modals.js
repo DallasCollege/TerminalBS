@@ -33,10 +33,17 @@
             } else if (ed2go === 'yes') {
                 $('#CredentialModal .modal-body').html(
                     '<div>Ed2Go is a partnership with Dallas College offering online CE. You can find certificates at <a href="https://www.ed2go.com">ed2go.com</a></div>');
-            } else if (gpsId) {
-                $('#CredentialModal .modal-body').html(
-                    '<div><a href="https://www.dallascollege.edu/cd/gps/pages/gpsmap.aspx?gpsId=' + gpsId + '">View the Guided Pathway</a></div>');
-            }
+            // Planned Code
+            // } else if (gpsId) {
+            //     $('#CredentialModal .modal-body').html(
+            //         '<div><a href="https://www.dallascollege.edu/cd/gps/pages/gpsmap.aspx?gpsId=' + gpsId + '">View the Guided Pathway</a></div>');
+            // }
+        // Code for Terminalfour Mockup and testing
+        } else if (gpsId) {
+            $('#CredentialModal .modal-body').html(
+                '<embed src="/gps-map-embed.html" width="100%" height=2500px onerror="alert(\'URL invalid !!\');" />');
+        }
+        // End for Terminalfour Mockup and testing
 
         });
     });
