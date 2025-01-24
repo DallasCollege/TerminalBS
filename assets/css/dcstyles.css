@@ -100,9 +100,9 @@ section:after, article:after {
 }
 
 label {
-  display: inline-block;
+  display: inline;
   max-width: 100%;
-  font-weight: 600
+  font-weight: 400
 }
 
 button {
@@ -8500,6 +8500,17 @@ fieldset label.t4-functional {
 
 form.t4-functional-search {
   display:inline;
+}
+
+label.form-check-label {
+  display: inline-block;
+  max-width: 100%;
+  font-weight: 600
+}
+
+input[type="checkbox"],input[type="radio"] {
+  margin-left:5px;
+  margin-right:5px;
 }
 
 .program-compare .row {
