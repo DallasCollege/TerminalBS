@@ -1,7 +1,24 @@
 // Define the OAuth 2.0 token endpoint and API endpoint
 const tokenUrl = 'https://auth.emsicloud.com/connect/token';
-const apiUrl = 'https://cc.emsiservices.com/careers/us/categories';
-//https://cc.emsiservices.com/careers/us/msa/10100/13-2011.00?fields=humanized-title%2Cmedian-earnings%2Cpercent-female%2Cpercent-male
+const apiUrl = 'https://cc.emsiservices.com/careers/us/msa/19100/13-2011.00?fields=humanized-title%2Cmedian-earnings%2Cannual-openings%2Cskills'; //example for Accountants and Auditors
+/*
+apiUrl: "Careers" category / country / "msa" (could also be whole country, state, zip etc) / DFW's MSA / desired career's onetid ?fields= see below. Comma separated (%2C)
+
+Desired fields:
+
+'annual-openings'
+'humanized-title'
+'median-earnings'
+'onet-id'
+'skills' (cap at 10?)
+job growth % - not sure actual field name
+
+Docs/References:
+
+API: https://docs.lightcast.dev/apis/careers
+MSA: https://proximityone.com/metros/guide/index.htm?misa_msa.htm
+O*NET lookup: https://www.onetonline.org/
+*/
 
 // Define your client credentials and other required parameters
 const clientId = 'dallascollege-marketing';
@@ -54,6 +71,8 @@ async function fetchData() {
         console.error('There was a problem with the fetch operation:', error);
     }
 }
+
+console.log("apiUrl: " + apiUrl);
 
 // Call the function and log the result
 fetchData().then(data => console.log(data));
