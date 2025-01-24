@@ -50,36 +50,33 @@
 
     // RFI form on Area of Study pages
 
-//    document.addEventListener('DOMContentLoaded', function () {
+    // look for CE related fields
+    function toggle_CE_related() {
+        const selectedValue = this.value;
+        const targetField = document.getElementById('tfa_59');
 
-      // look for CE related fields
-      function toggle_CE_related() {
-          const selectedValue = this.value;
-          const targetField = document.getElementById('tfa_59');
+        if (['tfa_42', 'tfa_43', 'tfa_44', 'tfa_45', 'tfa_46'].includes(selectedValue)) {
+            targetField.value = true;
+        } else {
+            targetField.value = false;
+        }
+    };
 
-          if (['tfa_42', 'tfa_43', 'tfa_44', 'tfa_45', 'tfa_46'].includes(selectedValue)) {
-              targetField.value = true;
-          } else {
-              targetField.value = false;
-          }
-      };
+    // show PLA related field
+    function toggle_PLA_related() {
+        const selectedValue = document.querySelector('input[name="tfa_65"]:checked').value;
+        const targetElement = document.getElementById('tfa_70-D');
 
-      // show PLA related field
-      function toggle_PLA_related() {
-          const selectedValue = document.querySelector('input[name="tfa_65"]:checked').value;
-          const targetElement = document.getElementById('tfa_70-D');
+        if (selectedValue === 'tfa_66') {
+            targetElement.style.display = 'block';
+        } else {
+            targetElement.style.display = 'none';
+        }
+    }
 
-          if (selectedValue === 'tfa_66') {
-              targetElement.style.display = 'block';
-          } else {
-              targetElement.style.display = 'none';
-          }
-      }
+    document.getElementById('tfa_14').addEventListener('change', toggle_CE_related);
+    document.getElementById('tfa_66').addEventListener('change', toggle_PLA_related);
+    document.getElementById('tfa_67').addEventListener('change', toggle_PLA_related);
 
-      document.getElementById('tfa_14').addEventListener('change', toggle_CE_related);
-      document.getElementById('tfa_66').addEventListener('change', toggle_PLA_related);
-      document.getElementById('tfa_67').addEventListener('change', toggle_PLA_related);
-
-//    });
 
     // End RFI form on Area of Study pages
