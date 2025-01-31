@@ -88,8 +88,7 @@ var LC_Careers = {
 
     console.log("apiUrl: " + apiUrl);
 
-    // Call the function and log the result
-    //fetchData().then(data => this.processCareers(data));
+    // Process the data
     fetchData().then(careers => LC_Careers.processCareers(careers));
   },
 
@@ -99,7 +98,6 @@ var LC_Careers = {
     console.log('length: ' + length);
     console.log(careers);
 
-    // process all careers in data object
      if (length > 0){
        for (var i = 0; i < careersArr.length; i++){
          console.log(careersArr[i]);
@@ -109,9 +107,9 @@ var LC_Careers = {
   },
 
   buildCareer : function(career){
-    console.log(career);
+    //console.log(career);
 
-    // definitions
+    // Definitions
     var c_annual_openings = '';
     var c_humanized_title = '';
     var c_median_earnings = '';
@@ -119,6 +117,7 @@ var LC_Careers = {
     var c_skills = [];
     var skillLimit = 10;
 
+    // if not undefined, set value
     if (career["annual-openings"] !== undefined){
       c_annual_openings = career["annual-openings"];
     }
@@ -130,17 +129,21 @@ var LC_Careers = {
     }
     if (career["median-earnings"] !== undefined){
       c_median_earnings = career["median-earnings"];
-      c_median_earnings = c_median_earnings/2080; // Divine by number of working days each year (2080) to get hourly wage
-      c_median_earnings = Math.round(c_median_earnings).toLocaleString(); // Format to a whole number with commas
+
+      // Divine by number of working days each year (2080) to get hourly wage
+      c_median_earnings = c_median_earnings/2080;
+
+      // Format to a whole number with commas
+      c_median_earnings = Math.round(c_median_earnings).toLocaleString();
     }
+    // Dump skills into array and cut off at limit
     let skillscount = career.skills.length;
     if (skillscount > 0){
       var c_skills = career.skills.map(item => item.name);
       c_skills.splice(skillLimit);
     }
-    //if (career.skills (array with name and description)
 
-    // Create a container div
+    // Create container div
     const container = document.createElement('div');
     container.className = 'col-lg-6 col-md-12';
 
