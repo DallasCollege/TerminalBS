@@ -25,7 +25,7 @@ O*NET lookup: https://www.onetonline.org/
 var LC_Careers = {
 
   outputDiv: 'careers-output',
-
+  onetImgURL: 'https://cc.emsiservices.com/images/us/onet2019/careers/',
   getData : function(Onets){
 
     // Define the OAuth 2.0 token endpoint and API endpoint
@@ -115,14 +115,18 @@ var LC_Careers = {
     var c_annual_openings = '';
     var c_humanized_title = '';
     var c_median_earnings = '';
+    var c_onetid = '';
     var c_skills = [];
     var skillLimit = 10;
-    
+
     if (career["annual-openings"] !== undefined){
       c_annual_openings = career["annual-openings"];
     }
     if (career["humanized-title"] !== undefined){
       c_humanized_title = career["humanized-title"];
+    }
+    if (career["median-earnings"] !== undefined){
+      c_onetid = career["onet-id"];
     }
     if (career["median-earnings"] !== undefined){
       c_median_earnings = career["median-earnings"];
@@ -148,7 +152,7 @@ var LC_Careers = {
     const leftDiv = document.createElement('div');
     leftDiv.className = 'col-md-4 col-sm-4 cib-left cib-img';
     const img = document.createElement('img');
-    img.src = 'https://dallascollege.github.io/TerminalBS/assets/img/students1.jpg';
+    img.src = LC_Careers.onetImgURL + c_onetid + '.jpg?width=422&height=666';
     img.className = 'cib-image';
     img.alt = 'Insert Alt Description';
     leftDiv.appendChild(img);
