@@ -232,7 +232,7 @@ var LC_Careers = {
     outlookData.textContent = '32%';
     const outlookImg = document.createElement('img');
     outlookImg.className = 'mb-3 ps-1 jobs-arrow';
-    outlookImg.src = '../assets/img/pop-arrow-up-25x25.png';
+    outlookImg.src = 'assets/img/pop-arrow-up-25x25.png';
     outlookImg.alt = 'arrow up';
     outlookImg.setAttribute('aria-hidden', 'true');
     outlookP.appendChild(outlookData);
