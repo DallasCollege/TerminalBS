@@ -883,7 +883,7 @@ footer#l-footer #l-footer__fine-print .small-print li:last-child {
 /* content */
 
 #main__body {
-  margin-top: 3rem; 
+  margin-top: 3rem;
   margin-bottom: 3rem
 }
 
@@ -4206,8 +4206,8 @@ ul.list-inline>li:not(:last-child) {
 }
 
 ul.list-inline>li:last-of-type {
-  padding-right: 0 !important; 
-} 
+  padding-right: 0 !important;
+}
 
 .list-inline>li.label {
   padding-right: .5rem;
@@ -8489,7 +8489,7 @@ fieldset legend  {
 fieldset .search-legend {
   font-size: 18px;
   font-weight: 700;
-  
+
 }
 
 fieldset label.t4-functional {
@@ -8515,7 +8515,7 @@ input[type="checkbox"],input[type="radio"] {
 
 .program-compare .row {
   display:flex;
-  flex-wrap:wrap;  
+  flex-wrap:wrap;
 }
 
 @media screen and (min-width: 1200px) {
@@ -8551,13 +8551,13 @@ input[type="checkbox"],input[type="radio"] {
 }
 
 .pgs-banner--double .pgs-banner__title {
-  background-color:#003385;   
-} 
- 
+  background-color:#003385;
+}
+
 .form-group input, .form-group select {
      margin-bottom:20px
  }
- 
+
 .program-glance {
   padding:2rem;
   margin-bottom:2rem;
@@ -8600,6 +8600,8 @@ ul.credential-info-list li {
 
 #jobs ul.jobs-skills li {
   padding-left:0;
+  display: inline-block;
+  margin: 0 0 .5rem;
 }
 
 #jobs .jobs-arrow {
@@ -8621,10 +8623,10 @@ h2#pathways {
 }
 
 .pathway-contact.contact-card {
-  border-radius: 4px 4px 0px 0px; 
-  border-bottom:6px solid; 
-  border-top:0; 
-  border-left:0; 
+  border-radius: 4px 4px 0px 0px;
+  border-bottom:6px solid;
+  border-top:0;
+  border-left:0;
   border-right:0;
   margin-top:3rem;
 }
@@ -8637,7 +8639,7 @@ h2#pathways {
 .nav .nav-item button.active, .nav .nav-item button.focus, .nav .nav-item button.hover {
   background-color: #E9F2FF;
   color: #001E49
-} 
+}
 
 button#pills-home-tab, button#pills-profile-tab, button#pills-home-tab2, button#pills-profile-tab3 {
   color: #003385 !important;
