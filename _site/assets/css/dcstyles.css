@@ -3651,6 +3651,18 @@ ol+.pgs-accordion {
   background-color: #66645e;
 }
 
+
+.pgs-people-profile__img img {
+  width: 200px;
+  max-width:100%;
+  /* height: 200px; */
+  border-radius: 50%;
+  display:block;
+  text-align: center;
+  margin: .25em auto 2rem auto;
+  background-color: #66645e;
+}
+
 .pgs-people-card--directory:last-of-type {
   margin-bottom: 1rem
 }
@@ -3752,6 +3764,10 @@ text-decoration: underline;
 
 .staff.button-list button.selected {
   background: #E9F2FF;
+}
+
+#emp-profile .ico {
+  color:#003385;
 }
 
 /* End Staff Directory */

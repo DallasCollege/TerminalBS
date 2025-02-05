@@ -23,28 +23,30 @@
         <!-- end site notice -->
 
         <div class="l-breadcrumb-bar">
-          <div class="container">
-            <div class="row">
-            <nav aria-label="Breadcrumb" class="col-9 pgs-breadcrumb">
-              <ol>
-                <li><a href="/TerminalBS/index.html">
-                    <span class="ico fas fa-home" aria-hidden="true"></span><span class="sr-only">Home</span></a></li>
-                <li><a href="{{ site.baseurl }}/staff-directory.html">
-                    Employee Directory</a></li>          
-        
-              </ol>
-            </nav>
-            <div class="col-3 pgs-shortcut d-none d-lg-block text-end">
-              <span>Shortcut: </span>dallascollege.edu/StaffDirectory
-            </div>
+            <div class="container">
+              <div class="row">
+              <nav aria-label="Breadcrumb" class="col-9 pgs-breadcrumb">
+                <ol>
+                  <li><a href="/TerminalBS/index.html">
+                      <span class="ico fas fa-home" aria-hidden="true"></span><span class="sr-only">Home</span></a></li>
+                  <li><a href="{{ site.baseurl }}/staff-directory.html">
+                      Employee Directory</a></li>          
+                      <li><a href="{{ site.baseurl }}/staff-directory-profiles.html">
+                        Employee Profile</a></li>     
+          
+                </ol>
+              </nav>
+              <div class="col-3 pgs-shortcut d-none d-lg-block text-end">
+                <span>Shortcut: </span>dallascollege.edu/StaffDirectory
+              </div>
+              </div>
             </div>
           </div>
-        </div>
 
 
     <div id="t4-bodyContainer">
 
-      {% include interior/content_staff-directory.html %}
+      {% include interior/content_staff-directory-profile.html %}
 
     </div>
 
