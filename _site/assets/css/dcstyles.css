@@ -8584,8 +8584,21 @@ input[type="checkbox"],input[type="radio"] {
   white-space: nowrap;
 }
 
+.cred-tab-offset {
+  margin-top: -5.75rem;
+}
+
 ul.credential-info-list li {
-  margin-bottom:0
+  margin-bottom:15px;
+}
+
+span.cred-details {
+  display: block;
+  font-weight: 600;
+}
+
+span.cred-time {
+  margin-left: 15px;
 }
 
 #jobs .jobs-data {
@@ -8657,7 +8670,7 @@ h2#pathways {
   color: #001E49
 }
 
-button#pills-home-tab, button#pills-profile-tab, button#pills-home-tab2, button#pills-profile-tab3 {
+button#pills-home-tab, button#pills-profile-tab, button#pills-home-tab2, button#pills-profile-tab2 {
   color: #003385 !important;
 }
 
