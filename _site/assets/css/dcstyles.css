@@ -3754,7 +3754,7 @@ text-decoration: underline;
   color: 229, 38, 38;
   }
 
-/* Staff Directory */
+/* Employee Directory */
 .staff.button-list button {
   border: 0px;
   padding: 5px;
@@ -3770,7 +3770,7 @@ text-decoration: underline;
   color:#003385;
 }
 
-/* End Staff Directory */
+/* End Employee Directory */
 
 .pgs-tile {
   display: block;
