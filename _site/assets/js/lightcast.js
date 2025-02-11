@@ -39,7 +39,7 @@ var LC_Careers = {
     const scope = 'careers';
 
     // Specific careers with OnetIDs listed in query, in DFW and with specific fields:
-    var apiUrl = 'https://cc.emsiservices.com/careers/us/msa/19100/?fields=humanized-title%2Cmedian-earnings%2Cannual-openings%2Cskills&onets='+OnetString;
+    var apiUrl = 'https://cc.emsiservices.com/careers/us/msa/19100/?fields=humanized-title%2Cmedian-earnings%2Cannual-openings%2Cemployment%2Cemployment-current%2Cskills&onets='+OnetString;
 
     // Function to get the OAuth 2.0 access token
     async function getAccessToken() {
@@ -86,7 +86,7 @@ var LC_Careers = {
         }
     }
 
-    console.log("apiUrl: " + apiUrl);
+    //console.log("apiUrl: " + apiUrl);
 
     // Process the data
     fetchData().then(careers => LC_Careers.processCareers(careers));
@@ -95,12 +95,12 @@ var LC_Careers = {
   processCareers : function(careers){
     careersArr = careers.data;
     let length = Object.keys(careersArr).length;
-    console.log('length: ' + length);
-    console.log(careers);
+    //console.log('length: ' + length);
+    //console.log(careers);
 
      if (length > 0){
        for (var i = 0; i < careersArr.length; i++){
-         console.log(careersArr[i]);
+         //console.log(careersArr[i]);
          LC_Careers.buildCareer(careersArr[i].attributes);
        }
      }
@@ -116,6 +116,7 @@ var LC_Careers = {
     var c_onetid = '';
     var c_skills = [];
     var skillLimit = 10;
+    var c_employment = '';
 
     // if not undefined, set value
     if (career["annual-openings"] !== undefined){
@@ -136,12 +137,19 @@ var LC_Careers = {
       // Format to a whole number with commas
       c_median_earnings = Math.round(c_median_earnings).toLocaleString();
     }
+    if (career["employment"] !== undefined){
+      let cEmpObj = career["employment"];
+      let currentYear = new Date().getFullYear();
+      let findKey = cEmpObj.find(obj => obj.year === currentYear);
+      c_employment = findKey ? findKey.number.toLocaleString('en-US') : "N/A";
+    }
     // Dump skills into array and cut off at limit
     let skillscount = career.skills.length;
     if (skillscount > 0){
       var c_skills = career.skills.map(item => item.name);
       c_skills.splice(skillLimit);
     }
+
 
     // Create container div
     const container = document.createElement('div');
@@ -222,7 +230,7 @@ var LC_Careers = {
     openingsCol.appendChild(openingsRow);
     openingsCol.appendChild(openingsDesc);
 
-    // Projected outlook column
+    // Total employed (WAS: Projected outlook %) column
     const outlookCol = document.createElement('div');
     outlookCol.className = 'col ps-0';
     const outlookRow = document.createElement('div');
@@ -232,19 +240,21 @@ var LC_Careers = {
     const outlookP = document.createElement('p');
     const outlookData = document.createElement('span');
     outlookData.className = 'jobs-data';
-    outlookData.textContent = '32%';
+    outlookData.textContent = c_employment; //'32%';
+    /*
     const outlookImg = document.createElement('img');
     outlookImg.className = 'mb-3 ps-1 jobs-arrow';
     outlookImg.src = 'assets/img/pop-arrow-up-25x25.png';
     outlookImg.alt = 'arrow up';
     outlookImg.setAttribute('aria-hidden', 'true');
+    */
     outlookP.appendChild(outlookData);
-    outlookP.appendChild(outlookImg);
+    //outlookP.appendChild(outlookImg);
     outlookSubCol.appendChild(outlookP);
     outlookRow.appendChild(outlookSubCol);
     const outlookDesc = document.createElement('p');
     outlookDesc.className = 'lh-sm jobs-desc';
-    outlookDesc.textContent = 'Projected Outlook';
+    outlookDesc.textContent = 'Total Employed';
     outlookCol.appendChild(outlookRow);
     outlookCol.appendChild(outlookDesc);
 
