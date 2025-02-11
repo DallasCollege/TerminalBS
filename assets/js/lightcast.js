@@ -308,7 +308,3 @@ var LC_Careers = {
   }
 
 }
-
-//move the following 2 lines to script call on page
-const OnetArr = ['27-1014.00','27-1011.00','15-1255.01','43-9031.00']; //Graphic Designers: 27-1024.00
-LC_Careers.getData(OnetArr);
