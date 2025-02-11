@@ -2240,6 +2240,14 @@ ul.button-group li:only-child .button {
   border-radius: 4px
 }
 
+ul.button-group li:only-child .button,
+ul.button-group.button-group--justified .button, 
+ul.button-group.button-group--justified li:first-child .button, 
+ul.button-group.button-group--justified li:last-child .button {
+  border-radius:4px
+}
+
+
 ul.button-group--justified {
   display: table;
   width: 100%;
@@ -4229,8 +4237,9 @@ ul.list-inline>li:last-of-type {
   padding-right: .5rem;
   padding-left: .5rem;
   margin-right: .5rem
-
 }
+
+
 
 /* updated to allow list inline without additional classes on li */
 ul.list-inline li {
@@ -4241,8 +4250,14 @@ ul.list-inline li:not(:last-child) {
   margin-right: .5rem;
 }
 
-ul.button-group li.list-inline-item {
-  margin:.05rem;
+ul.button-group.list-inline li {
+  margin: 0;
+  margin-right: 1px;
+  padding: 0;
+}
+
+ul.button-group.button-group--justified.list-inline li {
+  border-radius:4px;
 }
 
 caption {
