@@ -72,7 +72,7 @@ var LC_Careers = {
     careersArr = careers.data;
     let length = Object.keys(careersArr).length;
     //console.log('length: ' + length);
-    //console.log(careers);
+    console.log(careers);
 
      if (length > 0){
        for (var i = 0; i < careersArr.length; i++){
@@ -128,12 +128,17 @@ var LC_Careers = {
     if (career["employment"] !== undefined){
       let cEmpObj = career["employment"];
       let currentYear = new Date().getFullYear();
-      let cEmpCurrent = cEmpObj.find(obj => obj.year === currentYear);
-      let cEmpPrev = cEmpObj.find(obj => obj.year === currentYear-1);
-      //console.log(cEmpCurrent);
-      //console.log(cEmpPrev);
-      let change = cEmpCurrent.number - cEmpPrev.number;
-      let raw_change = change / cEmpPrev.number;
+
+      /* old method of comparing current and last year
+      //let cEmpCurrent = cEmpObj.find(obj => obj.year === currentYear);
+      //let cEmpPrev = cEmpObj.find(obj => obj.year === currentYear-1);
+      */
+
+      // compare the last year in dataset with 10 years prior
+      let lastIndex = cEmpObj.length - 1
+      let firstIndex = lastIndex-10;
+      let change = cEmpObj[lastIndex].number - cEmpObj[firstIndex].number;
+      let raw_change = change / cEmpObj[firstIndex].number;
       c_outlook = Math.round(raw_change * 100); //round to the nearest number
       if (c_outlook === 0){ //don't let the outlook be zero
         c_outlook = raw_change > 0 ? 1 : -1;
