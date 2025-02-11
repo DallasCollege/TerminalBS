@@ -90,9 +90,11 @@ var LC_Careers = {
     var c_humanized_title = '';
     var c_median_earnings = '';
     var c_onetid = '';
+    var c_outlook = 0;
+    var c_outlook_arrow = c_outlook_classes = '';
+    var c_employment = '';
     var c_skills = [];
     var skillLimit = 10;
-    var c_employment = '';
 
     // if not undefined, set value
     if (career["annual-openings"] !== undefined){
@@ -113,12 +115,41 @@ var LC_Careers = {
       // Format to a whole number with commas
       c_median_earnings = Math.round(c_median_earnings).toLocaleString();
     }
+    /*
+    //Total Employement option
     if (career["employment"] !== undefined){
       let cEmpObj = career["employment"];
       let currentYear = new Date().getFullYear();
       let findKey = cEmpObj.find(obj => obj.year === currentYear);
       c_employment = findKey ? findKey.number.toLocaleString('en-US') : "N/A";
     }
+    */
+    // Projected Outlook
+    if (career["employment"] !== undefined){
+      let cEmpObj = career["employment"];
+      let currentYear = new Date().getFullYear();
+      let cEmpCurrent = cEmpObj.find(obj => obj.year === currentYear);
+      let cEmpPrev = cEmpObj.find(obj => obj.year === currentYear-1);
+      console.log(cEmpCurrent);
+      console.log(cEmpPrev);
+      let change = cEmpCurrent.number - cEmpPrev.number;
+      let raw_change = change / cEmpPrev.number;
+      c_outlook = Math.round(raw_change * 100); //round to the nearest number
+      if (c_outlook === 0){ //don't let the outlook be zero
+        c_outlook = raw_change > 0 ? 1 : -1;
+      }
+      // set arrow output
+      if (raw_change < 0){
+        c_outlook_arrow = 'assets/img/pop-arrow-down-25x25.png';
+        c_outlook_classes = 'arrow down';
+      }else{
+        c_outlook_arrow = 'assets/img/pop-arrow-up-25x25.png';
+        c_outlook_classes = 'arrow up';
+      }
+      console.log(c_outlook +' / ' + c_outlook_arrow);
+    }
+
+
     // Dump skills into array and cut off at limit
     let skillscount = career.skills.length;
     if (skillscount > 0){
@@ -206,7 +237,7 @@ var LC_Careers = {
     openingsCol.appendChild(openingsRow);
     openingsCol.appendChild(openingsDesc);
 
-    // Total employed (WAS: Projected outlook %) column
+    // Projected outlook column
     const outlookCol = document.createElement('div');
     outlookCol.className = 'col ps-0';
     const outlookRow = document.createElement('div');
@@ -216,13 +247,19 @@ var LC_Careers = {
     const outlookP = document.createElement('p');
     const outlookData = document.createElement('span');
     outlookData.className = 'jobs-data';
-    outlookData.textContent = c_employment; //'32%';
+    outlookData.textContent = c_outlook + '%'; //'32%';
+    const outlookImg = document.createElement('img');
+    outlookImg.className = 'mb-3 ps-1 jobs-arrow';
+    outlookImg.src = c_outlook_arrow; //'assets/img/pop-arrow-up-25x25.png';
+    outlookImg.alt = c_outlook_classes; //'arrow up';
+    outlookImg.setAttribute('aria-hidden', 'true');
     outlookP.appendChild(outlookData);
+    outlookP.appendChild(outlookImg);
     outlookSubCol.appendChild(outlookP);
     outlookRow.appendChild(outlookSubCol);
     const outlookDesc = document.createElement('p');
     outlookDesc.className = 'lh-sm jobs-desc';
-    outlookDesc.textContent = 'Total Employed';
+    outlookDesc.textContent = 'Projected Outlook';
     outlookCol.appendChild(outlookRow);
     outlookCol.appendChild(outlookDesc);
 
