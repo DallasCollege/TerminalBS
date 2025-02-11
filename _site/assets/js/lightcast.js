@@ -130,8 +130,8 @@ var LC_Careers = {
       let currentYear = new Date().getFullYear();
       let cEmpCurrent = cEmpObj.find(obj => obj.year === currentYear);
       let cEmpPrev = cEmpObj.find(obj => obj.year === currentYear-1);
-      console.log(cEmpCurrent);
-      console.log(cEmpPrev);
+      //console.log(cEmpCurrent);
+      //console.log(cEmpPrev);
       let change = cEmpCurrent.number - cEmpPrev.number;
       let raw_change = change / cEmpPrev.number;
       c_outlook = Math.round(raw_change * 100); //round to the nearest number
@@ -146,7 +146,7 @@ var LC_Careers = {
         c_outlook_arrow = '/TerminalBS/assets/img/pop-arrow-up-25x25.png';
         c_outlook_classes = 'arrow up';
       }
-      console.log(c_outlook +' / ' + c_outlook_arrow);
+      //console.log(c_outlook +' / ' + c_outlook_arrow);
     }
 
 
