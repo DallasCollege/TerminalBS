@@ -1,27 +1,3 @@
-/*
-apiUrl: "Careers" category / country / "msa" (could also be whole country, state, zip etc) / DFW's MSA / desired career's onetid ?fields= see below. Comma separated (%2C)
-
-Desired fields:
-
-'annual-openings'
-'humanized-title'
-'median-earnings'
-'onet-id'
-'skills' (cap at 10?)
-job growth % - not sure actual field name
-
-Docs/References:
-
-API: https://docs.lightcast.dev/apis/careers
-MSA: https://proximityone.com/metros/guide/index.htm?misa_msa.htm
-O*NET lookup: https://www.onetonline.org/
-
-// ALL careers in DFW with specific fields: var apiUrl = 'https://cc.emsiservices.com/careers/us/msa/19100/?fields=humanized-title%2Cmedian-earnings%2Cannual-openings%2Cskills'; //example for Accountants and Auditors
-
-//Careers related to specified onet (Special Effects Artists)
-//var apiUrl = 'https://cc.emsiservices.com/careers/us/msa/19100/27-1014.00/related?fields=humanized-title%2Cmedian-earnings%2Cannual-openings%2Cskills&onets=27-1014.00'; //example for Accountants and Auditors
-*/
-
 var LC_Careers = {
 
   outputDiv: 'careers-output',
@@ -241,15 +217,7 @@ var LC_Careers = {
     const outlookData = document.createElement('span');
     outlookData.className = 'jobs-data';
     outlookData.textContent = c_employment; //'32%';
-    /*
-    const outlookImg = document.createElement('img');
-    outlookImg.className = 'mb-3 ps-1 jobs-arrow';
-    outlookImg.src = 'assets/img/pop-arrow-up-25x25.png';
-    outlookImg.alt = 'arrow up';
-    outlookImg.setAttribute('aria-hidden', 'true');
-    */
     outlookP.appendChild(outlookData);
-    //outlookP.appendChild(outlookImg);
     outlookSubCol.appendChild(outlookP);
     outlookRow.appendChild(outlookSubCol);
     const outlookDesc = document.createElement('p');
