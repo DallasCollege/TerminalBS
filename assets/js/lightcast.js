@@ -140,10 +140,10 @@ var LC_Careers = {
       }
       // set arrow output
       if (raw_change < 0){
-        c_outlook_arrow = 'assets/img/pop-arrow-down-25x25.png';
+        c_outlook_arrow = '/TerminalBS/assets/img/pop-arrow-down-25x25.png';
         c_outlook_classes = 'arrow down';
       }else{
-        c_outlook_arrow = 'assets/img/pop-arrow-up-25x25.png';
+        c_outlook_arrow = '/TerminalBS/assets/img/pop-arrow-up-25x25.png';
         c_outlook_classes = 'arrow up';
       }
       console.log(c_outlook +' / ' + c_outlook_arrow);
