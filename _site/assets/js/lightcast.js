@@ -1,27 +1,3 @@
-/*
-apiUrl: "Careers" category / country / "msa" (could also be whole country, state, zip etc) / DFW's MSA / desired career's onetid ?fields= see below. Comma separated (%2C)
-
-Desired fields:
-
-'annual-openings'
-'humanized-title'
-'median-earnings'
-'onet-id'
-'skills' (cap at 10?)
-job growth % - not sure actual field name
-
-Docs/References:
-
-API: https://docs.lightcast.dev/apis/careers
-MSA: https://proximityone.com/metros/guide/index.htm?misa_msa.htm
-O*NET lookup: https://www.onetonline.org/
-
-// ALL careers in DFW with specific fields: var apiUrl = 'https://cc.emsiservices.com/careers/us/msa/19100/?fields=humanized-title%2Cmedian-earnings%2Cannual-openings%2Cskills'; //example for Accountants and Auditors
-
-//Careers related to specified onet (Special Effects Artists)
-//var apiUrl = 'https://cc.emsiservices.com/careers/us/msa/19100/27-1014.00/related?fields=humanized-title%2Cmedian-earnings%2Cannual-openings%2Cskills&onets=27-1014.00'; //example for Accountants and Auditors
-*/
-
 var LC_Careers = {
 
   outputDiv: 'careers-output',
@@ -39,7 +15,7 @@ var LC_Careers = {
     const scope = 'careers';
 
     // Specific careers with OnetIDs listed in query, in DFW and with specific fields:
-    var apiUrl = 'https://cc.emsiservices.com/careers/us/msa/19100/?fields=humanized-title%2Cmedian-earnings%2Cannual-openings%2Cskills&onets='+OnetString;
+    var apiUrl = 'https://cc.emsiservices.com/careers/us/msa/19100/?fields=humanized-title%2Cmedian-earnings%2Cannual-openings%2Cemployment%2Cemployment-current%2Cskills&onets='+OnetString;
 
     // Function to get the OAuth 2.0 access token
     async function getAccessToken() {
@@ -86,7 +62,7 @@ var LC_Careers = {
         }
     }
 
-    console.log("apiUrl: " + apiUrl);
+    //console.log("apiUrl: " + apiUrl);
 
     // Process the data
     fetchData().then(careers => LC_Careers.processCareers(careers));
@@ -95,12 +71,12 @@ var LC_Careers = {
   processCareers : function(careers){
     careersArr = careers.data;
     let length = Object.keys(careersArr).length;
-    console.log('length: ' + length);
+    //console.log('length: ' + length);
     console.log(careers);
 
      if (length > 0){
        for (var i = 0; i < careersArr.length; i++){
-         console.log(careersArr[i]);
+         //console.log(careersArr[i]);
          LC_Careers.buildCareer(careersArr[i].attributes);
        }
      }
@@ -114,6 +90,9 @@ var LC_Careers = {
     var c_humanized_title = '';
     var c_median_earnings = '';
     var c_onetid = '';
+    var c_outlook = 0;
+    var c_outlook_arrow = c_outlook_classes = '';
+    var c_employment = '';
     var c_skills = [];
     var skillLimit = 10;
 
@@ -136,12 +115,53 @@ var LC_Careers = {
       // Format to a whole number with commas
       c_median_earnings = Math.round(c_median_earnings).toLocaleString();
     }
+    /*
+    //Total Employement option
+    if (career["employment"] !== undefined){
+      let cEmpObj = career["employment"];
+      let currentYear = new Date().getFullYear();
+      let findKey = cEmpObj.find(obj => obj.year === currentYear);
+      c_employment = findKey ? findKey.number.toLocaleString('en-US') : "N/A";
+    }
+    */
+    // Projected Outlook
+    if (career["employment"] !== undefined){
+      let cEmpObj = career["employment"];
+      let currentYear = new Date().getFullYear();
+
+      /* old method of comparing current and last year
+      //let cEmpCurrent = cEmpObj.find(obj => obj.year === currentYear);
+      //let cEmpPrev = cEmpObj.find(obj => obj.year === currentYear-1);
+      */
+
+      // compare the last year in dataset with 10 years prior
+      let lastIndex = cEmpObj.length - 1
+      let firstIndex = lastIndex-10;
+      let change = cEmpObj[lastIndex].number - cEmpObj[firstIndex].number;
+      let raw_change = change / cEmpObj[firstIndex].number;
+      c_outlook = Math.round(raw_change * 100); //round to the nearest number
+      if (c_outlook === 0){ //don't let the outlook be zero
+        c_outlook = raw_change > 0 ? 1 : -1;
+      }
+      // set arrow output
+      if (raw_change < 0){
+        c_outlook_arrow = '/TerminalBS/assets/img/pop-arrow-down-25x25.png';
+        c_outlook_classes = 'arrow down';
+      }else{
+        c_outlook_arrow = '/TerminalBS/assets/img/pop-arrow-up-25x25.png';
+        c_outlook_classes = 'arrow up';
+      }
+      //console.log(c_outlook +' / ' + c_outlook_arrow);
+    }
+
+
     // Dump skills into array and cut off at limit
     let skillscount = career.skills.length;
     if (skillscount > 0){
       var c_skills = career.skills.map(item => item.name);
       c_skills.splice(skillLimit);
     }
+
 
     // Create container div
     const container = document.createElement('div');
@@ -232,11 +252,11 @@ var LC_Careers = {
     const outlookP = document.createElement('p');
     const outlookData = document.createElement('span');
     outlookData.className = 'jobs-data';
-    outlookData.textContent = '32%';
+    outlookData.textContent = c_outlook + '%'; //'32%';
     const outlookImg = document.createElement('img');
     outlookImg.className = 'mb-3 ps-1 jobs-arrow';
-    outlookImg.src = 'assets/img/pop-arrow-up-25x25.png';
-    outlookImg.alt = 'arrow up';
+    outlookImg.src = c_outlook_arrow; //'assets/img/pop-arrow-up-25x25.png';
+    outlookImg.alt = c_outlook_classes; //'arrow up';
     outlookImg.setAttribute('aria-hidden', 'true');
     outlookP.appendChild(outlookData);
     outlookP.appendChild(outlookImg);
@@ -298,7 +318,3 @@ var LC_Careers = {
   }
 
 }
-
-//move the following 2 lines to script call on page
-const OnetArr = ['27-1014.00','27-1011.00','15-1255.01','43-9031.00']; //Graphic Designers: 27-1024.00
-LC_Careers.getData(OnetArr);

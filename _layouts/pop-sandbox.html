@@ -7,6 +7,7 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
 <script src="https://catalog.dallascollege.edu/widget-api/widget-api.min.js"></script>
 <script src="{{ site.baseurl }}/assets/js/credential-modals.js"></script>
+<script src="{{ site.baseurl }}/assets/js/lightcast.js"></script>
 
 <div class="pgs-banner pgs-banner--double">
   <div class="container-fluid">
@@ -290,6 +291,12 @@
     </div>
   </main>
 </div>
+
+<script>
+  /* The getData function accepts any number of career ONET ID strings as input. The output div ID is defined in the main file Lightcast.js */
+  const OnetArr = ['27-1014.00','27-1011.00','15-1255.01','43-9031.00'];
+  LC_Careers.getData(OnetArr);
+</script>
 
 {% include footer.html %}
 
