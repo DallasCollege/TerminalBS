@@ -8655,7 +8655,11 @@ span.cred-time {
 
 h2#pathways {
   margin-top:3rem;
-  margin-bottom:5rem;
+  /* margin-bottom:5rem; */
+}
+
+p.pathway-intro {
+  margin-bottom:6rem;
 }
 
 @media screen and (min-width: 769px) {
@@ -8688,6 +8692,16 @@ h2#pathways {
 button#pills-home-tab, button#pills-profile-tab, button#pills-home-tab2, button#pills-profile-tab2 {
   color: #003385 !important;
 }
+
+button#pills-home-tab, button#pills-profile-tab, button#pills-home-tab2, button#pills-profile-tab2{
+  border-top: 1px solid #dddddd;
+  border-left: 1px solid #dddddd;
+  border-right: 1px solid #dddddd;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+  margin-right:2px;
+}
+
 
 .nav .nav-item button.active::after {
   content: "";
@@ -8961,4 +8975,27 @@ No Javascript Style
 
 .no-js #top-utility-nav, .no-js #l-nav-utility, .no-js button.navbar-toggler, .no-js #l-header-mobile__menu, .no-js .accordion .accordion-button::after, .no-js .accordion .accordion-button::before, .no-js .pgs-grand-dropdown button .ico {
   display:none;
+}
+
+/* Area of Study What Can I Study Tabs */
+
+.no-js #pills-tab, .no-js #pills-tab2 {
+  display:none;
+}
+.no-js .tab-pane {
+  display: block !important;
+  opacity: 1 !important;
+  visibility: visible !important;
+}
+
+.no-js .tab-pane + .no-js .tab-pane {
+  margin-top: 20px;
+}
+
+h2.no-js {
+  display:none;
+}
+
+.no-js h2.no-js {
+  display:block
 }
