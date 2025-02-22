@@ -177,7 +177,7 @@ var LC_Careers = {
     const img = document.createElement('img');
     img.src = LC_Careers.onetImgURL + c_onetid + '.jpg?width=422&height=666';
     img.className = 'cib-image';
-    img.alt = 'Insert Alt Description';
+    img.alt = 'Image of ' + c_humanized_title + 'working';
     leftDiv.appendChild(img);
 
     // Create the right content div
