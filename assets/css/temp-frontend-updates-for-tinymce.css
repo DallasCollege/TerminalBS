@@ -1,0 +1,232 @@
+/* Base button styles */
+/* a[class*="button-bg-"],
+a span[class*="button-bg-"],
+[class*="button-bg-"] a {
+	display: inline-block;
+    padding: .75em 1.5em;
+    margin: .25rem 0 1.25rem;
+    font-family: 'Open Sans', arial, helvetica, sans-serif;
+    font-size: 1rem;
+    font-weight: 600;
+    line-height: 1.42857143;
+    text-align: center;
+    white-space: normal;
+    vertical-align: middle;
+    -ms-touch-action: manipulation;
+    touch-action: manipulation;
+    cursor: pointer;
+    border-radius: 4px;
+    text-decoration: none;
+} */
+
+/* Button Primary (Blue) */
+/* a.button-bg-cprimary,
+a span.button-bg-cprimary,
+.button-bg-cprimary a {
+	background-color: #003385;
+	color: #fff;
+}
+
+a.button-bg-cprimary:hover,
+a span.button-bg-cprimary:hover,
+.button-bg-cprimary a:hover,
+a.button-bg-cprimary:focus,
+a span.button-bg-cprimary:focus,
+.button-bg-cprimary a:focus {
+    background-color: #001639;
+    color: #fff !important;
+} */
+
+/* Button Secondary (Red) */
+/* a.button-bg-csecondary,
+a span.button-bg-csecondary,
+.button-bg-csecondary a {
+	background-color: #e52626;
+	color: #fff;
+}
+
+a.button-bg-csecondary:hover,
+a span.button-bg-csecondary:hover,
+.button-bg-csecondary a:hover,
+a.button-bg-csecondary:focus,
+a span.button-bg-csecondary:focus,
+.button-bg-csecondary a:focus {
+    background-color: #aa1414;
+    color: #fff !important;
+} */
+
+/* Button Grey */
+/* a.button-bg-cgrey,
+a span.button-bg-cgrey,
+.button-bg-cgrey a {
+	background-color: #e5e2d6;
+	color: #000;
+}
+
+a.button-bg-cgrey:hover,
+a span.button-bg-cgrey:hover,
+.button-bg-cgrey a:hover,
+a.button-bg-cgrey:focus,
+a span.button-bg-cgrey:focus,
+.button-bg-cgrey a:focus {
+    background-color: #d1ccb7;
+    color: #000 !important;
+} */
+
+/* Size classes */
+/* [class*="button-bg-"].button-xl,
+[class*="button-bg-"] .button-xl,
+.button-xl [class*="button-bg-"] {
+  font-size: 1.5rem !important;
+}
+
+[class*="button-bg-"].button-lg,
+[class*="button-bg-"] .button-lg,
+.button-lg [class*="button-bg-"] {
+  font-size: 1.25rem !important;
+}
+
+[class*="button-bg-"].button-sm,
+[class*="button-bg-"] .button-sm,
+.button-sm [class*="button-bg-"] {
+  font-size: .8625rem !important;
+}
+
+[class*="button-bg-"].button-mn,
+[class*="button-bg-"] .button-mn,
+.button-mn [class*="button-bg-"] {
+  font-size: .75rem !important;
+}
+
+.button-xl a,
+.button-lg a,
+.button-sm a,
+.button-mn a {
+	font-size: inherit !important;
+} */
+
+/* Indent */
+/* .indent {
+    display: block;
+} */
+
+/* List unstyled */
+/* ul.list-unstyled,
+ul:has(.list-unstyled) {
+    padding-left: 0;
+    list-style: none;
+} */
+
+/* List inline */
+/* ul.list-inline,
+ul:has(.list-inline) {
+    padding-left: 0;
+    list-style: none;
+} */
+
+/* ul.list-inline li,
+ul:has(.list-inline) li {
+    display: inline;
+} */
+
+/* ul.list-inline>li:not(:last-child),
+ul:has(.list-inline)>li:not(:last-child) {
+    padding-right: 1rem;
+    padding-left: .25rem;
+} */
+
+/* ul.list-inline li:not(:last-child),
+ul:has(.list-inline) li:not(:last-child) {
+    margin-right: .5rem;
+} */
+
+/* List inline */
+/* ul.list-bottom-border,
+ul:has(.list-bottom-border) {
+    padding-left: 0;
+    list-style: none;
+}
+
+ul:has(.list-bottom-border) li {
+    border-bottom: 1px solid #e5e2d6;
+    padding: 10px 0 !important;
+    text-align: center;
+    margin: 0;
+} */
+
+/* Action Links */
+/* a.pgs-action-link-t4,
+a span.pgs-action-link-t4,
+.pgs-action-link-t4 a {
+    font-weight: 700;
+    margin-right: 2rem;
+} */
+
+/* a.pgs-action-link-t4-quiet,
+a span.pgs-action-quiet-link-t4,
+.pgs-action-link-t4-quiet a {
+    margin-right: 2rem;
+} */
+
+
+/* a[class*="pgs-action-link-t4"]:before,
+a span[class*="pgs-action-link-t4"]:before,
+[class*="pgs-action-link-t4"] a:before  {
+    font-family: "Font Awesome 5 Free";
+    content: "\f054";
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    display: inline-block;
+    font-style: normal;
+    font-variant: normal;
+    text-rendering: auto;
+    line-height: 1;
+    margin-right: .5rem;
+    font-weight: 700;
+    transition: all 0.15s ease 0s;
+}
+
+a[class*="pgs-action-link-t4"]:hover:before,
+a span[class*="pgs-action-link-t4"]:hover:before,
+[class*="pgs-action-link-t4"] a:hover:before,
+a[class*="pgs-action-link-t4"]:focus:before,
+a span[class*="pgs-action-link-t4"]:focus:before,
+[class*="pgs-action-link-t4"] a:focus:before {
+    margin-right: .25rem;
+    margin-left: .25rem;
+} */
+
+/* ul:has([class*="pgs-action-link-t4"]) {
+    list-style: none;
+}
+
+ul:has(li[style*="center"]) {
+    text-align: center;
+} */
+
+/* Org Card - links in UL must be Action Links - some of this could be combined with above CSS */
+/* .t4-org-card .card-body ul {
+    list-style: none;
+}
+
+.t4-org-card .card-body ul li a:before {
+    color: #000;
+    font-family: "Font Awesome 5 Free";
+    content: "\f054";
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    display: inline-block;
+    font-style: normal;
+    font-variant: normal;
+    text-rendering: auto;
+    line-height: 1;
+    margin-right: .5rem;
+    font-weight: 700;
+    transition: all 0.15s ease 0s;
+}
+
+.t4-org-card .card-body ul li a:hover:before,
+.t4-org-card .card-body ul li a:focus:before {
+    margin-right: .25rem;
+    margin-left: .25rem;
+} */

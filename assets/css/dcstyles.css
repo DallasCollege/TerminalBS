@@ -690,7 +690,11 @@ width: 100vw;
   text-align: left;
 }
 
-/*  footers */
+/*
+**************************************************
+Footer
+**************************************************
+*/
 
 .list-group-item { background-color:transparent; border:0; margin:0 !important; }
 
@@ -756,7 +760,6 @@ footer a:not(.button):hover, footer a:not(.button):focus {
 .l-footer__main__heading {
   font-size: 1rem;
   font-weight: 900;
-  /* text-transform: uppercase; */
   border-bottom: 1px solid #99bbaf;
   padding-bottom: 1rem;
   margin-bottom: 1rem;
@@ -878,6 +881,8 @@ footer#l-footer #l-footer__fine-print .small-print li {
 footer#l-footer #l-footer__fine-print .small-print li:last-child {
   margin-right: auto;
 }
+
+/* End Footer */
 
 
 /* content */
@@ -1192,15 +1197,8 @@ main.affix {
   }
 
   #l-nav-utility .navbar-nav>li>a {
-    /* font-size: .625rem; */
     padding: 1em 1em
   }
-
-  /*
-  unclear of this need
-  #l-header-desktop .hidden-sm {
-    display: none !important
-  } */
 
   #l-header-desktop .logo-bar-slot {
     padding: .5em 0
@@ -1245,7 +1243,6 @@ main.affix {
 
   .l-footer__fine-print__links li {
     margin-bottom: .25rem !important;
-    /* font-size: .875rem; */
   }
 
   li.navbar-nav--seperator:before {
@@ -1739,7 +1736,11 @@ main.affix {
   }
 }
 
-/* Calendar */
+/*
+**************************************************
+Calendar
+**************************************************
+*/
 
 .pgs-calendar__day {
     font-size: 3rem;
@@ -1780,15 +1781,9 @@ tr.calendar-dayhead, tr.calendar-dayrow {
   line-height: 2.5rem;
 }
 
-/* .cal-table tbody tr:nth-child(even) {
-  background:#E5E2D6;
-  color:#000000;
-} */
-
 .cal-table tbody tr:nth-child(odd) {
   background-color: #ffffff;
 }
-
 
 td.hasEvents {
   background: #E9F2FF;
@@ -1829,12 +1824,7 @@ td.thismonth.viewrange.periodday.today.hasEvents a {
     text-align: center
 }
 
-
 /* End Calendar */
-
-
-
-
 
 
 .pgs-navbar--sidebar .navbar-toggler [aria-expanded="true"] {
@@ -1908,60 +1898,11 @@ a.pgs-calendar__event {
   padding-right: 20px;
 }
 
-/* School Blocks */
-
-/* .pgs-tile--business {
-  background: linear-gradient(0deg, rgba(26, 112, 35, 0.85), rgba(26, 112, 35, 0.85)), url('https://www.dallascollege.edu/PublishingImages/home/path-business-400x300.jpg');
-  background-size: cover;
-  background-position: center;
-  border-bottom-color: #249E31;
-}
-
-.pgs-tile--arts {
-  background: linear-gradient(0deg, rgba(147, 16, 29, 0.85), rgba(147, 16, 29, 0.85)), url('https://www.dallascollege.edu/PublishingImages/home/path-arts-400x300.jpg');
-  background-size: cover;
-  background-position: center;
-  border-bottom-color: #C00D1E;
-}
-
-.pgs-tile--education {
-  background: linear-gradient(0deg, rgba(133, 45, 129, 0.85), rgba(133, 45, 129, 0.85)), url('https://www.dallascollege.edu/PublishingImages/home/path-education-400x300.jpg');
-  background-size: cover;
-  background-position: center;
-  border-bottom-color: #93328E;
-}
-
-.pgs-tile--health {
-  background: linear-gradient(0deg, rgba(26, 112, 184, 0.85), rgba(31, 121, 184, 0.85)), url('https://www.dallascollege.edu/PublishingImages/home/path-health-sciences-400x300.jpg');
-  background-size: cover;
-  background-position: center;
-  border-bottom-color: #248ED8;
-}
-
-.pgs-tile--law {
-  background: linear-gradient(0deg, rgba(28, 31, 130, 0.85), rgba(28, 31, 130, 0.85)), url('https://www.dallascollege.edu/PublishingImages/home/path-public-service-400x300.jpg');
-  background-size: cover;
-  background-position: center;
-  border-bottom-color: #1E22AA;
-}
-
-.pgs-tile--manufacturing {
-  background: linear-gradient(0deg, rgba(121, 79, 63, 0.85), rgba(121, 79, 63, 0.85)), url('https://www.dallascollege.edu/PublishingImages/home/path-manufacturing-400x300.jpg');
-  background-size: cover;
-  background-position: center;
-  border-bottom-color: #95614D;
-}
-
-.pgs-tile--stem {
-  background: linear-gradient(0deg, rgba(184, 84, 0, 0.85), rgba(184, 84, 0, 0.85)), url('https://www.dallascollege.edu/PublishingImages/home/path-stem-400x300.jpg');
-  background-size: cover;
-  background-position: center;
-  border-bottom-color: #FF7500;
-} */
-
-/* End School Blocks */
-
-/* Offset CSS */
+/*
+**************************************************
+Offset CSS
+**************************************************
+*/
 
 .fwr-offset--success:before {
   /*sets height of offest */
@@ -1985,8 +1926,6 @@ a.pgs-calendar__event {
 }
 
 /* End Offset CSS */
-
-.list-group-item { background-color:transparent; border:0; }
 
 
 @media screen and (max-width: 1199px) {
@@ -2178,7 +2117,19 @@ a.pgs-calendar__event {
   }
 }
 
-a.button, button.button, input.button {
+
+/*
+**************************************************
+Buttons - note need special styles for TinyMCE spans
+**************************************************
+*/
+
+a.button, 
+button.button, 
+input.button, 
+a[class*="button-bg-"], 
+a span[class*="button-bg-"], 
+[class*="button-bg-"] a {
   display: inline-block;
   padding: .75em 1.5em;
   margin: .25rem 0 1.25rem;
@@ -2204,6 +2155,92 @@ a.button[class*="border"], button.button[class*="border"], input.button[class*="
   border-width: 1px;
   border-style: solid
 }
+
+/* Button Colors for TinyMCE */
+
+a.button-bg-cprimary,
+a span.button-bg-cprimary,
+.button-bg-cprimary a {
+	background-color: #003385;
+	color: #fff;
+}
+
+a.button-bg-cprimary:hover,
+a span.button-bg-cprimary:hover,
+.button-bg-cprimary a:hover,
+a.button-bg-cprimary:focus,
+a span.button-bg-cprimary:focus,
+.button-bg-cprimary a:focus {
+    background-color: #001639;
+    color: #fff !important;
+}
+
+a.button-bg-csecondary,
+a span.button-bg-csecondary,
+.button-bg-csecondary a {
+	background-color: #e52626;
+	color: #fff;
+}
+
+a.button-bg-csecondary:hover,
+a span.button-bg-csecondary:hover,
+.button-bg-csecondary a:hover,
+a.button-bg-csecondary:focus,
+a span.button-bg-csecondary:focus,
+.button-bg-csecondary a:focus {
+    background-color: #aa1414;
+    color: #fff !important;
+}
+
+a.button-bg-cgrey,
+a span.button-bg-cgrey,
+.button-bg-cgrey a {
+	background-color: #e5e2d6;
+	color: #000;
+}
+
+a.button-bg-cgrey:hover,
+a span.button-bg-cgrey:hover,
+.button-bg-cgrey a:hover,
+a.button-bg-cgrey:focus,
+a span.button-bg-cgrey:focus,
+.button-bg-cgrey a:focus {
+    background-color: #d1ccb7;
+    color: #000 !important;
+}
+
+/* Button Sizes for TinyMCE */
+[class*="button-bg-"].button-xl,
+[class*="button-bg-"] .button-xl,
+.button-xl [class*="button-bg-"] {
+  font-size: 1.5rem !important;
+}
+
+[class*="button-bg-"].button-lg,
+[class*="button-bg-"] .button-lg,
+.button-lg [class*="button-bg-"] {
+  font-size: 1.25rem !important;
+}
+
+[class*="button-bg-"].button-sm,
+[class*="button-bg-"] .button-sm,
+.button-sm [class*="button-bg-"] {
+  font-size: .8625rem !important;
+}
+
+[class*="button-bg-"].button-mn,
+[class*="button-bg-"] .button-mn,
+.button-mn [class*="button-bg-"] {
+  font-size: .75rem !important;
+}
+
+.button-xl a,
+.button-lg a,
+.button-sm a,
+.button-mn a {
+	font-size: inherit !important;
+}
+
 
 ul.button-group {
   margin-left: 0;
@@ -2246,7 +2283,6 @@ ul.button-group.button-group--justified li:first-child .button,
 ul.button-group.button-group--justified li:last-child .button {
   border-radius:4px
 }
-
 
 ul.button-group--justified {
   display: table;
@@ -2476,6 +2512,29 @@ a.grand-photo-button.no-border, a.grand-photo-button-lg.no-border, a.grand-photo
   margin-right: 5px
 }
 
+.button-nav:after {
+  display: table;
+  content: " ";
+  clear: both
+}
+
+.button-nav .button {
+  margin-right: .25em
+}
+
+.button-nav .button:last-child {
+  margin-right: 0
+}
+
+/* End Primary Button Info */
+
+
+/*
+**************************************************
+Headers and Breadcrumbs
+**************************************************
+*/
+
 .img-header {
   margin-top: 1.5rem;
   margin-bottom: 1.5rem
@@ -2494,24 +2553,6 @@ a.grand-photo-button.no-border, a.grand-photo-button-lg.no-border, a.grand-photo
 .img-header a:hover img {
   text-decoration: none
 }
-
-.button-nav:after {
-  display: table;
-  content: " ";
-  clear: both
-}
-
-.button-nav .button {
-  margin-right: .25em
-}
-
-.button-nav .button:last-child {
-  margin-right: 0
-}
-
-/* .pgs-breadcrumb {
-  text-transform: uppercase
-} */
 
 .pgs-shortcut, .pgs-breadcrumb {
   font-size: .9rem;
@@ -2556,14 +2597,22 @@ a.grand-photo-button.no-border, a.grand-photo-button-lg.no-border, a.grand-photo
 }
 
 .pgs-shortcut span {
-  /* text-transform: uppercase; */
   font-size: .875em
 }
+
+/* End Headers and Breadcrumbs */
+
 
 img.bio-image.pull-left, .pull-left.thumbnail, img.bio-image.pull-right, .pull-right.thumbnail {
   margin-right: 1em;
   margin-bottom: 1em
 }
+
+/*
+**************************************************
+Content Image Boxes
+**************************************************
+*/
 
 .content-image-box {
   margin: 0 0;
@@ -2621,7 +2670,6 @@ img.bio-image.pull-left, .pull-left.thumbnail, img.bio-image.pull-right, .pull-r
   display: block;
 }
 
-
 .content-image-box .cib-content h2:first-child, .content-image-box .cib-content h3:first-child, .content-image-box .cib-content h4:first-child, .content-image-box .cib-content h5:first-child, .content-image-box .cib-content h6:first-child {
   margin-top: 0
 }
@@ -2651,6 +2699,8 @@ img.bio-image.pull-left, .pull-left.thumbnail, img.bio-image.pull-right, .pull-r
   height: 100%;
   object-fit: cover;
 }
+
+/* End Content Image Boxes */
 
 
 * [class^="cib-col-"], .cb-mainico {
@@ -2693,7 +2743,11 @@ img.bio-image.pull-left, .pull-left.thumbnail, img.bio-image.pull-right, .pull-r
   font-size: 3rem
 }
 
-/* Org Cards */
+/*
+**************************************************
+Org Cards
+**************************************************
+*/
 
 .t4-org-card {
   margin-bottom: 1rem;
@@ -2719,7 +2773,6 @@ img.bio-image.pull-left, .pull-left.thumbnail, img.bio-image.pull-right, .pull-r
   border:0 solid
 }
 
-
 .pgs-org-card.border-cprimary, .pgs-org-card.border-csecondary {
   border-width: 1px;
   border-style: solid;
@@ -2740,7 +2793,6 @@ img.bio-image.pull-left, .pull-left.thumbnail, img.bio-image.pull-right, .pull-r
 
 .pgs-org-card__body {
   padding: 1.5rem;
-  /* text-align: right; */
   border-radius: 0 0 3px 3px
 }
 
@@ -2755,7 +2807,6 @@ img.bio-image.pull-left, .pull-left.thumbnail, img.bio-image.pull-right, .pull-r
 .pgs-org-card__body:has(.button) {
   padding: 1.5rem 1.5rem 3rem
 }
-
 
 ul.pgs-org-card__list {
   padding-bottom: 0;
@@ -2800,16 +2851,12 @@ ul.pgs-org-card__list .ico {
   text-align: center; /* Centers the text inside the button */
 }
 
-/* .pgs-org-card__body.text-center a.button {
-  position: static; /* Remove absolute positioning */
-  /* margin-top: auto !important;
-}  */
+/* End Org Card */
 
 .col.flexbox {
   margin-left:auto;
   margin-right:auto;
 }
-
 
 .cta-box-1:before, .content-image-box:before, .content-box-1:before, .content-box-2:before, .content-box-3:before {
   display: table;
@@ -3910,6 +3957,12 @@ a.pgs-tile--container:focus .pgs-tile, a.pgs-tile--container:hover .pgs-tile {
   font-size: .875rem
 }
 
+/*
+**************************************************
+Action Links - note need special styles for TinyMCE spans
+**************************************************
+*/
+
 ul.pgs-action-link-list--center {
   text-align: center;
   margin-left: 0
@@ -3919,13 +3972,57 @@ ul.pgs-action-link-list {
   padding-left: 0
 }
 
-.pgs-action-link, .pgs-action-link-list a {
+.pgs-action-link, 
+.pgs-action-link-list a,
+a.pgs-action-link-t4,
+a span.pgs-action-link-t4,
+.pgs-action-link-t4 a {
   font-weight: 700;
   margin-right: 2rem;
 }
 
-.pgs-action-link--quiet {
-  font-weight: 400
+.pgs-action-link--quiet,
+a.pgs-action-link-t4-quiet,
+a span.pgs-action-quiet-link-t4,
+.pgs-action-link-t4-quiet a {
+  font-weight: 400;
+  margin-right: 2rem;
+}
+
+/* TinyMCE adds chevron via CSS */
+a[class*="pgs-action-link-t4"]:before,
+a span[class*="pgs-action-link-t4"]:before,
+[class*="pgs-action-link-t4"] a:before  {
+    font-family: "Font Awesome 5 Free";
+    content: "\f054";
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    display: inline-block;
+    font-style: normal;
+    font-variant: normal;
+    text-rendering: auto;
+    line-height: 1;
+    margin-right: .5rem;
+    font-weight: 700;
+    transition: all 0.15s ease 0s;
+}
+
+a[class*="pgs-action-link-t4"]:hover:before,
+a span[class*="pgs-action-link-t4"]:hover:before,
+[class*="pgs-action-link-t4"] a:hover:before,
+a[class*="pgs-action-link-t4"]:focus:before,
+a span[class*="pgs-action-link-t4"]:focus:before,
+[class*="pgs-action-link-t4"] a:focus:before {
+    margin-right: .25rem;
+    margin-left: .25rem;
+}
+
+ul:has([class*="pgs-action-link-t4"]) {
+  list-style: none;
+}
+
+ul:has(li[style*="center"]) {
+  text-align: center;
 }
 
 .pgs-action-link .ico, .pgs-action-link-list a .ico {
@@ -3972,6 +4069,43 @@ ul.pgs-action-link-list {
 .pgs-action-link-list.list-inline .fa-li {
   left: -1.5em
 }
+
+/* Fixes for Psuedo Action Links in Org Cards */
+
+.t4-org-card .card-body ul {
+  list-style: none;
+}
+
+.t4-org-card .card-body ul li a:before {
+  color: #000;
+  font-family: "Font Awesome 5 Free";
+  content: "\f054";
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  display: inline-block;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  line-height: 1;
+  margin-right: .5rem;
+  font-weight: 700;
+  transition: all 0.15s ease 0s;
+  left:-2em;
+  top:.5em;
+  position:absolute;
+  width:2em;
+  line-height:interit;
+  text-align:center;
+}
+
+.t4-org-card .card-body ul li a:hover:before,
+.t4-org-card .card-body ul li a:focus:before {
+  margin-right: .25rem;
+  margin-left: .25rem;
+}
+
+
+/* End Action Links */
 
 ul.pgs-feature-list {
   font-size: 14px
@@ -4223,43 +4357,6 @@ a.button.button-off {
   color:#333333;
 }
 
-
-ul.list-inline>li:not(:last-child) {
-  padding-right: 1rem;
-  padding-left: .25rem
-}
-
-ul.list-inline>li:last-of-type {
-  padding-right: 0 !important;
-}
-
-.list-inline>li.label {
-  padding-right: .5rem;
-  padding-left: .5rem;
-  margin-right: .5rem
-}
-
-
-
-/* updated to allow list inline without additional classes on li */
-ul.list-inline li {
-  display:inline
-}
-
-ul.list-inline li:not(:last-child) {
-  margin-right: .5rem;
-}
-
-ul.button-group.list-inline li {
-  margin: 0;
-  margin-right: 1px;
-  padding: 0;
-}
-
-ul.button-group.button-group--justified.list-inline li {
-  border-radius:4px;
-}
-
 caption {
   color: #66645e;
   font-size: .875rem
@@ -4279,11 +4376,100 @@ caption {
   max-width: 300px
 }
 
+
+/*
+**************************************************
+Unordered Lists - styled to allow TinyMCE span tags
+**************************************************
+*/
+
+ul.list-inline li, ul:has(.list-inline) li {
+  display:inline
+}
+
+ul.list-unstyled,
+ul:has(.list-unstyled) {
+    padding-left: 0;
+    list-style: none;
+}
+
+ul.list-inline,
+ul:has(.list-inline) {
+    padding-left: 0;
+    list-style: none;
+}
+
+
+ul.list-inline>li:not(:last-child), ul:has(.list-inline)>li:not(:last-child) {
+  padding-right: 1rem;
+  padding-left: .25rem
+}
+
+ul.list-inline>li:last-of-type {
+  padding-right: 0 !important;
+}
+
+.list-inline>li.label {
+  padding-right: .5rem;
+  padding-left: .5rem;
+  margin-right: .5rem
+}
+
+ul.list-inline li:not(:last-child), ul:has(.list-inline) li:not(:last-child) {
+  margin-right: .5rem;
+}
+
+ul.button-group.list-inline li {
+  margin: 0;
+  margin-right: 1px;
+  padding: 0;
+}
+
+ul.button-group.button-group--justified.list-inline li {
+  border-radius:4px;
+}
+
+li.li-border {
+  border-bottom: 1px solid #e5e2d6;
+  padding: 10px 0 !important;
+  text-align: center;
+  margin: 0
+}
+
+li.li-border:last-child {
+  border-bottom: 0 solid #f7f3e8
+}
+
+ul.list-striped li:nth-of-type(odd), ol.list-striped li:nth-of-type(odd) {
+  background-color: #e5e2d6;
+  border-bottom: 2px solid #d6d2c4
+}
+
+ul.list-striped li, ol.list-striped li {
+  padding: .5em
+}
+
+ul.list-bottom-border,
+ul:has(.list-bottom-border) {
+    padding-left: 0;
+    list-style: none;
+}
+
+ul:has(.list-bottom-border) li {
+    border-bottom: 1px solid #e5e2d6;
+    padding: 10px 0 !important;
+    text-align: center;
+    margin: 0;
+}
+
+
+/* End Unordered Lists */
+
 /*
 **************************************************
 School Blocks
 **************************************************
- */
+*/
 
 .pgs-tile--business {
   background: linear-gradient(0deg, rgba(26, 112, 35, 0.85), rgba(26, 112, 35, 0.85)), url('https://www.dallascollege.edu/PublishingImages/home/path-business-400x300.jpg');
@@ -4659,7 +4845,8 @@ section.no-margin {
 .indent {
   padding: 1.5rem;
   margin: 1.5rem;
-  line-height: 1.75
+  line-height: 1.75;
+  display:block
 }
 
 hr.hr75 {
@@ -6066,26 +6253,6 @@ img.width-200 {
   border: 4px solid
 }
 
-li.li-border {
-  border-bottom: 1px solid #e5e2d6;
-  padding: 10px 0 !important;
-  text-align: center;
-  margin: 0
-}
-
-li.li-border:last-child {
-  border-bottom: 0 solid #f7f3e8
-}
-
-ul.list-striped li:nth-of-type(odd), ol.list-striped li:nth-of-type(odd) {
-  background-color: #e5e2d6;
-  border-bottom: 2px solid #d6d2c4
-}
-
-ul.list-striped li, ol.list-striped li {
-  padding: .5em
-}
-
 .col-count-2 {
   column-count: 2
 }
@@ -6129,6 +6296,7 @@ a:not(.button):focus, #l-header-desktop a:not(.button):hover, #sidebar a:not(.bu
   border-radius: 0.25rem;
   outline: 2px solid #4D90FE
 }
+
 .bg-csecondary a:not(.button):focus, .bg-csecondary-dk a:not(.button):focus {
     outline: 2px solid #b8d3ff;
 }
@@ -8936,9 +9104,18 @@ Full Width Styles for T4
 
 /*
 **************************************************
+TinyMCE fixes for T4
+**************************************************
+*/
+
+
+
+
+/*
+**************************************************
 No Javascript Style
 **************************************************
- */
+*/
 
 
  .no-js .navbar .navbar-nav {
