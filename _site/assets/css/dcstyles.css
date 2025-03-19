@@ -3790,24 +3790,7 @@ h2.pgs-people-card__name, h3.pgs-people-card__name, h4.pgs-people-card__name, h5
   padding: .5em 1em .5em .5em
 }
 
-.pagination>.active>a, .pagination>.active>a:focus, .pagination>.active>a:hover, .pagination>.active>span, .pagination>.active>span:focus, .pagination>.active>span:hover {
-  z-index: 3;
-  color: #fff !important;
-  cursor: default;
-  background-color: #003385;
-  border-color: #003385
-}
 
-.pagination .page-item a.page-link {
-color: #003385;
-color: 0, 51, 133;
-text-decoration: underline;
-}
-
-.pagination .page-item a.page-link:hover {
-  color: #E52626;
-  color: 229, 38, 38;
-  }
 
 /* Employee Directory */
 .staff.button-list button {
@@ -8881,6 +8864,30 @@ button#pills-home-tab, button#pills-profile-tab, button#pills-home-tab2, button#
   border-radius: 5px 5px 0 0;
 }
 
+/*
+**************************************************
+Pagination
+**************************************************
+ */
+
+.pagination>.active>a, .pagination>.active>a:focus, .pagination>.active>a:hover, .pagination>.active>span, .pagination>.active>span:focus, .pagination>.active>span:hover {
+  z-index: 3;
+  color: #fff !important;
+  cursor: default;
+  background-color: #001E49;
+  border-color: #001E49
+}
+
+.pagination .page-item a.page-link {
+color: #003385;
+color: 0, 51, 133;
+text-decoration: underline;
+}
+
+.pagination .page-item a.page-link:hover {
+  color: #E52626;
+  color: 229, 38, 38;
+  }
 
 li.page-item a {
   position: relative;
@@ -8889,8 +8896,15 @@ li.page-item a {
   border:1px solid #DEE2E6;
   margin:-1px;
 
-  &:hover {
+  &.active,
+  .active > & {
     z-index: 2;
+    background-color: #003385;
+    color:#fff;
+  }
+
+  &:hover {
+  z-index: 2; 
     background-color: #E9F2FF;
   }
 
@@ -8898,13 +8912,6 @@ li.page-item a {
     background-color:#E9F2FF;
     z-index: 2;
   }
-
-  &.active,
-  .active > & {
-    z-index: 2;
-    background-color:#E9F2FF;
-  }
-
 }
 
 
