@@ -51,10 +51,6 @@
 .dropdown-menu li { margin: 0.5em 0; }
 .navbar a { text-decoration: none; }
 
-#l-nav-utility .nav .open>a, #l-nav-utility .nav .open>a:hover, #l-nav-utility .nav .open>a:focus, #l-nav-utility .navbar-nav>li>a:hover, #l-nav-utility .navbar-nav>li>a:focus, #l-nav-utility .dropdown-menu>li>a:hover, #l-nav-utility .dropdown-menu>li>a:focus {
-
-}
-
 #l-header-mobile .navbar-nav a, #l-header-mobile .navbar-nav.navbar-secondary a {
   font-size: .875rem;
 }

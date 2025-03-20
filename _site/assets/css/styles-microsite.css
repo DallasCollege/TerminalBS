@@ -46,10 +46,6 @@
     margin: 0.5em 0
 }
 
-/* .affix {
-    width: 100%
-} */
-
 .navbar a {
     text-decoration: none
 }
@@ -110,11 +106,6 @@
     background: none
 }
 
-/* #zz1_V4QuickLaunchMenu a.static {
-    padding-left: 1rem;
-    padding-right: 1rem
-} */
-
 .navbar-brand {
     height: auto !important
 }
@@ -136,11 +127,6 @@
     display: inline-block;
     height: 1.5em;
   }
-
-  /* .logo-bar-slot img {
-    height: 1.25em;
-    margin-right: 1.5em;
-} */
 
 span.site-title {
     margin-left: 1.5em;
