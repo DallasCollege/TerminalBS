@@ -137,9 +137,13 @@
     height: 1.5em;
   }
 
-  .logo-bar-slot img {
+  /* .logo-bar-slot img {
     height: 1.25em;
     margin-right: 1.5em;
+} */
+
+span.site-title {
+    margin-left: 1.5em;
 }
 
 #l-header-desktop.l-header-desktop--microsite .logo-bar-slot__img:hover {
@@ -258,6 +262,10 @@ body {
 
 #l-nav-utility .navbar-nav>li>a .ico,.navbar-utility .navbar-nav>li>a .ico {
     color: #fff;
+}
+
+#l-nav-utility .navbar-nav>li>a:focus .ico, .navbar-utility .navbar-nav>li>a:focus .ico {
+    color:#111111
 }
 
 #l-header-desktop .nav-secondary {
