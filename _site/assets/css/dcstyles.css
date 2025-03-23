@@ -2161,7 +2161,7 @@ a.button-bg-cprimary,
 a span.button-bg-cprimary,
 .button-bg-cprimary a {
 	background-color: #003385;
-	color: #fff;
+	color: #fff !important;;
 }
 
 a.button-bg-cprimary:hover,
@@ -2178,7 +2178,7 @@ a.button-bg-csecondary,
 a span.button-bg-csecondary,
 .button-bg-csecondary a {
 	background-color: #e52626;
-	color: #fff;
+	color: #fff !important;;
 }
 
 a.button-bg-csecondary:hover,
@@ -2195,7 +2195,7 @@ a.button-bg-cgrey,
 a span.button-bg-cgrey,
 .button-bg-cgrey a {
 	background-color: #e5e2d6;
-	color: #000;
+	color: #000 !important;;
 }
 
 a.button-bg-cgrey:hover,
@@ -2583,6 +2583,10 @@ Headers and Breadcrumbs
   color: rgba(0, 30, 73, 0.7);
   content: "\f054";
   margin-left: .75rem
+}
+
+.pgs-breadcrumb li:last-child:after {
+  display: none;
 }
 
 .pgs-shortcut {
@@ -3971,6 +3975,12 @@ a span.pgs-action-quiet-link-t4,
   margin-right: 2rem;
 }
 
+@media (max-width: 767px) {
+  ul:has(.list-inline) .pgs-action-link-t4 {
+      display: block;
+  }
+}
+
 /* TinyMCE adds chevron via CSS */
 a[class*="pgs-action-link-t4"]:before,
 a span[class*="pgs-action-link-t4"]:before,
@@ -4056,6 +4066,9 @@ ul:has(li[style*="center"]) {
 
 .t4-org-card .card-body ul {
   list-style: none;
+  list-style: none;
+  margin-left:0px;
+  padding-left: 0;
 }
 
 .t4-org-card .card-body ul li a:before {
@@ -4069,12 +4082,12 @@ ul:has(li[style*="center"]) {
   font-variant: normal;
   text-rendering: auto;
   line-height: 1;
-  margin-right: .5rem;
+  /* margin-right: .5rem; */
   font-weight: 700;
   transition: all 0.15s ease 0s;
   left:-2em;
   top:.5em;
-  position:absolute;
+  /* position:absolute; */
   width:2em;
   line-height:interit;
   text-align:center;
@@ -4412,6 +4425,16 @@ ul.button-group.list-inline li {
   padding: 0;
 }
 
+ul.list-inline:not(.button-group--justified):not(.button-group)>li:not(:last-child),
+ul:has(.list-inline):not(.button-group--justified):not(.button-group)>li:not(:last-child) {
+    padding-right: 1rem;
+    padding-left: .25rem;
+}
+ul.list-inline:not(.button-group--justified):not(.button-group) li:not(:last-child),
+ul:has(.list-inline):not(.button-group--justified):not(.button-group) li:not(:last-child) {
+    margin-right: .5rem;
+}
+
 ul.button-group.button-group--justified.list-inline li {
   border-radius:4px;
 }
@@ -4608,6 +4631,11 @@ a .t4-tile-overlay, .t4-tile-overlay {
 .t4-tile.t4-tile--stem, .t4-tile--stem .t4-tile-overlay {
   background: linear-gradient(0deg, rgba(184, 84, 0, 0.85), rgba(184, 84, 0, 0.85)), url('https://www.dallascollege.edu/PublishingImages/home/path-stem-400x300.jpg');
   border-bottom-color: #FF7500;
+}
+
+.t4-tile.t4-tile--none, .t4-tile--none .t4-tile-overlay {
+  background: transparent;
+  border-bottom-color: #003385;
 }
 
 /* End T4 Tiles */
@@ -4844,6 +4872,12 @@ hr.hr75 {
   width: 100%
 }
 
+.spacer-05 {
+  display: block;
+  height: .5rem;
+  clear: both
+}
+
 .spacer-1 {
   display: block;
   height: 1rem;
@@ -4879,6 +4913,32 @@ hr.hr75 {
   height: 6rem;
   clear: both
 }
+
+.spacer-7 {
+  display: block;
+  height: 7rem;
+  clear: both
+}
+
+.spacer-8 {
+  display: block;
+  height: 8rem;
+  clear: both
+}
+
+.spacer-9 {
+  display: block;
+  height: 8rem;
+  clear: both
+}
+
+.spacer-10 {
+  display: block;
+  height: 8rem;
+  clear: both
+}
+
+
 
 .no-margin {
   margin: 0 !important
@@ -8194,8 +8254,19 @@ div.csecondary-dk p a:not(.button), div.cseconary-dk p a:link:not(.button) {
 
 .well {
   background-color: #f7f3e8;
-  border-color: #e5e2d6
+  min-height: 20px;
+  padding: 19px;
+  margin-bottom: 20px;
+  border: 1px solid;
+  border-color: #e5e2d6;
+  border-radius: 4px;
+  .box-shadow(inset 0 1px 1px rgba(0,0,0,.05));
+  blockquote {
+    border-color: #ddd;
+    border-color: rgba(0,0,0,.15);
+  }
 }
+
 
 @media print {
   html, body {
