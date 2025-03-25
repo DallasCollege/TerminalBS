@@ -4738,6 +4738,13 @@ a.font-bold, .font-bold {
   border: 0
 }
 
+.page-header {
+  padding-bottom: 9px;
+  margin: 40px 0 20px 0;
+  border-bottom: 1px solid #eee;
+}
+
+
 .page-header--xl {
   color: #000;
   font-weight: 800;
