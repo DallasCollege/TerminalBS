@@ -3852,7 +3852,8 @@ a.pgs-tile {
 a.pgs-tile--container:hover, a.pgs-tile--container:focus {
   display: block;
   outline: #4d90fe solid 3px !important;
-  outline-offset: .5rem !important
+  outline-offset: .5rem !important;
+  border-radius: 4px;
 }
 
 a.pgs-tile--container:focus .pgs-tile, a.pgs-tile--container:hover .pgs-tile {
@@ -3941,6 +3942,23 @@ a.pgs-tile--container:focus .pgs-tile, a.pgs-tile--container:hover .pgs-tile {
 
 .pgs-grand-dropdown--sm a {
   font-size: .875rem
+}
+
+.t4-tile-block-container {
+  margin-bottom:3rem
+}
+
+a .t4-tile-block, .t4-tile-block {
+  border-bottom: 6px solid #003385;
+  height:175px;
+}
+
+.t4-tile-block img {
+  border-radius:4px 4px 0 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
 }
 
 /*
@@ -4624,12 +4642,12 @@ a .t4-tile-overlay, .t4-tile-overlay {
 }
 
 .t4-tile.t4-tile--manufacturing, .t4-tile--manufacturing .t4-tile-overlay {
-  background: linear-gradient(0deg, rgba(121, 79, 63, 0.85), rgba(121, 79, 63, 0.85)), url('');
+  background: linear-gradient(0deg, rgba(121, 79, 63, 0.85), rgba(121, 79, 63, 0.85));
   border-bottom-color: #95614D;
 }
 
 .t4-tile.t4-tile--stem, .t4-tile--stem .t4-tile-overlay {
-  background: linear-gradient(0deg, rgba(184, 84, 0, 0.85), rgba(184, 84, 0, 0.85)), url('https://www.dallascollege.edu/PublishingImages/home/path-stem-400x300.jpg');
+  background: linear-gradient(0deg, rgba(184, 84, 0, 0.85), rgba(184, 84, 0, 0.85));
   border-bottom-color: #FF7500;
 }
 
