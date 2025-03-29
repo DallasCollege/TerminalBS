@@ -327,6 +327,7 @@ li.navbar-nav--seperator:before {
 
 .tools-workday {
   background-image: url("https://dallascollege.edu/publishingimages/icons/workday.svg");
+  /* background-image: url("<t4 type="media" id="23299" formatter="path/*" />"); */
   width: 25px;
   display: inline-block;
   height: 15px;
@@ -4069,16 +4070,21 @@ ul:has(li[style*="center"]) {
   left: -1.5em
 }
 
-/* Fixes for Psuedo Action Links in Org Cards */
+/* Fixes for Psuedo Action Links in Org Cards and Location Maps*/
 
-.t4-org-card .card-body ul {
+.t4-location-map-info {
+  margin-top:2rem;
+  font-weight: 700;
+}
+
+.t4-org-card .card-body ul, .t4-location-map-info ul {
   list-style: none;
   list-style: none;
   margin-left:0px;
   padding-left: 0;
 }
 
-.t4-org-card .card-body ul li a:before {
+.t4-org-card .card-body ul li a:before, .t4-location-map-info ul li a:before {
   color: #000;
   font-family: "Font Awesome 5 Free";
   content: "\f054";
@@ -4101,10 +4107,15 @@ ul:has(li[style*="center"]) {
 }
 
 .t4-org-card .card-body ul li a:hover:before,
-.t4-org-card .card-body ul li a:focus:before {
+.t4-org-card .card-body ul li a:focus:before, 
+.t4-location-map-info ul li a:hover:before,
+.t4-location-map-info ul li a:focus:before,
+  {
   margin-right: .25rem;
   margin-left: .25rem;
 }
+
+
 
 
 /* End Action Links */
@@ -4219,9 +4230,24 @@ a .txt-img-overlay__text {
   z-index: -1; /* temporary rks addition while figuring out offsets not working the same */
 }
 
+.fwr-offset--where:before {
+  height: 150px;
+}
+
+.bg-campuses img.map-bg {
+  position: absolute; 
+  width: 100%; 
+  height: auto; 
+  z-index: -1;
+  top:150px;
+}
+
 @media (max-width: 767px) {
   .fwr-offset:before {
     height: 0 !important
+  }
+  img.map-bg {
+    display:none;
   }
 }
 
@@ -4489,49 +4515,49 @@ School Blocks
 */
 
 .pgs-tile--business {
-  background: linear-gradient(0deg, rgba(26, 112, 35, 0.85), rgba(26, 112, 35, 0.85)), url('https://www.dallascollege.edu/PublishingImages/home/path-business-400x300.jpg');
+  background: linear-gradient(0deg, rgba(26, 112, 35, 0.85), rgba(26, 112, 35, 0.85));
   background-size: cover;
   background-position: center;
   border-bottom-color: #249E31;
 }
 
 .pgs-tile--arts {
-  background: linear-gradient(0deg, rgba(147, 16, 29, 0.85), rgba(147, 16, 29, 0.85)), url('https://www.dallascollege.edu/PublishingImages/home/path-arts-400x300.jpg');
+  background: linear-gradient(0deg, rgba(147, 16, 29, 0.85), rgba(147, 16, 29, 0.85));
   background-size: cover;
   background-position: center;
   border-bottom-color: #C00D1E;
 }
 
 .pgs-tile--education {
-  background: linear-gradient(0deg, rgba(133, 45, 129, 0.85), rgba(133, 45, 129, 0.85)), url('https://www.dallascollege.edu/PublishingImages/home/path-education-400x300.jpg');
+  background: linear-gradient(0deg, rgba(133, 45, 129, 0.85), rgba(133, 45, 129, 0.85));
   background-size: cover;
   background-position: center;
   border-bottom-color: #93328E;
 }
 
 .pgs-tile--health {
-  background: linear-gradient(0deg, rgba(26, 112, 184, 0.85), rgba(31, 121, 184, 0.85)), url('https://www.dallascollege.edu/PublishingImages/home/path-health-sciences-400x300.jpg');
+  background: linear-gradient(0deg, rgba(26, 112, 184, 0.85), rgba(31, 121, 184, 0.85));
   background-size: cover;
   background-position: center;
   border-bottom-color: #248ED8;
 }
 
 .pgs-tile--law {
-  background: linear-gradient(0deg, rgba(28, 31, 130, 0.85), rgba(28, 31, 130, 0.85)), url('https://www.dallascollege.edu/PublishingImages/home/path-public-service-400x300.jpg');
+  background: linear-gradient(0deg, rgba(28, 31, 130, 0.85), rgba(28, 31, 130, 0.85));
   background-size: cover;
   background-position: center;
   border-bottom-color: #1E22AA;
 }
 
 .pgs-tile--manufacturing {
-  background: linear-gradient(0deg, rgba(121, 79, 63, 0.85), rgba(121, 79, 63, 0.85)), url('https://www.dallascollege.edu/PublishingImages/home/path-manufacturing-400x300.jpg');
+  background: linear-gradient(0deg, rgba(121, 79, 63, 0.85), rgba(121, 79, 63, 0.85));
   background-size: cover;
   background-position: center;
   border-bottom-color: #95614D;
 }
 
 .pgs-tile--stem {
-  background: linear-gradient(0deg, rgba(184, 84, 0, 0.85), rgba(184, 84, 0, 0.85)), url('https://www.dallascollege.edu/PublishingImages/home/path-stem-400x300.jpg');
+  background: linear-gradient(0deg, rgba(184, 84, 0, 0.85), rgba(184, 84, 0, 0.85));
   background-size: cover;
   background-position: center;
   border-bottom-color: #FF7500;
@@ -7104,6 +7130,7 @@ a:hover>img.shadow-hover {
   top: 0;
   left: -112px;
   background-image: url("https://www.dallascollege.edu/publishingimages/icons/dc-quotes-open-cgrey-05.svg");
+  /* background-image: url("<t4 type="media" id="23280" formatter="path/*" />"); */
   background-repeat: no-repeat;
   background-size: contain;
   width: 96px;
@@ -7117,6 +7144,7 @@ a:hover>img.shadow-hover {
   top: 0;
   left: -112px;
   background-image: url("https://www.dallascollege.edu/PublishingImages/icons/dc-quotes-open-cprimary-lt.svg");
+  /* background-image: url("<t4 type="media" id="23282" formatter="path/*" />"); */
   background-repeat: no-repeat;
   background-size: contain;
   width: 96px;
@@ -7130,6 +7158,7 @@ a:hover>img.shadow-hover {
   top: 0;
   right: -112px;
   background-image: url("https://www.dallascollege.edu/publishingimages/icons/dc-quotes-close-cgrey-05.svg");
+  /* background-image: url("<t4 type="media" id="23276" formatter="path/*" />"); */
   background-repeat: no-repeat;
   background-size: contain;
   width: 96px;
@@ -7257,6 +7286,7 @@ a:hover>img.shadow-hover {
     top: 0;
     left: -90px;
     background-image: url("https://www.dallascollege.edu/publishingimages/icons/dc-quotes-open-cgrey-05.svg");
+    /* background-image: url("<t4 type="media" id="23280" formatter="path/*" />"); */
     background-repeat: no-repeat;
     background-size: contain;
     width: 96px;
@@ -7270,6 +7300,7 @@ a:hover>img.shadow-hover {
     top: 0;
     left: -90px;
     background-image: url("https://www.dallascollege.edu/PublishingImages/icons/dc-quotes-open-cprimary-lt.svg");
+    /* background-image: url("<t4 type="media" id="23282" formatter="path/*" />"); */
     background-repeat: no-repeat;
     background-size: contain;
     width: 96px;
@@ -7289,6 +7320,7 @@ a:hover>img.shadow-hover {
     top: 0;
     right: -100px;
     background-image: url("https://www.dallascollege.edu/publishingimages/icons/dc-quotes-open-cgrey-05.svg");
+    /* background-image: url("<t4 type="media" id="23280" formatter="path/*" />"); */
     background-repeat: no-repeat;
     background-size: contain;
     width: 96px;
@@ -7302,6 +7334,7 @@ a:hover>img.shadow-hover {
     top: 0;
     right: -100px;
     background-image: url("https://www.dallascollege.edu/PublishingImages/icons/dc-quotes-open-csecondary.svg");
+    /* background-image: url("<t4 type="media" id="23284" formatter="path/*" />"); */
     background-repeat: no-repeat;
     background-size: contain;
     width: 96px;
@@ -7314,6 +7347,7 @@ a:hover>img.shadow-hover {
     top: 0;
     right: -100px;
     background-image: url("https://www.dallascollege.edu/publishingimages/icons/dc-quotes-close-cgrey-05.svg");
+    /* background-image: url("<t4 type="media" id="23276" formatter="path/*" />"); */
     background-repeat: no-repeat;
     background-size: contain;
     width: 96px;
