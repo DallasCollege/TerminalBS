@@ -3498,9 +3498,13 @@ button.accordion-button {
   transform: rotate(180deg); /* Rotate the chevron when expanded */
 }
 
-
 .accordion.accordion-item-quiet .accordion-button::after {
   display:none
+}
+
+.accordion-item-quiet button.accordion-button {
+  width: auto;
+  color: #003385;
 }
 
 .accordion.accordion-item-quiet .accordion-button::before {
@@ -4887,7 +4891,7 @@ a.font-bold, .font-bold {
   margin-top: 1em
 }
 
-h2.module-title, h3.module-title {
+h2.module-title, h3.module-title, h2 .module-title, h3 .module-title {
   font-size: 2.5rem;
   color: #333;
   font-family: "Montserrat", "Open Sans", Helvetica, Arial, sans-serif;
@@ -8873,7 +8877,7 @@ input[type="checkbox"],input[type="radio"] {
 }
 
 .pgs-banner--double .pgs-banner__title {
-  background-color:#003385;
+  background-color:#001E49;
 }
 
 .form-group input, .form-group select {
