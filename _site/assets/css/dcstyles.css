@@ -6365,11 +6365,11 @@ img.width-200 {
   border: 4px solid
 }
 
-.col-count-2 {
+.list-col-count-2, .col-count-2, ul:has(.list-col-count-2), ol:has(.list-col-count-2) {
   column-count: 2
 }
 
-.col-count-3 {
+.list-col-count-3, .col-count-3, ul:has(.list-col-count-3), ol:has(.list-col-count-3) {
   column-count: 3
 }
 
