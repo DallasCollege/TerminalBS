@@ -8160,6 +8160,8 @@ a.grand-button.bg-cgrey-80:hover, a.grand-button.bg-cgrey-80:focus, a.button.bg-
   }
 }
 
+/* ALERTS */
+
 .alert-success, .bg-success {
   background-color: #dff0d8 !important;
   border-color: #d6e9c6;
@@ -8189,9 +8191,6 @@ a.grand-button.bg-cgrey-80:hover, a.grand-button.bg-cgrey-80:focus, a.button.bg-
   background-color: #99C3FF !important;
   color: #000;
 }
-
-
-
 
 .alert-info h2, .alert-info h3, .alert-info h4, .alert-info h5, .alert-info h6, .text-info {
   color: #214A5F !important
@@ -8240,6 +8239,13 @@ a.grand-button.bg-cgrey-80:hover, a.grand-button.bg-cgrey-80:focus, a.button.bg-
 .alert-danger .alert-link, .alert-danger a {
   color: #762F2E
 }
+
+/* for content type Alert Boxes - puts the first item after the icon as display inline */
+[id^="alert-"] span:first-of-type ~ * {
+  display:inline;
+}
+
+/* End Alerts */
 
 .label-default {
   background-color: #6F6F6F
