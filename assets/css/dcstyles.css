@@ -43,7 +43,7 @@ h3, .h3 {
   font-size: 1.25rem
 }
 
-h4, .h4 {
+h4, .h4, .fs-5s {
   font-weight: 700;
   font-size: 1.125rem
 }
@@ -65,6 +65,10 @@ h6, .h6 {
   color: #66645E;
 }
 
+.body {
+  font-size:1rem;
+  font-weight:400;
+}
 
 /* general */
 a {
@@ -1499,8 +1503,6 @@ main.affix {
   width: 100% !important
 }
 
-
-
 .pgs-navbar--sidebar li {
   margin-bottom: 2px
 }
@@ -1514,13 +1516,11 @@ main.affix {
   background: #e5e2d6;
   font-weight: 500;
   color: #000;
-  font-size: 14px;
+  font-size: .875rem;
   padding: .75rem 1rem;
   display: block;
   white-space: normal
 }
-
-
 
 .pgs-navbar--sidebar .nav>li:first-of-type a {
   font-family: "Montserrat", "Open Sans", Helvetica, Arial, sans-serif;
@@ -1538,21 +1538,21 @@ main.affix {
 
 .pgs-navbar--sidebar .nav>li ul {
   list-style-type: none;
-  margin: 0;
+  margin-bottom:1px;
+  margin-top:2px;
   padding: 0
 }
 
 .pgs-navbar--sidebar .nav>li ul a, .pgs-navbar--sidebar .nav a.level2 {
   font-weight: 500;
-  padding-top: .5rem;
-  padding-bottom: .5rem;
-  background-color: #f7f3e8;
-  padding-left: 2rem;
-  font-size: .75rem;
-  white-space: normal
+  background-color: #e5e2d6;
+  padding: .75rem 1rem .5rem 2rem;
+  font-size: .875rem;
+  white-space: normal;
+  font-size: .875rem;
 }
 
-.pgs-navbar--sidebar .nav>li ul a:before, .pgs-navbar--sidebar .nav a.level2:before {
+/* .pgs-navbar--sidebar .nav>li ul a:before, .pgs-navbar--sidebar .nav a.level2:before {
   font-family: "Font Awesome 5 Free";
   font-weight: 900;
   content: "\f101";
@@ -1560,7 +1560,7 @@ main.affix {
   margin-right: .5em;
   color: #66645e
 }
-
+  */
 .pgs-navbar--sidebar a.static.selected {
   border-left: 4px #e52626 solid;
   font-weight: 700
@@ -1576,11 +1576,10 @@ main.affix {
   border:0 solid;
 }
 
-
 .pgs-navbar--banner .nav>li {
   margin-bottom: 0
 }
-
+  
 .pgs-navbar--banner .dropdown>a, .pgs-navbar--banner .navbar-nav a {
   text-decoration: none;
   font-weight: 600;
@@ -6366,11 +6365,13 @@ img.width-200 {
 }
 
 .list-col-count-2, .col-count-2, ul:has(.list-col-count-2), ol:has(.list-col-count-2) {
-  column-count: 2
+  column-count: 2;
+  column-gap: 2.5rem;
 }
 
 .list-col-count-3, .col-count-3, ul:has(.list-col-count-3), ol:has(.list-col-count-3) {
-  column-count: 3
+  column-count: 3;
+  column-gap: 2.5rem;
 }
 
 @media (max-width: 350px) {
