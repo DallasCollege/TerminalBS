@@ -3026,11 +3026,17 @@ margin-right:auto;
   font-weight: 800;
   display: inline-block;
   font-family: "Montserrat", "Open Sans", Helvetica, Arial, sans-serif;
-}
-
-.data-box:not(.bg-cprimary) .data-figure, .data-box:not(.bg-csecondary) .data-figure, .data-box:not(.bg-cgrey-80) .data-figure, .data-box:not(.bg-cgrey) .data-figure {
   color:#003385;
 }
+
+.data-box.bg-cprimary .data-figure, .data-box.bg-secondary .data-figure, .data-box.bg-cgrey-80 .data-figure {
+  color:#ffffff;
+}
+
+.data-box.bg-cgrey .data-figure {
+  color:#000000;
+}
+
 
 .data-figure sup {
   font-size: 58%
