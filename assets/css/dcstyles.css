@@ -2012,7 +2012,7 @@ Offset CSS
   }
 
   .pgs-banner--double .pgs-banner__image {
-    height: 15em;
+    height: 20em;
     min-height: auto
   }
 
@@ -2065,6 +2065,15 @@ Offset CSS
 
 .t4-2col-breadcrumb.pgs-breadcrumb, .t4-2col-breadcrumb.pgs-breadcrumb li:after, .t4-2col-breadcrumb.pgs-breadcrumb a {
   color: #ffffff;
+}
+
+@media screen and (min-width: 2200px) {
+  .pgs-banner.pgs-banner--double .pgs-banner__image {
+    aspect-ratio:3/2;
+  }
+  .pgs-banner--double, .pgs-banner--double .pgs-banner__title, .pgs-banner--double .pgs-banner__image {
+    min-height: 35em;
+  }  
 }
 
 @media screen and (max-width: 575px) {
@@ -2710,8 +2719,8 @@ Content Image Boxes
 }
 
 .content-image-box .cib-content h2 {
-  font-weight: 300;
-  font-size: 2em;
+  /* font-weight: 300;
+  font-size: 2em; */
   display: block;
 }
 
@@ -2739,7 +2748,7 @@ Content Image Boxes
   border-radius: 0
 }
 
-.content-image-box .cib-image {
+.content-image-box .cib-image, img.cib-image {
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -4036,6 +4045,7 @@ a span.pgs-action-link-t4,
 .pgs-action-link-t4 a {
   font-weight: 700;
   margin-right: 2rem;
+  display:inline-block;
 }
 
 .pgs-action-link--quiet,
@@ -4855,6 +4865,7 @@ a.font-bold, .font-bold {
 
 .lead {
   font-size: 1.5rem;
+  line-height:1.75em;
   font-weight: 300;
   margin: .5rem auto 1em
 }
@@ -6461,6 +6472,11 @@ img.width-200 {
   column-count: 4;
   column-gap: 2.5rem;
 }
+
+.col-count-2 li, .col-count-3 li, .col-count-4 li, .list-col-count-2 li, .list-col-count-3 li, .list-col-count-4 li {
+    display: inline-block;
+}
+
 
 @media (max-width: 350px) {
   .hidden-ip5 {
@@ -9329,11 +9345,11 @@ Full Width Styles for T4
 **************************************************
  */
 
-.no-sidebar .accordion {
-  max-width:80%;
+/*.no-sidebar .accordion {
+  max-width:80%; 
   margin-left: auto;
   margin-right:auto;
- }
+}*/
 
  .no-sidebar .video-container .accordion {
   max-width: initial;
