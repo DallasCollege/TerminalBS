@@ -8138,7 +8138,7 @@ a.grand-button.csecondary-md:hover, a.grand-button.csecondary-md:focus, a.grand-
   background-color: #fff
 }
 
-.bg-cwhite a {
+.bg-cwhite a:not(.button) {
   color: #003385;
 }
 
@@ -8150,7 +8150,7 @@ a.grand-button.csecondary-md:hover, a.grand-button.csecondary-md:focus, a.grand-
   border-color: #fff !important
 }
 
-.bg-cblack, .bg-cblack a, .cblack {
+.bg-cblack, .bg-cblack a:not(.button), .cblack {
   background-color: #000;
   color: #fff
 }
@@ -8163,7 +8163,7 @@ a.grand-button.csecondary-md:hover, a.grand-button.csecondary-md:focus, a.grand-
   border-color: #000 !important
 }
 
-.bg-cgrey, .bg-cgrey a, .cgrey {
+.bg-cgrey, .bg-cgrey a:not(.button), .cgrey {
   background-color: #e5e2d6;
   color: #000
 }
@@ -8189,7 +8189,7 @@ a.grand-button.cgrey:hover, a.grand-button.cgrey:focus, a.grand-button.bg-cgrey:
   color: #000
 }
 
-.bg-cgrey-05 a {
+.bg-cgrey-05 a:not(.button) {
   color: #003385;
 }
 
@@ -8205,7 +8205,7 @@ a.grand-button.bg-cgrey-05:hover, a.grand-button.bg-cgrey-05:focus, a.button.bg-
   color: #d6d2c4 !important
 }
 
-.bg-cgrey-20, .bg-cgrey-20 a {
+.bg-cgrey-20, .bg-cgrey-20 a:not(.button) {
   background-color: #d6d2c4;
   color: #000
 }
@@ -8222,7 +8222,7 @@ a.grand-button.bg-cgrey-20:hover, a.grand-button.bg-cgrey-20:focus, a.button.bg-
   color: #99968d !important
 }
 
-.bg-cgrey-40, .bg-cgrey-40 a {
+.bg-cgrey-40, .bg-cgrey-40 a:not(.button) {
   background-color: #99968d;
   color: #000
 }
@@ -8239,7 +8239,7 @@ a.grand-button.bg-cgrey-40:hover, a.grand-button.bg-cgrey-40:focus, a.button.bg-
   color: #66645e !important
 }
 
-.bg-cgrey-60, .bg-cgrey-60 a {
+.bg-cgrey-60, .bg-cgrey-60 a:not(.button) {
   background-color: #66645e;
   color: #fff
 }
@@ -8257,7 +8257,7 @@ a.grand-button.bg-cgrey-60:hover, a.grand-button.bg-cgrey-60:focus, a.button.bg-
   color: #333
 }
 
-.bg-cgrey-80, .bg-cgrey-80 a {
+.bg-cgrey-80, .bg-cgrey-80 a:not(.button) {
   background-color: #333;
   color: #fff
 }
