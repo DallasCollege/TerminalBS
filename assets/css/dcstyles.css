@@ -1578,7 +1578,7 @@ main.affix {
 .pgs-navbar--banner .nav>li {
   margin-bottom: 0
 }
-  
+
 .pgs-navbar--banner .dropdown>a, .pgs-navbar--banner .navbar-nav a {
   text-decoration: none;
   font-weight: 600;
@@ -2073,7 +2073,7 @@ Offset CSS
   }
   .pgs-banner--double, .pgs-banner--double .pgs-banner__title, .pgs-banner--double .pgs-banner__image {
     min-height: 35em;
-  }  
+  }
 }
 
 @media screen and (max-width: 575px) {
@@ -2135,11 +2135,11 @@ Buttons - note need special styles for TinyMCE spans
 **************************************************
 */
 
-a.button, 
-button.button, 
-input.button, 
-a[class*="button-bg-"], 
-a span[class*="button-bg-"], 
+a.button,
+button.button,
+input.button,
+a[class*="button-bg-"],
+a span[class*="button-bg-"],
 [class*="button-bg-"] a {
   display: inline-block;
   padding: .75em 1.5em;
@@ -2328,8 +2328,8 @@ ul.button-group li:only-child .button {
 }
 
 ul.button-group li:only-child .button,
-ul.button-group.button-group--justified .button, 
-ul.button-group.button-group--justified li:first-child .button, 
+ul.button-group.button-group--justified .button,
+ul.button-group.button-group--justified li:first-child .button,
 ul.button-group.button-group--justified li:last-child .button {
   border-radius:4px
 }
@@ -4042,7 +4042,7 @@ ul.pgs-action-link-list {
   padding-left: 0
 }
 
-.pgs-action-link, 
+.pgs-action-link,
 .pgs-action-link-list a,
 a.pgs-action-link-t4,
 a span.pgs-action-link-t4,
@@ -4184,7 +4184,7 @@ ul:has(li[style*="center"]) {
 }
 
 .t4-org-card .card-body ul li a:hover:before,
-.t4-org-card .card-body ul li a:focus:before, 
+.t4-org-card .card-body ul li a:focus:before,
 .t4-location-map-info ul li a:hover:before,
 .t4-location-map-info ul li a:focus:before,
   {
@@ -4312,9 +4312,9 @@ a .txt-img-overlay__text {
 }
 
 .bg-campuses img.map-bg {
-  position: absolute; 
-  width: 100%; 
-  height: auto; 
+  position: absolute;
+  width: 100%;
+  height: auto;
   z-index: -1;
   top:150px;
 }
@@ -4332,23 +4332,23 @@ a .txt-img-overlay__text {
 .background-cover {
   background-size: cover;
   }
-  
+
   .background-bottom {
       background-repeat: no-repeat;
       background-size: 100%;
       background-position: bottom;
   }
-  
+
   .background-top {
       background-repeat: no-repeat;
       background-size: 100%;
       background-position: top;
   }
-  
+
   .background-repeat {
       background-repeat
   }
-  
+
   /* End Background Styles */
 
 /*rks*/
@@ -6519,7 +6519,7 @@ article .cprimary a:not(.button):hover, article .cprimary-lt a:not(.button):hove
   color: inherit !important
 }
 
-a:not(.button):focus, #l-header-desktop a:not(.button):hover, #sidebar a:not(.button):hover, .pgs-breadcrumb a:hover, .pgs-navbar--banner a:hover { 
+a:not(.button):focus, #l-header-desktop a:not(.button):hover, #sidebar a:not(.button):hover, .pgs-breadcrumb a:hover, .pgs-navbar--banner a:hover {
   text-decoration: none;
   outline: none;
   border-radius: 0.25rem;
@@ -8150,6 +8150,10 @@ a.grand-button.csecondary-md:hover, a.grand-button.csecondary-md:focus, a.grand-
   background-color: #fff
 }
 
+.bg-cwhite a:not(.button) {
+  color: #003385;
+}
+
 .text-cwhite, .cwhite-font {
   color: #fff !important
 }
@@ -8158,7 +8162,7 @@ a.grand-button.csecondary-md:hover, a.grand-button.csecondary-md:focus, a.grand-
   border-color: #fff !important
 }
 
-.bg-cblack, .cblack {
+.bg-cblack, .bg-cblack a:not(.button), .cblack {
   background-color: #000;
   color: #fff
 }
@@ -8171,7 +8175,7 @@ a.grand-button.csecondary-md:hover, a.grand-button.csecondary-md:focus, a.grand-
   border-color: #000 !important
 }
 
-.bg-cgrey, .cgrey {
+.bg-cgrey, .bg-cgrey a:not(.button), .cgrey {
   background-color: #e5e2d6;
   color: #000
 }
@@ -8197,6 +8201,10 @@ a.grand-button.cgrey:hover, a.grand-button.cgrey:focus, a.grand-button.bg-cgrey:
   color: #000
 }
 
+.bg-cgrey-05 a:not(.button) {
+  color: #003385;
+}
+
 .border-cgrey-05 {
   border-color: #f7f3e8 !important
 }
@@ -8209,7 +8217,7 @@ a.grand-button.bg-cgrey-05:hover, a.grand-button.bg-cgrey-05:focus, a.button.bg-
   color: #d6d2c4 !important
 }
 
-.bg-cgrey-20 {
+.bg-cgrey-20, .bg-cgrey-20 a:not(.button) {
   background-color: #d6d2c4;
   color: #000
 }
@@ -8226,7 +8234,7 @@ a.grand-button.bg-cgrey-20:hover, a.grand-button.bg-cgrey-20:focus, a.button.bg-
   color: #99968d !important
 }
 
-.bg-cgrey-40 {
+.bg-cgrey-40, .bg-cgrey-40 a:not(.button) {
   background-color: #99968d;
   color: #000
 }
@@ -8243,7 +8251,7 @@ a.grand-button.bg-cgrey-40:hover, a.grand-button.bg-cgrey-40:focus, a.button.bg-
   color: #66645e !important
 }
 
-.bg-cgrey-60 {
+.bg-cgrey-60, .bg-cgrey-60 a:not(.button) {
   background-color: #66645e;
   color: #fff
 }
@@ -8261,7 +8269,7 @@ a.grand-button.bg-cgrey-60:hover, a.grand-button.bg-cgrey-60:focus, a.button.bg-
   color: #333
 }
 
-.bg-cgrey-80, .bg-cgrey-80 a {
+.bg-cgrey-80, .bg-cgrey-80 a:not(.button) {
   background-color: #333;
   color: #fff
 }
@@ -9179,7 +9187,7 @@ li.page-item a {
   }
 
   &:hover {
-  z-index: 2; 
+  z-index: 2;
     background-color: #E9F2FF;
   }
 
@@ -9358,7 +9366,7 @@ Full Width Styles for T4
  */
 
 /*.no-sidebar .accordion {
-  max-width:80%; 
+  max-width:80%;
   margin-left: auto;
   margin-right:auto;
 }*/
