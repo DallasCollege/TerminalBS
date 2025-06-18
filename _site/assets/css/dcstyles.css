@@ -3483,8 +3483,12 @@ h2.accordion-header, h3.accordion-header, h4.accordion-header {margin-top: .375e
   background:transparent
 }
 
+.accordion.accordion-item-quiet {
+    background: inherit;
+}
+
 .accordion-item-quiet .accordion-button:not(.collapsed) {
-  background: #ffffff;
+    background: inherit;
 }
 
 .accordion-button:not(.collapsed) {
@@ -4486,11 +4490,19 @@ a.button.button-off {
   color:#333333;
 }
 
+/* Table */
 caption {
   color: #66645e;
-  font-size: .875rem
+  font-size: .875rem;
+  caption-side:top;
 }
 
+thead.bg-cprimary, .bg-cprimary th {
+  background: #003385;
+  color: #ffffff;
+}
+
+/* End Table */
 
 #LayoutBody .hero-overlay-content {
   margin-top: 2em;
