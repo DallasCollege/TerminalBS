@@ -9042,11 +9042,6 @@ span.cred-time {
   margin-left: 15px;
 }
 
-/* max width for when only one type of credential is used */
-.program-glance, .credential-info {
-    max-width: 50%;
-}
-
 #jobs .jobs-data {
   font-size:1.875rem;
   font-weight:800;

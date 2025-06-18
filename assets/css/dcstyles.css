@@ -4490,9 +4490,9 @@ a.button.button-off {
   color:#333333;
 }
 
+/* Table */
 caption {
   color: #66645e;
-  font-size: .875rem
   font-size: .875rem;
   caption-side:top;
 }
@@ -9040,11 +9040,6 @@ span.cred-details {
 
 span.cred-time {
   margin-left: 15px;
-}
-
-/* max width for when only one type of credential is used */
-.program-glance, .credential-info {
-    max-width: 50%;
 }
 
 #jobs .jobs-data {
