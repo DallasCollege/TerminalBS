@@ -1,0 +1,72 @@
+#l-nav-primary,
+#l-nav-utility,
+#l-logo-bar,
+#l-footer__cta,
+#l-footer__main,
+#l-footer__contact,
+#l-header-mobile {
+    display: none;
+}
+    .boxshadow .WithBackground .PageMainContent {
+        box-shadow: none;
+    }
+
+    #calc_Results {
+        display: none;
+    }
+
+    #calc_Image {
+        margin-bottom: 10px;
+    }
+            .range {
+            margin: 2rem;
+            text-align:center;
+            padding:1rem 0px 1rem 0px;
+        }
+        .range input {
+            display: none;
+        }
+        #s4-workspace .range .question p{
+            font-size:1.25rem;
+            font-weight:bold;
+        }
+        .slider {
+            display: flex;
+            width: 75%;
+            justify-content: space-between;
+            position: relative;
+            background: linear-gradient(to top, #999, #888 0.4rem, #999 0rem, #888 0.5rem, transparent 0.6rem);
+            padding-bottom:21px;
+margin:0 auto;
+        }
+        .slider label {
+            cursor: pointer;
+            position: relative;
+            text-align: center;
+            font-weight: bold;
+            color: #111111;
+            margin-bottom: 12px;
+}
+
+        .slider label:after {
+            content: '';
+            position: absolute;
+            top: 0; left: 50%;
+            width: 25px;
+            height: 25px;
+            background: #888;
+            border-radius: 100%;
+            margin-left: -.7rem;
+            margin-top:37px;
+            z-index: 2;
+        }
+
+        .checkedClass:after{
+            background: #E52626!important;
+        }
+        .checkedClass{
+            color:#E52626!important;
+        }
+	div#calc_Number {
+    margin: 40px;
+}

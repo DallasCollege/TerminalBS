@@ -2140,7 +2140,22 @@ button.button,
 input.button,
 a[class*="button-bg-"],
 a span[class*="button-bg-"],
-[class*="button-bg-"] a {
+[class*="button-bg-"] a,
+a[class*="button-blue"],
+a span[class*="button-blue"],
+[class*="button-blue"] a,
+ss-link[class*="button-blue"],
+media-item[class*="button-blue"],
+a[class*="button-red"],
+a span[class*="button-red"],
+[class*="button-red"] a,
+ss-link[class*="button-red"],
+media-item[class*="button-red"],
+a[class*="button-grey"],
+a span[class*="button-grey"],
+[class*="button-grey"] a,
+ss-link[class*="button-grey"],
+media-item[class*="button-grey"] {
   display: inline-block;
   padding: .75em 1.5em;
   margin: .25rem 0 1.25rem;
@@ -2166,7 +2181,6 @@ a.button[class*="border"], button.button[class*="border"], input.button[class*="
   border-width: 1px;
   border-style: solid
 }
-
 
 .button-file a:before {
   content: "\f02f";
@@ -2969,8 +2983,13 @@ ul.pgs-org-card__list .ico {
   max-width: 100%
 }
 
-.cb-mainimg-lg img {
-  width: 192px
+.cb-mainimg-lg img, img.cb-mainimg-lg, .card .cb-mainimg-lg img, .card img.cb-mainimg-lg {
+  width: 200px
+}
+
+.program-image {
+  text-align:center;
+  margin:1rem;
 }
 
 .feature-card.img-circle img {
@@ -4345,9 +4364,17 @@ a .txt-img-overlay__text {
       background-position: top;
   }
 
-  .background-repeat {
-      background-repeat
-  }
+.background-repeat {
+    background-repeat:repeat
+}
+
+.background-repeat-x {
+    background-repeat:repeat-x
+}
+
+.background-repeat-y {
+    background-repeat:repeat-y
+}
 
   /* End Background Styles */
 
@@ -8983,6 +9010,30 @@ input[type="checkbox"],input[type="radio"] {
   flex-wrap:wrap;
 }
 
+#sidebar .pgs-navbar--sidebar #searchclear a {
+    display: inline-block;
+    padding: 0.9em 1.5em;
+    margin: .25rem 0 1.25rem;
+    font-family: 'Open Sans', arial, helvetica, sans-serif;
+    font-size: .75rem;
+    font-weight: 600;
+    line-height: 1.5;
+    text-align: center;
+    white-space: normal;
+    vertical-align: middle;
+    -ms-touch-action: manipulation;
+    touch-action: manipulation;
+    cursor: pointer;
+    border-radius: 4px;
+    text-decoration: none;
+    color: #ffffff !important;
+}
+
+#searchclear a:hover, #searchclear a:focus {
+  border-left-width:0px;
+  border-left-style:none;
+}
+
 @media screen and (min-width: 1200px) {
 
 .program-compare-title {
@@ -9028,7 +9079,10 @@ input[type="checkbox"],input[type="radio"] {
   margin-bottom:2rem;
 }
 
-.program-glance p, .program-glance li {
+.program-glance p {
+ font-size:.875rem;
+}
+.program-glance li {
   font-size:.875rem;
   white-space: nowrap;
 }
@@ -9350,6 +9404,14 @@ a:hover .news-image img {
   border-radius: 50% !important;
 }
 
+.pgs-people-card__col.pgs-people-card__img img {
+    width: 75px;
+    height: 75px;
+    max-width: 100%;
+    border-radius: 50%;
+    text-align: center;
+}
+
 @media screen and (max-width: 575px){
   .pgs-people-card__img img {
     width: 40px;
@@ -9398,6 +9460,44 @@ TinyMCE fixes for T4
 **************************************************
 */
 
+/* Button Blue */
+a.button-blue,
+a span.button-blue,
+.button-blue a,
+ss-link.button-blue,
+ss-link.button-blue::part(t4-sslink-wc),
+media-item.button-blue,
+media-item.button-blue::part(t4-media-item-wc) {
+    background-color: #003385 !important;
+    color: #fff !important;
+    text-decoration: none;
+}
+
+/* Button Red */
+a.button-red,
+a span.button-red,
+.button-red a,
+ss-link.button-red,
+ss-link.button-red::part(t4-sslink-wc),
+media-item.button-red,
+media-item.button-red::part(t4-media-item-wc) {
+    background-color: #e52626 !important;
+    color: #fff !important;
+    text-decoration: none;
+}
+
+/* Button Grey */
+a.button-grey,
+a span.button-grey,
+.button-grey a,
+ss-link.button-grey,
+ss-link.button-grey::part(t4-sslink-wc),
+media-item.button-grey,
+media-item.button-grey::part(t4-media-item-wc) {
+    background-color: #e5e2d6 !important;
+    color: #000 !important;
+    text-decoration: none;
+}
 
 
 
