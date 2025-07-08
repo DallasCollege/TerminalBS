@@ -700,6 +700,11 @@ Footer
 **************************************************
 */
 
+.modified {
+  text-align:right;
+  margin:.25rem
+}
+
 .list-group-item { background-color:transparent; border:0; margin:0 !important; }
 
 footer h1, footer .h1, footer h2, footer .h2, footer h3, footer .h3, footer h4, footer .h4, footer h5, footer .h5, footer h6, footer .h6 {
@@ -4589,7 +4594,6 @@ ul.list-inline li:not(:last-child), ul:has(.list-inline) li:not(:last-child) {
 
 ul.button-group.list-inline li {
   margin: 0;
-  margin-right: 1px;
   padding: 0;
 }
 
@@ -8189,7 +8193,7 @@ a.grand-button.csecondary-md:hover, a.grand-button.csecondary-md:focus, a.grand-
   border-color: #fff !important
 }
 
-.bg-cblack, .bg-cblack a:not(.button), .cblack {
+.bg-cblack, .bg-cblack a:not(.button):not([class^="button-"]), .cblack {
   background-color: #000;
   color: #fff
 }
@@ -8202,7 +8206,7 @@ a.grand-button.csecondary-md:hover, a.grand-button.csecondary-md:focus, a.grand-
   border-color: #000 !important
 }
 
-.bg-cgrey, .bg-cgrey a:not(.button), .cgrey {
+.bg-cgrey, .bg-cgrey a:not(.button):not([class^="button-"]), .cgrey {
   background-color: #e5e2d6;
   color: #000
 }
@@ -8228,7 +8232,7 @@ a.grand-button.cgrey:hover, a.grand-button.cgrey:focus, a.grand-button.bg-cgrey:
   color: #000
 }
 
-.bg-cgrey-05 a:not(.button) {
+.bg-cgrey-05 a:not(.button):not([class^="button-"]):not(.button):not(.nav-link):not(.t4-org-card a) {
   color: #003385;
 }
 
@@ -8244,7 +8248,7 @@ a.grand-button.bg-cgrey-05:hover, a.grand-button.bg-cgrey-05:focus, a.button.bg-
   color: #d6d2c4 !important
 }
 
-.bg-cgrey-20, .bg-cgrey-20 a:not(.button) {
+.bg-cgrey-20, .bg-cgrey-20 a:not(.button):not([class^="button-"]):not(.button):not(.nav-link):not(.t4-org-card a) {
   background-color: #d6d2c4;
   color: #000
 }
@@ -8261,7 +8265,7 @@ a.grand-button.bg-cgrey-20:hover, a.grand-button.bg-cgrey-20:focus, a.button.bg-
   color: #99968d !important
 }
 
-.bg-cgrey-40, .bg-cgrey-40 a:not(.button) {
+.bg-cgrey-40, .bg-cgrey-40 a:not(.button):not([class^="button-"]):not(.button):not(.nav-link):not(.t4-org-card a) {
   background-color: #99968d;
   color: #000
 }
@@ -8278,7 +8282,7 @@ a.grand-button.bg-cgrey-40:hover, a.grand-button.bg-cgrey-40:focus, a.button.bg-
   color: #66645e !important
 }
 
-.bg-cgrey-60, .bg-cgrey-60 a:not(.button) {
+.bg-cgrey-60, .bg-cgrey-60 a:not(.button):not([class^="button-"]):not(.button):not(.nav-link):not(.t4-org-card a) {
   background-color: #66645e;
   color: #fff
 }
@@ -8296,7 +8300,7 @@ a.grand-button.bg-cgrey-60:hover, a.grand-button.bg-cgrey-60:focus, a.button.bg-
   color: #333
 }
 
-.bg-cgrey-80, .bg-cgrey-80 a:not(.button) {
+.bg-cgrey-80, .bg-cgrey-80 a:not(.button):not([class^="button-"]):not(.button):not(.nav-link):not(.t4-org-card a) {
   background-color: #333;
   color: #fff
 }
@@ -9404,7 +9408,7 @@ a:hover .news-image img {
   border-radius: 50% !important;
 }
 
-.pgs-people-card__col.pgs-people-card__img img {
+.pgs-people-card__col.pgs-people-card__img img:not(.col-xl-6 .pgs-people-card__col.pgs-people-card__img img) {
     width: 75px;
     height: 75px;
     max-width: 100%;
