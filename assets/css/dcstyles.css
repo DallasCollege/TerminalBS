@@ -4182,14 +4182,14 @@ ul:has(li[style*="center"]) {
   font-weight: 700;
 }
 
-.t4-org-card .card-body ul, .t4-location-map-info ul {
-  list-style: none;
-  list-style: none;
+.t4-org-card .card-body ul:not(.card-body.t4-org-card__bypass ul), .t4-location-map-info ul {
+  list-style: none; 
+  list-style: none; 
   margin-left:0px;
   padding-left: 0;
 }
 
-.t4-org-card .card-body ul li a:before, .t4-location-map-info ul li a:before {
+.t4-org-card .card-body ul li a:before:not(.card-body.t4-org-card__bypass ul li a:before), .t4-location-map-info ul li a:before {
   color: #000;
   font-family: "Font Awesome 5 Free";
   content: "\f054";
