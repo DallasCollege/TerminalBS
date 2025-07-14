@@ -132,6 +132,10 @@ li>ol, li>ul {
   margin-top: .75rem
 }
 
+ul, li {
+    list-style-type: disc; 
+}
+
 small, .small {
   font-size: .875em
 }
@@ -8300,7 +8304,7 @@ a.grand-button.bg-cgrey-60:hover, a.grand-button.bg-cgrey-60:focus, a.button.bg-
   color: #333
 }
 
-.bg-cgrey-80, .bg-cgrey-80 a:not(.button):not([class^="button-"]):not(.button):not(.nav-link):not(.t4-org-card a) {
+.bg-cgrey-80, .bg-cgrey-80 a:not(.button):not([class^="button-"]):not(.button):not(.nav-link) {
   background-color: #333;
   color: #fff
 }
@@ -9422,6 +9426,11 @@ a:hover .news-image img {
     height: 40px;
     max-width:100%;
   }
+}
+
+.row-images .image-caption {
+  font-weight:600;
+  margin-top:1rem;
 }
 
 
