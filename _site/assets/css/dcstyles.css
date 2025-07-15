@@ -4566,6 +4566,10 @@ ul.list-inline li, ul:has(.list-inline) li {
   display:inline
 }
 
+ul.button-group--justified li, ul:has(.list-inline) li {
+  display:table-cell;
+}
+
 ul.list-unstyled,
 ul:has(.list-unstyled) {
     padding-left: 0;
