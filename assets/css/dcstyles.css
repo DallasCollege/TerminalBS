@@ -8725,6 +8725,50 @@ div.csecondary-dk p a:not(.button), div.cseconary-dk p a:link:not(.button) {
   text-align:center;
 }*/
 
+/*
+**************************************************
+Big Button Blocks
+**************************************************
+*/
+
+button.accordion-button.big-button {
+    background: none;
+    border-left: 0px;
+}
+button.accordion-button.big-button {
+    text-align: center !important;
+    display: block;
+	font-size:2rem;
+	font-weight:600;
+}
+.accordion-button.big-button::after {
+    content: none;
+}
+.big-button-block .accordion-body {
+    border: 1px solid #D6D2C4;
+    border-radius: 0 0 8px 8px;
+}
+button.accordion-button.big-button.bg-csecondary {
+    background:#e52626;
+	color:#ffffff;
+}
+button.accordion-button.big-button.bg-cprimary {
+    background: #003385;
+	color:#ffffff;
+}
+button.accordion-button.big-button.bg-cblack {
+    background: #000000;
+	color:#ffffff;
+}
+button.accordion-button.big-button.bg-cprimary-dk {
+    background: #001E49;
+	color:#ffffff;
+}
+button.accordion-button.big-button.bg-csecondary-dk {
+    background: #6D0000;
+	color:#ffffff;
+}
+
 
 /*
 **************************************************
