@@ -3066,7 +3066,7 @@ margin-right:auto;
   color:#003385;
 }
 
-.data-box.bg-cprimary .data-figure, .data-box.bg-secondary .data-figure, .data-box.bg-cgrey-80 .data-figure {
+.bg-cprimary .data-figure, .bg-secondary .data-figure, .bg-cgrey-80 .data-figure, .bg-cprimary-dk .data-figure, .bg-secondary-dk .data-figure {
   color:#ffffff;
 }
 
@@ -4566,7 +4566,7 @@ ul.list-inline li, ul:has(.list-inline) li {
   display:inline
 }
 
-ul.button-group--justified li, ul:has(.list-inline) li {
+ul.button-group--justified li, ul.list-inline li a:not(.pgs-action-link-t4.list-inline) {
   display:table-cell;
 }
 
@@ -8738,8 +8738,9 @@ button.accordion-button.big-button {
 button.accordion-button.big-button {
     text-align: center !important;
     display: block;
-	font-size:2rem;
-	font-weight:600;
+	  font-size:1.5rem;
+	``font-weight:600;
+  	line-height:1.75rem;
 }
 .accordion-button.big-button::after {
     content: none;
@@ -8747,6 +8748,9 @@ button.accordion-button.big-button {
 .big-button-block .accordion-body {
     border: 1px solid #D6D2C4;
     border-radius: 0 0 8px 8px;
+}
+.big-button-block span.ico {
+    margin: 1.5rem;
 }
 button.accordion-button.big-button.bg-csecondary {
     background:#e52626;
@@ -8767,6 +8771,14 @@ button.accordion-button.big-button.bg-cprimary-dk {
 button.accordion-button.big-button.bg-csecondary-dk {
     background: #6D0000;
 	color:#ffffff;
+}
+button.accordion-button.big-button.bg-cgrey-80 {
+    background: #333333;
+	color:#ffffff;
+}
+button.accordion-button.big-button.bg-cwhite {
+    background: #ffffff;
+	color:#003385;
 }
 
 
@@ -9416,14 +9428,13 @@ a:hover .news-image img {
 }
 }
 
-.content-image-image {
+.content-image-image, .content-image-text {
   padding:2em;
 }
 
 .content-image-image img {
   border-radius:4px;
   max-width:100%;
-  margin-top:1.5em;
   display:block;
   margin-left:auto;
   margin-right:auto;
