@@ -1538,12 +1538,12 @@ main.affix {
   color: #fff
 }
 
-.pgs-navbar--sidebar .nav>li:first-of-type a:after {
+/* .pgs-navbar--sidebar .nav>li:first-of-type a:after {
   font-family: "Font Awesome 5 Free";
   content: "\f054";
   opacity: .7;
   margin-left: .5rem
-}
+} */
 
 .pgs-navbar--sidebar .nav>li ul {
   list-style-type: none;
@@ -5039,7 +5039,6 @@ a.font-bold, .font-bold {
 
 h2.module-title, h3.module-title, h2 .module-title, h3 .module-title {
   font-size: 2.5rem;
-  color: #333;
   font-family: "Montserrat", "Open Sans", Helvetica, Arial, sans-serif;
   font-weight: 800;
   margin-top: 0
@@ -6527,7 +6526,7 @@ img.width-200 {
 }
 
 .col-count-2 li, .col-count-3 li, .col-count-4 li, .list-col-count-2 li, .list-col-count-3 li, .list-col-count-4 li {
-    display: inline-block;
+  /*  display: inline-block; removed 2025-07-19 jdb to fix alignment issue in the footer */
 }
 
 
@@ -8727,6 +8726,22 @@ div.csecondary-dk p a:not(.button), div.cseconary-dk p a:link:not(.button) {
 
 /*
 **************************************************
+Professional Licensure
+**************************************************
+*/
+
+.pro-license ul li {
+    margin-bottom:0 !important
+}
+.pro-license .row {
+    padding:.75rem
+}
+.pro-license .row:nth-child(even) {
+    background:#efefef;
+}
+
+/*
+**************************************************
 Big Button Blocks
 **************************************************
 */
@@ -8813,6 +8828,12 @@ Featured News layout
 }
 @media screen and (max-width: 991px){
   .news-featured-block { padding:2rem 0 1rem; }
+}
+
+.news-group-container .news-container .news-text h3 {
+    margin-top: 0;
+    font-size: 1rem;
+    font-weight: 700;
 }
 
 /*
@@ -9000,6 +9021,13 @@ Full News Layout Themes
   color:#fff;
 }
 
+.news-grey-theme, .news-blue-theme {
+-webkit-box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  -moz-box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  -ms-box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  -o-box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06)
+}
 
 /*
 **************************************************
