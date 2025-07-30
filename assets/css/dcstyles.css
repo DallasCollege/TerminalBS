@@ -133,7 +133,7 @@ li>ol, li>ul {
 }
 
 ul, li {
-    list-style-type: disc; 
+    list-style-type: disc;
 }
 
 small, .small {
@@ -4192,7 +4192,7 @@ ul:has(li[style*="center"]) {
 }
 
 .t4-org-card .card-body ul, .t4-location-map-info ul {
-  list-style: none; 
+  list-style: none;
   /* margin-left:0px;  */
   padding-left: 0;
 }
@@ -8006,7 +8006,7 @@ ul.contact-info li.extra.contact-desktop:before {
   color: #fff
 }
 
-.bg-cprimary a, .cprimary a, .bg-cprimary h2, .bg-cprimary h3, .bg-cprimary h4, .bg-cprimary h5, .cprimary h2, .cprimary h3, .cprimary h4, .cprimary h5 {
+.bg-cprimary a, .cprimary a, .bg-cprimary h2, .bg-cprimary h3, .bg-cprimary h4, .bg-cprimary h5, .bg-cprimary h6, .cprimary h2, .cprimary h3, .cprimary h4, .cprimary h5, .cprimary h6 {
   color: #fff
 }
 
@@ -8065,7 +8065,7 @@ a.grand-button.cprimary-lt:hover, a.grand-button.cprimary-lt:focus, a.grand-butt
   color: #fff
 }
 
-.bg-cprimary-dk a, .cprimary-dk a {
+.bg-cprimary-dk a, .cprimary-dk a, .bg-cprimary-dk h2, .bg-cprimary-dk h3, .bg-cprimary-dk h4, .bg-cprimary-dk h5, .bg-cprimary-dk h6, .cprimary-dk h2, .cprimary-dk h3, .cprimary-dk h4, .cprimary-dk h5, .cprimary-dk h6  {
   color: #fff
 }
 
@@ -8086,7 +8086,7 @@ a.grand-button.cprimary-dk:hover, a.grand-button.cprimary-dk:focus, a.grand-butt
   color: #000
 }
 
-.bg-cprimary-md a, .cprimary-md a {
+.bg-cprimary-md a, .cprimary-md a, .bg-cprimary-md h2, .bg-cprimary-md h3, .bg-cprimary-md h4, .bg-cprimary-md h5, .bg-cprimary-md h6  {
   color: #000
 }
 
@@ -8107,7 +8107,7 @@ a.grand-button.cprimary-md:hover, a.grand-button.cprimary-md:focus, a.grand-butt
   color: #fff
 }
 
-.bg-csecondary a, .csecondary a, .bg-csecondary h2, .bg-csecondary h3, .bg-csecondary h4, .bg-csecondary h5, .csecondary h2, .csecondary h3, .csecondary h4, .csecondary h5 {
+.bg-csecondary a, .csecondary a, .bg-csecondary h2, .bg-csecondary h3, .bg-csecondary h4, .bg-csecondary h5, .bg-csecondary h6, .csecondary h2, .csecondary h3, .csecondary h4, .csecondary h5, .csecondary h6 {
   color: #fff
 }
 
@@ -8162,7 +8162,7 @@ a.grand-button.csecondary:hover, a.grand-button.csecondary:focus, a.grand-button
   color: #fff
 }
 
-.bg-csecondary-dk a, .csecondary-dk a {
+.bg-csecondary-dk a, .csecondary-dk a, .bg-csecondary-dk h2, .bg-csecondary-dk h3, .bg-csecondary-dk h4, .bg-csecondary-dk h5, .bg-csecondary-dk h6 {
   color: #fff
 }
 
@@ -8331,6 +8331,18 @@ a.grand-button.bg-cgrey-80:hover, a.grand-button.bg-cgrey-80:focus, a.button.bg-
   background-color: #4d4d4d;
   color:#ffffff;
 }
+
+/* added heading color on dark greys/black background - rks on 2025-07-30 */
+.bg-cgrey-60 h2, .bg-cgrey-60 h3, .bg-cgrey-60 h4, .bg-cgrey-60 h5, .bg-cgrey-60 h6,
+.bg-cgrey-80 h2, .bg-cgrey-80 h3, .bg-cgrey-80 h4, .bg-cgrey-80 h5, .bg-cgrey-80 h6,
+.bg-cblack h2, .bg-cblack h3, .bg-cblack h4, .bg-cblack h5, .bg-cblack h6 {
+  color:#ffffff;
+}
+
+.bg-cgrey-40 h2, .bg-cgrey-40 h3, .bg-cgrey-40 h4, .bg-cgrey-40 h5, .bg-cgrey-40 h6 {
+  color:#000;
+}
+
 
 @media screen {
   a.bg-cprimary, a.cprimary, a.bg-cprimary-gr, a.cprimary-gr, a.bg-cprimary-dk, a.cprimary-dk, a.bg-csecondary, a.csecondary, a.bg-csecondary-gr, a.csecondary-gr, a.bg-csecondary-dk, a.csecondary-dk, a.bg-cblack, a.cblack, a.bg-cgrey-60, a.bg-cgrey-80, a.text-cgrey-80 {
