@@ -2540,7 +2540,8 @@ a.grand-button.grand-button-sm {
   display: block
 }
 
-.grand-button:not([class*="cprimary"][class*="csecondary"]) .ico {
+.grand-button:not([class*="cprimary"]):not([class*="csecondary"]) .ico, 
+.grand-button:not([class*="cprimary"]):not([class*="csecondary"]) .grand-button-label {
   color: #5d5d5d
 }
 
@@ -2558,7 +2559,7 @@ a.grand-button.grand-button-sm {
 
 .grand-button.grand-button-lg .grand-button-label, .grand-photo-button-lg .grand-button-label {
   font-size: 1.75em;
-  font-weight: 300;
+  font-weight: 600;
   display: block
 }
 
@@ -9771,3 +9772,24 @@ input#search-input::placeholder {
 .search-results .pgs-people-card.pgs-people-card--quiet {
     border: 0px solid;
 }
+
+/*
+**************************************************
+Kiosk Styles
+**************************************************
+*/
+
+.pgs-banner.t4-kiosk-banner {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+main#main__body.kiosk {
+    margin-top: 150px;
+}
+
+.kiosk-content {
+    margin: 25px;
+}
+
