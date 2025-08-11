@@ -2540,7 +2540,7 @@ a.grand-button.grand-button-sm {
   display: block
 }
 
-.grand-button:not([class*="cprimary"]):not([class*="csecondary"]) .ico, 
+.grand-button:not([class*="cprimary"]):not([class*="csecondary"]) .ico,
 .grand-button:not([class*="cprimary"]):not([class*="csecondary"]) .grand-button-label {
   color: #5d5d5d
 }
@@ -9340,6 +9340,13 @@ button#pills-home-tab, button#pills-profile-tab, button#pills-home-tab2, button#
   border-radius: 5px 5px 0 0;
 }
 
+.nav-item .currentbranch1 a {
+  border-left-width: 4px;
+  border-left-color: #e52626;
+  border-left-style: solid;
+  padding-left: .75rem;
+}
+
 /*
 **************************************************
 Pagination
@@ -9792,4 +9799,3 @@ main#main__body.kiosk {
 .kiosk-content {
     margin: 25px;
 }
-
