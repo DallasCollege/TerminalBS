@@ -1,0 +1,29 @@
+{{nav id="300" name="Return PHP Head"}}<!DOCTYPE html>
+<html dir="ltr" lang="en-US" class="no-js">
+<head>
+  	{{>headMeta}}
+   	{{>headCssScripts}}
+    {{>favicons}}
+    {{nav id="278" name="Return Code - Head"}}
+    {{nav id="309" name="Return Custom Code for Head"}}
+</head>
+<body>
+  	{{nav id="279" name="Return Code - Body Start"}}
+  	<?php if (!isset($_GET['hideHeaderFooter'])) : ?>
+  	{{nav id="275" name="Return Header"}}
+  	<div class="emergencynotice" aria-live="assertive" data-t4-emergency-notices="{{{media id="11042" layout="path/*"}}}"></div>
+  	{{nav id="276" name="Return Site Wide Announcements"}}
+  	{{#not (nav id="292" name="Return Landing Page Banner") ~}}
+    		{{>breadcrumbsBar}}
+    {{~/not}}
+  	{{nav id="292" name="Return Landing Page Banner"}}
+  	{{>horizontalNavigation}}
+  	<?php endif ?>
+  	<div id="t4-bodyContainer">
+  			<main id="main__body" class="no-sidebar">
+    				<div class="container">
+      					<div class="row">
+        						<div class="col-12">
+          							<article>
+                          	{{>defaultHeadingAndSectionAnnouncements}}
+                          <!-- Search text crawl start --> 

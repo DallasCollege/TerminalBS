@@ -173,13 +173,6 @@ img {
   width: auto
 }
 
-/* jb: no idea why this is set smaller than the normal container
-@media (min-width: 1200px) {
-  .full-width-row .container {
-    width: 1170px
-  }
-} */
-
 .skiptocontent a, #skiptocontent a {
   background: #6D0000;
   border-bottom: 1px solid white;
@@ -208,12 +201,12 @@ img {
 
 /* headers and navigation  */
 
-#l-header-desktop a {
+#l-header-desktop a, #l-header-kiosk a {
   text-decoration: none;
   color: #333
 }
 
-#l-header-desktop ul, #l-header-mobile ul {
+#l-header-desktop ul, #l-header-mobile ul, #l-header-kiosk ul {
   list-style: none;
   margin-bottom: 0;
   margin-left: 0;
@@ -272,11 +265,17 @@ ul.dropdown-menu {
   max-width: 1170px
 }
 
+#l-header-kiosk .container-fluid {
+  max-width: 1400px
+}
+
+.logo-bar-slot img {
+  margin-top:2rem;
+}
+
 #l-nav-utility, #l-nav-primary {
   font-weight: 600
 }
-
-
 
 #l-nav-utility .navbar-nav>li>a {
   color: #000;
@@ -1438,22 +1437,14 @@ main.affix {
   box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06)
 }
 
-.pgs-banner--double .pgs-shortcut, .pgs-banner.pgs-banner--sub-landing .pgs-shortcut {
+.pgs-banner--double .pgs-shortcut, .pgs-banner--microsite-fw .pgs-shortcut {
   position: absolute;
   right: 0;
   bottom: 1rem;
-  background-color: rgba(0, 30, 73, 0.7);
+  background-color: rgba(0, 30, 73, 0.9);
   margin: 0;
   padding: .5rem 1rem;
-  color: #e5e2d6
-} {
-  position: absolute;
-  right: 0;
-  bottom: 1rem;
-  background-color: rgba(0, 30, 73, 0.7);
-  margin: 0;
-  padding: .5rem 1rem;
-  color: #e5e2d6
+  color: #ffffff
 }
 
 .pgs-banner--sub-landing, .pgs-banner--sub-landing .pgs-banner__image {
@@ -2683,7 +2674,7 @@ Headers and Breadcrumbs
 
 .pgs-shortcut {
   text-align: right;
-  color: #66645e
+  color: #111111
 }
 
 .l-banner--double .pgs-shortcut {
@@ -4312,33 +4303,26 @@ a .txt-img-overlay__text {
 
 .full-width-row {
   position: relative;
-  /* width: 98vw; */
   width:100vw;
   left: calc(-50vw + 50%);
-  /*! padding-left:15px;  NOTE - removed 8/25/17 - causing issues*/
-  /*! padding-right:15px; */
 }
+
+/* JB: 2025-08-05 Trying to clean up funky margins
 
 @media (min-width: 576px) {
   .full-width-row {
-  /* width: 98.5vw; */
   width:100vw;
   }
-}
+} 
 
 @media (min-width: 992px) {
   .full-width-row {
     width: 99vw
+    width:100vw;
 
   }
 }
-
-@media (min-width: 1200px) {
-  .full-width-row {
-    width: 99.5vw
-
-  }
-}
+*/
 
 @media (min-width: 1200px) {
   .full-width-row {
@@ -5041,6 +5025,12 @@ a.font-bold, .font-bold {
   margin-left: 0
 }
 
+.cb-title-light {
+  font-weight: 400;
+  font-size: 1.125em;
+  display: block
+}
+
 .cb-title-sm {
   font-weight: 700;
   font-size: 1.125em;
@@ -5060,7 +5050,7 @@ a.font-bold, .font-bold {
 }
 
 .cb-title-xl {
-  font-weight: 300;
+  font-weight: 400;
   font-size: 2.5em;
   display: block;
   margin-top: 1em
@@ -7481,7 +7471,7 @@ a:hover>img.shadow-hover {
     background-size: contain;
     width: 96px;
     height: 96px;
-    z-index:-1
+    z-index:1
   }
 
   .t4-testimonial-quote-cprimarylt:before {
@@ -7495,7 +7485,7 @@ a:hover>img.shadow-hover {
     background-size: contain;
     width: 96px;
     height: 96px;
-    z-index:-1
+    z-index:1
   }
 }
 
@@ -8216,7 +8206,12 @@ a.grand-button.csecondary-md:hover, a.grand-button.csecondary-md:focus, a.grand-
 }
 
 .bg-cwhite, .cwhite {
-  background-color: #fff
+  background-color: #fff;
+  color:#111111;
+}
+
+.bg-cwhite h2, .cwhite h2, .bg-cwhite h3, .cwhite h3, .bg-cwhite h4, .cwhite h4, .bg-cwhite h5, .cwhite h5, .bg-cwhite h6, .cwhite h6 {
+  color:#003385;
 }
 
 .bg-cwhite a:not(.button) {
@@ -9442,10 +9437,16 @@ a:hover .news-image img {
   border-radius:4px;
 }
 
-.news-thumbnail .caption {
+.news-thumbnail .caption, .news-thumbnail .caption, .feature-news .caption {
   margin-top:.5rem;
   font-size:.85rem;
 }
+
+/*
+**************************************************
+Video Embed
+**************************************************
+ */
 
 .video-container {
   margin:2rem 0 2rem 0;
@@ -9464,6 +9465,23 @@ a:hover .news-image img {
   outline:none;
   -webkit-box-shadow: 0 0 0 0.0825rem #fff, 0 0 0.0625rem 0.225rem #4D90FE !important;
   box-shadow: 0 0 0 0.0825rem #fff, 0 0 0.0625rem 0.225rem #4D90FE !important;
+}
+
+.video-container .accordion-item-quiet button.accordion-button {
+    width: auto;
+    color: inherit;
+    width: 100%;
+    background:transparent; 
+    padding:.5rem;
+}
+
+.video-container .accordion.accordion-item-quiet .accordion-button::before, .video-container .accordion.accordion-item-quiet {
+    color:inherit
+}
+
+.video-container .pgs-accordion--sm button.accordion-button {
+    font-weight:400;
+    font-size:.875rem
 }
 
 .gps-icon img {
