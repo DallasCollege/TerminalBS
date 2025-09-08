@@ -226,8 +226,8 @@ ul.dropdown-menu {
 
 /* Navbar Fix to remove row and columns */
 .navbar-right .dropdown-menu.show {
-  display: flex;
-  flex-wrap: wrap; /* Allow items to wrap into multiple lines */
+  /* display: flex; remove flex 2025-09-07 jdb to set hover to full width on right side of screen
+  flex-wrap: wrap; */ /* Allow items to wrap into multiple lines */
   padding: 0; /* Remove default padding */
   margin: 0; /* Remove default margin */
   list-style: none; /* Remove bullet points */
@@ -1445,6 +1445,17 @@ main.affix {
   margin: 0;
   padding: .5rem 1rem;
   color: #ffffff
+}
+
+.pgs-banner--double.pgs-banner--aos .pgs-shortcut {
+  position: absolute;
+  left: 0;
+  bottom: 1rem;
+  background-color: rgba(0, 30, 73, 0.9);
+  margin: 0;
+  padding: .5rem 1rem;
+  color: #ffffff;
+  right: initial;
 }
 
 .pgs-banner--sub-landing, .pgs-banner--sub-landing .pgs-banner__image {
@@ -3077,6 +3088,10 @@ margin-right:auto;
 
 .bg-cprimary .data-figure, .bg-secondary .data-figure, .bg-cgrey-80 .data-figure, .bg-cprimary-dk .data-figure, .bg-secondary-dk .data-figure {
   color:#ffffff;
+}
+
+.bg-cwhite .data-figure {
+    color: #003385;
 }
 
 .data-box.bg-cgrey .data-figure {
@@ -9611,11 +9626,11 @@ Full Width Styles for T4
   margin-right: initial;
 }
 
- .no-sidebar .pgs-grand-dropdown {
-  max-width:60%;
+ /*.no-sidebar .pgs-grand-dropdown {
+  max-width:80%;
   margin-left: auto;
   margin-right:auto;
- }
+ } removed 2025-08-29 jdb breaks with d-flex */
 
  @media screen and (max-width: 767px){
   .no-sidebar .accordion,  .no-sidebar .pgs-grand-dropdown {
@@ -9716,7 +9731,11 @@ No Javascript Style
   display:none;
 }
 
-/* Area of Study What Can I Study Tabs */
+/*
+**************************************************
+Area of Study
+**************************************************
+*/
 
 .no-js #pills-tab, .no-js #pills-tab2 {
   display:none;
@@ -9738,6 +9757,15 @@ h2.no-js {
 .no-js h2.no-js {
   display:block
 }
+
+#add-info .accordion {
+    margin: 3.5rem 0 3.5rem;
+}
+
+#add-info .accordion:first-of-type {
+    margin-top: 0;
+}
+
 
 /*
 **************************************************
