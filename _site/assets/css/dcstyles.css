@@ -894,6 +894,33 @@ footer#l-footer #l-footer__fine-print .small-print li:last-child {
   margin-right: auto;
 }
 
+@media (max-width: 992px) {
+footer ul.small-print li.list-inline-item a {
+line-height: 3rem;
+margin: 1rem !important;
+padding: .5rem;
+}
+footer ul.small-print {
+-moz-column-count: 2;
+-moz-column-gap: 5px;
+-webkit-column-count: 2;
+-webkit-column-gap: 5px;
+column-count: 2;
+}
+footer ul.small-print li.list-inline-item {
+  display:block;
+text-align:left;
+}
+}
+
+@media (max-width: 600px) {
+footer ul.small-print {
+-moz-column-count: 1;
+-webkit-column-count: 1;
+column-count: 1;
+}
+}
+
 /* End Footer */
 
 
@@ -9764,6 +9791,47 @@ h2.no-js {
 
 #add-info .accordion:first-of-type {
     margin-top: 0;
+}
+
+#formbox fieldset legend {
+    font-size: 16px;
+}
+#formbox input[type=checkbox], input[type=radio] {
+    margin: 0 0 10px 8px;
+} 
+#formbox .form-group input[type=text], #formbox .form-group input[type=email], #formbox .form-group input[type=tel], #formbox .form-group select {
+    margin: 20px 0 0 0;
+}
+#submit_button:disabled {
+  background-color: #99968d;
+  color: #dddddd;
+  cursor: not-allowed;
+  outline: none;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+  
+.captcha {
+	padding-bottom: 1em !important;
+}
+.wForm .captcha .oneField {
+	margin: 0;
+	padding: 0;
+}
+.wForm .reqMark:after {
+    color: #af252d;
+    content: " *";
+    font-size: 90%;
+}
+#tfa_61-L,
+	label[id^="tfa_61["] {
+	width: 283px !important;
+	min-width: 0px;
+}
+#tfa_65-L,
+	label[id^="tfa_65["] {
+	width: 304px !important;
+	min-width: 0px;
 }
 
 
