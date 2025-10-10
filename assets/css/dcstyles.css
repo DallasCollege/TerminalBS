@@ -2208,7 +2208,7 @@ a span[class*="button-grey"],
 ss-link[class*="button-grey"],
 media-item[class*="button-grey"] {
   display: inline-block;
-  padding: .75em 1.5em;
+  padding: .8rem 1.5rem;
   margin: .25rem 0 1.25rem;
   font-family: 'Open Sans', arial, helvetica, sans-serif;
   font-size: 1rem;
@@ -2489,7 +2489,7 @@ ul.button-group--vertical li:last-child .button {
 }
 
 .button.button-mn {
-  font-size: .75rem;
+  font-size: .85rem;
 }
 
 .button.button-ghost .button.button-flat {
