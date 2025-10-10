@@ -1219,7 +1219,7 @@ main.affix {
   }
 }
 
-@media screen and (max-width: 991px) {
+@media screen and (max-width: 1010px) {
   #l-nav-primary .twoL {
     padding: 1em 0
   }
@@ -1240,7 +1240,7 @@ main.affix {
   }
 
   #l-header-desktop .search-slot {
-    width: 40%
+    width: 80%
   }
 
   #l-header-desktop .nav-secondary, #l-header-desktop .search-slot {
