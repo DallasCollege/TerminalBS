@@ -418,7 +418,8 @@ li.navbar-nav--seperator:before {
 }
 
 #l-header-desktop .nav-secondary .button {
-  margin-bottom: 0
+  margin-bottom: 0;
+  margin-top: 0
 }
 
 #l-header-desktop .nav-secondary, #l-header-desktop .search-slot {
@@ -1219,7 +1220,7 @@ main.affix {
   }
 }
 
-@media screen and (max-width: 991px) {
+@media screen and (max-width: 1010px) {
   #l-nav-primary .twoL {
     padding: 1em 0
   }
@@ -1240,7 +1241,7 @@ main.affix {
   }
 
   #l-header-desktop .search-slot {
-    width: 40%
+    width: 80%
   }
 
   #l-header-desktop .nav-secondary, #l-header-desktop .search-slot {
@@ -2208,7 +2209,7 @@ a span[class*="button-grey"],
 ss-link[class*="button-grey"],
 media-item[class*="button-grey"] {
   display: inline-block;
-  padding: .75em 1.5em;
+  padding: .8rem 1.5rem;
   margin: .25rem 0 1.25rem;
   font-family: 'Open Sans', arial, helvetica, sans-serif;
   font-size: 1rem;
@@ -2489,7 +2490,7 @@ ul.button-group--vertical li:last-child .button {
 }
 
 .button.button-mn {
-  font-size: .75rem;
+  font-size: .85rem;
 }
 
 .button.button-ghost .button.button-flat {
