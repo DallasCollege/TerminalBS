@@ -280,9 +280,8 @@ ul.dropdown-menu {
 #l-nav-utility .navbar-nav>li>a {
   color: #000;
   display: inline-block;
-  font-size: .75rem;
-  padding: .5em 1rem;
-  /*text-transform: uppercase;*/
+  font-size: .85rem;
+  padding: .75em 1rem;
 }
 
 #l-nav-utility .navbar-nav>li>a .ico, .navbar-utility .navbar-nav>li>a .ico {
@@ -301,9 +300,6 @@ ul.dropdown-menu {
 }
 
 #l-nav-utility .dropdown-menu>li>a {
-  /*padding-top: 8px;
-  padding-bottom: 8px;*/
-  /* padding: 1em 2em; */
   color: #333;
   display: block;
 }
