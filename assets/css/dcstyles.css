@@ -418,7 +418,8 @@ li.navbar-nav--seperator:before {
 }
 
 #l-header-desktop .nav-secondary .button {
-  margin-bottom: 0
+  margin-bottom: 0;
+  margin-top: 0
 }
 
 #l-header-desktop .nav-secondary, #l-header-desktop .search-slot {
