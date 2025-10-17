@@ -1356,14 +1356,15 @@ main.affix {
   }
 }
 
-
 .module-block {
   padding: 3rem 0 2rem 0
 }
 
+/*  banners */
 
-
-/*  banner */
+section.pgs-banner {
+    margin-bottom: 0rem;
+}
 
 .pgs-banner {
   position: relative
@@ -3110,9 +3111,10 @@ margin-right:auto;
   color:#003385;
 }
 
-.bg-cprimary .data-figure, .bg-secondary .data-figure, .bg-cgrey-80 .data-figure, .bg-cprimary-dk .data-figure, .bg-secondary-dk .data-figure {
+.bg-cprimary .data-figure, .bg-secondary .data-figure, .bg-cgrey-80 .data-figure, .bg-cprimary-dk .data-figure, .bg-csecondary .data-figure, .bg-secondary-dk .data-figure {
   color:#ffffff;
 }
+
 
 .bg-cwhite .data-figure {
     color: #003385;
