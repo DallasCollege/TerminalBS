@@ -8267,6 +8267,10 @@ a.grand-button.csecondary-md:hover, a.grand-button.csecondary-md:focus, a.grand-
   border-color: #fff !important
 }
 
+a.button.bg-cwhite:hover, a.grand-button.bg-cwhite:focus, a.grand-button.bg-cwhite:hover, a.grand-button.bg-cwhite:focus a.button.bg-cwhite:hover, a.button.bg-cwhite:focus, a.button.bg-cwhite:hover, a.button.bg-cwhite:focus {
+  background-color: #d1ccb7;
+}
+
 .bg-cblack, .bg-cblack a:not(.button):not([class^="button-"]), .cblack {
   background-color: #000;
   color: #fff
