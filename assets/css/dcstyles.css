@@ -1414,7 +1414,7 @@ section.pgs-banner {
 }
 
 .pgs-banner--grand, .pgs-banner--grand .pgs-banner__image {
-  min-height: 32em
+  min-height: 32em;
 }
 
 .pgs-banner--grand .pgs-banner__title {
@@ -4992,6 +4992,7 @@ a.font-bold, .font-bold {
 
 .dc-quote blockquote {
   font-size: 1.333rem;
+  font-weight:700;
   line-height: 2.333rem;
   padding: 0;
   border: 0
@@ -7330,6 +7331,7 @@ a:hover>img.shadow-hover {
 
 .testimonial-quote blockquote {
   font-size: 1.5em;
+  font-weight:700;
   font-family: "Montserrat", "Open Sans", Helvetica, Arial, sans-serif;
   line-height: 1.75em;
   border: 0;
@@ -7388,7 +7390,8 @@ a:hover>img.shadow-hover {
 }
 
 .testimonial--mega .testimonial-quote blockquote {
-  font-size: 1.75rem
+  font-size: 1.75rem;
+  font-weight:700;
 }
 
 .testimonial .testimonial-name {
@@ -7427,6 +7430,7 @@ a:hover>img.shadow-hover {
 
 .mega-quote .quote, .mega-quote blockquote.quote {
   font-size: 2rem;
+  font-weight:700;
   line-height: 1.5em;
   text-align: center;
   padding: 0 50px 0 50px;
