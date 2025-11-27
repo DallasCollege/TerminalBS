@@ -1,6 +1,3 @@
-@import 'https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800&display=swap';
-@import 'https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&display=swap';
-
 html, body {
   font-size: 16px;
   line-height: 1.5rem
@@ -379,7 +376,7 @@ li.navbar-nav--seperator:before {
 
 #l-nav-primary ul li {
   text-align: center;
-  width: 16.6%
+  /* width: 16.6% */
 }
 
 #l-nav-primary a {
@@ -1165,6 +1162,10 @@ main.affix {
 
 #l-nav-primary a:hover, #l-nav-primary a:focus {
   border-bottom-color: #e52626
+}
+
+#l-nav-primary .bg-csecondary a:hover, #l-nav-primary .bg-csecondary a:focus {
+    border-bottom-color: #003385;
 }
 
 #l-header-desktop .navbar-default .navbar-toggler:hover .icon-bar {
@@ -9828,12 +9829,12 @@ h2.no-js {
 }
 #tfa_61-L,
 	label[id^="tfa_61["] {
-	width: 283px !important;
+	/* width: 283px !important; */
 	min-width: 0px;
 }
 #tfa_65-L,
 	label[id^="tfa_65["] {
-	width: 304px !important;
+	/* width: 304px !important; */
 	min-width: 0px;
 }
 
