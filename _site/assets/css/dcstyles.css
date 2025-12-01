@@ -3586,6 +3586,7 @@ h2.accordion-header, h3.accordion-header, h4.accordion-header {margin-top: .375e
 
 .accordion-item button.accordion-button, .accordion-item-quiet button.accordion-button {
   font-size: 1.15rem;
+  font-weight:700
 }
 
 .pgs-accordion--sm button.accordion-button {
