@@ -57,7 +57,7 @@ h6, .h6 {
 }
 
 .h1 .small, .h1 small, .h2 .small, .h2 small, .h3 .small, .h3 small, .h4 .small, .h4 small, .h5 .small, .h5 small, .h6 .small, .h6 small, h1 .small, h1 small, h2 .small, h2 small, h3 .small, h3 small, h4 .small, h4 small, h5 .small, h5 small, h6 .small, h6 small {
-  font-weight: 400;
+  font-weight: 600;
   line-height: 1;
   color: #66645E;
 }
@@ -4269,13 +4269,10 @@ ul:has(li[style*="center"]) {
 .t4-org-card .card-body ul li a:focus:before,
 .t4-location-map-info ul li a:hover:before,
 .t4-location-map-info ul li a:focus:before,
-  {
+{
   margin-right: .25rem;
   margin-left: .25rem;
 }
-
-
-
 
 /* End Action Links */
 
@@ -4348,6 +4345,20 @@ a .txt-img-overlay__text {
   position: relative;
   width:100vw;
   left: calc(-50vw + 50%);
+}
+
+/* Ensure background-size is set for larger screens */
+.module-block.full-width-row[style*="background-image"] { 
+background-size: cover;
+background-position: center;
+background-repeat: no-repeat;
+}
+
+/* Remove background on mobile */
+@media (max-width: 767px) {
+  .module-block.full-width-row {
+    background-image: none !important;
+  }
 }
 
 /* JB: 2025-08-05 Trying to clean up funky margins
