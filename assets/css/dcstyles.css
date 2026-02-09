@@ -7360,19 +7360,20 @@ a:hover>img.shadow-hover {
   line-height: 1.75em
 }
 
+/* Removing Quotation Styles
+
 .t4-testimonial-quote:before {
   position: absolute;
   content: '';
   top: 0;
   left: -112px;
   background-image: url("https://www.dallascollege.edu/publishingimages/icons/dc-quotes-open-cgrey-05.svg");
-  /* background-image: url("<t4 type="media" id="23280" formatter="path/*" />"); */
+  background-image: url("<t4 type="media" id="23280" formatter="path/*" />"); 
   background-repeat: no-repeat;
   background-size: contain;
   width: 96px;
   height: 96px
 }
-
 
 .t4-testimonial-quote-cprimarylt:before {
   position: absolute;
@@ -7380,13 +7381,12 @@ a:hover>img.shadow-hover {
   top: 0;
   left: -112px;
   background-image: url("https://www.dallascollege.edu/PublishingImages/icons/dc-quotes-open-cprimary-lt.svg");
-  /* background-image: url("<t4 type="media" id="23282" formatter="path/*" />"); */
+  background-image: url("<t4 type="media" id="23282" formatter="path/*" />"); 
   background-repeat: no-repeat;
   background-size: contain;
   width: 96px;
   height: 96px
 }
-
 
 .testimonial--mega .testimonial-quote:after {
   position: absolute;
@@ -7394,12 +7394,13 @@ a:hover>img.shadow-hover {
   top: 0;
   right: -112px;
   background-image: url("https://www.dallascollege.edu/publishingimages/icons/dc-quotes-close-cgrey-05.svg");
-  /* background-image: url("<t4 type="media" id="23276" formatter="path/*" />"); */
+  background-image: url("<t4 type="media" id="23276" formatter="path/*" />"); 
   background-repeat: no-repeat;
   background-size: contain;
   width: 96px;
   height: 96px
-}
+} 
+Removing Quotation Styles */
 
 .testimonial--mega .testimonial-quote blockquote {
   font-size: 1.75rem;
@@ -7507,7 +7508,6 @@ a:hover>img.shadow-hover {
   position:relative;
 }
 
-
 .t4-testimonial-name {
   font-family: "Montserrat", "Open Sans", Helvetica, Arial, sans-serif;
   font-weight: bold;
@@ -7516,7 +7516,11 @@ a:hover>img.shadow-hover {
 .t4-testimonial-title {
   font-size: .875em
 }
+.t4-testimonial--mega .t4-testimonial-quote blockquote {
+  font-size:1.5rem;
+}
 
+/* Removing Quotation Styles
 @media (min-width: 768px) {
   .t4-testimonial-quote:before {
     position: absolute;
@@ -7524,33 +7528,27 @@ a:hover>img.shadow-hover {
     top: 0;
     left: -90px;
     background-image: url("https://www.dallascollege.edu/publishingimages/icons/dc-quotes-open-cgrey-05.svg");
-    /* background-image: url("<t4 type="media" id="23280" formatter="path/*" />"); */
+    background-image: url("<t4 type="media" id="23280" formatter="path/*" />"); 
     background-repeat: no-repeat;
     background-size: contain;
     width: 96px;
     height: 96px;
     z-index:1
   }
-
   .t4-testimonial-quote-cprimarylt:before {
     position: absolute;
     content: '';
     top: 0;
     left: -90px;
     background-image: url("https://www.dallascollege.edu/PublishingImages/icons/dc-quotes-open-cprimary-lt.svg");
-    /* background-image: url("<t4 type="media" id="23282" formatter="path/*" />"); */
+    background-image: url("<t4 type="media" id="23282" formatter="path/*" />"); 
     background-repeat: no-repeat;
     background-size: contain;
     width: 96px;
     height: 96px;
     z-index:1
   }
-}
-
-.t4-testimonial--mega .t4-testimonial-quote blockquote {
-  font-size:1.5rem;
-}
-
+} 
 @media (min-width: 768px) {
   .t4-testimonial--mega .t4-testimonial-quote:before {
     position: absolute;
@@ -7558,40 +7556,38 @@ a:hover>img.shadow-hover {
     top: 0;
     right: -100px;
     background-image: url("https://www.dallascollege.edu/publishingimages/icons/dc-quotes-open-cgrey-05.svg");
-    /* background-image: url("<t4 type="media" id="23280" formatter="path/*" />"); */
+    background-image: url("<t4 type="media" id="23280" formatter="path/*" />"); 
     background-repeat: no-repeat;
     background-size: contain;
     width: 96px;
     height: 96px
   }
-
-
   .t4-testimonial--mega-secondary .t4-testimonial-quote-cprimarylt:before {
     position: absolute;
     content: '';
     top: 0;
     right: -100px;
     background-image: url("https://www.dallascollege.edu/PublishingImages/icons/dc-quotes-open-csecondary.svg");
-    /* background-image: url("<t4 type="media" id="23284" formatter="path/*" />"); */
+    background-image: url("<t4 type="media" id="23284" formatter="path/*" />"); 
     background-repeat: no-repeat;
     background-size: contain;
     width: 96px;
     height: 96px
   }
-
   .t4-testimonial--mega .t4-testimonial-quote-cprimarylt:after {
     position: absolute;
     content: '';
     top: 0;
     right: -100px;
     background-image: url("https://www.dallascollege.edu/publishingimages/icons/dc-quotes-close-cgrey-05.svg");
-    /* background-image: url("<t4 type="media" id="23276" formatter="path/*" />"); */
+    background-image: url("<t4 type="media" id="23276" formatter="path/*" />"); 
     background-repeat: no-repeat;
     background-size: contain;
     width: 96px;
     height: 96px
   }
 }
+Removing Quotation Styles */
 
 .dc-quote__text {
   font-family: montserrat;
