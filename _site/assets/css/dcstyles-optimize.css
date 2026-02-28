@@ -1,20 +1,30 @@
+:root {
+  --color-primary: #003385;
+  --color-text: #333;
+  --color-cprimary-dk: #001E49;
+  --shadow-default: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  --font-primary: "Open Sans", Helvetica, Arial, sans-serif;
+  --font-header: "Montserrat", "Open Sans", Helvetica, Arial, sans-serif;
+}
+
 html, body {
   font-size: 16px;
   line-height: 1.5rem
 }
 
 body {
-  font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+  font-family: var(--font-primary);
   font-size: 1rem !important;
   -webkit-overflow-scrolling: touch;
-  color: #333
+  color: var(--color-text);
+  font-weight:400;
 }
 
 /* headings */
-h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
-  font-family: "Montserrat", "Open Sans", Helvetica, Arial, sans-serif;
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+  font-family: var(--font-header);
   font-weight: 700;
-  color: #003385;
+  color: var(--color-primary);
   margin-bottom: 1rem;
   line-height: 1.5em
 }
@@ -27,34 +37,17 @@ h4, .h4, h5, .h5, h6, .h6 {
   margin-top: 1em
 }
 
-h1, .h1 {
-  font-size: 2rem;
-  font-weight: 800
-}
+h1, .h1 { font-size: 2rem; font-weight: 800 }
 
-h2, .h2 {
-  font-size: 1.5rem
-}
+h2, .h2 { font-size: 1.5rem }
 
-h3, .h3 {
-  font-size: 1.25rem
-}
+h3, .h3 { font-size: 1.25rem }
 
-h4, .h4, .fs-5s {
-  font-weight: 700;
-  font-size: 1.125rem
-}
+h4, .h4, .fs-5s { font-size: 1.125rem; font-weight: 700 }
 
-h5, .h5 {
-  font-weight: 700;
-  font-size: 1rem
-}
+h5, .h5 {  font-size: 1rem; font-weight: 700 }
 
-h6, .h6 {
-  font-weight: 700;
-  font-size: .875rem;
-  /* text-transform: uppercase */
-}
+h6, .h6 { font-size: .875rem; }
 
 .h1 .small, .h1 small, .h2 .small, .h2 small, .h3 .small, .h3 small, .h4 .small, .h4 small, .h5 .small, .h5 small, .h6 .small, .h6 small, h1 .small, h1 small, h2 .small, h2 small, h3 .small, h3 small, h4 .small, h4 small, h5 .small, h5 small, h6 .small, h6 small {
   font-weight: 600;
@@ -62,14 +55,9 @@ h6, .h6 {
   color: #66645E;
 }
 
-.body {
-  font-size:1rem;
-  font-weight:400;
-}
-
 /* general */
 a {
-  color: #003385;
+  color: var(--color-primary);
   text-decoration: underline;
   transition: all 0.15s ease 0s
 }
@@ -166,7 +154,6 @@ code {
 }
 
 img {
-  /*max-width: inherit;*/
   width: auto
 }
 
@@ -223,22 +210,18 @@ ul.dropdown-menu {
 
 /* Navbar Fix to remove row and columns */
 .navbar-right .dropdown-menu.show {
-  /* display: flex; remove flex 2025-09-07 jdb to set hover to full width on right side of screen
-  flex-wrap: wrap; */ /* Allow items to wrap into multiple lines */
-  padding: 0; /* Remove default padding */
-  margin: 0; /* Remove default margin */
-  list-style: none; /* Remove bullet points */
+  padding: 0; 
+  margin: 0; 
+  list-style: none; 
 }
 .dropdown-menu .nav-item {
   flex: 0 0 50%;
   box-sizing: border-box;}
-
 .dropdown-menu .nav-item-full {
   flex: 0 0 100%;
   box-sizing: border-box;}
-
 .dropdown-item {
-  padding: 10px; /* Adjust padding as needed */
+  padding: 10px;
 }
 /* End Navbar Fix to remove row and columns */
 
@@ -376,7 +359,6 @@ li.navbar-nav--seperator:before {
 
 #l-nav-primary ul li {
   text-align: center;
-  /* width: 16.6% */
 }
 
 #l-nav-primary a {
@@ -469,7 +451,6 @@ li.navbar-nav--seperator:before {
 
 #top-utility-nav ul {
   width: 100vw;
-  /* margin-left: -15px; */
   margin-top: 0;
 }
 
@@ -485,8 +466,7 @@ li.navbar-nav--seperator:before {
   margin-left: 0px;
   margin-right:40px;
   margin-top: 0;
-  padding-top: 10px;
-  padding-bottom:10px
+  padding-top: 10px 0 10px;
 }
 
 #l-header-mobile #l-utility ul.dropdown-menu.show {
@@ -502,22 +482,12 @@ li.navbar-nav--seperator:before {
   color:#333;
   margin-left: 0px;
   margin-top: 0;
-  /* padding-top: 10px;
-  padding-bottom:10px */
 }
 
 #l-header-mobile #l-utility li li a:hover {
   background: #E9F2FF;
   color: #000
 }
-
-
-/* #l-header-mobile ul.navbar-nav {
-width: 100vw;
-  background: #003385;
-  margin-left: 0px;
-  margin-top: 0;
-} */
 
 #l-header-mobile ul.navbar-nav.navbar-secondary  {
   background: #001E49;
@@ -528,8 +498,6 @@ width: 100vw;
 #l-header-mobile a {
   text-decoration: none;
   font-weight: 600;
-  /* color: #fff */
-  /* color: #ffffff; */
 }
 
   /* Added These Styles (Not Sure If Necessary) */
@@ -538,16 +506,7 @@ width: 100vw;
     padding-right: 20px;
   }
 
-  /* // Edited This Existing Style (Not Sure If Necessary)
-  #l-header-mobile ul.navbar-nav {
-    width: 100vw;
-    background: #003385;
-    margin-left: 0px;
-    margin-top: 0;
-
-  }*/
-
-  #l-header-mobile .navbar-right ul.dropdown-menu { margin-left: -50vw;}
+#l-header-mobile .navbar-right ul.dropdown-menu { margin-left: -50vw;}
 
 .navbar-primary-toggle {
   margin: 0;
@@ -634,7 +593,6 @@ width: 100vw;
 
 .navbar-utility a.dropdown-toggle {
   display: inline-block;
-  /* text-transform: uppercase; */
   font-size: .875rem
 }
 
@@ -660,7 +618,6 @@ width: 100vw;
 
 #l-header-mobile .navbar-primary a, #l-header-mobile .navbar-utility .dropdown-menu a {
   padding: 1em 2em;
-  /* color: #333; */
 }
 
 #l-header-mobile .navbar-utility .dropdown-menu [class*="col-"] {
@@ -672,7 +629,6 @@ width: 100vw;
 }
 
 #l-header-mobile .navbar-nav.navbar-primary {
-  /*margin-top: 1em;*/
   margin-bottom: 1em
 }
 
@@ -1311,11 +1267,6 @@ main.affix {
     padding-top: 50px
   }
 
-  /* #main__body {
-    margin-top: 2rem;
-    margin-bottom: 2rem
-  } */
-
   .l-footer__main__popular-items__box {
     padding: 1rem !important
   }
@@ -1329,11 +1280,6 @@ main.affix {
     margin-top: 1rem !important;
     margin-right: 1.25rem
   }
-
-  /* removed based on non-sticky footer
-  #l-footer__fine-print {
-    margin-bottom: 50px
-  } */
 
   #l-footer__mobile {
     display: block
@@ -1591,13 +1537,6 @@ section.pgs-banner {
   color: #fff
 }
 
-/* .pgs-navbar--sidebar .nav>li:first-of-type a:after {
-  font-family: "Font Awesome 5 Free";
-  content: "\f054";
-  opacity: .7;
-  margin-left: .5rem
-} */
-
 .pgs-navbar--sidebar .nav>li ul {
   list-style-type: none;
   margin-bottom:1px;
@@ -1613,15 +1552,6 @@ section.pgs-banner {
   font-size: .875rem;
 }
 
-/* .pgs-navbar--sidebar .nav>li ul a:before, .pgs-navbar--sidebar .nav a.level2:before {
-  font-family: "Font Awesome 5 Free";
-  font-weight: 900;
-  content: "\f101";
-  margin-left: -1em;
-  margin-right: .5em;
-  color: #66645e
-}
-  */
 .pgs-navbar--sidebar a.static.selected {
   border-left: 4px #e52626 solid;
   font-weight: 700
@@ -1712,7 +1642,6 @@ section.pgs-banner {
   float: none;
   font-size: .875em;
   font-weight: 700;
-  /* padding: .8125rem; */
   padding: 1rem;
   background-color: #e5e2d6;
   background-image: none;
@@ -1733,7 +1662,6 @@ section.pgs-banner {
   width: 100%;
   text-align: left;
   font-family: "Montserrat";
-  /* text-transform: uppercase */
 }
 
 .pgs-navbar .navbar-toggler .ico, .pgs-navbar--sidebar .navbar-toggler .ico{
@@ -1943,14 +1871,8 @@ a.pgs-calendar__event {
   margin-bottom: .25rem
 }
 
-/* #main__body {
-  margin-top: 48px;
-} */
-
-
 .pgs-navbar--home {
   font-weight: 800;
-  /* text-transform: uppercase; */
 }
 
 .pgs-navbar--home .nav>li>a {
@@ -1965,7 +1887,6 @@ Offset CSS
 */
 
 .fwr-offset--success:before {
-  /*sets height of offest */
   height: 80px;
 }
 
@@ -1982,7 +1903,6 @@ Offset CSS
     /* at MD and above, image will be offset, under that image will be normal */
     margin-top: -5.75rem;
   }
-
 }
 
 /* End Offset CSS */
@@ -2796,8 +2716,6 @@ Content Image Boxes
 }
 
 .content-image-box .cib-content h2 {
-  /* font-weight: 300;
-  font-size: 2em; */
   display: block;
 }
 
@@ -2970,16 +2888,16 @@ ul.pgs-org-card__list .ico {
  .pgs-org-card__body.text-center {
   display: flex;
   flex-direction: column;
-  align-items: center; /* Center children horizontally */
-  justify-content: flex-end; /* Align children to the bottom */
+  align-items: center; 
+  justify-content: flex-end; 
 }
 
 .pgs-org-card__body.text-center a.button {
-  position: static; /* Remove absolute positioning */
+  position: static;
   margin-top: auto !important;
-  display: inline-block; /* Prevents the button from taking full width */
-  width: auto; /* Ensures the button's width is only as wide as its content */
-  text-align: center; /* Centers the text inside the button */
+  display: inline-block; 
+  width: auto; 
+  text-align: center; 
 }
 
 /* End Org Card */
@@ -3308,7 +3226,6 @@ margin-right:auto;
 }
 
 .award-box .cta {
-  /* text-transform: uppercase; */
   text-align: center
 }
 
@@ -3374,7 +3291,6 @@ margin-right:auto;
 .card.award-box .card-header {
   padding: .75rem 1.25rem;
   border-bottom: 1px solid rgba(0, 0, 0, 0.125);
-  /* text-transform: uppercase; */
   font-size: 14px
 }
 
@@ -3450,7 +3366,6 @@ ul.pgs-program-card__meta {
 
 .pgs-program-card__type {
   font-size: .675rem;
-  /* text-transform: uppercase; */
   font-weight: 700
 }
 
@@ -3526,7 +3441,6 @@ ul.pgs-program-card__meta {
 h2.pgs-dept-card__subhead, h3.pgs-dept-card__subhead, h4.pgs-dept-card__subhead {
   font-size: 14px;
   font-weight: bold;
-  /* text-transform: uppercase; */
   margin-top: 0;
   margin-bottom: 1em
 }
@@ -3634,12 +3548,6 @@ button.accordion-button {
   border-left: 0px solid;
   width:100%
 }
-
-/* Hide the default chevron */
-/* .accordion-button::after {
-  display: none;
- */
-
 
 .accordion .accordion-button::after {
   content: "\f13a"; /* Unicode for Font Awesome chevron-down */
@@ -3874,11 +3782,9 @@ ol+.pgs-accordion {
   background-color: #66645e;
 }
 
-
 .pgs-people-profile__img img {
   width: 200px;
   max-width:100%;
-  /* height: 200px; */
   border-radius: 50%;
   display:block;
   text-align: center;
@@ -3979,8 +3885,6 @@ h2.pgs-people-card__name, h3.pgs-people-card__name, h4.pgs-people-card__name, h5
 
 /* End Employee Directory */
 
-
-
 .pgs-tile {
   display: block;
   position: relative;
@@ -4028,8 +3932,6 @@ a.pgs-tile--container:focus .pgs-tile, a.pgs-tile--container:hover .pgs-tile {
   box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.25), 0 4px 6px -2px rgba(0, 0, 0, 0.12);
   outline: 0px
 }
-
-
 
 .pgs-grand-dropdown {
   position: relative;
@@ -4113,8 +4015,6 @@ a.pgs-tile--container:focus .pgs-tile, a.pgs-tile--container:hover .pgs-tile {
 .pgs-grand-dropdown--sm a {
   font-size: .875rem
 }
-
-
 
 /*
 **************************************************
@@ -4264,7 +4164,6 @@ ul:has(li[style*="center"]) {
   transition: all 0.15s ease 0s;
   left:-2em;
   top:.5em;
-  /* position:absolute; */
   width:2em;
   line-height:interit;
   text-align:center;
@@ -4369,23 +4268,6 @@ background-repeat: no-repeat;
     background-image: none !important;
   }
 }
-
-/* JB: 2025-08-05 Trying to clean up funky margins
-
-@media (min-width: 576px) {
-  .full-width-row {
-  width:100vw;
-  }
-} 
-
-@media (min-width: 992px) {
-  .full-width-row {
-    width: 99vw
-    width:100vw;
-
-  }
-}
-*/
 
 @media (min-width: 1200px) {
   .full-width-row {
@@ -4630,7 +4512,6 @@ table.table-striped thead tr:nth-child(even) th {
 #LayoutBody .hero-overlay-fixed {
   max-width: 300px
 }
-
 
 /*
 **************************************************
@@ -6115,7 +5996,6 @@ Width and Height Classes
   }
 }
 
-/* @media screen and (min-width: 992px) */
 @media screen and (min-width: 768px) {
   .height-md-12, .child-height-md-12 [class*="col-"] {
     min-height: 12px
@@ -6608,11 +6488,6 @@ img.width-200 {
   column-gap: 2.5rem;
 }
 
-.col-count-2 li, .col-count-3 li, .col-count-4 li, .list-col-count-2 li, .list-col-count-3 li, .list-col-count-4 li {
-  /*  display: inline-block; removed 2025-07-19 jdb to fix alignment issue in the footer */
-}
-
-
 @media (max-width: 350px) {
   .hidden-ip5 {
     display: none
@@ -7004,11 +6879,6 @@ a:hover>img.shadow-hover {
     text-align: center
   }
 
-  /* container margin creates a left to right scroll bar
-.full-width-row>.container, .full-width-row>.container-fluid {
-    margin: 0 2rem;
-  } */
-
   h2.module-title--sm, h3.module-title--sm {
     display: block;
     float: none
@@ -7369,48 +7239,6 @@ a:hover>img.shadow-hover {
   line-height: 1.75em
 }
 
-/* Removing Quotation Styles
-
-.t4-testimonial-quote:before {
-  position: absolute;
-  content: '';
-  top: 0;
-  left: -112px;
-  background-image: url("https://www.dallascollege.edu/publishingimages/icons/dc-quotes-open-cgrey-05.svg");
-  background-image: url("<t4 type="media" id="23280" formatter="path/*" />"); 
-  background-repeat: no-repeat;
-  background-size: contain;
-  width: 96px;
-  height: 96px
-}
-
-.t4-testimonial-quote-cprimarylt:before {
-  position: absolute;
-  content: '';
-  top: 0;
-  left: -112px;
-  background-image: url("https://www.dallascollege.edu/PublishingImages/icons/dc-quotes-open-cprimary-lt.svg");
-  background-image: url("<t4 type="media" id="23282" formatter="path/*" />"); 
-  background-repeat: no-repeat;
-  background-size: contain;
-  width: 96px;
-  height: 96px
-}
-
-.testimonial--mega .testimonial-quote:after {
-  position: absolute;
-  content: '';
-  top: 0;
-  right: -112px;
-  background-image: url("https://www.dallascollege.edu/publishingimages/icons/dc-quotes-close-cgrey-05.svg");
-  background-image: url("<t4 type="media" id="23276" formatter="path/*" />"); 
-  background-repeat: no-repeat;
-  background-size: contain;
-  width: 96px;
-  height: 96px
-} 
-Removing Quotation Styles */
-
 .testimonial--mega .testimonial-quote blockquote {
   font-size: 1.75rem;
   font-weight:700;
@@ -7529,75 +7357,6 @@ Removing Quotation Styles */
   font-size:1.5rem;
 }
 
-/* Removing Quotation Styles
-@media (min-width: 768px) {
-  .t4-testimonial-quote:before {
-    position: absolute;
-    content: '';
-    top: 0;
-    left: -90px;
-    background-image: url("https://www.dallascollege.edu/publishingimages/icons/dc-quotes-open-cgrey-05.svg");
-    background-image: url("<t4 type="media" id="23280" formatter="path/*" />"); 
-    background-repeat: no-repeat;
-    background-size: contain;
-    width: 96px;
-    height: 96px;
-    z-index:1
-  }
-  .t4-testimonial-quote-cprimarylt:before {
-    position: absolute;
-    content: '';
-    top: 0;
-    left: -90px;
-    background-image: url("https://www.dallascollege.edu/PublishingImages/icons/dc-quotes-open-cprimary-lt.svg");
-    background-image: url("<t4 type="media" id="23282" formatter="path/*" />"); 
-    background-repeat: no-repeat;
-    background-size: contain;
-    width: 96px;
-    height: 96px;
-    z-index:1
-  }
-} 
-@media (min-width: 768px) {
-  .t4-testimonial--mega .t4-testimonial-quote:before {
-    position: absolute;
-    content: '';
-    top: 0;
-    right: -100px;
-    background-image: url("https://www.dallascollege.edu/publishingimages/icons/dc-quotes-open-cgrey-05.svg");
-    background-image: url("<t4 type="media" id="23280" formatter="path/*" />"); 
-    background-repeat: no-repeat;
-    background-size: contain;
-    width: 96px;
-    height: 96px
-  }
-  .t4-testimonial--mega-secondary .t4-testimonial-quote-cprimarylt:before {
-    position: absolute;
-    content: '';
-    top: 0;
-    right: -100px;
-    background-image: url("https://www.dallascollege.edu/PublishingImages/icons/dc-quotes-open-csecondary.svg");
-    background-image: url("<t4 type="media" id="23284" formatter="path/*" />"); 
-    background-repeat: no-repeat;
-    background-size: contain;
-    width: 96px;
-    height: 96px
-  }
-  .t4-testimonial--mega .t4-testimonial-quote-cprimarylt:after {
-    position: absolute;
-    content: '';
-    top: 0;
-    right: -100px;
-    background-image: url("https://www.dallascollege.edu/publishingimages/icons/dc-quotes-close-cgrey-05.svg");
-    background-image: url("<t4 type="media" id="23276" formatter="path/*" />"); 
-    background-repeat: no-repeat;
-    background-size: contain;
-    width: 96px;
-    height: 96px
-  }
-}
-Removing Quotation Styles */
-
 .dc-quote__text {
   font-family: montserrat;
   text-transform: uppercase;
@@ -7623,52 +7382,6 @@ Cards: Flexcards, Award Cards, Org Cards
 .row.award-box {
   margin-bottom:2rem;
 }
-
-/*
- @media (min-width: 576px) {
-  .card-group {
-    display: table;
-    width: 100%;
-    table-layout: fixed;
-    border-spacing: 1em
-  }
-
-  .card-group .card {
-    display: table-cell;
-    vertical-align: top
-  } */
-
-  /* .card-group>.card:not(:first-child) {
-    border-top-left-radius: 4px;
-    border-bottom-left-radius: 4px;
-    border-top-left-radius: 4px;
-    border-bottom-left-radius: 4px;
-  } */
-
-}
-
-/* .card {
-  position: relative;
-  margin-bottom: .75em;
-  border: 1px solid rgba(0, 0, 0, 0.16);
-  border-radius: .25em;
-  display: block;
-  margin: 1em 0 2em 0;
-  max-width:50%;
-  min-width:250px;
-} */
-
-/* @media (max-width: 575px) {
-  .card {
-    width:100%;
-    max-width: 100%;
-    max-width:auto;
-  }
-} */
-
-/* .card-block, .card-button {
-  padding: 1.25em
-} */
 
 .card-title, span.card-title, h2.card-title, h3.card-title, h4.card-title, h5.card-title {
   display: block;
@@ -7912,7 +7625,6 @@ ul.contact-info li.extra.contact-desktop:before {
 }
 
 .pop-footer h2 {
-  /* text-transform: uppercase; */
   border-bottom-width: 5px;
   border-bottom-style: solid;
   padding-bottom: .5em
@@ -8414,7 +8126,6 @@ a.grand-button.bg-cgrey-80:hover, a.grand-button.bg-cgrey-80:focus, a.button.bg-
   color:#ffffff;
 }
 
-/* added heading color on dark greys/black background - rks on 2025-07-30 */
 .bg-cgrey-60 h2, .bg-cgrey-60 h3, .bg-cgrey-60 h4, .bg-cgrey-60 h5, .bg-cgrey-60 h6,
 .bg-cgrey-80 h2, .bg-cgrey-80 h3, .bg-cgrey-80 h4, .bg-cgrey-80 h5, .bg-cgrey-80 h6,
 .bg-cblack h2, .bg-cblack h3, .bg-cblack h4, .bg-cblack h5, .bg-cblack h6 {
@@ -8455,13 +8166,6 @@ a.grand-button.bg-cgrey-80:hover, a.grand-button.bg-cgrey-80:focus, a.button.bg-
 .alert-success .alert-link, .alert-success a {
   color: #2B542B
 }
-
-/* .alert-info, .bg-info {
-  background-color: #d9edf7 !important;
-  border-color: #bce8f1;
-  color: #214A5F
-} */
-
 
 .alert-info, .bg-info {
   background-color: #99C3FF !important;
@@ -8683,10 +8387,8 @@ div.csecondary-dk p a:not(.button), div.cseconary-dk p a:link:not(.button) {
 }
 
   .pgs-accordion .accordion-button::after {
-    /* padding-right: 40px; */
     position: absolute;
     right: 20px;
-    /* padding-right: 80px; */
 }
 
   .pgs-accordion .collapsible {
@@ -8795,11 +8497,6 @@ div.csecondary-dk p a:not(.button), div.cseconary-dk p a:link:not(.button) {
   }
 }
 
-/*# sourceMappingURL=styles.css.map */
-
-
-
-
 /* BS5 Utilities */
 
 .navbar-toggler-icon {
@@ -8823,9 +8520,6 @@ div.csecondary-dk p a:not(.button), div.cseconary-dk p a:link:not(.button) {
 .l-header-mobile__menu__search {
   margin: 1em;
 }
-/*#l-header-mobile .navbar-nav li {
-  text-align:center;
-}*/
 
 /*
 **************************************************
@@ -8909,11 +8603,9 @@ News Container Layouts
 .news-container a  {
   font-size: 16px;
   font-weight: 600;
-  /*text-decoration: none;*/
 }
 
 .news-container a:hover, a.news-title h3:hover {
-  /*text-decoration:underline;*/
   color:#BF1717;
 }
 
@@ -8953,20 +8645,12 @@ Full (default) layout
 .news-container {
   display: flex;
   flex-direction: row;
-  /* height: 100%; */
   flex: 1;
 }
 
 .news-thumb {
   flex-shrink: 0;
 }
-
-/* .news-text {
-  flex-grow: 1;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-} */
 
 .feat-news-title {
   padding-top: 0.875rem;
@@ -9015,8 +8699,6 @@ h2.news-module-no-left-margin {
 }
 .news-container {
   margin-bottom: 15px;
-  /* overflow: auto; --- this is hiding the focus outline, must disable for now */
-	/* min-height: 110px; */
 }
 .news-summary > p.small {
   font-size: 1rem !important;
@@ -9247,7 +8929,6 @@ input[type="checkbox"],input[type="radio"] {
 .program-compare-locations {
   min-height:175px
 }
-
 }
 
 .program-compare-box {
@@ -9344,7 +9025,6 @@ span.cred-time {
 
 h2#pathways {
   margin-top:3rem;
-  /* margin-bottom:5rem; */
 }
 
 p.pathway-intro {
@@ -9528,7 +9208,6 @@ Video Embed
 }
 
 .video-container .ratio:focus {
-  /* outline: 0.225rem solid #4D90FE !important; */
   outline:none;
   -webkit-box-shadow: 0 0 0 0.0825rem #fff, 0 0 0.0625rem 0.225rem #4D90FE !important;
   box-shadow: 0 0 0 0.0825rem #fff, 0 0 0.0625rem 0.225rem #4D90FE !important;
@@ -9666,23 +9345,12 @@ Full Width Styles for T4
 **************************************************
  */
 
-/*.no-sidebar .accordion {
-  max-width:80%;
-  margin-left: auto;
-  margin-right:auto;
-}*/
-
  .no-sidebar .video-container .accordion {
   max-width: initial;
   margin-left: initial;
   margin-right: initial;
 }
 
- /*.no-sidebar .pgs-grand-dropdown {
-  max-width:80%;
-  margin-left: auto;
-  margin-right:auto;
- } removed 2025-08-29 jdb breaks with d-flex */
 
  @media screen and (max-width: 767px){
   .no-sidebar .accordion,  .no-sidebar .pgs-grand-dropdown {
@@ -9850,12 +9518,10 @@ h2.no-js {
 }
 #tfa_61-L,
 	label[id^="tfa_61["] {
-	/* width: 283px !important; */
 	min-width: 0px;
 }
 #tfa_65-L,
 	label[id^="tfa_65["] {
-	/* width: 304px !important; */
 	min-width: 0px;
 }
 
