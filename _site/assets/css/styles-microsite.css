@@ -38,14 +38,11 @@
     margin-right: 0.5em
 }
 
-.navbar {
-    margin-bottom: 0
-}
-
-.dropdown-menu li {
-    margin: 0.5em 0
-}
-
+.navbar { margin-bottom: 0; }
+.navbar { font-size: 0.875em; }
+.navbar a { text-decoration: none; }
+.dropdown-menu li {margin: 0.5em 0;width: 100%;}
+.navbar a { text-decoration: none; }
 .navbar a {
     text-decoration: none
 }
@@ -123,6 +120,11 @@
     color: #fff
 }
 
+.microsite-logo {
+    margin-right: 1em;
+    display: inline-block;
+}
+
 .logo-bar-slot img {
     display: inline-block;
     height: 1.5em;
@@ -131,6 +133,15 @@
 span.site-title {
     margin-left: 1.5em;
 }
+
+h1, .h1 { font-size: 1.8rem; }
+.pgs-banner__h1 .logo-bar-slot__img { height: 2rem; opacity: 0.85; }
+.pgs-banner__h1 .logo-bar-slot__img:hover { opacity: 1; }
+.pgs-banner__h1 .site-title { display:inline-block; vertical-align: text-top; margin:0 0 0 1rem; }
+.pgs-banner__h1 a:hover { outline: 0px; }
+.pgs-banner__h1 { text-shadow: 2px 2px 12px rgba(0,0,0,1); }
+.pgs-banner__h1 h1.text-cblack {text-shadow: 0 0 0 rgba(0,0,0,0);}
+
 
 #l-header-desktop.l-header-desktop--microsite .logo-bar-slot__img:hover {
     opacity: .85
@@ -299,3 +310,42 @@ display:inline-block
         display: none !important
     }
 }
+
+/* Responsive images for banners */
+.pgs-banner:has(> .pgs-banner__image.hero-image) {
+  position: relative;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+  width: 100vw;
+}
+
+.pgs-banner--sub-landing:has(> .pgs-banner__image.hero-image) {
+    -webkit-box-shadow: 0 0px 0px 0px rgba(0, 0, 0, 0), 0 0px 0px 0px rgba(0, 0, 0, 0.0);
+    -moz-box-shadow: 0 0px 0px 0px rgba(0, 0, 0, 0), 0 0px 0px 0px rgba(0, 0, 0, 0.0);
+    -ms-box-shadow: 0 0px 0px 0px rgba(0, 0, 0, 0), 0 0px 0px 0px rgba(0, 0, 0, 0.0);
+    -o-box-shadow: 0 0px 0px 0px rgba(0, 0, 0, 0), 0 0px 0px 0px rgba(0, 0, 0, 0.0);
+    box-shadow: 0 0px 0px 0px rgba(0, 0, 0, 0), 0 0px 0px 0px rgba(0, 0, 0, 0.0); 
+}
+
+.pgs-banner--sub-landing:has(> .pgs-banner__image.hero-image), .pgs-banner--sub-landing .pgs-banner__image:has(> .pgs-banner__image.hero-image) {
+  min-height:0;
+}
+
+.pgs-banner__image.hero-image {
+  width: 100%;  
+  line-height: 0;               
+  padding: 0;   
+  height: auto;
+  min-height:0; 
+}
+
+.pgs-banner__image.hero-image picture,
+.pgs-banner__image.hero-image img {
+  display: block;
+  width: 100%;
+  height: auto;                 
+  max-width: none;           
+}
+/* End responsive images for banners */

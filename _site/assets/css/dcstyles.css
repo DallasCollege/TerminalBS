@@ -153,6 +153,18 @@ blockquote {
   padding: 10px 0 20px 30px
 }
 
+article aside {
+    border-left: 8px solid #003385 !important;
+  	background: #e5e2d6;
+    padding: 1.5rem;
+    margin:1.5rem 0;
+    margin-left: 0 !important;
+}
+
+figure:has(aside) {
+    display: block;
+}
+
 code {
   color: #6D0000;
 }
@@ -193,7 +205,8 @@ img {
   outline: 0;
   position: absolute;
   top: 0;
-  transition: top .1s ease-in, background .5s linear
+  transition: top .1s ease-in, background .5s linear;
+  z-index:1050
 }
 
 /* headers and navigation  */
@@ -1373,44 +1386,9 @@ section.pgs-banner {
 
 .pgs-banner, .pgs-banner__image, .pgs-banner--double .pgs-banner__image {
   background-size: cover;
-  background-position: center;
-  background-color: #99968d
+  background-position: left center;
+  background-color: #001E49
 }
-
-/* Responsive images for banners */
-.pgs-banner:has(> .pgs-banner__image.hero-image) {
-  position: relative;
-  left: 50%;
-  right: 50%;
-  margin-left: -50vw;
-  margin-right: -50vw;
-  width: 100vw;
-}
-
-.pgs-banner--sub-landing:has(> .pgs-banner__image.hero-image) {
-    -webkit-box-shadow: 0 0px 0px 0px rgba(0, 0, 0, 0), 0 0px 0px 0px rgba(0, 0, 0, 0.0);
-    -moz-box-shadow: 0 0px 0px 0px rgba(0, 0, 0, 0), 0 0px 0px 0px rgba(0, 0, 0, 0.0);
-    -ms-box-shadow: 0 0px 0px 0px rgba(0, 0, 0, 0), 0 0px 0px 0px rgba(0, 0, 0, 0.0);
-    -o-box-shadow: 0 0px 0px 0px rgba(0, 0, 0, 0), 0 0px 0px 0px rgba(0, 0, 0, 0.0);
-    box-shadow: 0 0px 0px 0px rgba(0, 0, 0, 0), 0 0px 0px 0px rgba(0, 0, 0, 0.0); 
-}
-
-.pgs-banner__image.hero-image {
-  width: 100%;  
-  line-height: 0;               
-  padding: 0;   
-  height: auto;
-  min-height:0; 
-}
-
-.pgs-banner__image.hero-image picture,
-.pgs-banner__image.hero-image img {
-  display: block;
-  width: 100%;
-  height: auto;                 
-  max-width: none;           
-}
-/* End responsive images for banners */
 
 .pgs-banner__h1 {
   margin-top: 0
@@ -2090,7 +2068,7 @@ Offset CSS
   }
 
   .sidebar-img img {
-    display: none
+    margin:auto;
   }
 }
 
@@ -2592,7 +2570,7 @@ a.grand-button {
 }
 
 a.grand-button:not([class*="cprimary"]) {
-  border: 2px solid #a8a8a8
+  border: 2px solid #ccc;
 }
 
 a.grand-button.grand-button-solid {
@@ -2642,7 +2620,7 @@ a.grand-button.grand-button-sm {
 
 a.grand-photo-button, a.grand-photo-button-lg, a.grand-photo-button-sm {
   display: block;
-  border: 2px solid #a8a8a8;
+  border: 2px solid #ccc;
   text-align: center;
   border-radius: 2px;
   margin-bottom: 2em;
@@ -3993,18 +3971,19 @@ h2.pgs-people-card__name, h3.pgs-people-card__name, h4.pgs-people-card__name, h5
   padding: .5em 1em .5em .5em
 }
 
-
-
 /* Employee Directory */
 .staff.button-list button {
   border: 0px;
   padding: 5px;
   margin: 2px;
   background: #ffffff;
+  min-width: 2.5rem;
+  font-size: 1.25rem;
+  font-weight: 600;
 }
 
 .staff.button-list button.selected {
-  background: #E9F2FF;
+  background: #efefef;
 }
 
 #emp-profile .ico {
@@ -4012,8 +3991,6 @@ h2.pgs-people-card__name, h3.pgs-people-card__name, h4.pgs-people-card__name, h5
 }
 
 /* End Employee Directory */
-
-
 
 .pgs-tile {
   display: block;
@@ -5135,10 +5112,10 @@ a.font-bold, .font-bold {
   display: block
 }
 
-.cb-title {
-  font-weight: 700;
-  font-size: 1.25em;
-  display: block
+.cb-title, ol.cb-list > li::marker, ul.cb-list > li::marker {
+    font-weight: 700;
+    font-size: 1.25em;
+    display: block;
 }
 
 .cb-title-lg {
@@ -7075,10 +7052,6 @@ a:hover>img.shadow-hover {
     display: none
   }
 
-  .content-image-box h2, .content-image-box h3, .content-image-box h4, .content-image-box span.cb-title {
-    text-align: center
-  }
-
   .content-image-box .cib-content {
     width: auto
   }
@@ -8702,6 +8675,10 @@ div.csecondary-dk p a:not(.button), div.cseconary-dk p a:link:not(.button) {
   .sidebar-img, #sidebar {
     display: none
   }
+  
+  .sidebar-img img {
+    margin:auto;
+  }
 
   .pgs-dept-card__col {
     float: left;
@@ -9963,12 +9940,49 @@ Kiosk Styles
     position: fixed;
     top: 0;
     width: 100%;
+    z-index:1000;
 }
 
 main#main__body.kiosk {
-    margin-top: 150px;
+    margin-top: 175px;
 }
 
 .kiosk-content {
     margin: 25px;
+}
+
+/*
+**************************************************
+Wait Well Styles
+**************************************************
+*/
+
+.waitwell-queue {
+    padding: .75rem;
+    border-bottom: 2px #e1e1e1 solid;
+}
+
+.waitwell .waitwell-queue:nth-child(odd) { background: #efefef; }
+.waitwell .waitwell-queue:nth-child(even) { background: #fff; }
+
+.pgs-action-link-t4.disabled { display:none }
+
+/*
+**************************************************
+Insight Works
+**************************************************
+*/
+
+.top-report img {
+    object-fit: cover;
+    width: 100%;
+}
+
+.report-title {
+    font-size:1.4rem;
+    line-height:1.5rem;
+}
+
+.report-summary {
+    font-size: .9rem;
 }
