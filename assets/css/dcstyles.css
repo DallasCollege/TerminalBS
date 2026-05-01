@@ -2758,10 +2758,12 @@ Content Image Boxes
 **************************************************
 */
 
-.content-image-box {
+/*
+removed with v.2 2026-04-24 jdb
+.content-image-box { 
   margin: 0 0;
   position: relative
-}
+}*/
 
 .content-image-box .cib-col-6 {
   width: 50%
@@ -9604,12 +9606,20 @@ Video Embed
   padding:2em;
 }
 
-.content-image-image img {
+.two-col-content-image {
+    padding-top: 1rem;
+}
+
+.content-image-image img, .two-col-content-image img {
   border-radius:4px;
   max-width:100%;
   display:block;
   margin-left:auto;
   margin-right:auto;
+}
+
+.two-col-content-content > :first-child:is(h2, h3, h4, h5) {
+  margin-top:0;
 }
 
 .cib-image img {
