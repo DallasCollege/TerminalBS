@@ -1387,7 +1387,15 @@ section.pgs-banner {
 .pgs-banner, .pgs-banner__image, .pgs-banner--double .pgs-banner__image {
   background-size: cover;
   background-position: left center;
-  background-color: #001E49
+  background-color: #001E49;
+}
+
+@media screen and (max-width:900px) {
+.pgs-banner, .pgs-banner__image, .pgs-banner--double .pgs-banner__image {
+  background-size: cover;
+  background-position: center;
+  background-color: #001E49;  
+}
 }
 
 .pgs-banner__h1 {
@@ -3133,6 +3141,7 @@ margin-right:auto;
   display: inline-block;
   font-family: "Montserrat", "Open Sans", Helvetica, Arial, sans-serif;
   color:#003385;
+  line-height: 2rem;
 }
 
 .bg-cprimary .data-figure, .bg-secondary .data-figure, .bg-cgrey-80 .data-figure, .bg-cprimary-dk .data-figure, .bg-csecondary .data-figure, .bg-secondary-dk .data-figure {
@@ -4256,13 +4265,21 @@ ul:has(li[style*="center"]) {
   font-weight: 700;
 }
 
-.t4-org-card .card-body ul, .t4-location-map-info ul {
+.t4-org-card .card-body ul:has(li a),
+.t4-location-map-info ul:has(li a) {
   list-style: none;
-  /* margin-left:0px;  */
   padding-left: 0;
 }
 
-.t4-org-card .card-body ul li a:before, .t4-location-map-info ul li a:before {
+.t4-org-card .card-body ul li a,
+.t4-location-map-info ul li a {
+  display: inline-block;
+  padding-left: 0;
+  position: relative;
+}
+
+.t4-org-card .card-body ul li > a:first-child:before,
+.t4-location-map-info ul li > a:first-child:before {
   color: #000;
   font-family: "Font Awesome 5 Free";
   content: "\f054";
