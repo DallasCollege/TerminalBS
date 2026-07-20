@@ -8090,6 +8090,10 @@ ul.contact-info li.extra.contact-desktop:before {
   color: #fff
 }
 
+.bg-cgrey-05 a h2,.bg-cgrey-05 a h3,.bg-cgrey-05 a h4 {
+  color:#003385;
+}
+
 .bg-cprimary-gr, .cprimary-gr {
   background: #003385;
   background: -webkit-linear-gradient(#003385, #002561);
@@ -9474,6 +9478,14 @@ li.page-item a {
   }
 }
 
+/*
+**************************************************
+Multi Action Link Block
+**************************************************
+ */
+.row.action-link-block {
+    border-top: solid 4px #e52626;
+}
 
 /*
 **************************************************
@@ -9895,6 +9907,83 @@ Online Credential Listing
 .credential-info-list a.credential {
     font-weight: 600;
 }
+
+/*
+**************************************************
+Conference Day
+**************************************************
+*/
+
+.cd-red-banner-img {
+    position: absolute;
+    right: 5%;
+}
+
+.cd-banner-img.pgs-banner--grand, .cd-banner-img.pgs-banner--grand .pgs-banner__image {
+    min-height: 38em;
+}
+
+.cd-banner {
+    position: absolute;
+    top: 15%;
+    left: 10%;
+    width: 650px;
+    padding: .5rem;
+    color:#ffffff;
+}
+
+.gotham h2, .gotham h3, .gotham h4, .gotham h5, .gotham .cb-title {
+    font-family:"gotham",
+    "Helvetica Neue", Arial,
+    "Noto Sans", "Liberation Sans",
+    sans-serif;
+    font-style: normal;
+    letter-spacing: 0.03em; /* scalable tracking for headings */
+    line-height: 1.2; /* tighter line-height is typical for headings */
+}
+
+.cd-banner h2 {
+    font-family:"gotham",
+    "Helvetica Neue", Arial,
+    "Noto Sans", "Liberation Sans",
+    sans-serif;
+    font-style: normal;
+    letter-spacing: 0.03em; /* scalable tracking for headings */
+    line-height: 1.2; /* tighter line-height is typical for headings */
+    color:#ffffff;
+}
+
+span.sub-banner-lead {
+    text-transform: uppercase;
+    font-size: 1.75rem;
+    font-weight:400;
+}
+
+span.banner-lead {
+    text-transform: uppercase;
+    font-size: 5rem;
+    display: block;
+    margin-top: 0rem;
+    line-height: 5.5rem;
+    font-weight: 800;
+}
+
+.cd-banner-main {
+    border-bottom: 3px solid #e52626;
+}
+
+.cd-banner-subtext p {
+    font-size: 1.75rem;
+}
+
+@media (max-width: 767px) {
+.cd-banner {max-width:60%}
+span.banner-lead {
+    font-size:3rem;
+    line-height:3.25rem
+} 
+}
+
 
 /*
 **************************************************
