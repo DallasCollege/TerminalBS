@@ -9847,8 +9847,12 @@ h2.no-js {
 #formbox input[type=checkbox], input[type=radio] {
     margin: 0 0 10px 8px;
 } 
-#formbox .form-group input[type=text], #formbox .form-group input[type=email], #formbox .form-group input[type=tel], #formbox .form-group select {
+#formbox .form-group input[type=text], #formbox .form-group input[type=email], #formbox .form-group input[type=tel], #formbox .form-group input[type=date], #formbox .form-group select {
     margin: 20px 0 0 0;
+}
+
+#formbox .form-group {
+    margin-top: 1rem;
 }
 #submit_button:disabled {
   background-color: #99968d;
@@ -9929,7 +9933,7 @@ Conference Day
     left: 10%;
     width: 650px;
     padding: .5rem;
-    color:#ffffff;
+    color:#003385;
 }
 
 .gotham h2, .gotham h3, .gotham h4, .gotham h5, .gotham .cb-title {
@@ -9950,7 +9954,11 @@ Conference Day
     font-style: normal;
     letter-spacing: 0.03em; /* scalable tracking for headings */
     line-height: 1.2; /* tighter line-height is typical for headings */
-    color:#ffffff;
+    color:#003385;
+}
+
+.cd-banner-main h2 span.highlight {
+    color: #e52626;
 }
 
 span.sub-banner-lead {
