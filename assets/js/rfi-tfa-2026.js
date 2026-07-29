@@ -1,8 +1,8 @@
 document.addEventListener('DOMContentLoaded', function() {
   // RFI form on Area of Study pages
   document.getElementById('tfa_14').addEventListener('change', toggle_CE_related);
-  document.getElementById('tfa_66').addEventListener('change', toggle_PLA_related);
-  document.getElementById('tfa_67').addEventListener('change', toggle_PLA_related);
+  document.getElementById('tfa_122').addEventListener('change', toggle_CPL_related);
+  document.getElementById('tfa_123').addEventListener('change', toggle_CPL_related);
 
 //applies the automask/format to the phone field
 const phoneInput = document.getElementById('tfa_5');
@@ -88,53 +88,14 @@ if (phoneInput) {
   //submitButton.disabled = false;
   // initial on load only
   document.getElementById('submit_button').disabled = true;
+  toggle_CPL_related();
 });
                 
 
-// custom phone check moved here, from inline after input tfa_5
-//if(typeof wFORMS != 'undefined') {
-//  if(wFORMS.behaviors.validation) {
-//    wFORMS.behaviors.validation.rules['customtfa_5'] =  { selector: '*[id="tfa_5"]', check: 'validateCustom'};
-//    wFORMS.behaviors.validation.messages['customtfa_5'] = "Please enter a number in this format xxx-xxx-xxxx";
-//  }
-// }
-
-// look for CE related fields
-function toggle_CE_related() {
-    const selectedValue = this.value;
-    const targetField = document.getElementById('tfa_59');
-
-    if (['tfa_42', 'tfa_43', 'tfa_44', 'tfa_45', 'tfa_46', 'tfa_81'].includes(selectedValue)) {
-        targetField.value = true;
-    } else {
-        targetField.value = false;
-    }
-};
-
-// show PLA related field
-function toggle_PLA_related() {
-    const selected = document.querySelector('input[name="tfa_65"]:checked');
-    const target = document.getElementById('tfa_70-D');
-	
-  if (!target) return;
-    target.style.display =
-      (selected && selected.value === 'tfa_66')
-    	? 'block'
-    	: 'none';
-}
-
-  
- // changed 2026-07-28 jdb 
- //   if (selectedValue === 'tfa_66') {
- //       targetElement.style.display = 'block';
- //   } else {
- //       targetElement.style.display = 'none';
- //   }
-  
 // show PLA related field on 2026 secondary form
 function toggle_CPL_related() {
     const selected = document.querySelector('input[name="tfa_121"]:checked');
-    const target = document.getElementById('tfa_130');
+    const target = document.getElementById('tfa_130-D');
 
     if (!target) return;
         target.style.display =
@@ -150,26 +111,12 @@ function toggle_CPL_related() {
 
 // set the URL in the hidden field
 function setCurrentUrlInHiddenField() {
-  ["tfa_19", "tfa_139"].forEach(function(id) {
-    var input = document.getElementById(id);
-    if (input) {
-      input.value = window.location.href;
-    }
-  });
-}
+    const input = document.querySelector('input[name="tfa_139"]');
 
+    if (input) {
+        input.value = window.location.href;
+    }
+}
 
 // wait until the DOM is fully loaded
 document.addEventListener("DOMContentLoaded", setCurrentUrlInHiddenField);
-
-
-
-
-
-
-
-
-
-
-
-
