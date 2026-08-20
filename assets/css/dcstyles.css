@@ -1,5 +1,20 @@
 html, body {
   font-size: 16px;
+  line-height: 1.5rem;
+}
+
+body {
+  font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+  color: #333;
+}
+
+h1, h2, h3 {
+  font-family: 'Montserrat', 'Arial Black', sans-serif;
+}
+
+
+html, body {
+  font-size: 16px;
   line-height: 1.5rem
 }
 
@@ -62,10 +77,6 @@ h6, .h6 {
   color: #66645E;
 }
 
-.body {
-  font-size:1rem;
-  font-weight:400;
-}
 
 /* general */
 a {
@@ -129,8 +140,8 @@ li>ol, li>ul {
   margin-top: .75rem
 }
 
-ul, li {
-    list-style-type: disc;
+ul {
+  list-style: disc;
 }
 
 small, .small {
@@ -139,6 +150,7 @@ small, .small {
 
 blockquote {
   font-size: 18px;
+  font-weight:700;
   line-height: 1.875em;
   border-left: 8px solid #f7f3e8;
   font-family: "Montserrat";
@@ -206,7 +218,7 @@ img {
   position: absolute;
   top: 0;
   transition: top .1s ease-in, background .5s linear;
-  z-index:1050
+  z-index: 1050;
 }
 
 /* headers and navigation  */
@@ -275,12 +287,12 @@ ul.dropdown-menu {
   max-width: 1170px
 }
 
-#l-header-kiosk .container-fluid {
-  max-width: 1400px
+#l-header-kiosk .logo-bar-slot img {
+  margin-top:2rem;
 }
 
-.logo-bar-slot img {
-  margin-top:2rem;
+#l-header-kiosk .container-fluid {
+  max-width: 1400px
 }
 
 #l-nav-utility, #l-nav-primary {
@@ -339,8 +351,7 @@ li.navbar-nav--seperator:before {
 }
 
 .tools-workday {
-  background-image: url("https://dallascollege.edu/publishingimages/icons/workday.svg");
-  /* background-image: url("<t4 type="media" id="23299" formatter="path/*" />"); */
+  background-image: url("<t4 type="media" id="23299" formatter="path/*" />");
   width: 25px;
   display: inline-block;
   height: 15px;
@@ -389,7 +400,7 @@ li.navbar-nav--seperator:before {
 
 #l-nav-primary ul li {
   text-align: center;
-  /* width: 16.6% */
+  /* width: 16.6%; */
 }
 
 #l-nav-primary a {
@@ -429,7 +440,7 @@ li.navbar-nav--seperator:before {
 
 #l-header-desktop .nav-secondary .button {
   margin-bottom: 0;
-  margin-top: 0
+  margin-top:0
 }
 
 #l-header-desktop .nav-secondary, #l-header-desktop .search-slot {
@@ -928,6 +939,7 @@ column-count: 1;
 }
 }
 
+
 /* End Footer */
 
 
@@ -1370,9 +1382,12 @@ main.affix {
   }
 }
 
+
 .module-block {
   padding: 3rem 0 2rem 0
 }
+
+
 
 /* banners */
 
@@ -1387,14 +1402,14 @@ section.pgs-banner {
 .pgs-banner, .pgs-banner__image, .pgs-banner--double .pgs-banner__image {
   background-size: cover;
   background-position: left center;
-  background-color: #001E49;
+  background-color: #001E49
 }
 
 @media screen and (max-width:900px) {
 .pgs-banner, .pgs-banner__image, .pgs-banner--double .pgs-banner__image {
   background-size: cover;
   background-position: center;
-  background-color: #001E49;  
+  background-color: #001E49
 }
 }
 
@@ -1570,6 +1585,7 @@ section.pgs-banner {
 .pgs-navbar--home {
   padding: 0;
 }
+
 .pgs-navbar--home .nav-link {
     padding-left: 20px !important;
     padding-right: 20px !important;
@@ -1622,6 +1638,7 @@ section.pgs-banner {
 .pgs-navbar--sidebar .nav>li ul {
   list-style-type: none;
   margin-bottom:1px;
+  margin-top:2px;
   padding: 0
 }
 
@@ -1642,7 +1659,7 @@ section.pgs-banner {
   margin-right: .5em;
   color: #66645e
 }
-  */
+ */
 .pgs-navbar--sidebar a.static.selected {
   border-left: 4px #e52626 solid;
   font-weight: 700
@@ -2150,18 +2167,19 @@ Offset CSS
   color: #ffffff;
 }
 
+@media screen and (max-width: 575px) {
+  .pgs-calendar__item {
+    padding-bottom: 1rem
+  }
+}
+
+
 @media screen and (min-width: 2200px) {
   .pgs-banner.pgs-banner--double .pgs-banner__image {
     aspect-ratio:3/2;
   }
   .pgs-banner--double, .pgs-banner--double .pgs-banner__title, .pgs-banner--double .pgs-banner__image {
     min-height: 35em;
-  }
-}
-
-@media screen and (max-width: 575px) {
-  .pgs-calendar__item {
-    padding-bottom: 1rem
   }
 }
 
@@ -2266,21 +2284,21 @@ a.button[class*="border"], button.button[class*="border"], input.button[class*="
 }
 
 .button-file a:before {
-  content: "\f02f";
-  padding-right: .75rem;
-  font-family: "Font Awesome 5 Free";
+    content: "\f02f";
+    padding-right: .75rem;
+    font-family: "Font Awesome 5 Free";
 }
 
 .button-file a {
-font-size:.75rem;
-text-align:right;
+  font-size:.75rem;
+  text-align:right;
 }
 
 a.button-bg-cprimary-lt,
 a span.button-bg-cprimary-lt,
 .button-bg-cprimary-lt a {
-  background-color: #E9F2FF;
-  color: #000	!important;
+    background-color: #E9F2FF;
+    color: #000	!important;
 }
 
 .button-file a:hover,
@@ -2289,18 +2307,6 @@ a span.button-bg-cprimary-lt,
     outline: none;
     -webkit-box-shadow: 0 0 0 0.0825rem #fff,0 0 0.0625rem 0.225rem rgba(77,144,254,0.5);
     box-shadow: 0 0 0 0.0825rem #fff,0 0 0.0625rem 0.225rem rgba(77,144,254,0.5)
-}
-
-.button-file a.button-bg-cprimary-lt:hover,
-.button-file a span.button-bg-cprimary-lt:hover,
-.button-file.button-bg-cprimary-lt a:hover,
-.button-filea.button-bg-cprimary-lt:focus,
-.button-file a span.button-bg-cprimary-lt:focus,
-.button-bg-cprimary-lt a:focus
-{
-  outline: none;
-  -webkit-box-shadow: 0 0 0 0.0825rem #fff,0 0 0.0625rem 0.225rem rgba(77,144,254,0.5);
-  box-shadow: 0 0 0 0.0825rem #fff,0 0 0.0625rem 0.225rem rgba(77,144,254,0.5)
 }
 
 /* Button Colors for TinyMCE */
@@ -2740,7 +2746,7 @@ Headers and Breadcrumbs
 
 .pgs-shortcut {
   text-align: right;
-  color: #111111
+  color: #111111;
 }
 
 .l-banner--double .pgs-shortcut {
@@ -2768,7 +2774,7 @@ Content Image Boxes
 
 /*
 removed with v.2 2026-04-24 jdb
-.content-image-box { 
+.content-image-box {
   margin: 0 0;
   position: relative
 }*/
@@ -2819,8 +2825,8 @@ removed with v.2 2026-04-24 jdb
 }
 
 .content-image-box .cib-content h2 {
-  /* font-weight: 300;
-  font-size: 2em; */
+ /*  font-weight: 300;
+ font-size: 2em; */
   display: block;
 }
 
@@ -3130,9 +3136,9 @@ margin-right:auto;
 }
 
 .data-box-image {
-  text-align: center;
-  margin-bottom: 1.5rem;
-  min-height: 100px;
+    text-align: center;
+    margin-bottom: 1.5rem;
+    min-height: 100px;
 }
 
 .data-figure {
@@ -3148,7 +3154,6 @@ margin-right:auto;
   color:#ffffff;
 }
 
-
 .bg-cwhite .data-figure {
     color: #003385;
 }
@@ -3156,7 +3161,6 @@ margin-right:auto;
 .data-box.bg-cgrey .data-figure {
   color:#000000;
 }
-
 
 .data-figure sup {
   font-size: 58%
@@ -3583,7 +3587,7 @@ p+.pgs-dept-card, ul+.pgs-dept-card, ol+.pgs-dept-card {
 h2.accordion-header, h3.accordion-header, h4.accordion-header {margin-top: .375em; }
 
 .accordion-header button {
-  background:#e5e2d6
+  background:#f7f3e8
 }
 
 .accordion-item {
@@ -3682,13 +3686,14 @@ button.accordion-button {
   transform: rotate(180deg); /* Rotate the chevron when expanded */
 }
 
+
 .accordion.accordion-item-quiet .accordion-button::after {
   display:none
 }
 
 .accordion-item-quiet button.accordion-button {
-  width: auto;
-  color: #003385;
+    width: auto;
+    color: #003385;
 }
 
 .accordion.accordion-item-quiet .accordion-button::before {
@@ -3891,7 +3896,8 @@ ol+.pgs-accordion {
 .pgs-people-sd-card__img img {
   width: 75px;
   max-width:100%;
-  height: 75px;
+  height: auto;
+  aspect-ratio:1/1;
   border-radius: 50%;
   text-align: center;
   margin: .25em 0 -2em .25em;
@@ -3902,7 +3908,8 @@ ol+.pgs-accordion {
 .pgs-people-profile__img img {
   width: 200px;
   max-width:100%;
-  /* height: 200px; */
+  height: auto;
+  aspect-ratio:1/1;
   border-radius: 50%;
   display:block;
   text-align: center;
@@ -3947,7 +3954,8 @@ h2.pgs-people-card__name, h3.pgs-people-card__name, h4.pgs-people-card__name, h5
 
 .pgs-people-card__photo {
   width: 80px;
-  height: 80px;
+  height: auto;
+  aspect-ratio:1/1;
   background-color: #66645e;
   border-radius: 50%;
   text-align: center;
@@ -3994,7 +4002,7 @@ h2.pgs-people-card__name, h3.pgs-people-card__name, h4.pgs-people-card__name, h5
 }
 
 .staff.button-list button.selected {
-  background: #efefef;
+  background: #E9F2FF;
 }
 
 #emp-profile .ico {
@@ -4002,6 +4010,8 @@ h2.pgs-people-card__name, h3.pgs-people-card__name, h4.pgs-people-card__name, h5
 }
 
 /* End Employee Directory */
+
+
 
 .pgs-tile {
   display: block;
@@ -4307,11 +4317,11 @@ ul:has(li[style*="center"]) {
 .t4-org-card .card-body ul li a:hover:before,
 .t4-org-card .card-body ul li a:focus:before,
 .t4-location-map-info ul li a:hover:before,
-.t4-location-map-info ul li a:focus:before,
-{
+.t4-location-map-info ul li a:focus:before {
   margin-right: .25rem;
   margin-left: .25rem;
 }
+
 
 /* End Action Links */
 
@@ -4325,7 +4335,7 @@ ul.pgs-feature-list {
 
 .pgs-feature-list li {
   margin-bottom: 1.5rem;
-  display:inline-block;
+    display:inline-block;
 }
 
 .pgs-feature-list a {
@@ -4387,7 +4397,7 @@ a .txt-img-overlay__text {
 }
 
 /* Ensure background-size is set for larger screens */
-.module-block.full-width-row[style*="background-image"] { 
+.module-block.full-width-row[style*="background-image"] {
 background-size: cover;
 background-position: center;
 background-repeat: no-repeat;
@@ -4406,7 +4416,7 @@ background-repeat: no-repeat;
   .full-width-row {
   width:100vw;
   }
-} 
+}
 
 @media (min-width: 992px) {
   .full-width-row {
@@ -4456,20 +4466,20 @@ background-repeat: no-repeat;
 
 /* Background Styles */
 .background-cover {
-  background-size: cover;
-  }
+background-size: cover;
+}
 
-  .background-bottom {
-      background-repeat: no-repeat;
-      background-size: 100%;
-      background-position: bottom;
-  }
+.background-bottom {
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: bottom;
+}
 
-  .background-top {
-      background-repeat: no-repeat;
-      background-size: 100%;
-      background-position: top;
-  }
+.background-top {
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: top;
+}
 
 .background-repeat {
     background-repeat:repeat
@@ -4483,7 +4493,8 @@ background-repeat: no-repeat;
     background-repeat:repeat-y
 }
 
-  /* End Background Styles */
+
+/* End Background Styles */
 
 /*rks*/
 .dropdown-toggle::after {
@@ -4671,39 +4682,31 @@ Unordered Lists - styled to allow TinyMCE span tags
 ul.list-inline li, ul:has(.list-inline) li {
   display:inline
 }
-
-ul.button-group--justified li, ul.list-inline li a:not(.pgs-action-link-t4.list-inline) {
+ul.button-group--justified li {
   display:table-cell;
 }
-
 ul.list-unstyled,
 ul:has(.list-unstyled) {
     padding-left: 0;
     list-style: none;
 }
-
 ul.list-inline,
 ul:has(.list-inline) {
     padding-left: 0;
     list-style: none;
 }
-
-
 ul.list-inline>li:not(:last-child), ul:has(.list-inline)>li:not(:last-child) {
   padding-right: 1rem;
   padding-left: .25rem
 }
-
 ul.list-inline>li:last-of-type {
   padding-right: 0 !important;
 }
-
 .list-inline>li.label {
   padding-right: .5rem;
   padding-left: .5rem;
   margin-right: .5rem
 }
-
 ul.list-inline li:not(:last-child), ul:has(.list-inline) li:not(:last-child) {
   margin-right: .5rem;
 }
@@ -5024,8 +5027,8 @@ a.font-bold, .font-bold {
 
 .lead {
   font-size: 1.5rem;
-  line-height:1.75em;
   font-weight: 300;
+  line-height:1.75em;
   margin: .5rem auto 1em
 }
 
@@ -5144,7 +5147,7 @@ a.font-bold, .font-bold {
 }
 
 .cb-title-xl {
-  font-weight: 400;
+  font-weight: 300;
   font-size: 2.5em;
   display: block;
   margin-top: 1em
@@ -6642,7 +6645,6 @@ img.width-200 {
   /*  display: inline-block; removed 2025-07-19 jdb to fix alignment issue in the footer */
 }
 
-
 @media (max-width: 350px) {
   .hidden-ip5 {
     display: none
@@ -7396,45 +7398,44 @@ a:hover>img.shadow-hover {
 }
 
 /* Removing Quotation Styles
-
 .t4-testimonial-quote:before {
   position: absolute;
   content: '';
   top: 0;
   left: -112px;
-  background-image: url("https://www.dallascollege.edu/publishingimages/icons/dc-quotes-open-cgrey-05.svg");
-  background-image: url("<t4 type="media" id="23280" formatter="path/*" />"); 
+  background-image: url("<t4 type="media" id="23280" formatter="path/*" />");
   background-repeat: no-repeat;
   background-size: contain;
   width: 96px;
   height: 96px
 }
+
 
 .t4-testimonial-quote-cprimarylt:before {
   position: absolute;
   content: '';
   top: 0;
   left: -112px;
-  background-image: url("https://www.dallascollege.edu/PublishingImages/icons/dc-quotes-open-cprimary-lt.svg");
-  background-image: url("<t4 type="media" id="23282" formatter="path/*" />"); 
+  background-image: url("<t4 type="media" id="23282" formatter="path/*" />");
   background-repeat: no-repeat;
   background-size: contain;
   width: 96px;
   height: 96px
 }
 
+
 .testimonial--mega .testimonial-quote:after {
   position: absolute;
   content: '';
   top: 0;
   right: -112px;
-  background-image: url("https://www.dallascollege.edu/publishingimages/icons/dc-quotes-close-cgrey-05.svg");
-  background-image: url("<t4 type="media" id="23276" formatter="path/*" />"); 
+  background-image: url("<t4 type="media" id="23276" formatter="path/*" />");
   background-repeat: no-repeat;
   background-size: contain;
   width: 96px;
   height: 96px
-} 
+}
+
 Removing Quotation Styles */
 
 .testimonial--mega .testimonial-quote blockquote {
@@ -7543,6 +7544,7 @@ Removing Quotation Styles */
   position:relative;
 }
 
+
 .t4-testimonial-name {
   font-family: "Montserrat", "Open Sans", Helvetica, Arial, sans-serif;
   font-weight: bold;
@@ -7551,9 +7553,7 @@ Removing Quotation Styles */
 .t4-testimonial-title {
   font-size: .875em
 }
-.t4-testimonial--mega .t4-testimonial-quote blockquote {
-  font-size:1.5rem;
-}
+
 
 /* Removing Quotation Styles
 @media (min-width: 768px) {
@@ -7562,60 +7562,62 @@ Removing Quotation Styles */
     content: '';
     top: 0;
     left: -90px;
-    background-image: url("https://www.dallascollege.edu/publishingimages/icons/dc-quotes-open-cgrey-05.svg");
-    background-image: url("<t4 type="media" id="23280" formatter="path/*" />"); 
+    background-image: url("<t4 type="media" id="23280" formatter="path/*" />");
     background-repeat: no-repeat;
     background-size: contain;
     width: 96px;
     height: 96px;
     z-index:1
   }
+
   .t4-testimonial-quote-cprimarylt:before {
     position: absolute;
     content: '';
     top: 0;
     left: -90px;
-    background-image: url("https://www.dallascollege.edu/PublishingImages/icons/dc-quotes-open-cprimary-lt.svg");
-    background-image: url("<t4 type="media" id="23282" formatter="path/*" />"); 
+    background-image: url("<t4 type="media" id="23282" formatter="path/*" />");
     background-repeat: no-repeat;
     background-size: contain;
     width: 96px;
     height: 96px;
     z-index:1
   }
-} 
+}
+
 @media (min-width: 768px) {
+
+
   .t4-testimonial--mega .t4-testimonial-quote:before {
     position: absolute;
     content: '';
     top: 0;
     right: -100px;
-    background-image: url("https://www.dallascollege.edu/publishingimages/icons/dc-quotes-open-cgrey-05.svg");
-    background-image: url("<t4 type="media" id="23280" formatter="path/*" />"); 
+    background-image: url("<t4 type="media" id="23280" formatter="path/*" />");
     background-repeat: no-repeat;
     background-size: contain;
     width: 96px;
     height: 96px
   }
+
+
   .t4-testimonial--mega-secondary .t4-testimonial-quote-cprimarylt:before {
     position: absolute;
     content: '';
     top: 0;
     right: -100px;
-    background-image: url("https://www.dallascollege.edu/PublishingImages/icons/dc-quotes-open-csecondary.svg");
-    background-image: url("<t4 type="media" id="23284" formatter="path/*" />"); 
+    background-image: url("<t4 type="media" id="23284" formatter="path/*" />");
     background-repeat: no-repeat;
     background-size: contain;
     width: 96px;
     height: 96px
   }
+
   .t4-testimonial--mega .t4-testimonial-quote-cprimarylt:after {
     position: absolute;
     content: '';
     top: 0;
     right: -100px;
-    background-image: url("https://www.dallascollege.edu/publishingimages/icons/dc-quotes-close-cgrey-05.svg");
-    background-image: url("<t4 type="media" id="23276" formatter="path/*" />"); 
+    background-image: url("<t4 type="media" id="23276" formatter="path/*" />");
     background-repeat: no-repeat;
     background-size: contain;
     width: 96px;
@@ -7624,15 +7626,21 @@ Removing Quotation Styles */
 }
 Removing Quotation Styles */
 
+.t4-testimonial--mega .t4-testimonial-quote blockquote {
+  font-size:1.5rem;
+}
+
 .dc-quote__text {
-  font-family: montserrat;
-  text-transform: uppercase;
-  font-size: 2rem;
-  text-align: center;
-  font-weight: 800;
+font-family: montserrat;
+text-transform: uppercase;
+font-size: 2rem;
+text-align: center;
+font-weight: 800;
 }
 
 /* End Testimonials - Mega Quotes */
+
+
 
 
 /*
@@ -7710,6 +7718,29 @@ Cards: Flexcards, Award Cards, Org Cards
   border-top-right-radius: .25em;
   max-width: 100%;
   height: auto;
+}
+
+.component-library-card img {
+    width: 100%;
+    max-width: 450px;
+    aspect-ratio: 3 / 2;
+    border-top-left-radius: .25em;
+    border-top-right-radius: .25em;
+    object-fit: cover;
+    object-position: top center;
+    display: block;
+}
+
+.component-library-card .recommended {
+    border: 1px solid #d2d2dd;
+    border-radius: 2rem;
+    padding: .5rem 1rem .5rem 1rem;
+    background: #f7f7f9;
+    margin: .5rem 0;
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    font-weight: 800;
 }
 
 .card-text:last-of-type {
@@ -8109,6 +8140,10 @@ ul.contact-info li.extra.contact-desktop:before {
   color: #fff
 }
 
+.bg-cgrey-05 a h2,.bg-cgrey-05 a h3,.bg-cgrey-05 a h4 {
+  color:#003385;
+}
+
 .bg-cprimary-gr, .cprimary-gr {
   background: #003385;
   background: -webkit-linear-gradient(#003385, #002561);
@@ -8316,7 +8351,7 @@ a.grand-button.csecondary-md:hover, a.grand-button.csecondary-md:focus, a.grand-
 }
 
 a.button.bg-cwhite:hover, a.grand-button.bg-cwhite:focus, a.grand-button.bg-cwhite:hover, a.grand-button.bg-cwhite:focus a.button.bg-cwhite:hover, a.button.bg-cwhite:focus, a.button.bg-cwhite:hover, a.button.bg-cwhite:focus {
-  background-color: #d1ccb7;
+  background-color: #d1ccb7
 }
 
 .bg-cblack, .bg-cblack a:not(.button):not([class^="button-"]), .cblack {
@@ -8450,7 +8485,6 @@ a.grand-button.bg-cgrey-80:hover, a.grand-button.bg-cgrey-80:focus, a.button.bg-
 .bg-cgrey-40 h2, .bg-cgrey-40 h3, .bg-cgrey-40 h4, .bg-cgrey-40 h5, .bg-cgrey-40 h6 {
   color:#000;
 }
-
 
 @media screen {
   a.bg-cprimary, a.cprimary, a.bg-cprimary-gr, a.cprimary-gr, a.bg-cprimary-dk, a.cprimary-dk, a.bg-csecondary, a.csecondary, a.bg-csecondary-gr, a.csecondary-gr, a.bg-csecondary-dk, a.csecondary-dk, a.bg-cblack, a.cblack, a.bg-cgrey-60, a.bg-cgrey-80, a.text-cgrey-80 {
@@ -8648,6 +8682,9 @@ div.csecondary-dk p a:not(.button), div.cseconary-dk p a:link:not(.button) {
   }
 }
 
+.single-col-block > :last-child {
+    margin-bottom: 0;
+}
 
 @media print {
   html, body {
@@ -8694,9 +8731,9 @@ div.csecondary-dk p a:not(.button), div.cseconary-dk p a:link:not(.button) {
   .sidebar-img, #sidebar {
     display: none
   }
-  
+
   .sidebar-img img {
-    margin:auto;
+  margin:auto;
   }
 
   .pgs-dept-card__col {
@@ -8886,8 +8923,8 @@ button.accordion-button.big-button {
 button.accordion-button.big-button {
     text-align: center !important;
     display: block;
-	  font-size:1.5rem;
-	``font-weight:600;
+	font-size:1.5rem;
+	font-weight:600;
   	line-height:1.75rem;
 }
 .accordion-button.big-button::after {
@@ -9445,7 +9482,7 @@ Pagination
 **************************************************
  */
 
- .pagination a.currentpage {
+.pagination a.currentpage {
     background: #efefef;
 }
 
@@ -9493,6 +9530,14 @@ li.page-item a {
   }
 }
 
+/*
+**************************************************
+Multi Action Link Block
+**************************************************
+ */
+.row.action-link-block {
+    border-top: solid 4px #e52626;
+}
 
 /*
 **************************************************
@@ -9534,7 +9579,7 @@ a:hover .news-image img {
   border-radius:4px;
 }
 
-.news-thumbnail .caption, .news-thumbnail .caption, .feature-news .caption {
+.news-thumbnail .caption, .feature-news .caption {
   margin-top:.5rem;
   font-size:.85rem;
 }
@@ -9546,15 +9591,13 @@ Video Embed
  */
 
 .video-container {
-  margin:2rem 0 2rem 0;
-}
-
-.video-container {
-  margin:2rem 0 2rem 0;
+    margin: 2rem 0 2rem 0;
 }
 
 .video-container .ratio {
   margin-bottom:1rem;
+  border-radius: .75rem;
+  overflow: hidden;
 }
 
 .video-container .ratio:focus {
@@ -9568,7 +9611,7 @@ Video Embed
     width: auto;
     color: inherit;
     width: 100%;
-    background:transparent; 
+    background:transparent;
     padding:.5rem;
 }
 
@@ -9580,6 +9623,7 @@ Video Embed
     font-weight:400;
     font-size:.875rem
 }
+
 
 .gps-icon img {
   width:75px;
@@ -9660,14 +9704,16 @@ Video Embed
 
 .event-participant img {
   width: 75px;
-  height: 75px;
+  height: auto;
+  aspect-ratio: 1 / 1;
   border-radius: 50% !important;
 }
 
 
 .pgs-people-card__img img {
   width: 50px;
-  height: 50px;
+  height: auto;
+  aspect-ratio: 1 / 1;
   max-width:100%;
   border-radius: 50%;
   text-align: center;
@@ -9678,7 +9724,8 @@ Video Embed
 
 .pgs-people-card__col.pgs-people-card__img img:not(.col-xl-6 .pgs-people-card__col.pgs-people-card__img img) {
     width: 75px;
-    height: 75px;
+    height: auto;
+  	aspect-ratio: 1 / 1;
     max-width: 100%;
     border-radius: 50%;
     text-align: center;
@@ -9687,7 +9734,8 @@ Video Embed
 @media screen and (max-width: 575px){
   .pgs-people-card__img img {
     width: 40px;
-    height: 40px;
+  	height: auto;
+  	aspect-ratio: 1 / 1;
     max-width:100%;
   }
 }
@@ -9696,7 +9744,6 @@ Video Embed
   font-weight:600;
   margin-top:1rem;
 }
-
 
 /*
 **************************************************
@@ -9710,7 +9757,7 @@ Full Width Styles for T4
   margin-right:auto;
 }*/
 
- .no-sidebar .video-container .accordion {
+.no-sidebar .video-container .accordion {
   max-width: initial;
   margin-left: initial;
   margin-right: initial;
@@ -9775,7 +9822,6 @@ media-item.button-grey::part(t4-media-item-wc) {
     color: #000 !important;
     text-decoration: none;
 }
-
 
 
 /*
@@ -9849,7 +9895,7 @@ h2.no-js {
 }
 
 #add-info .accordion {
-    margin: 3.5rem 0 3.5rem;
+    /*margin: 3.5rem 0 3.5rem; -disabled due to excessive spacing between each */
 }
 
 #add-info .accordion:first-of-type {
@@ -9861,10 +9907,15 @@ h2.no-js {
 }
 #formbox input[type=checkbox], input[type=radio] {
     margin: 0 0 10px 8px;
-} 
-#formbox .form-group input[type=text], #formbox .form-group input[type=email], #formbox .form-group input[type=tel], #formbox .form-group select {
+}
+#formbox .form-group input[type=text], #formbox .form-group input[type=email], #formbox .form-group input[type=tel], #formbox .form-group input[type=date], #formbox .form-group select {
     margin: 20px 0 0 0;
 }
+
+#formbox .form-group {
+    margin-top: 1rem;
+}
+
 #submit_button:disabled {
   background-color: #99968d;
   color: #dddddd;
@@ -9873,7 +9924,7 @@ h2.no-js {
   -webkit-box-shadow: none;
   box-shadow: none;
 }
-  
+
 .captcha {
 	padding-bottom: 1em !important;
 }
@@ -9925,6 +9976,155 @@ Online Credential Listing
 
 /*
 **************************************************
+File Display Card
+**************************************************
+*/
+
+.file-display-card {
+    border: 1px solid #efefef;
+    border-radius: .5rem;
+    padding: .5rem;
+}
+
+.file-display-card-caption {
+    font-size: 1rem;
+    margin-top: .5rem;
+}
+
+.file-display-card-link {font-size: .875rem;margin: 1rem 0;}
+
+/*
+**************************************************
+Athletic Site
+**************************************************
+*/
+
+.card.athletic-preview-card {
+  filter: drop-shadow(0 .3rem .3rem #a29494);
+  border-radius:.5rem;
+  margin-bottom:2rem;
+  border:0;
+}
+
+.card.athletic-preview-card:hover, .card.athletic-preview-card:focus {
+  filter: none;
+}
+
+.athletic-preview-image img {
+  width: 100%;
+  border-radius: .5em;
+  max-width: 100%;
+  height: auto;
+}
+
+.athletic-preview-title {
+    position: absolute;
+    bottom: 0px;
+    background: rgba(0, 0, 0, 0.6);
+    width: 100%;
+    padding: .75rem;
+    border-bottom-left-radius: .5rem;
+    border-bottom-right-radius: .5rem;
+}
+
+.athletic-preview-title h2 {
+    font-size: 1rem;
+    color: #fff;
+    margin-bottom: 0;
+}
+
+.athletic-preview-meta {
+    position: absolute;
+    margin: .5rem;
+    background: rgba(255, 255, 255, 0.6);
+    padding:.25rem .5rem;
+    border-radius:2rem;
+    font-size:.8rem;
+    font-weight:700;
+}
+
+/*
+**************************************************
+Conference Day
+**************************************************
+*/
+
+.cd-red-banner-img {
+    position: absolute;
+    right: 5%;
+}
+
+.cd-banner-img.pgs-banner--grand, .cd-banner-img.pgs-banner--grand .pgs-banner__image {
+    min-height: 38em;
+}
+
+.cd-banner {
+    position: absolute;
+    top: 15%;
+    left: 10%;
+    width: 650px;
+    padding: .5rem;
+    color:#003385;
+}
+
+.gotham h2, .gotham h3, .gotham h4, .gotham h5, .gotham .cb-title {
+    font-family:"gotham",
+    "Helvetica Neue", Arial,
+    "Noto Sans", "Liberation Sans",
+    sans-serif;
+    font-style: normal;
+    letter-spacing: 0.03em; /* scalable tracking for headings */
+    line-height: 1.2; /* tighter line-height is typical for headings */
+}
+
+.cd-banner h2 {
+    font-family:"gotham",
+    "Helvetica Neue", Arial,
+    "Noto Sans", "Liberation Sans",
+    sans-serif;
+    font-style: normal;
+    letter-spacing: 0.03em; /* scalable tracking for headings */
+    line-height: 1.2; /* tighter line-height is typical for headings */
+    color:#003385;
+}
+
+.cd-banner-main h2 span.highlight {
+    color: #e52626;
+}
+
+span.sub-banner-lead {
+    text-transform: uppercase;
+    font-size: 1.75rem;
+	font-weight:400;
+}
+
+span.banner-lead {
+    text-transform: uppercase;
+    font-size: 5rem;
+    display: block;
+    margin-top: 0rem;
+    line-height: 5.5rem;
+    font-weight: 800;
+}
+
+.cd-banner-main {
+    border-bottom: 3px solid #e52626;
+}
+
+.cd-banner-subtext p {
+    font-size: 1.75rem;
+}
+
+@media (max-width: 767px) {
+.cd-banner {max-width:60%}
+span.banner-lead {
+    font-size:3rem;
+    line-height:3.25rem
+}
+}
+
+/*
+**************************************************
 Terminalfour Site Search
 **************************************************
 */
@@ -9953,9 +10153,10 @@ input#search-input::placeholder {
     border-bottom: 1px solid #dee2e6;
 }
 
-.search-results .pgs-people-card.pgs-people-card--quiet {
+.row.search-results .pgs-people-card.pgs-people-card--quiet {
     border: 0px solid;
 }
+
 
 /*
 **************************************************
