@@ -9532,6 +9532,10 @@ a:hover .news-image img {
   box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.25), 0 4px 6px -2px rgba(0, 0, 0, 0.12);
 }
 
+.news-shadow {
+    filter: drop-shadow(0 .3rem .3rem #a29494);
+}
+
 .news-thumbnail.float-start {
   padding-left:0;
   margin-left:0;
@@ -9553,6 +9557,26 @@ a:hover .news-image img {
 .news-thumbnail .caption, .news-thumbnail .caption, .feature-news .caption {
   margin-top:.5rem;
   font-size:.85rem;
+}
+
+.news-image.news-related {
+    aspect-ratio: 3 / 2;
+    overflow: hidden;
+    border-radius:.75rem;
+}
+.news-image.news-related img {
+    max-width: 100%;
+    height: auto;
+    border-radius: .5rem;
+    object-fit: cover;
+    height: 100%;
+    weight: 100%;
+    display: block;
+    width: 100%;
+}
+.news-container:hover .news-image img {
+transform: scale(1.05);
+border-radius:.75rem;
 }
 
 /*
@@ -9651,10 +9675,19 @@ Video Embed
   object-fit: cover;
 }
 
+.news-search-thumbnail {
+    aspect-ratio: 3 / 2;
+    overflow: hidden;
+    align-self: flex-start;
+    border-radius:.5rem;
+    margin-top: 1rem;
+}
+
 .news-search-thumbnail img {
-  border-radius: var(--bs-border-radius) !important;
-  margin-top: 1rem !important;
-  height: auto;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius:.5rem
 }
 
 .event-thumb img {
@@ -9959,17 +9992,23 @@ Athletic Site
 
 .card.athletic-preview-card {
   filter: drop-shadow(0 .3rem .3rem #a29494);
-    border-radius:.5rem
+  border-radius:.5rem;
+  margin-bottom:2rem;
+  border:0;
+  overflow:hidden;
 }
-.card.athletic-preview-card:hover, .card.athletic-preview-card:focus {
+
+.card.athletic-preview-card:hover img, .card.athletic-preview-card:focus img {
   filter: none;
+  transform: scale(1.05);
 }
 
 .athletic-preview-image img {
-  width: 100%;
-  border-radius: .5em;
-  max-width: 100%;
-  height: auto;
+	width: 100%;
+	border-radius: .5em;
+	max-width: 100%;
+  	transition: transform .25s ease-in-out;
+	height: auto;
 }
 
 .athletic-preview-title {
@@ -10168,4 +10207,24 @@ Insight Works
 
 .report-summary {
     font-size: .9rem;
+}
+
+/*
+**************************************************
+Reduce Motions and Transitions
+**************************************************
+*/
+
+@media (prefers-reduced-motion: reduce) {
+    html {
+        scroll-behavior: auto;
+    }
+
+    .news-image img,
+    .hero-image,
+    .card,
+    .button {
+        transition: none !important;
+        animation: none !important;
+    }
 }
