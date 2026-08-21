@@ -9561,6 +9561,10 @@ a:hover .news-image img {
   box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.25), 0 4px 6px -2px rgba(0, 0, 0, 0.12);
 }
 
+.news-shadow {
+    filter: drop-shadow(0 .3rem .3rem #a29494);
+}
+
 .news-thumbnail.float-start {
   padding-left:0;
   margin-left:0;
@@ -9584,6 +9588,26 @@ a:hover .news-image img {
   font-size:.85rem;
 }
 
+.news-image.news-related {
+    aspect-ratio: 3 / 2;
+    overflow: hidden;
+    border-radius:.75rem;
+}
+.news-image.news-related img {
+    max-width: 100%;
+    height: auto;
+    border-radius: .5rem;
+    object-fit: cover;
+    height: 100%;
+    weight: 100%;
+    display: block;
+    width: 100%;
+}
+.news-container:hover .news-image img {
+transform: scale(1.05);
+border-radius:.75rem;
+}
+
 /*
 **************************************************
 Video Embed
@@ -9591,7 +9615,7 @@ Video Embed
  */
 
 .video-container {
-    margin: 2rem 0 2rem 0;
+  margin:2rem 0 2rem 0;
 }
 
 .video-container .ratio {
@@ -9689,10 +9713,19 @@ Video Embed
   object-fit: cover;
 }
 
+.news-search-thumbnail {
+    aspect-ratio: 3 / 2;
+    overflow: hidden;
+    align-self: flex-start;
+    border-radius:.5rem;
+    margin-top: 1rem;
+}
+
 .news-search-thumbnail img {
-  border-radius: var(--bs-border-radius) !important;
-  margin-top: 1rem !important;
-  height: auto;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius:.5rem
 }
 
 .event-thumb img {
@@ -9907,7 +9940,7 @@ h2.no-js {
 }
 #formbox input[type=checkbox], input[type=radio] {
     margin: 0 0 10px 8px;
-}
+} 
 #formbox .form-group input[type=text], #formbox .form-group input[type=email], #formbox .form-group input[type=tel], #formbox .form-group input[type=date], #formbox .form-group select {
     margin: 20px 0 0 0;
 }
@@ -9915,7 +9948,6 @@ h2.no-js {
 #formbox .form-group {
     margin-top: 1rem;
 }
-
 #submit_button:disabled {
   background-color: #99968d;
   color: #dddddd;
@@ -9948,6 +9980,24 @@ h2.no-js {
 	min-width: 0px;
 }
 
+/*
+**************************************************
+File Display Card
+**************************************************
+*/
+
+.file-display-card {
+    border: 1px solid #efefef;
+    border-radius: .5rem;
+    padding: .5rem;
+}
+
+.file-display-card-caption {
+    font-size: 1rem;
+    margin-top: .5rem;
+}
+
+.file-display-card-link {font-size: .875rem;margin: 1rem 0;}
 
 /*
 **************************************************
@@ -9976,25 +10026,6 @@ Online Credential Listing
 
 /*
 **************************************************
-File Display Card
-**************************************************
-*/
-
-.file-display-card {
-    border: 1px solid #efefef;
-    border-radius: .5rem;
-    padding: .5rem;
-}
-
-.file-display-card-caption {
-    font-size: 1rem;
-    margin-top: .5rem;
-}
-
-.file-display-card-link {font-size: .875rem;margin: 1rem 0;}
-
-/*
-**************************************************
 Athletic Site
 **************************************************
 */
@@ -10004,22 +10035,25 @@ Athletic Site
   border-radius:.5rem;
   margin-bottom:2rem;
   border:0;
+  overflow:hidden;
 }
 
-.card.athletic-preview-card:hover, .card.athletic-preview-card:focus {
+.card.athletic-preview-card:hover img, .card.athletic-preview-card:focus img {
   filter: none;
+  transform: scale(1.05);
 }
 
 .athletic-preview-image img {
-  width: 100%;
-  border-radius: .5em;
-  max-width: 100%;
-  height: auto;
+	width: 100%;
+	border-radius: .5em;
+	max-width: 100%;
+  	transition: transform .25s ease-in-out;
+	height: auto;
 }
 
 .athletic-preview-title {
     position: absolute;
-    bottom: 0px;
+    top: 155px;
     background: rgba(0, 0, 0, 0.6);
     width: 100%;
     padding: .75rem;
@@ -10095,7 +10129,7 @@ Conference Day
 span.sub-banner-lead {
     text-transform: uppercase;
     font-size: 1.75rem;
-	font-weight:400;
+    font-weight:400;
 }
 
 span.banner-lead {
@@ -10120,8 +10154,9 @@ span.banner-lead {
 span.banner-lead {
     font-size:3rem;
     line-height:3.25rem
+} 
 }
-}
+
 
 /*
 **************************************************
@@ -10213,4 +10248,24 @@ Insight Works
 
 .report-summary {
     font-size: .9rem;
+}
+
+/*
+**************************************************
+Reduce Motions and Transitions
+**************************************************
+*/
+
+@media (prefers-reduced-motion: reduce) {
+    html {
+        scroll-behavior: auto;
+    }
+
+    .news-image img,
+    .hero-image,
+    .card,
+    .button {
+        transition: none !important;
+        animation: none !important;
+    }
 }
