@@ -1,35 +1,71 @@
+:root {
+  /* Primary Colors */
+  --color-blue: #003385;
+  --color-red: #e52626;
+  --color-grey: #e5e2d6;
+
+  /* Blue Variations */
+  --color-blue-dark: #001e49;
+  --color-blue-middle: #99c3ff;
+  --color-blue-light: #e9f2ff;
+
+  /* Red Variations */
+  --color-red-dark: #6d0000;
+  --color-red-middle: #ff8383;
+  --color-red-light: #ffe9e9;
+
+  /* Grey Variations */
+  --color-grey-05: #f7f3e8;
+  --color-grey-20: #c1bba6;
+  --color-grey-40: #f0e9d5;
+  --color-grey-60: #66645e;
+  --color-grey-80: #333333;
+
+  /* Gradients */
+  --gradient-blue: linear-gradient(
+    to bottom,
+    #003385 0%,
+    #002561 100%
+  );
+
+  --gradient-red: linear-gradient(
+    to bottom,
+    #e52626 0%,
+    #c11717 100%
+  );
+
+  /* Alert Colors */
+  --alert-success: #dff0d8;
+  --alert-info: #99c3ff;
+  --alert-warning: #fcf8e3;
+  --alert-danger: #f2dede;
+
+  --color-text: #333;
+  --color-text-on-dark: #fff;
+  --radius: 0.5rem;
+  --shadow-default: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  --font-primary: "Open Sans", sans-serif;
+  --font-header: "Montserrat", "Open Sans", sans-serif;
+}
+
 html, body {
   font-size: 16px;
   line-height: 1.5rem;
 }
 
 body {
-  font-family: 'Open Sans', Arial, Helvetica, sans-serif;
-  color: #333;
-}
-
-h1, h2, h3 {
-  font-family: 'Montserrat', 'Arial Black', sans-serif;
-}
-
-
-html, body {
-  font-size: 16px;
-  line-height: 1.5rem
-}
-
-body {
-  font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+  font-family: var(--font-primary);
   font-size: 1rem !important;
   -webkit-overflow-scrolling: touch;
-  color: #333
+  color: var(--color-text);
+  font-weight:400;
 }
 
 /* headings */
-h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
-  font-family: "Montserrat", "Open Sans", Helvetica, Arial, sans-serif;
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+  font-family: var(--font-header);
   font-weight: 700;
-  color: #003385;
+  color: var(--color-primary);
   margin-bottom: 1rem;
   line-height: 1.5em
 }
@@ -42,51 +78,32 @@ h4, .h4, h5, .h5, h6, .h6 {
   margin-top: 1em
 }
 
-h1, .h1 {
-  font-size: 2rem;
-  font-weight: 800
-}
+h1, .h1 { font-size: 2rem; font-weight: 800 }
 
-h2, .h2 {
-  font-size: 1.5rem
-}
+h2, .h2 { font-size: 1.5rem }
 
-h3, .h3 {
-  font-size: 1.25rem
-}
+h3, .h3 { font-size: 1.25rem }
 
-h4, .h4, .fs-5s {
-  font-weight: 700;
-  font-size: 1.125rem
-}
+h4, .h4, .fs-5s { font-size: 1.125rem; font-weight: 700 }
 
-h5, .h5 {
-  font-weight: 700;
-  font-size: 1rem
-}
+h5, .h5 {  font-size: 1rem; font-weight: 700 }
 
-h6, .h6 {
-  font-weight: 700;
-  font-size: .875rem;
-  /* text-transform: uppercase */
-}
+h6, .h6 { font-size: .875rem; }
 
 .h1 .small, .h1 small, .h2 .small, .h2 small, .h3 .small, .h3 small, .h4 .small, .h4 small, .h5 .small, .h5 small, .h6 .small, .h6 small, h1 .small, h1 small, h2 .small, h2 small, h3 .small, h3 small, h4 .small, h4 small, h5 .small, h5 small, h6 .small, h6 small {
   font-weight: 600;
   line-height: 1;
-  color: #66645E;
+  color: var(--color-grey-60);
 }
-
 
 /* general */
 a {
-  color: #003385;
+  color: var(--color-primary);
   text-decoration: underline;
   transition: all 0.15s ease 0s
 }
 
-p {
-  font-size: 1rem;
+p {font-size: 1rem; 
   margin: 0 0 1rem;
   line-height: 1.75em
 }
@@ -140,8 +157,8 @@ li>ol, li>ul {
   margin-top: .75rem
 }
 
-ul {
-  list-style: disc;
+ul, li {
+    list-style-type: disc;
 }
 
 small, .small {
@@ -153,7 +170,7 @@ blockquote {
   font-weight:700;
   line-height: 1.875em;
   border-left: 8px solid #f7f3e8;
-  font-family: "Montserrat";
+  font-family: var(--font-header);
   padding: 10px 20px
 }
 
@@ -166,11 +183,11 @@ blockquote {
 }
 
 article aside {
-    border-left: 8px solid #003385 !important;
-  	background: #e5e2d6;
-    padding: 1.5rem;
-    margin:1.5rem 0;
-    margin-left: 0 !important;
+  border-left: 8px solid #003385 !important;
+  background: #e5e2d6;
+  padding: 1.5rem;
+  margin:1.5rem 0;
+  margin-left: 0 !important;
 }
 
 figure:has(aside) {
@@ -333,7 +350,7 @@ ul.dropdown-menu {
 }
 
 #l-nav-utility .dropdown-menu a .ico, .navbar-utility .dropdown-menu a .ico {
-  color: #66645e;
+  color: var(--color-grey-60);
   width: 1.5rem
 }
 
@@ -350,13 +367,13 @@ li.navbar-nav--seperator:before {
   border-left: 1px solid white
 }
 
-.tools-workday {
+/* .tools-workday {
   background-image: url("<t4 type="media" id="23299" formatter="path/*" />");
   width: 25px;
   display: inline-block;
   height: 15px;
   background-repeat: no-repeat
-}
+} */
 
 #l-logo-bar .logo-bar-slot {
   padding: 1.825em 0
@@ -400,7 +417,6 @@ li.navbar-nav--seperator:before {
 
 #l-nav-primary ul li {
   text-align: center;
-  /* width: 16.6%; */
 }
 
 #l-nav-primary a {
@@ -410,7 +426,7 @@ li.navbar-nav--seperator:before {
   padding: .875em 0;
   color: #fff;
   text-decoration: none;
-  font-family: "Montserrat", "Open Sans", Helvetica, Arial, sans-serif
+  font-family: var(--font-header);
 }
 
 #l-nav-primary .apply-now .ico {
@@ -468,11 +484,11 @@ li.navbar-nav--seperator:before {
   border: 1px solid #003385;
   padding: 4px 12px;
   border-radius: 4px 0 0 4px;
-  font-family: "Montserrat"
+  font-family: var(--font-header);
 }
 
 #l-header-desktop .search-bar__input::placeholder {
-  font-family: "Open Sans", Helvetica, Arial, sans-serif;
+  font-family: var(--font-header);
   color: #003385
 }
 
@@ -526,22 +542,12 @@ li.navbar-nav--seperator:before {
   color:#333;
   margin-left: 0px;
   margin-top: 0;
-  /* padding-top: 10px;
-  padding-bottom:10px */
 }
 
 #l-header-mobile #l-utility li li a:hover {
   background: #E9F2FF;
   color: #000
 }
-
-
-/* #l-header-mobile ul.navbar-nav {
-width: 100vw;
-  background: #003385;
-  margin-left: 0px;
-  margin-top: 0;
-} */
 
 #l-header-mobile ul.navbar-nav.navbar-secondary  {
   background: #001E49;
@@ -552,8 +558,6 @@ width: 100vw;
 #l-header-mobile a {
   text-decoration: none;
   font-weight: 600;
-  /* color: #fff */
-  /* color: #ffffff; */
 }
 
   /* Added These Styles (Not Sure If Necessary) */
@@ -562,16 +566,7 @@ width: 100vw;
     padding-right: 20px;
   }
 
-  /* // Edited This Existing Style (Not Sure If Necessary)
-  #l-header-mobile ul.navbar-nav {
-    width: 100vw;
-    background: #003385;
-    margin-left: 0px;
-    margin-top: 0;
-
-  }*/
-
-  #l-header-mobile .navbar-right ul.dropdown-menu { margin-left: -50vw;}
+#l-header-mobile .navbar-right ul.dropdown-menu { margin-left: -50vw;}
 
 .navbar-primary-toggle {
   margin: 0;
@@ -658,7 +653,6 @@ width: 100vw;
 
 .navbar-utility a.dropdown-toggle {
   display: inline-block;
-  /* text-transform: uppercase; */
   font-size: .875rem
 }
 
@@ -684,7 +678,6 @@ width: 100vw;
 
 #l-header-mobile .navbar-primary a, #l-header-mobile .navbar-utility .dropdown-menu a {
   padding: 1em 2em;
-  /* color: #333; */
 }
 
 #l-header-mobile .navbar-utility .dropdown-menu [class*="col-"] {
@@ -775,13 +768,12 @@ footer a:not(.button):hover, footer a:not(.button):focus {
   font-size: 1.25rem;
   margin: 0;
   padding: .5rem 0;
-  font-family: "Montserrat", "Open Sans", Helvetica, Arial, sans-serif
+  font-family: var(--font-header);
 }
 
 #l-footer__cta .l-footer__cta__headline .ico {
   margin-right: 1rem
 }
-
 
 #l-footer__main {
   padding: 2rem 0
@@ -864,7 +856,7 @@ footer a:not(.button):focus {
   border-radius: 0;
   padding: 16px 8px 16px 8px;
   margin: 0;
-  font-family: "Montserrat", "Open Sans", Helvetica, Arial, sans-serif
+  font-family: var(--font-header);
 }
 
 #l-footer__mobile.affix {
@@ -939,9 +931,7 @@ column-count: 1;
 }
 }
 
-
 /* End Footer */
-
 
 /* content */
 
@@ -958,7 +948,6 @@ column-count: 1;
 #main__body.home {
   margin-top: 0px;
 }
-
 
 main.affix {
   position: static
@@ -1072,13 +1061,13 @@ main.affix {
 .dfwp-list .link-item a {
   font-size: 1.125em;
   font-weight: 600;
-  font-family: 'Open Sans'
+  font-family: var(--font-header);
 }
 
 .dfwp-list .link-item .description {
   font-size: .875em;
   font-weight: 400;
-  font-family: 'Open Sans'
+  font-family: var(--font-header);
 }
 
 .ScopingError {
@@ -1228,7 +1217,7 @@ main.affix {
   font-size: 16px !important;
   min-width: 60px !important;
   height: 50px !important;
-  font-family: "Open Sans", Helvetica, Arial, sans-serif
+  font-family: var(--font-header);
 }
 
 ._admithub_embed-container .activation-button .icon {
@@ -1336,11 +1325,6 @@ main.affix {
     padding-top: 50px
   }
 
-  /* #main__body {
-    margin-top: 2rem;
-    margin-bottom: 2rem
-  } */
-
   .l-footer__main__popular-items__box {
     padding: 1rem !important
   }
@@ -1354,11 +1338,6 @@ main.affix {
     margin-top: 1rem !important;
     margin-right: 1.25rem
   }
-
-  /* removed based on non-sticky footer
-  #l-footer__fine-print {
-    margin-bottom: 50px
-  } */
 
   #l-footer__mobile {
     display: block
@@ -1382,12 +1361,9 @@ main.affix {
   }
 }
 
-
 .module-block {
   padding: 3rem 0 2rem 0
 }
-
-
 
 /* banners */
 
@@ -1622,18 +1598,11 @@ section.pgs-banner {
 }
 
 .pgs-navbar--sidebar .nav>li:first-of-type a {
-  font-family: "Montserrat", "Open Sans", Helvetica, Arial, sans-serif;
+  font-family: var(--font-header);
   background: #003385;
   font-weight: 600;
   color: #fff
 }
-
-/* .pgs-navbar--sidebar .nav>li:first-of-type a:after {
-  font-family: "Font Awesome 5 Free";
-  content: "\f054";
-  opacity: .7;
-  margin-left: .5rem
-} */
 
 .pgs-navbar--sidebar .nav>li ul {
   list-style-type: none;
@@ -1651,15 +1620,6 @@ section.pgs-banner {
   font-size: .875rem;
 }
 
-/* .pgs-navbar--sidebar .nav>li ul a:before, .pgs-navbar--sidebar .nav a.level2:before {
-  font-family: "Font Awesome 5 Free";
-  font-weight: 900;
-  content: "\f101";
-  margin-left: -1em;
-  margin-right: .5em;
-  color: #66645e
-}
- */
 .pgs-navbar--sidebar a.static.selected {
   border-left: 4px #e52626 solid;
   font-weight: 700
@@ -1687,7 +1647,7 @@ section.pgs-banner {
   padding-top: 1.375rem;
   padding-bottom: 1.375rem;
   transition: none;
-  font-family: "Montserrat", "Open Sans", Helvetica, Arial, sans-serif
+  font-family: var(--font-header);
 }
 
 .pgs-navbar--sidebar .navbar-text {
@@ -1770,8 +1730,7 @@ section.pgs-banner {
   border: 0px;
   width: 100%;
   text-align: left;
-  font-family: "Montserrat";
-  /* text-transform: uppercase */
+  font-family: var(--font-header);
 }
 
 .pgs-navbar .navbar-toggler .ico, .pgs-navbar--sidebar .navbar-toggler .ico{
@@ -1782,7 +1741,6 @@ section.pgs-banner {
   -webkit-transition: transform .25s ease;
   transition: transform .25s ease
 }
-
 
 #scnbox {
   position: relative;
@@ -1915,11 +1873,11 @@ td.thismonth.viewrange.periodday.today.hasEvents a {
 }
 
 .pgs-calendar__date {
-    font-family: montserrat;
-    font-weight: 800;
-    text-transform: uppercase;
-    margin-bottom: 1.5rem;
-    text-align: center
+  font-family: var(--font-header);
+  font-weight: 800;
+  text-transform: uppercase;
+  margin-bottom: 1.5rem;
+  text-align: center
 }
 
 /* End Calendar */
@@ -1955,7 +1913,7 @@ td.thismonth.viewrange.periodday.today.hasEvents a {
 }
 
 .pgs-calendar__date {
-  font-family: montserrat;
+  font-family: var(--font-header);
   font-weight: 800;
   text-transform: uppercase;
   margin-bottom: 1.5rem;
@@ -1980,11 +1938,6 @@ a.pgs-calendar__event {
   font-size: 1rem;
   margin-bottom: .25rem
 }
-
-/* #main__body {
-  margin-top: 48px;
-} */
-
 
 .pgs-navbar--home {
   font-weight: 800;
@@ -2260,7 +2213,7 @@ media-item[class*="button-grey"] {
   display: inline-block;
   padding: .8rem 1.5rem;
   margin: .25rem 0 1.25rem;
-  font-family: 'Open Sans', arial, helvetica, sans-serif;
+  font-family: var(--font-header);
   font-size: 1rem;
   font-weight: 600;
   line-height: 1.42857143;
@@ -2499,7 +2452,7 @@ ul.button-group--vertical li:last-child .button {
 .button-ghost {
   border-width: 2px;
   border-style: solid;
-  border-color: #66645e
+  border-color: var(--color-grey-60);
 }
 
 .button-flat {
@@ -2571,7 +2524,7 @@ ul.button-group--vertical li:last-child .button {
 }
 
 .button-ghost.border-cgrey-60 {
-  color: #66645e
+  color: var(--color-grey-60);
 }
 
 a.grand-button {
@@ -2772,13 +2725,6 @@ Content Image Boxes
 **************************************************
 */
 
-/*
-removed with v.2 2026-04-24 jdb
-.content-image-box {
-  margin: 0 0;
-  position: relative
-}*/
-
 .content-image-box .cib-col-6 {
   width: 50%
 }
@@ -2825,8 +2771,6 @@ removed with v.2 2026-04-24 jdb
 }
 
 .content-image-box .cib-content h2 {
- /*  font-weight: 300;
- font-size: 2em; */
   display: block;
 }
 
@@ -3145,7 +3089,7 @@ margin-right:auto;
   font-size: 2.5em;
   font-weight: 800;
   display: inline-block;
-  font-family: "Montserrat", "Open Sans", Helvetica, Arial, sans-serif;
+  font-family: var(--font-header);
   color:#003385;
   line-height: 2rem;
 }
@@ -3193,7 +3137,7 @@ margin-right:auto;
   margin-top: 0px;
   margin-bottom: 0px;
   font-weight: 400;
-  font-family: "Open Sans"
+  font-family: var(--font-header);
 }
 
 .event-card .event-time {
@@ -3266,6 +3210,8 @@ margin-right:auto;
   margin-bottom: 0
 }
 
+/* 
+Award Box no longer used? - 2026-08-27 jdb
 .award-box {
   margin-bottom: 1em;
   color: #111111
@@ -3336,7 +3282,6 @@ margin-right:auto;
 }
 
 .award-box .cta {
-  /* text-transform: uppercase; */
   text-align: center
 }
 
@@ -3368,7 +3313,7 @@ margin-right:auto;
 .award-box.award-box-lg .cta-inside {
   padding-top: 4em;
   padding-bottom: 4em
-}
+} */
 
 .cta-inside {
   text-align: center
@@ -3478,7 +3423,6 @@ ul.pgs-program-card__meta {
 
 .pgs-program-card__type {
   font-size: .675rem;
-  /* text-transform: uppercase; */
   font-weight: 700
 }
 
@@ -3554,7 +3498,6 @@ ul.pgs-program-card__meta {
 h2.pgs-dept-card__subhead, h3.pgs-dept-card__subhead, h4.pgs-dept-card__subhead {
   font-size: 14px;
   font-weight: bold;
-  /* text-transform: uppercase; */
   margin-top: 0;
   margin-bottom: 1em
 }
@@ -3582,6 +3525,24 @@ ul~h2.pgs-dept-card__subhead, ul~h3.pgs-dept-card__subhead, ul~h4.pgs-dept-card_
 
 p+.pgs-dept-card, ul+.pgs-dept-card, ol+.pgs-dept-card {
   margin-top: 2rem
+}
+
+.nested-layout--narrow .pgs-dept-card__col {
+flex: 0 0 100%;
+max-width: 100%;
+}
+
+.nested-layout--narrow {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+}
+
+.nested-layout--narrow .pgs-dept-card {
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 auto;
 }
 
 h2.accordion-header, h3.accordion-header, h4.accordion-header {margin-top: .375em; }
@@ -3663,12 +3624,6 @@ button.accordion-button {
   width:100%
 }
 
-/* Hide the default chevron */
-/* .accordion-button::after {
-  display: none;
- */
-
-
 .accordion .accordion-button::after {
   content: "\f13a"; /* Unicode for Font Awesome chevron-down */
   background-image: none; /* Overwrites Bootstrap default icon */
@@ -3706,13 +3661,11 @@ button.accordion-button {
   margin-right: 0.6rem; /* Space between icon and text */
   transition: transform 0.3s; /* Smooth transition for rotation */
   color: #003385; /* Custom color */
-
 }
 
 .accordion.accordion-item-quiet .accordion-button:not(.collapsed)::before {
   transform: rotate(180deg); /* Rotate the chevron when expanded */
 }
-
 
 .pgs-accordion--block {
   background: #e5e2d6
@@ -3755,6 +3708,7 @@ button.accordion-button {
   margin-bottom: 2em
 }
 
+/* Custom college accordions no longer used - 2026-08-27 jdb 
 .pgs-accordion--BHC .collapsible {
   border-left-color: #003385
 }
@@ -3781,7 +3735,7 @@ button.accordion-button {
 
 .pgs-accordion--RLC .collapsible {
   border-left-color: #003385
-}
+} */
 
 a.collapsible {
   text-decoration: none
@@ -3890,7 +3844,7 @@ ol+.pgs-accordion {
   border-radius: .125rem;
   border-left: 0.375rem solid #001E49;
   border-bottom: 0px;
-  min-height: 7.5rem
+  min-height: 7.5rem;
 }
 
 .pgs-people-sd-card__img img {
@@ -3901,9 +3855,8 @@ ol+.pgs-accordion {
   border-radius: 50%;
   text-align: center;
   margin: .25em 0 -2em .25em;
-  background-color: #66645e;
+  background-color: var(--color-grey-60);
 }
-
 
 .pgs-people-profile__img img {
   width: 200px;
@@ -3914,7 +3867,7 @@ ol+.pgs-accordion {
   display:block;
   text-align: center;
   margin: .25em auto 2rem auto;
-  background-color: #66645e;
+  background-color: var(--color-grey-60);
 }
 
 .pgs-people-card--directory:last-of-type {
@@ -3956,7 +3909,7 @@ h2.pgs-people-card__name, h3.pgs-people-card__name, h4.pgs-people-card__name, h5
   width: 80px;
   height: auto;
   aspect-ratio:1/1;
-  background-color: #66645e;
+  background-color: var(--color-grey-60);
   border-radius: 50%;
   text-align: center;
   margin: .25em 0 -2em .25em
@@ -4011,8 +3964,6 @@ h2.pgs-people-card__name, h3.pgs-people-card__name, h4.pgs-people-card__name, h5
 
 /* End Employee Directory */
 
-
-
 .pgs-tile {
   display: block;
   position: relative;
@@ -4035,7 +3986,7 @@ a.pgs-tile {
   bottom: 1rem;
   left: 1rem;
   font-size: 1.125rem;
-  font-family: "Montserrat", "Open Sans", Helvetica, Arial, sans-serif;
+  font-family: var(--font-header);
   text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5);
   font-weight: 700;
   margin-right: 1rem;
@@ -4060,8 +4011,6 @@ a.pgs-tile--container:focus .pgs-tile, a.pgs-tile--container:hover .pgs-tile {
   box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.25), 0 4px 6px -2px rgba(0, 0, 0, 0.12);
   outline: 0px
 }
-
-
 
 .pgs-grand-dropdown {
   position: relative;
@@ -4088,8 +4037,8 @@ a.pgs-tile--container:focus .pgs-tile, a.pgs-tile--container:hover .pgs-tile {
   margin-bottom: 0;
   border-width: 2px;
   border-radius: 4px;
-  border-color: #66645e;
-  font-family: "Montserrat";
+  border-color: var(--color-grey-60);
+  font-family: var(--font-header);
   font-weight: 700
 }
 
@@ -4099,7 +4048,7 @@ a.pgs-tile--container:focus .pgs-tile, a.pgs-tile--container:hover .pgs-tile {
 
 .pgs-grand-dropdown button .ico {
   position: absolute;
-  color: #66645e;
+  color: var(--color-grey-60)
   right: 1rem;
   margin-right: 0;
   margin-top: .25rem
@@ -4146,8 +4095,6 @@ a.pgs-tile--container:focus .pgs-tile, a.pgs-tile--container:hover .pgs-tile {
   font-size: .875rem
 }
 
-
-
 /*
 **************************************************
 Action Links - note need special styles for TinyMCE spans
@@ -4161,6 +4108,10 @@ ul.pgs-action-link-list--center {
 
 ul.pgs-action-link-list {
   padding-left: 0
+}
+
+ul.pgs-action-link-list.fa-ul.pgs-action-link-default {
+    margin-left: 0;
 }
 
 .pgs-action-link,
@@ -4375,7 +4326,7 @@ ul.pgs-feature-list {
 }
 
 .txt-img-overlay__text {
-  font-family: "Montserrat", "Open Sans", sans-serif;
+  font-family: var(--font-header);
   font-weight: 800;
   position: absolute;
   bottom: 0;
@@ -4553,7 +4504,7 @@ background-size: cover;
   font-size: .75rem;
   margin-bottom: 1.5rem;
   margin-top: -1.5rem;
-  color: #66645e
+  color: var(--color-grey-60);
 }
 
 .pgs-available-tag ul {
@@ -4594,7 +4545,7 @@ background-size: cover;
 }
 
 .pgs-cta .pgs-cta__headline {
-  font-family: "montserrat";
+  font-family: var(--font-header);
   font-weight: 600
 }
 
@@ -4623,11 +4574,7 @@ a.button.button-off {
 }
 
 .img-cap img, .thumbnail img, .feature-news img {
-  margin-bottom:.5rem;.news-thumbnail .caption, .feature-news .caption {
-  margin-top:.5rem;
-  font-size:.85rem;
-  display: block;
-}
+  margin-bottom:.5rem;
   border-radius:.5rem;
   width:100%;
   max-width:100%
@@ -4641,7 +4588,7 @@ a.button.button-off {
 
 /* Table */
 caption {
-  color: #66645e;
+  color: var(--color-grey-60);
   font-size: .875rem;
   caption-side:top;
 }
@@ -4675,7 +4622,6 @@ table.table-striped thead tr:nth-child(even) th {
 #LayoutBody .hero-overlay-fixed {
   max-width: 300px
 }
-
 
 /*
 **************************************************
@@ -4879,7 +4825,7 @@ a .t4-tile-overlay, .t4-tile-overlay {
   bottom: 1rem;
   left: 1rem;
   font-size: 1.125rem;
-  font-family: "Montserrat", "Open Sans", Helvetica, Arial, sans-serif;
+  font-family: var(--font-header);
   text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5);
   font-weight: 700;
   margin-right: 1rem;
@@ -4951,8 +4897,6 @@ a .t4-tile-block, .t4-tile-block {
   object-fit: cover;
   object-position: center;
 }
-
-
 
 /* End T4 Tiles */
 
@@ -5159,7 +5103,7 @@ a.font-bold, .font-bold {
 
 h2.module-title, h3.module-title, h2 .module-title, h3 .module-title {
   font-size: 2.5rem;
-  font-family: "Montserrat", "Open Sans", Helvetica, Arial, sans-serif;
+  font-family: var(--font-header);
   font-weight: 800;
   margin-top: 0
 }
@@ -5267,8 +5211,6 @@ hr.hr75 {
   height: 8rem;
   clear: both
 }
-
-
 
 .no-margin {
   margin: 0 !important
@@ -6760,7 +6702,7 @@ button:hover, .button:hover {
 }
 
 .button-ghost.border-cgrey-60:hover, .button-ghost.cgrey-60-border:focus {
-  background-color: #66645e;
+  background-color: var(--color-grey-60);
   color: #ffffff;
 }
 
@@ -7040,11 +6982,6 @@ a:hover>img.shadow-hover {
     text-align: center
   }
 
-  /* container margin creates a left to right scroll bar
-.full-width-row>.container, .full-width-row>.container-fluid {
-    margin: 0 2rem;
-  } */
-
   h2.module-title--sm, h3.module-title--sm {
     display: block;
     float: none
@@ -7227,7 +7164,7 @@ a:hover>img.shadow-hover {
   font-size: 1.25rem;
   margin: 0;
   padding: .5rem 0;
-  font-family: "Montserrat", "Open Sans", Helvetica, Arial, sans-serif
+  font-family: var(--font-header);
 }
 
 .cta-stripe .cta-stripe__headline .ico {
@@ -7243,9 +7180,6 @@ a:hover>img.shadow-hover {
   text-align:center;
   }
 }
-
-
-
 
 .fa-rotate-180 {
   -webkit-transform: rotate(180deg);
@@ -7294,6 +7228,7 @@ a:hover>img.shadow-hover {
   list-style: none
 }
 
+/* Campus specific buttons not needed 2026-08-27 jdb 
 .button.button-mn.BHC {
   border-bottom: 2px solid !important;
   border-bottom-color: #009639 !important;
@@ -7372,8 +7307,7 @@ a:hover>img.shadow-hover {
   background-position-y: 8px;
   background-position-x: 1.5em;
   padding-left: 30px
-}
-
+}  */
 
 /* Testimonials - Mega Quotes */
 
@@ -7385,7 +7319,7 @@ a:hover>img.shadow-hover {
 .testimonial-quote blockquote {
   font-size: 1.5em;
   font-weight:700;
-  font-family: "Montserrat", "Open Sans", Helvetica, Arial, sans-serif;
+  font-family: var(--font-header);
   line-height: 1.75em;
   border: 0;
   padding: 0
@@ -7397,50 +7331,9 @@ a:hover>img.shadow-hover {
 
 .testimonial-quote p.readmore {
   font-size: .875rem;
-  font-family: 'Open Sans';
+  font-family: var(--font-header);
   line-height: 1.75em
 }
-
-/* Removing Quotation Styles
-.t4-testimonial-quote:before {
-  position: absolute;
-  content: '';
-  top: 0;
-  left: -112px;
-  background-image: url("<t4 type="media" id="23280" formatter="path/*" />");
-  background-repeat: no-repeat;
-  background-size: contain;
-  width: 96px;
-  height: 96px
-}
-
-
-.t4-testimonial-quote-cprimarylt:before {
-  position: absolute;
-  content: '';
-  top: 0;
-  left: -112px;
-  background-image: url("<t4 type="media" id="23282" formatter="path/*" />");
-  background-repeat: no-repeat;
-  background-size: contain;
-  width: 96px;
-  height: 96px
-}
-
-
-.testimonial--mega .testimonial-quote:after {
-  position: absolute;
-  content: '';
-  top: 0;
-  right: -112px;
-  background-image: url("<t4 type="media" id="23276" formatter="path/*" />");
-  background-repeat: no-repeat;
-  background-size: contain;
-  width: 96px;
-  height: 96px
-}
-
-Removing Quotation Styles */
 
 .testimonial--mega .testimonial-quote blockquote {
   font-size: 1.75rem;
@@ -7449,7 +7342,7 @@ Removing Quotation Styles */
 
 .testimonial .testimonial-name {
   font-size: 1.25rem;
-  font-family: "Montserrat", "Open Sans", Helvetica, Arial, sans-serif;
+  font-family: var(--font-header);
   font-weight: bold;
   line-height: 1.7rem
 }
@@ -7534,6 +7427,7 @@ Removing Quotation Styles */
 .t4-testimonial {
   margin:5rem 0;
 }
+
 .t4-testimonial-quote blockquote, .t4-testimonial-quote-cprimarylt blockquote {
   border:0
 }
@@ -7548,9 +7442,8 @@ Removing Quotation Styles */
   position:relative;
 }
 
-
 .t4-testimonial-name {
-  font-family: "Montserrat", "Open Sans", Helvetica, Arial, sans-serif;
+  font-family: var(--font-header);
   font-weight: bold;
   line-height: 1.7rem;
 }
@@ -7558,101 +7451,25 @@ Removing Quotation Styles */
   font-size: .875em
 }
 
-
-/* Removing Quotation Styles
-@media (min-width: 768px) {
-  .t4-testimonial-quote:before {
-    position: absolute;
-    content: '';
-    top: 0;
-    left: -90px;
-    background-image: url("<t4 type="media" id="23280" formatter="path/*" />");
-    background-repeat: no-repeat;
-    background-size: contain;
-    width: 96px;
-    height: 96px;
-    z-index:1
-  }
-
-  .t4-testimonial-quote-cprimarylt:before {
-    position: absolute;
-    content: '';
-    top: 0;
-    left: -90px;
-    background-image: url("<t4 type="media" id="23282" formatter="path/*" />");
-    background-repeat: no-repeat;
-    background-size: contain;
-    width: 96px;
-    height: 96px;
-    z-index:1
-  }
-}
-
-@media (min-width: 768px) {
-
-
-  .t4-testimonial--mega .t4-testimonial-quote:before {
-    position: absolute;
-    content: '';
-    top: 0;
-    right: -100px;
-    background-image: url("<t4 type="media" id="23280" formatter="path/*" />");
-    background-repeat: no-repeat;
-    background-size: contain;
-    width: 96px;
-    height: 96px
-  }
-
-
-  .t4-testimonial--mega-secondary .t4-testimonial-quote-cprimarylt:before {
-    position: absolute;
-    content: '';
-    top: 0;
-    right: -100px;
-    background-image: url("<t4 type="media" id="23284" formatter="path/*" />");
-    background-repeat: no-repeat;
-    background-size: contain;
-    width: 96px;
-    height: 96px
-  }
-
-  .t4-testimonial--mega .t4-testimonial-quote-cprimarylt:after {
-    position: absolute;
-    content: '';
-    top: 0;
-    right: -100px;
-    background-image: url("<t4 type="media" id="23276" formatter="path/*" />");
-    background-repeat: no-repeat;
-    background-size: contain;
-    width: 96px;
-    height: 96px
-  }
-}
-Removing Quotation Styles */
-
 .t4-testimonial--mega .t4-testimonial-quote blockquote {
   font-size:1.5rem;
 }
 
 .dc-quote__text {
-font-family: montserrat;
-text-transform: uppercase;
-font-size: 2rem;
-text-align: center;
-font-weight: 800;
+  font-family: var(--font-header);
+  text-transform: uppercase;
+  font-size: 2rem;
+  text-align: center;
+  font-weight: 800;
 }
 
 /* End Testimonials - Mega Quotes */
-
-
-
 
 /*
 **************************************************
 Cards: Flexcards, Award Cards, Org Cards
 **************************************************
  */
-
 
  .card-button {
   padding: 1rem;
@@ -7661,52 +7478,6 @@ Cards: Flexcards, Award Cards, Org Cards
 .row.award-box {
   margin-bottom:2rem;
 }
-
-/*
- @media (min-width: 576px) {
-  .card-group {
-    display: table;
-    width: 100%;
-    table-layout: fixed;
-    border-spacing: 1em
-  }
-
-  .card-group .card {
-    display: table-cell;
-    vertical-align: top
-  } */
-
-  /* .card-group>.card:not(:first-child) {
-    border-top-left-radius: 4px;
-    border-bottom-left-radius: 4px;
-    border-top-left-radius: 4px;
-    border-bottom-left-radius: 4px;
-  } */
-
-}
-
-/* .card {
-  position: relative;
-  margin-bottom: .75em;
-  border: 1px solid rgba(0, 0, 0, 0.16);
-  border-radius: .25em;
-  display: block;
-  margin: 1em 0 2em 0;
-  max-width:50%;
-  min-width:250px;
-} */
-
-/* @media (max-width: 575px) {
-  .card {
-    width:100%;
-    max-width: 100%;
-    max-width:auto;
-  }
-} */
-
-/* .card-block, .card-button {
-  padding: 1.25em
-} */
 
 .card-title, span.card-title, h2.card-title, h3.card-title, h4.card-title, h5.card-title {
   display: block;
@@ -8444,16 +8215,16 @@ a.grand-button.bg-cgrey-40:hover, a.grand-button.bg-cgrey-40:focus, a.button.bg-
 }
 
 .text-cgrey-60 {
-  color: #66645e !important
+  color: var(--color-grey-60) !important;
 }
 
 .bg-cgrey-60, .bg-cgrey-60 a:not(.button):not([class^="button-"]):not(.button):not(.nav-link):not(.t4-org-card a) {
-  background-color: #66645e;
+  background-color: var(--color-grey-60);
   color: #fff
 }
 
 .border-cgrey-60 {
-  border-color: #66645e !important
+  border-color: var(--color-grey-60) !important;
 }
 
 a.grand-button.bg-cgrey-60:hover, a.grand-button.bg-cgrey-60:focus, a.button.bg-cgrey-60:hover, a.button.bg-cgrey-60:focus {
@@ -8519,13 +8290,6 @@ a.grand-button.bg-cgrey-80:hover, a.grand-button.bg-cgrey-80:focus, a.button.bg-
 .alert-success .alert-link, .alert-success a {
   color: #2B542B
 }
-
-/* .alert-info, .bg-info {
-  background-color: #d9edf7 !important;
-  border-color: #bce8f1;
-  color: #214A5F
-} */
-
 
 .alert-info, .bg-info {
   background-color: #99C3FF !important;
@@ -8754,10 +8518,8 @@ div.csecondary-dk p a:not(.button), div.cseconary-dk p a:link:not(.button) {
 }
 
   .pgs-accordion .accordion-button::after {
-    /* padding-right: 40px; */
     position: absolute;
     right: 20px;
-    /* padding-right: 80px; */
 }
 
   .pgs-accordion .collapsible {
@@ -8867,9 +8629,6 @@ div.csecondary-dk p a:not(.button), div.cseconary-dk p a:link:not(.button) {
 }
 
 /*# sourceMappingURL=styles.css.map */
-
-
-
 
 /* BS5 Utilities */
 
@@ -8989,7 +8748,9 @@ News Container Layouts
 }
 
 .news-container .news-image {
-  margin-bottom:1.25rem
+  margin-bottom:1.25rem;
+  overflow: hidden;
+  border-radius: .5rem;
 }
 
 /*
@@ -9032,13 +8793,6 @@ Full (default) layout
   flex-shrink: 0;
 }
 
-/* .news-text {
-  flex-grow: 1;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-} */
-
 .feat-news-title {
   padding-top: 0.875rem;
 }
@@ -9048,15 +8802,15 @@ Full (default) layout
 }
 
 h2.news-module-heading {
-     font-size: 2rem;
-     display: inline-block;
-     float: left;
-     margin-right: 3rem;
-     color: #333;
-     font-family: "Montserrat","Open Sans",Helvetica,Arial,sans-serif;
-     font-weight: 800;
-     margin-top: 0.875rem;
-     margin-left: 0.75rem;
+  font-size: 2rem;
+  display: inline-block;
+  float: left;
+  margin-right: 3rem;
+  color: #333;
+  font-family: var(--font-header);
+  font-weight: 800;
+  margin-top: 0.875rem;
+  margin-left: 0.75rem;
  }
 
 h2.news-module-no-left-margin {
@@ -9086,8 +8840,6 @@ h2.news-module-no-left-margin {
 }
 .news-container {
   margin-bottom: 15px;
-  /* overflow: auto; --- this is hiding the focus outline, must disable for now */
-	/* min-height: 110px; */
 }
 .news-summary > p.small {
   font-size: 1rem !important;
@@ -9283,22 +9035,22 @@ input[type="checkbox"],input[type="radio"] {
 }
 
 #sidebar .pgs-navbar--sidebar #searchclear a {
-    display: inline-block;
-    padding: 0.9em 1.5em;
-    margin: .25rem 0 1.25rem;
-    font-family: 'Open Sans', arial, helvetica, sans-serif;
-    font-size: .75rem;
-    font-weight: 600;
-    line-height: 1.5;
-    text-align: center;
-    white-space: normal;
-    vertical-align: middle;
-    -ms-touch-action: manipulation;
-    touch-action: manipulation;
-    cursor: pointer;
-    border-radius: 4px;
-    text-decoration: none;
-    color: #ffffff !important;
+  display: inline-block;
+  padding: 0.9em 1.5em;
+  margin: .25rem 0 1.25rem;
+  font-family: var(--font-header);
+  font-size: .75rem;
+  font-weight: 600;
+  line-height: 1.5;
+  text-align: center;
+  white-space: normal;
+  vertical-align: middle;
+  -ms-touch-action: manipulation;
+  touch-action: manipulation;
+  cursor: pointer;
+  border-radius: 4px;
+  text-decoration: none;
+  color: #ffffff !important;
 }
 
 #searchclear a:hover, #searchclear a:focus {
@@ -9380,7 +9132,7 @@ span.cred-time {
   font-size:1.875rem;
   font-weight:800;
   color:#003385;
-  font-family: "Montserrat", "Open Sans", Helvetica, Arial, sans-serif;
+  font-family: var(--font-header);
   margin-bottom: 1rem;
   line-height: 1.5em;
 }
@@ -9630,7 +9382,6 @@ Video Embed
 }
 
 .video-container .ratio:focus {
-  /* outline: 0.225rem solid #4D90FE !important; */
   outline:none;
   -webkit-box-shadow: 0 0 0 0.0825rem #fff, 0 0 0.0625rem 0.225rem #4D90FE !important;
   box-shadow: 0 0 0 0.0825rem #fff, 0 0 0.0625rem 0.225rem #4D90FE !important;
@@ -9756,7 +9507,7 @@ Video Embed
   border-radius: 50%;
   text-align: center;
   margin: .25em 0 -2em .25em;
-  background-color: #66645e;
+  background-color: var(--color-grey-60);
   border-radius: 50% !important;
 }
 
@@ -9789,23 +9540,11 @@ Full Width Styles for T4
 **************************************************
  */
 
-/*.no-sidebar .accordion {
-  max-width:80%;
-  margin-left: auto;
-  margin-right:auto;
-}*/
-
 .no-sidebar .video-container .accordion {
   max-width: initial;
   margin-left: initial;
   margin-right: initial;
 }
-
- /*.no-sidebar .pgs-grand-dropdown {
-  max-width:80%;
-  margin-left: auto;
-  margin-right:auto;
- } removed 2025-08-29 jdb breaks with d-flex */
 
  @media screen and (max-width: 767px){
   .no-sidebar .accordion,  .no-sidebar .pgs-grand-dropdown {
@@ -9814,7 +9553,6 @@ Full Width Styles for T4
     margin-right: initial;
    }
   }
-
 
 /*
 **************************************************
@@ -9867,7 +9605,6 @@ media-item.button-grey::part(t4-media-item-wc) {
 No Javascript Style
 **************************************************
 */
-
 
  .no-js .navbar .navbar-nav {
   display:block !important;
@@ -9953,6 +9690,7 @@ h2.no-js {
 #formbox .form-group {
     margin-top: 1rem;
 }
+
 #submit_button:disabled {
   background-color: #99968d;
   color: #dddddd;
@@ -10162,7 +9900,6 @@ span.banner-lead {
 } 
 }
 
-
 /*
 **************************************************
 Terminalfour Site Search
@@ -10174,8 +9911,8 @@ input#search-input {
   border: 1px solid #003385;
   padding: 4px 12px;
   border-radius: 4px;
-  font-family: "Montserrat", sans-serif;
-    -webkit-box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  font-family: var(--font-header);
+  -webkit-box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
   -moz-box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
   -ms-box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
   -o-box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
@@ -10183,7 +9920,7 @@ input#search-input {
 }
 
 input#search-input::placeholder {
-  font-family: "Open Sans", Helvetica, Arial, sans-serif;
+  font-family: var(--font-primary);
   color: #003385;
 }
 
@@ -10196,7 +9933,6 @@ input#search-input::placeholder {
 .row.search-results .pgs-people-card.pgs-people-card--quiet {
     border: 0px solid;
 }
-
 
 /*
 **************************************************
@@ -10253,6 +9989,17 @@ Insight Works
 
 .report-summary {
     font-size: .9rem;
+}
+
+/*
+**************************************************
+Agenda Timeline
+**************************************************
+*/
+
+.agenda-timeline .start-time {
+    font-size: 1.6em;
+    font-weight: 800;
 }
 
 /*
