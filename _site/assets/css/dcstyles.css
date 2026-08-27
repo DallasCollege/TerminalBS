@@ -367,13 +367,13 @@ li.navbar-nav--seperator:before {
   border-left: 1px solid white
 }
 
-.tools-workday {
+/* .tools-workday {
   background-image: url("<t4 type="media" id="23299" formatter="path/*" />");
   width: 25px;
   display: inline-block;
   height: 15px;
   background-repeat: no-repeat
-}
+} */
 
 #l-logo-bar .logo-bar-slot {
   padding: 1.825em 0
@@ -417,7 +417,6 @@ li.navbar-nav--seperator:before {
 
 #l-nav-primary ul li {
   text-align: center;
-  /* width: 16.6%; */
 }
 
 #l-nav-primary a {
@@ -543,22 +542,12 @@ li.navbar-nav--seperator:before {
   color:#333;
   margin-left: 0px;
   margin-top: 0;
-  /* padding-top: 10px;
-  padding-bottom:10px */
 }
 
 #l-header-mobile #l-utility li li a:hover {
   background: #E9F2FF;
   color: #000
 }
-
-
-/* #l-header-mobile ul.navbar-nav {
-width: 100vw;
-  background: #003385;
-  margin-left: 0px;
-  margin-top: 0;
-} */
 
 #l-header-mobile ul.navbar-nav.navbar-secondary  {
   background: #001E49;
@@ -569,8 +558,6 @@ width: 100vw;
 #l-header-mobile a {
   text-decoration: none;
   font-weight: 600;
-  /* color: #fff */
-  /* color: #ffffff; */
 }
 
   /* Added These Styles (Not Sure If Necessary) */
@@ -579,16 +566,7 @@ width: 100vw;
     padding-right: 20px;
   }
 
-  /* // Edited This Existing Style (Not Sure If Necessary)
-  #l-header-mobile ul.navbar-nav {
-    width: 100vw;
-    background: #003385;
-    margin-left: 0px;
-    margin-top: 0;
-
-  }*/
-
-  #l-header-mobile .navbar-right ul.dropdown-menu { margin-left: -50vw;}
+#l-header-mobile .navbar-right ul.dropdown-menu { margin-left: -50vw;}
 
 .navbar-primary-toggle {
   margin: 0;
@@ -675,7 +653,6 @@ width: 100vw;
 
 .navbar-utility a.dropdown-toggle {
   display: inline-block;
-  /* text-transform: uppercase; */
   font-size: .875rem
 }
 
@@ -701,7 +678,6 @@ width: 100vw;
 
 #l-header-mobile .navbar-primary a, #l-header-mobile .navbar-utility .dropdown-menu a {
   padding: 1em 2em;
-  /* color: #333; */
 }
 
 #l-header-mobile .navbar-utility .dropdown-menu [class*="col-"] {
@@ -798,7 +774,6 @@ footer a:not(.button):hover, footer a:not(.button):focus {
 #l-footer__cta .l-footer__cta__headline .ico {
   margin-right: 1rem
 }
-
 
 #l-footer__main {
   padding: 2rem 0
@@ -956,9 +931,7 @@ column-count: 1;
 }
 }
 
-
 /* End Footer */
-
 
 /* content */
 
@@ -975,7 +948,6 @@ column-count: 1;
 #main__body.home {
   margin-top: 0px;
 }
-
 
 main.affix {
   position: static
@@ -1353,11 +1325,6 @@ main.affix {
     padding-top: 50px
   }
 
-  /* #main__body {
-    margin-top: 2rem;
-    margin-bottom: 2rem
-  } */
-
   .l-footer__main__popular-items__box {
     padding: 1rem !important
   }
@@ -1371,11 +1338,6 @@ main.affix {
     margin-top: 1rem !important;
     margin-right: 1.25rem
   }
-
-  /* removed based on non-sticky footer
-  #l-footer__fine-print {
-    margin-bottom: 50px
-  } */
 
   #l-footer__mobile {
     display: block
@@ -1399,12 +1361,9 @@ main.affix {
   }
 }
 
-
 .module-block {
   padding: 3rem 0 2rem 0
 }
-
-
 
 /* banners */
 
@@ -1979,11 +1938,6 @@ a.pgs-calendar__event {
   font-size: 1rem;
   margin-bottom: .25rem
 }
-
-/* #main__body {
-  margin-top: 48px;
-} */
-
 
 .pgs-navbar--home {
   font-weight: 800;
@@ -2771,13 +2725,6 @@ Content Image Boxes
 **************************************************
 */
 
-/*
-removed with v.2 2026-04-24 jdb
-.content-image-box {
-  margin: 0 0;
-  position: relative
-}*/
-
 .content-image-box .cib-col-6 {
   width: 50%
 }
@@ -2824,8 +2771,6 @@ removed with v.2 2026-04-24 jdb
 }
 
 .content-image-box .cib-content h2 {
- /*  font-weight: 300;
- font-size: 2em; */
   display: block;
 }
 
@@ -3265,6 +3210,8 @@ margin-right:auto;
   margin-bottom: 0
 }
 
+/* 
+Award Box no longer used? - 2026-08-27 jdb
 .award-box {
   margin-bottom: 1em;
   color: #111111
@@ -3335,7 +3282,6 @@ margin-right:auto;
 }
 
 .award-box .cta {
-  /* text-transform: uppercase; */
   text-align: center
 }
 
@@ -3367,7 +3313,7 @@ margin-right:auto;
 .award-box.award-box-lg .cta-inside {
   padding-top: 4em;
   padding-bottom: 4em
-}
+} */
 
 .cta-inside {
   text-align: center
@@ -3477,7 +3423,6 @@ ul.pgs-program-card__meta {
 
 .pgs-program-card__type {
   font-size: .675rem;
-  /* text-transform: uppercase; */
   font-weight: 700
 }
 
@@ -3553,7 +3498,6 @@ ul.pgs-program-card__meta {
 h2.pgs-dept-card__subhead, h3.pgs-dept-card__subhead, h4.pgs-dept-card__subhead {
   font-size: 14px;
   font-weight: bold;
-  /* text-transform: uppercase; */
   margin-top: 0;
   margin-bottom: 1em
 }
@@ -3680,12 +3624,6 @@ button.accordion-button {
   width:100%
 }
 
-/* Hide the default chevron */
-/* .accordion-button::after {
-  display: none;
- */
-
-
 .accordion .accordion-button::after {
   content: "\f13a"; /* Unicode for Font Awesome chevron-down */
   background-image: none; /* Overwrites Bootstrap default icon */
@@ -3723,13 +3661,11 @@ button.accordion-button {
   margin-right: 0.6rem; /* Space between icon and text */
   transition: transform 0.3s; /* Smooth transition for rotation */
   color: #003385; /* Custom color */
-
 }
 
 .accordion.accordion-item-quiet .accordion-button:not(.collapsed)::before {
   transform: rotate(180deg); /* Rotate the chevron when expanded */
 }
-
 
 .pgs-accordion--block {
   background: #e5e2d6
@@ -3772,6 +3708,7 @@ button.accordion-button {
   margin-bottom: 2em
 }
 
+/* Custom college accordions no longer used - 2026-08-27 jdb 
 .pgs-accordion--BHC .collapsible {
   border-left-color: #003385
 }
@@ -3798,7 +3735,7 @@ button.accordion-button {
 
 .pgs-accordion--RLC .collapsible {
   border-left-color: #003385
-}
+} */
 
 a.collapsible {
   text-decoration: none
@@ -4027,8 +3964,6 @@ h2.pgs-people-card__name, h3.pgs-people-card__name, h4.pgs-people-card__name, h5
 
 /* End Employee Directory */
 
-
-
 .pgs-tile {
   display: block;
   position: relative;
@@ -4076,8 +4011,6 @@ a.pgs-tile--container:focus .pgs-tile, a.pgs-tile--container:hover .pgs-tile {
   box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.25), 0 4px 6px -2px rgba(0, 0, 0, 0.12);
   outline: 0px
 }
-
-
 
 .pgs-grand-dropdown {
   position: relative;
@@ -4161,8 +4094,6 @@ a.pgs-tile--container:focus .pgs-tile, a.pgs-tile--container:hover .pgs-tile {
 .pgs-grand-dropdown--sm a {
   font-size: .875rem
 }
-
-
 
 /*
 **************************************************
@@ -4643,11 +4574,7 @@ a.button.button-off {
 }
 
 .img-cap img, .thumbnail img, .feature-news img {
-  margin-bottom:.5rem;.news-thumbnail .caption, .feature-news .caption {
-  margin-top:.5rem;
-  font-size:.85rem;
-  display: block;
-}
+  margin-bottom:.5rem;
   border-radius:.5rem;
   width:100%;
   max-width:100%
@@ -4695,7 +4622,6 @@ table.table-striped thead tr:nth-child(even) th {
 #LayoutBody .hero-overlay-fixed {
   max-width: 300px
 }
-
 
 /*
 **************************************************
@@ -4971,8 +4897,6 @@ a .t4-tile-block, .t4-tile-block {
   object-fit: cover;
   object-position: center;
 }
-
-
 
 /* End T4 Tiles */
 
@@ -5287,8 +5211,6 @@ hr.hr75 {
   height: 8rem;
   clear: both
 }
-
-
 
 .no-margin {
   margin: 0 !important
@@ -7060,11 +6982,6 @@ a:hover>img.shadow-hover {
     text-align: center
   }
 
-  /* container margin creates a left to right scroll bar
-.full-width-row>.container, .full-width-row>.container-fluid {
-    margin: 0 2rem;
-  } */
-
   h2.module-title--sm, h3.module-title--sm {
     display: block;
     float: none
@@ -7264,9 +7181,6 @@ a:hover>img.shadow-hover {
   }
 }
 
-
-
-
 .fa-rotate-180 {
   -webkit-transform: rotate(180deg);
   -moz-transform: rotate(180deg);
@@ -7314,6 +7228,7 @@ a:hover>img.shadow-hover {
   list-style: none
 }
 
+/* Campus specific buttons not needed 2026-08-27 jdb 
 .button.button-mn.BHC {
   border-bottom: 2px solid !important;
   border-bottom-color: #009639 !important;
@@ -7384,7 +7299,7 @@ a:hover>img.shadow-hover {
   padding-left: 30px
 }
 
-/* .button.button-mn.DCCCD {
+.button.button-mn.DCCCD {
   border-bottom: 2px solid !important;
   border-bottom-color: #0033a0 !important;
   background: url("/PublishingImages/icons/mini-logo-dcccd.png") no-repeat;
@@ -7392,7 +7307,7 @@ a:hover>img.shadow-hover {
   background-position-y: 8px;
   background-position-x: 1.5em;
   padding-left: 30px
-} */
+}  */
 
 /* Testimonials - Mega Quotes */
 
@@ -7536,78 +7451,6 @@ a:hover>img.shadow-hover {
   font-size: .875em
 }
 
-
-/* Removing Quotation Styles
-@media (min-width: 768px) {
-  .t4-testimonial-quote:before {
-    position: absolute;
-    content: '';
-    top: 0;
-    left: -90px;
-    background-image: url("<t4 type="media" id="23280" formatter="path/*" />");
-    background-repeat: no-repeat;
-    background-size: contain;
-    width: 96px;
-    height: 96px;
-    z-index:1
-  }
-
-  .t4-testimonial-quote-cprimarylt:before {
-    position: absolute;
-    content: '';
-    top: 0;
-    left: -90px;
-    background-image: url("<t4 type="media" id="23282" formatter="path/*" />");
-    background-repeat: no-repeat;
-    background-size: contain;
-    width: 96px;
-    height: 96px;
-    z-index:1
-  }
-}
-
-@media (min-width: 768px) {
-
-
-  .t4-testimonial--mega .t4-testimonial-quote:before {
-    position: absolute;
-    content: '';
-    top: 0;
-    right: -100px;
-    background-image: url("<t4 type="media" id="23280" formatter="path/*" />");
-    background-repeat: no-repeat;
-    background-size: contain;
-    width: 96px;
-    height: 96px
-  }
-
-
-  .t4-testimonial--mega-secondary .t4-testimonial-quote-cprimarylt:before {
-    position: absolute;
-    content: '';
-    top: 0;
-    right: -100px;
-    background-image: url("<t4 type="media" id="23284" formatter="path/*" />");
-    background-repeat: no-repeat;
-    background-size: contain;
-    width: 96px;
-    height: 96px
-  }
-
-  .t4-testimonial--mega .t4-testimonial-quote-cprimarylt:after {
-    position: absolute;
-    content: '';
-    top: 0;
-    right: -100px;
-    background-image: url("<t4 type="media" id="23276" formatter="path/*" />");
-    background-repeat: no-repeat;
-    background-size: contain;
-    width: 96px;
-    height: 96px
-  }
-}
-Removing Quotation Styles */
-
 .t4-testimonial--mega .t4-testimonial-quote blockquote {
   font-size:1.5rem;
 }
@@ -7635,52 +7478,6 @@ Cards: Flexcards, Award Cards, Org Cards
 .row.award-box {
   margin-bottom:2rem;
 }
-
-/*
- @media (min-width: 576px) {
-  .card-group {
-    display: table;
-    width: 100%;
-    table-layout: fixed;
-    border-spacing: 1em
-  }
-
-  .card-group .card {
-    display: table-cell;
-    vertical-align: top
-  } */
-
-  /* .card-group>.card:not(:first-child) {
-    border-top-left-radius: 4px;
-    border-bottom-left-radius: 4px;
-    border-top-left-radius: 4px;
-    border-bottom-left-radius: 4px;
-  } */
-
-}
-
-/* .card {
-  position: relative;
-  margin-bottom: .75em;
-  border: 1px solid rgba(0, 0, 0, 0.16);
-  border-radius: .25em;
-  display: block;
-  margin: 1em 0 2em 0;
-  max-width:50%;
-  min-width:250px;
-} */
-
-/* @media (max-width: 575px) {
-  .card {
-    width:100%;
-    max-width: 100%;
-    max-width:auto;
-  }
-} */
-
-/* .card-block, .card-button {
-  padding: 1.25em
-} */
 
 .card-title, span.card-title, h2.card-title, h3.card-title, h4.card-title, h5.card-title {
   display: block;
@@ -8494,13 +8291,6 @@ a.grand-button.bg-cgrey-80:hover, a.grand-button.bg-cgrey-80:focus, a.button.bg-
   color: #2B542B
 }
 
-/* .alert-info, .bg-info {
-  background-color: #d9edf7 !important;
-  border-color: #bce8f1;
-  color: #214A5F
-} */
-
-
 .alert-info, .bg-info {
   background-color: #99C3FF !important;
   color: #000;
@@ -8728,10 +8518,8 @@ div.csecondary-dk p a:not(.button), div.cseconary-dk p a:link:not(.button) {
 }
 
   .pgs-accordion .accordion-button::after {
-    /* padding-right: 40px; */
     position: absolute;
     right: 20px;
-    /* padding-right: 80px; */
 }
 
   .pgs-accordion .collapsible {
@@ -8841,9 +8629,6 @@ div.csecondary-dk p a:not(.button), div.cseconary-dk p a:link:not(.button) {
 }
 
 /*# sourceMappingURL=styles.css.map */
-
-
-
 
 /* BS5 Utilities */
 
@@ -9008,13 +8793,6 @@ Full (default) layout
   flex-shrink: 0;
 }
 
-/* .news-text {
-  flex-grow: 1;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-} */
-
 .feat-news-title {
   padding-top: 0.875rem;
 }
@@ -9062,8 +8840,6 @@ h2.news-module-no-left-margin {
 }
 .news-container {
   margin-bottom: 15px;
-  /* overflow: auto; --- this is hiding the focus outline, must disable for now */
-	/* min-height: 110px; */
 }
 .news-summary > p.small {
   font-size: 1rem !important;
@@ -9606,7 +9382,6 @@ Video Embed
 }
 
 .video-container .ratio:focus {
-  /* outline: 0.225rem solid #4D90FE !important; */
   outline:none;
   -webkit-box-shadow: 0 0 0 0.0825rem #fff, 0 0 0.0625rem 0.225rem #4D90FE !important;
   box-shadow: 0 0 0 0.0825rem #fff, 0 0 0.0625rem 0.225rem #4D90FE !important;
@@ -9765,23 +9540,11 @@ Full Width Styles for T4
 **************************************************
  */
 
-/*.no-sidebar .accordion {
-  max-width:80%;
-  margin-left: auto;
-  margin-right:auto;
-}*/
-
 .no-sidebar .video-container .accordion {
   max-width: initial;
   margin-left: initial;
   margin-right: initial;
 }
-
- /*.no-sidebar .pgs-grand-dropdown {
-  max-width:80%;
-  margin-left: auto;
-  margin-right:auto;
- } removed 2025-08-29 jdb breaks with d-flex */
 
  @media screen and (max-width: 767px){
   .no-sidebar .accordion,  .no-sidebar .pgs-grand-dropdown {
@@ -9790,7 +9553,6 @@ Full Width Styles for T4
     margin-right: initial;
    }
   }
-
 
 /*
 **************************************************
@@ -9843,7 +9605,6 @@ media-item.button-grey::part(t4-media-item-wc) {
 No Javascript Style
 **************************************************
 */
-
 
  .no-js .navbar .navbar-nav {
   display:block !important;
@@ -9929,6 +9690,7 @@ h2.no-js {
 #formbox .form-group {
     margin-top: 1rem;
 }
+
 #submit_button:disabled {
   background-color: #99968d;
   color: #dddddd;
@@ -10138,7 +9900,6 @@ span.banner-lead {
 } 
 }
 
-
 /*
 **************************************************
 Terminalfour Site Search
@@ -10172,7 +9933,6 @@ input#search-input::placeholder {
 .row.search-results .pgs-people-card.pgs-people-card--quiet {
     border: 0px solid;
 }
-
 
 /*
 **************************************************
