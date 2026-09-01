@@ -21,6 +21,10 @@
   --color-grey-60: #66645e;
   --color-grey-80: #333333;
 
+  /* Semantic Colors */
+  --color-primary: var(--color-blue);
+  --color-secondary: var(--color-red);
+  
   /* Gradients */
   --gradient-blue: linear-gradient(
     to bottom,
@@ -157,7 +161,7 @@ li>ol, li>ul {
   margin-top: .75rem
 }
 
-ul, li {
+ul {
     list-style-type: disc;
 }
 
