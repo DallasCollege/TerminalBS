@@ -2235,7 +2235,7 @@ media-item[class*="button-grey"] {
   text-decoration: none;
 }
 
-button.button :not(.pgs-grand-dropdown *) {
+button.button:not(.pgs-grand-dropdown__btn) {
     border: 0;
 }
 
