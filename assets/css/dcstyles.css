@@ -8356,9 +8356,18 @@ a.grand-button.bg-cgrey-80:hover, a.grand-button.bg-cgrey-80:focus, a.button.bg-
   color: #762F2E
 }
 
-/* for content type Alert Boxes - puts the first item after the icon as display inline */
+/* for content type Alert Boxes - puts the first item after the icon as display inline 
 [id^="alert-"] span:first-of-type ~ * {
   display:inline;
+}*/
+
+[id^="alert-"] > .ico {
+    float: left;
+    margin-right: .5rem;
+}
+
+[id^="alert-"] > .ico + * {
+    overflow: hidden; /* establishes a BFC */
 }
 
 /* End Alerts */
@@ -9815,7 +9824,7 @@ Athletic Site
 
 .athletic-preview-title {
     position: absolute;
-    top: 155px;
+    bottom: 0px;
     background: rgba(0, 0, 0, 0.6);
     width: 100%;
     padding: .75rem;
