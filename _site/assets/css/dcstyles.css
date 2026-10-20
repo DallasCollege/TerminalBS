@@ -771,20 +771,20 @@ footer a:not(.button):hover, footer a:not(.button):focus {
   margin-bottom: 0
 }
 
-#l-footer__cta .bg-cprimary a.button.bg-cwhite {
-    color: var(-color-primary);
+#l-footer__cta.bg-cprimary a.button.bg-cwhite {
+    color: var(--color-primary);
 }
 
-#l-footer__cta .bg-csecondary a.button.bg-cwhite {
+#l-footer__cta.bg-csecondary a.button.bg-cwhite {
     color: var(--color-secondary);
 }
 
-#l-footer__cta .bg-csecondary-dk a.button.bg-cwhite {
+#l-footer__cta.bg-csecondary-dk a.button.bg-cwhite {
     color: var(--color-red-dark);
 }
 
-#l-footer__cta .bg-cprimary-dk a.button.bg-cwhite {
-    color: var(-color-blue-dark);
+#l-footer__cta.bg-cprimary-dk a.button.bg-cwhite {
+    color: var(--color-blue-dark);
 }
 
 #l-footer__cta .l-footer__cta__headline {
