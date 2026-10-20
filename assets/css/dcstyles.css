@@ -771,6 +771,22 @@ footer a:not(.button):hover, footer a:not(.button):focus {
   margin-bottom: 0
 }
 
+#l-footer__cta .bg-cprimary a.button.bg-cwhite {
+    color: var(-color-primary);
+}
+
+#l-footer__cta .bg-csecondary a.button.bg-cwhite {
+    color: var(--color-secondary);
+}
+
+#l-footer__cta .bg-csecondary-dk a.button.bg-cwhite {
+    color: var(--color-red-dark);
+}
+
+#l-footer__cta .bg-cprimary-dk a.button.bg-cwhite {
+    color: var(-color-blue-dark);
+}
+
 #l-footer__cta .l-footer__cta__headline {
   font-size: 1.25rem;
   margin: 0;
@@ -4296,6 +4312,9 @@ ul:has(li[style*="center"]) {
   margin-left: .25rem;
 }
 
+.t4-org-card ul.pgs-action-link-list.fa-ul.pgs-action-link-default {
+    margin-left: 2rem;
+}
 
 /* End Action Links */
 
