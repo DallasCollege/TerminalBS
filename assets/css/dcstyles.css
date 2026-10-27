@@ -4171,10 +4171,18 @@ a span.pgs-action-quiet-link-t4,
   margin-right: 2rem;
 }
 
+.pgs-action-link-list--center .fa-li {
+  position: static;
+  display: inline-block;
+  width: auto;
+  /* margin-right: .5rem; */
+}
+
 @media (max-width: 767px) {
   ul:has(.list-inline) .pgs-action-link-t4 {
       display: block;
   }
+
 }
 
 /* TinyMCE adds chevron via CSS */
@@ -4314,6 +4322,7 @@ ul:has(li[style*="center"]) {
 
 .t4-org-card ul.pgs-action-link-list.fa-ul.pgs-action-link-default {
     margin-left: 2rem;
+    margin-right: 2rem;
 }
 
 /* End Action Links */
@@ -6970,13 +6979,25 @@ a:hover>img.shadow-hover {
     display: block
   }
 
+  ul.list-inline.pgs-action-link-list--center {
+    padding-left: 0;
+    margin-left: 0;
+    text-align: center;
+  }
+
+  ul.list-inline.pgs-action-link-list--center > li {
+    display: block;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
   .pgs-grand-dropdown .dropdown-menu {
     position: relative;
     float: none
   }
 
   .pgs-action-link-list--center {
-    text-align: left
+    text-align: center
   }
 
   .pgs-org-card__body {
@@ -8166,7 +8187,7 @@ a.grand-button.csecondary-md:hover, a.grand-button.csecondary-md:focus, a.grand-
 }
 
 .text-cwhite, .cwhite-font {
-  color: #fff !important
+  color: var(--color-text-on-dark) !important;
 }
 
 .border-cwhite, .cwhite-border {
@@ -8179,7 +8200,7 @@ a.button.bg-cwhite:hover, a.grand-button.bg-cwhite:focus, a.grand-button.bg-cwhi
 
 .bg-cblack, .bg-cblack a:not(.button):not([class^="button-"]), .cblack {
   background-color: var(--color-black);
-  color: #fff
+  color: var(--color-text-on-dark);
 }
 
 .text-cblack, .cblack-font {
