@@ -9521,6 +9521,18 @@ Video Embed
 }
 }
 
+/*
+**************************************************
+Two Column Content Wide
+**************************************************
+ */
+
+@media screen and (max-width: 769px) {
+.two-col-content-wide .col-md-5, .two-col-content-wide .col-md-7, .two-col-content-wide .col-md-4, .two-col-content-wide .col-md-8 {
+    padding: 1.5rem;
+}
+}
+
 .content-image-image, .content-image-text {
   padding:2em;
 }
@@ -9546,6 +9558,8 @@ Video Embed
   height: 100%;
   object-fit: cover;
 }
+
+/* End Two Column Content Wide */
 
 .news-search-thumbnail {
     aspect-ratio: 3 / 2;
